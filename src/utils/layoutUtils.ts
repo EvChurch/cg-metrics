@@ -1,9 +1,6 @@
 import dagre from "dagre";
 import type { Node, Edge } from "reactflow";
 
-// Store previous node positions to detect new vs existing nodes
-const previousNodePositions = new Map<string, { x: number; y: number }>();
-
 // Store actual node dimensions
 const actualNodeDimensions = new Map<
   string,
@@ -119,7 +116,7 @@ export const repositionChildrenOfNode = (
 export const getInitialLayout = (nodes: Node[], edges: Edge[]) => {
   const dagreGraph = new dagre.graphlib.Graph();
   dagreGraph.setDefaultEdgeLabel(() => ({}));
-  dagreGraph.setGraph({ rankdir: "TB", nodesep: 25, ranksep: 50 });
+  dagreGraph.setGraph({ rankdir: "TB", nodesep: 25, ranksep: 30 });
 
   // Set default node dimensions for initial layout
   nodes.forEach((node) => {
@@ -153,120 +150,6 @@ export const getInitialLayout = (nodes: Node[], edges: Edge[]) => {
       position: { x, y },
       positionAbsolute: { x, y },
     };
-  });
-
-  return { nodes: layoutedNodes, edges };
-};
-
-// Dagre layout function for automatic node positioning
-export const getLayoutedElements = (nodes: Node[], edges: Edge[]) => {
-  const dagreGraph = new dagre.graphlib.Graph();
-  dagreGraph.setDefaultEdgeLabel(() => ({}));
-  dagreGraph.setGraph({ rankdir: "TB", nodesep: 15, ranksep: 50 }); // Increased ranksep for better spacing
-
-  // Set node dimensions - use actual dimensions if available, otherwise use defaults
-  nodes.forEach((node) => {
-    const actualDimensions = actualNodeDimensions.get(node.id);
-    const width = actualDimensions?.width || 180;
-    const height = actualDimensions?.height || 150;
-    dagreGraph.setNode(node.id, { width, height });
-  });
-
-  // Set edges
-  edges.forEach((edge) => {
-    dagreGraph.setEdge(edge.source, edge.target);
-  });
-
-  // Calculate layout
-  dagre.layout(dagreGraph);
-
-  // Find the bottommost position and X position of existing locale nodes
-  let bottommostExistingY = -Infinity;
-  let existingLocaleX = 0;
-  let existingLocaleCount = 0;
-
-  nodes.forEach((node) => {
-    if (previousNodePositions.has(node.id)) {
-      const prevPos = previousNodePositions.get(node.id)!;
-      bottommostExistingY = Math.max(bottommostExistingY, prevPos.y);
-
-      // Check if this is a locale node (GroupTypeId 39)
-      const nodeData = node.data as { position?: { GroupTypeId?: number } };
-      if (nodeData?.position?.GroupTypeId === 39) {
-        existingLocaleX += prevPos.x;
-        existingLocaleCount++;
-      }
-    }
-  });
-
-  // Calculate average X position of existing locale nodes
-  if (existingLocaleCount > 0) {
-    existingLocaleX = existingLocaleX / existingLocaleCount;
-  }
-
-  // Calculate offset for new locale nodes
-  let localeXOffset = 0;
-  let localeYOffset = 0;
-
-  // Find the first new locale node to calculate the offset
-  const newLocaleNode = nodes.find((node) => {
-    const isNewNode = !previousNodePositions.has(node.id);
-    const nodeData = node.data as { position?: { GroupTypeId?: number } };
-    const isLocaleNode = nodeData?.position?.GroupTypeId === 39;
-    return isNewNode && isLocaleNode;
-  });
-
-  if (newLocaleNode && existingLocaleCount > 0) {
-    const nodeWithPosition = dagreGraph.node(newLocaleNode.id);
-    const originalX = nodeWithPosition.x - nodeWithPosition.width / 2;
-    const originalY = nodeWithPosition.y - nodeWithPosition.height / 2;
-
-    localeXOffset = existingLocaleX - originalX;
-    localeYOffset =
-      (bottommostExistingY > -Infinity
-        ? bottommostExistingY + 500
-        : originalY) - originalY;
-  }
-
-  // Apply layout to nodes
-  const layoutedNodes = nodes.map((node) => {
-    const nodeWithPosition = dagreGraph.node(node.id);
-    const isNewNode = !previousNodePositions.has(node.id);
-
-    // Check if this is a locale node (GroupTypeId 39)
-    const nodeData = node.data as { position?: { GroupTypeId?: number } };
-    const isLocaleNode = nodeData?.position?.GroupTypeId === 39;
-
-    let x = nodeWithPosition.x - nodeWithPosition.width / 2;
-    let y = nodeWithPosition.y - nodeWithPosition.height / 2;
-
-    // Apply positioning
-    if (isNewNode && isLocaleNode && existingLocaleCount > 0) {
-      // Position new locale nodes below existing charts
-      x = existingLocaleX;
-      y = bottommostExistingY > -Infinity ? bottommostExistingY + 500 : y;
-    } else if (isNewNode && !isLocaleNode) {
-      // For new child nodes, apply the same offset as their locale node
-      x += localeXOffset;
-      y += localeYOffset;
-    } else if (!isNewNode) {
-      // For existing nodes, keep their current positions
-      const prevPos = previousNodePositions.get(node.id)!;
-      x = prevPos.x;
-      y = prevPos.y;
-    }
-
-    return {
-      ...node,
-      position: { x, y },
-      positionAbsolute: { x, y },
-    };
-  });
-
-  // Update previous node positions
-  previousNodePositions.clear();
-  layoutedNodes.forEach((node) => {
-    previousNodePositions.set(node.id, node.position);
   });
 
   return { nodes: layoutedNodes, edges };

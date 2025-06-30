@@ -101,7 +101,7 @@ const OrgChart = () => {
     if (nodes.length > 0) {
       // Wait for all nodes to be rendered and measured
       const timeoutId = window.setTimeout(() => {
-        // Find all TeamNodes and AreaNodes and reposition their children
+        // Find all TeamNodes and AreaNodes that have children
         const nodesWithChildren = nodes.filter((node) => {
           const nodeData = node.data as { position?: { GroupTypeId?: number } };
           return (
@@ -110,8 +110,31 @@ const OrgChart = () => {
           );
         });
 
+        // Sort nodes by hierarchy level (top to bottom)
+        // Nodes with no parents come first, then their children, etc.
+        const sortedNodes = [...nodesWithChildren].sort((a, b) => {
+          const aData = a.data as { position?: { ParentGroupId?: number } };
+          const bData = b.data as { position?: { ParentGroupId?: number } };
+
+          // If one has no parent and the other does, the one without parent comes first
+          if (!aData?.position?.ParentGroupId && bData?.position?.ParentGroupId)
+            return -1;
+          if (aData?.position?.ParentGroupId && !bData?.position?.ParentGroupId)
+            return 1;
+
+          // If both have parents, sort by parent ID (this ensures children of the same parent are grouped)
+          if (
+            aData?.position?.ParentGroupId &&
+            bData?.position?.ParentGroupId
+          ) {
+            return aData.position.ParentGroupId - bData.position.ParentGroupId;
+          }
+
+          return 0;
+        });
+
         let updatedNodes = [...nodes];
-        nodesWithChildren.forEach((parentNode) => {
+        sortedNodes.forEach((parentNode) => {
           updatedNodes = repositionChildrenOfNode(
             parentNode.id,
             updatedNodes,

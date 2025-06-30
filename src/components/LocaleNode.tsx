@@ -48,7 +48,7 @@ const LocaleNode = memo(({ data }: NodeProps<LocaleNodeData>) => {
         className="w-0 h-0 opacity-0"
       />
       <div className="text-center">
-        <h4 className="font-bold text-8xl text-brand-black">
+        <h4 className="font-bold text-7xl text-brand-black">
           {position.Name.replace(/^~/, "")}
         </h4>
         {leadersList}
