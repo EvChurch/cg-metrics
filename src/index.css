@@ -44,7 +44,7 @@
 /* Ensure full height and width for React Flow */
 html,
 body,
-#root {
+#ev-serving-app {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -52,11 +52,39 @@ body,
 }
 
 /* Ensure no padding on the main container */
-#root > div {
+#ev-serving-app > div {
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
+}
+
+/* CSS isolation for embedded app to prevent conflicts with Rock RMS */
+#ev-serving-app {
+  /* Reset any inherited styles that might conflict */
+  all: initial;
+  font-family: "Proxima Nova", sans-serif, system-ui, Avenir, Helvetica, Arial;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #213547;
+  background-color: #ffffff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Ensure proper sizing */
+  width: 100%;
+  height: 100%;
+  min-height: 600px; /* Minimum height for the chart */
+  display: block;
+  position: relative;
+}
+
+/* Ensure all child elements inherit the font */
+#ev-serving-app * {
+  font-family: inherit;
+  box-sizing: border-box;
 }
 
 :root {

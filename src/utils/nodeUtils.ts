@@ -121,7 +121,6 @@ export const getPeopleForGroup = (group: Group): Person[] => {
 // Create nodes from groups data
 export const createNodesFromGroups = (
   groups: Group[],
-  people: Person[],
   combinations: string[]
 ): Node[] => {
   const filteredGroups = filterGroupsByCategoriesAndLocations(

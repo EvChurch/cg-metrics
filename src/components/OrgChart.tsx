@@ -56,11 +56,7 @@ const OrgChart = () => {
   const flowData = useMemo(() => {
     if (!data) return { nodes: [], edges: [] };
 
-    const nodes = createNodesFromGroups(
-      data.groups,
-      data.people,
-      filters.combinations
-    );
+    const nodes = createNodesFromGroups(data.groups, filters.combinations);
     const edges = createEdgesFromGroups(data.groups, filters.combinations);
 
     return getInitialLayout(nodes, edges);
@@ -206,8 +202,6 @@ const OrgChart = () => {
         minZoom={0.1}
         maxZoom={2}
         defaultViewport={{ x: 0, y: 0, zoom: 0.8 }}
-        // Remove edge handles
-        connectable={false}
       >
         <Background color="#E5E5E5" />
         <Controls position="bottom-right" />

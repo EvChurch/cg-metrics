@@ -1,5 +1,18 @@
 import { useQuery } from "@tanstack/react-query";
 
+// Function to get initial groups data from script tag
+function getInitialGroupsData() {
+  const scriptTag = document.getElementById("initial-groups-data");
+  if (!scriptTag || !scriptTag.textContent) return { groups: [] };
+
+  try {
+    return JSON.parse(scriptTag.textContent);
+  } catch (e) {
+    console.error("Failed to parse initial groups data", e);
+    return { groups: [] };
+  }
+}
+
 // Types based on your data structure
 export interface Person {
   FullName?: string;
@@ -23,7 +36,6 @@ export interface Group {
 }
 
 interface OrgChartData {
-  people: Person[];
   groups: Group[];
 }
 
@@ -94,27 +106,46 @@ export const useOrgChartData = () => {
     queryKey: ["orgChartData"],
     queryFn: async (): Promise<OrgChartData> => {
       try {
-        const response = await fetch("/test-data.json");
-        if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        const data = await response.json();
+        // Toggle this flag to switch between dynamic data and test data
+        const USE_DYNAMIC_DATA = true; // Set to false to use test data instead
 
-        // Handle the current {groups: [existing data]} structure
-        if (data.groups && Array.isArray(data.groups)) {
-          const normalizedGroups = normalizeGroupTypeId(data.groups);
-          const filteredGroups = filterMemberRoles(normalizedGroups);
-          return {
-            people: data.people || [],
-            groups: filteredGroups,
-          };
+        if (USE_DYNAMIC_DATA) {
+          // Get data from script tag (dynamic data from database)
+          const dynamicData = getInitialGroupsData();
+          if (dynamicData.groups && dynamicData.groups.length > 0) {
+            const normalizedGroups = normalizeGroupTypeId(dynamicData.groups);
+            const filteredGroups = filterMemberRoles(normalizedGroups);
+            return {
+              groups: filteredGroups,
+            };
+          }
+          console.warn("No dynamic data available");
+          return { groups: [] };
         } else {
-          console.warn("Unexpected data structure:", data);
-          return { people: [], groups: [] };
+          // Use test data from JSON file
+          const response = await fetch("/test-data.json");
+          if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+          }
+          const data = await response.json();
+
+          console.log("Using test data");
+
+          // Handle the current {groups: [existing data]} structure
+          if (data.groups && Array.isArray(data.groups)) {
+            const normalizedGroups = normalizeGroupTypeId(data.groups);
+            const filteredGroups = filterMemberRoles(normalizedGroups);
+            return {
+              groups: filteredGroups,
+            };
+          } else {
+            console.warn("Unexpected data structure:", data);
+            return { groups: [] };
+          }
         }
       } catch (error) {
         console.error("Failed to fetch org chart data:", error);
-        return { people: [], groups: [] };
+        return { groups: [] };
       }
     },
     refetchInterval: 30000,
