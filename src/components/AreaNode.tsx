@@ -33,29 +33,49 @@ const AreaNode = memo(({ data, id }: NodeProps<AreaNodeData>) => {
   }, [id]);
 
   // Memoize the members list to prevent unnecessary re-renders
-  const membersList = useMemo(() => {
+  const leadersList = useMemo(() => {
     if (!position.Members || position.Members.length === 0) {
       return null;
     }
 
-    // Filter to only show leaders
-    const leaders = position.Members.filter(
-      (member) => member.Role === "Leader"
+    // Filter to show leaders and assistants
+    const leadersAndAssistants = position.Members.filter(
+      (member) => member.Role === "Leader" || member.Role === "Assistant"
     );
 
-    if (leaders.length === 0) {
+    if (leadersAndAssistants.length === 0) {
       return null;
     }
 
+    // Sort: leaders first, then assistants
+    const sortedMembers = leadersAndAssistants.sort((a, b) => {
+      const aIsLeader = a.Role === "Leader";
+      const bIsLeader = b.Role === "Leader";
+      if (aIsLeader && !bIsLeader) return -1;
+      if (!aIsLeader && bIsLeader) return 1;
+      return 0;
+    });
+
     return (
       <div>
-        {leaders.map((member) => (
-          <div key={member.Id} className="flex pt-2">
-            <div className="text-m p-2 rounded font-semibold text-wrap flex-1 text-center bg-brand-rich-red text-white">
-              {member.Person.FullName || "Unknown"}
+        {sortedMembers.map((member) => {
+          const isAssistant = member.Role === "Assistant";
+
+          let pillClass = "bg-brand-rich-red text-white";
+          if (isAssistant) {
+            pillClass = "bg-brand-orange text-white";
+          }
+
+          return (
+            <div key={member.Id} className="flex pt-2">
+              <div
+                className={`text-m p-2 rounded font-semibold text-wrap flex-1 text-center ${pillClass}`}
+              >
+                {member.Person.FullName || "Unknown"}
+              </div>
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
     );
   }, [position.Members]);
@@ -73,7 +93,7 @@ const AreaNode = memo(({ data, id }: NodeProps<AreaNodeData>) => {
       <div className="text-center">
         <h4 className="font-bold text-2xl text-brand-black">{position.Name}</h4>
 
-        {membersList}
+        {leadersList}
       </div>
       <Handle
         type="source"

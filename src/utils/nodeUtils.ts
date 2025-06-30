@@ -68,16 +68,6 @@ export const filterGroupsByCategoriesAndLocations = (
     matchesFilter(group.Name)
   );
 
-  console.log("Filtering with combinations:", combinations);
-  console.log(
-    "All groups:",
-    filteredGroups.map((g) => g.Name)
-  );
-  console.log(
-    "Matching groups:",
-    matchingGroups.map((g) => g.Name)
-  );
-
   if (matchingGroups.length === 0) {
     return [];
   }
@@ -104,95 +94,6 @@ export const filterGroupsByCategoriesAndLocations = (
 
   // Filter groups to only include those in the selected hierarchies
   return filteredGroups.filter((group) => selectedHierarchyIds.has(group.Id));
-};
-
-// Filter groups that belong to any NS locale group hierarchy
-export const filterNSMatGroups = (groups: Group[]): Group[] => {
-  // First filter out test groups
-  const filteredGroups = filterTestGroups(groups);
-
-  // Find all NS locale groups (groups with GroupTypeId 39 that start with "NS")
-  const nsLocaleGroups = filteredGroups.filter(
-    (group) =>
-      group.GroupTypeId === GROUP_TYPE_IDS.LOCALE &&
-      group.Name.toUpperCase().startsWith("NS")
-  );
-
-  if (nsLocaleGroups.length === 0) {
-    return [];
-  }
-
-  // Create a set of group IDs that belong to any NS locale hierarchy
-  const nsHierarchyIds = new Set<number>();
-
-  // Add all NS locale groups themselves
-  nsLocaleGroups.forEach((group) => {
-    nsHierarchyIds.add(group.Id);
-  });
-
-  // Recursive function to add all children
-  const addChildren = (parentId: number) => {
-    filteredGroups.forEach((group) => {
-      if (group.ParentGroupId === parentId) {
-        nsHierarchyIds.add(group.Id);
-        addChildren(group.Id);
-      }
-    });
-  };
-
-  // Start from all NS locale groups
-  nsLocaleGroups.forEach((group) => {
-    addChildren(group.Id);
-  });
-
-  // Filter groups to only include those in any NS locale hierarchy
-  return filteredGroups.filter((group) => nsHierarchyIds.has(group.Id));
-};
-
-// Generic function to filter groups by locale prefix (e.g., "NS", "CT", "UC")
-export const filterGroupsByLocalePrefix = (
-  groups: Group[],
-  prefix: string
-): Group[] => {
-  // First filter out test groups
-  const filteredGroups = filterTestGroups(groups);
-
-  // Find all locale groups that start with the specified prefix
-  const localeGroups = filteredGroups.filter(
-    (group) =>
-      group.GroupTypeId === GROUP_TYPE_IDS.LOCALE &&
-      group.Name.toUpperCase().startsWith(prefix.toUpperCase())
-  );
-
-  if (localeGroups.length === 0) {
-    return [];
-  }
-
-  // Create a set of group IDs that belong to the locale hierarchy
-  const hierarchyIds = new Set<number>();
-
-  // Add all locale groups themselves
-  localeGroups.forEach((group) => {
-    hierarchyIds.add(group.Id);
-  });
-
-  // Recursive function to add all children
-  const addChildren = (parentId: number) => {
-    filteredGroups.forEach((group) => {
-      if (group.ParentGroupId === parentId) {
-        hierarchyIds.add(group.Id);
-        addChildren(group.Id);
-      }
-    });
-  };
-
-  // Start from all locale groups
-  localeGroups.forEach((group) => {
-    addChildren(group.Id);
-  });
-
-  // Filter groups to only include those in the locale hierarchy
-  return filteredGroups.filter((group) => hierarchyIds.has(group.Id));
 };
 
 // Get node type based on group type ID

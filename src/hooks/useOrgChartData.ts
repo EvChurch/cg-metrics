@@ -2,28 +2,14 @@ import { useQuery } from "@tanstack/react-query";
 
 // Types based on your data structure
 export interface Person {
-  Id?: number;
-  NickName?: string;
-  LastName?: string;
   FullName?: string;
   Email?: string;
   Phone?: string | null;
   Gender?: number;
 }
 
-export interface GroupRole {
-  Id: number;
-  Name: string;
-  IsLeader: boolean;
-}
-
 export interface GroupMember {
   Id: number;
-  PersonId?: number;
-  GroupRoleId?: number;
-  GroupRole?: GroupRole;
-  GroupMemberStatus?: number;
-  HoursServing?: number;
   Role?: string;
   Person: Person;
 }
@@ -33,9 +19,6 @@ export interface Group {
   Name: string;
   ParentGroupId: number | null;
   GroupTypeId: number;
-  GroupType?: string;
-  GroupTypeName?: string;
-  isOrgGroup?: boolean;
   Members: GroupMember[];
 }
 
@@ -91,6 +74,20 @@ const normalizeGroupTypeId = (groups: Group[]): Group[] => {
   });
 };
 
+// Function to filter out "Member" role people from Area and Locale groups
+const filterMemberRoles = (groups: Group[]): Group[] => {
+  return groups.map((group) => {
+    // Filter out "Member" role for Area (GroupTypeId 40) and Locale (GroupTypeId 39) groups
+    if (group.GroupTypeId === 40 || group.GroupTypeId === 39) {
+      return {
+        ...group,
+        Members: group.Members.filter((member) => member.Role !== "Member"),
+      };
+    }
+    return group;
+  });
+};
+
 // Custom hook to fetch data from JSON file
 export const useOrgChartData = () => {
   return useQuery({
@@ -103,26 +100,13 @@ export const useOrgChartData = () => {
         }
         const data = await response.json();
 
-        // Handle the new {groups: [existing data]} structure
+        // Handle the current {groups: [existing data]} structure
         if (data.groups && Array.isArray(data.groups)) {
           const normalizedGroups = normalizeGroupTypeId(data.groups);
+          const filteredGroups = filterMemberRoles(normalizedGroups);
           return {
             people: data.people || [],
-            groups: normalizedGroups,
-          };
-        } else if (data.people && data.groups) {
-          // Legacy format
-          const normalizedGroups = normalizeGroupTypeId(data.groups);
-          return {
-            people: data.people || [],
-            groups: normalizedGroups || [],
-          };
-        } else if (data.Id && data.Name) {
-          // Single group object format
-          const normalizedGroups = normalizeGroupTypeId([data]);
-          return {
-            people: [],
-            groups: normalizedGroups,
+            groups: filteredGroups,
           };
         } else {
           console.warn("Unexpected data structure:", data);

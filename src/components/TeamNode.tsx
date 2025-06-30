@@ -42,13 +42,17 @@ const TeamNode = memo(({ data, id }: NodeProps<TeamNodeData>) => {
       );
     }
 
-    // Sort members: leaders first, then others
+    // Sort members: leaders first, then assistants, then others
     const sortedMembers = [...position.Members].sort((a, b) => {
       const aIsLeader = a.Role === "Leader";
       const bIsLeader = b.Role === "Leader";
+      const aIsAssistant = a.Role === "Assistant";
+      const bIsAssistant = b.Role === "Assistant";
 
       if (aIsLeader && !bIsLeader) return -1;
       if (!aIsLeader && bIsLeader) return 1;
+      if (aIsAssistant && !bIsAssistant && !bIsLeader) return -1;
+      if (!aIsAssistant && bIsAssistant && !aIsLeader) return 1;
       return 0;
     });
 
@@ -56,16 +60,20 @@ const TeamNode = memo(({ data, id }: NodeProps<TeamNodeData>) => {
       <div className="space-y-2">
         {sortedMembers.map((member) => {
           const isLeader = member.Role === "Leader";
+          const isAssistant = member.Role === "Assistant";
           const personName = member.Person.FullName || "Unknown";
+
+          let pillClass = "bg-brand-cool-grey text-gray-500";
+          if (isLeader) {
+            pillClass = "bg-brand-rich-red text-brand-white";
+          } else if (isAssistant) {
+            pillClass = "bg-brand-orange text-brand-white";
+          }
 
           return (
             <div key={member.Id} className="flex pt-2 ">
               <div
-                className={`text-m p-2 rounded font-semibold text-wrap flex-1 text-center ${
-                  isLeader
-                    ? "bg-brand-rich-red text-brand-white"
-                    : "bg-brand-cool-grey text-gray-500"
-                }`}
+                className={`text-m p-2 rounded font-semibold text-wrap flex-1 text-center ${pillClass}`}
               >
                 {personName}
               </div>

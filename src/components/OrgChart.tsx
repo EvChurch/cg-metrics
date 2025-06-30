@@ -5,12 +5,14 @@ import ReactFlow, {
   useEdgesState,
   useReactFlow,
   SelectionMode,
+  type Node,
 } from "reactflow";
 import { useMemo, useEffect, useCallback, useState } from "react";
 import TeamNode from "./TeamNode";
 import AreaNode from "./AreaNode";
 import LocaleNode from "./LocaleNode";
 import ChartFilter from "./ChartFilter";
+import Analytics from "./Analytics";
 import { useOrgChartData } from "../hooks/useOrgChartData";
 import {
   getInitialLayout,
@@ -38,11 +40,17 @@ const OrgChart = () => {
   const [nodes, setNodes, onNodesChange] = useNodesState([]);
   const [edges, setEdges, onEdgesChange] = useEdgesState([]);
   const { fitView } = useReactFlow();
+  const [selectedNodes, setSelectedNodes] = useState<Node[]>([]);
 
   // Initialize filter state with no filters selected
   const [filters, setFilters] = useState<FilterState>({
     combinations: [],
   });
+
+  // Handle selection changes
+  const handleSelectionChange = useCallback(({ nodes }: { nodes: Node[] }) => {
+    setSelectedNodes(nodes);
+  }, []);
 
   // Transform data into React Flow nodes and edges
   const flowData = useMemo(() => {
@@ -141,11 +149,13 @@ const OrgChart = () => {
         onFilterChange={handleFilterChange}
         groups={data?.groups || []}
       />
+      <Analytics nodes={nodes} selectedNodes={selectedNodes} />
       <ReactFlow
         nodes={nodes}
         onNodesChange={onNodesChange}
         edges={edges}
         onEdgesChange={onEdgesChange}
+        onSelectionChange={handleSelectionChange}
         nodeTypes={nodeTypes}
         // Auto-fit view when new nodes are added
         fitView={nodes.length > 0}
