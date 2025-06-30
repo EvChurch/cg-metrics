@@ -101,18 +101,19 @@ const OrgChart = () => {
     if (nodes.length > 0) {
       // Wait for all nodes to be rendered and measured
       const timeoutId = window.setTimeout(() => {
-        // Find all TeamNodes and reposition their children
-        const teamNodes = nodes.filter((node) => {
+        // Find all TeamNodes and AreaNodes and reposition their children
+        const nodesWithChildren = nodes.filter((node) => {
           const nodeData = node.data as { position?: { GroupTypeId?: number } };
           return (
-            nodeData?.position?.GroupTypeId === GROUP_TYPE_IDS.SERVING_TEAM
+            nodeData?.position?.GroupTypeId === GROUP_TYPE_IDS.SERVING_TEAM ||
+            nodeData?.position?.GroupTypeId === GROUP_TYPE_IDS.AREA
           );
         });
 
         let updatedNodes = [...nodes];
-        teamNodes.forEach((teamNode) => {
+        nodesWithChildren.forEach((parentNode) => {
           updatedNodes = repositionChildrenOfNode(
-            teamNode.id,
+            parentNode.id,
             updatedNodes,
             edges
           );

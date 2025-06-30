@@ -119,7 +119,7 @@ export const repositionChildrenOfNode = (
 export const getInitialLayout = (nodes: Node[], edges: Edge[]) => {
   const dagreGraph = new dagre.graphlib.Graph();
   dagreGraph.setDefaultEdgeLabel(() => ({}));
-  dagreGraph.setGraph({ rankdir: "TB", nodesep: 15, ranksep: 50 });
+  dagreGraph.setGraph({ rankdir: "TB", nodesep: 25, ranksep: 50 });
 
   // Set default node dimensions for initial layout
   nodes.forEach((node) => {
