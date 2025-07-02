@@ -63,7 +63,8 @@ body,
 #ev-serving-app {
   /* Reset any inherited styles that might conflict */
   all: initial;
-  font-family: "Proxima Nova", sans-serif, system-ui, Avenir, Helvetica, Arial;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
   color: #213547;
@@ -88,7 +89,8 @@ body,
 }
 
 :root {
-  font-family: "Proxima Nova", sans-serif, system-ui, Avenir, Helvetica, Arial;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
   color: #213547;
