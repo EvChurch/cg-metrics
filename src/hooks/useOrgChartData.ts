@@ -107,7 +107,7 @@ export const useOrgChartData = () => {
     queryFn: async (): Promise<OrgChartData> => {
       try {
         // Toggle this flag to switch between dynamic data and test data
-        const USE_DYNAMIC_DATA = true; // Set to false to use test data instead
+        const USE_DYNAMIC_DATA = false; // Set to false to use test data instead
 
         if (USE_DYNAMIC_DATA) {
           // Get data from script tag (dynamic data from database)

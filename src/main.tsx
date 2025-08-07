@@ -39,13 +39,13 @@ function waitForRockJQuery() {
 
 // Function to find the mount point
 function getMountPoint() {
-  const mountPoint = document.getElementById("ev-serving-app");
+  const mountPoint = document.getElementById("ev-pathways-app");
   if (mountPoint) {
     return mountPoint;
   }
 
   const fallback = document.createElement("div");
-  fallback.id = "ev-serving-app";
+  fallback.id = "ev-pathways-app";
   document.body.appendChild(fallback);
   return fallback;
 }
