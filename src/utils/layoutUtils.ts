@@ -33,97 +33,18 @@ export const updateNodeDimensions = (
   }
 };
 
-// Function to get children of a specific node
-const getChildrenOfNode = (nodeId: string, edges: Edge[]): string[] => {
-  return edges
-    .filter((edge) => edge.source === nodeId)
-    .map((edge) => edge.target);
-};
-
-// Function to get all descendants of a node (children, grandchildren, etc.)
-const getAllDescendants = (nodeId: string, edges: Edge[]): string[] => {
-  const descendants = new Set<string>();
-
-  const addDescendants = (parentId: string) => {
-    const children = getChildrenOfNode(parentId, edges);
-    children.forEach((childId) => {
-      if (!descendants.has(childId)) {
-        descendants.add(childId);
-        addDescendants(childId);
-      }
-    });
-  };
-
-  addDescendants(nodeId);
-  return Array.from(descendants);
-};
-
-// Function to reposition children of a specific parent node
-export const repositionChildrenOfNode = (
-  parentNodeId: string,
-  nodes: Node[],
-  edges: Edge[]
-): Node[] => {
-  const parentNode = nodes.find((node) => node.id === parentNodeId);
-  if (!parentNode) return nodes;
-
-  // Get the actual dimensions of the parent node, or use defaults if not available
-  const parentDimensions = actualNodeDimensions.get(parentNodeId);
-  const parentHeight = parentDimensions?.height || 150; // Default height if not measured yet
-
-  // Get all descendants of this parent
-  const descendantIds = getAllDescendants(parentNodeId, edges);
-
-  // Calculate the new Y position for the first level children
-  const parentBottom = parentNode.position.y + parentHeight;
-  const spacing = 50; // Vertical spacing between levels
-
-  // Create a map of node levels relative to the parent
-  const nodeLevels = new Map<string, number>();
-  nodeLevels.set(parentNodeId, 0);
-
-  // Calculate levels for all descendants
-  const calculateLevels = (currentNodeId: string, level: number) => {
-    const children = getChildrenOfNode(currentNodeId, edges);
-    children.forEach((childId) => {
-      if (descendantIds.includes(childId)) {
-        nodeLevels.set(childId, level + 1);
-        calculateLevels(childId, level + 1);
-      }
-    });
-  };
-  calculateLevels(parentNodeId, 0);
-
-  // Update positions for descendants
-  const updatedNodes = nodes.map((node) => {
-    if (descendantIds.includes(node.id)) {
-      const level = nodeLevels.get(node.id) || 0;
-      const newY = parentBottom + spacing + level * spacing;
-
-      return {
-        ...node,
-        position: { ...node.position, y: newY },
-        positionAbsolute: { ...node.position, y: newY },
-      };
-    }
-    return node;
-  });
-
-  return updatedNodes;
-};
-
-// Simple initial layout function for first-time positioning
+// Simple initial layout function for flat node positioning
 export const getInitialLayout = (nodes: Node[], edges: Edge[]) => {
   const dagreGraph = new dagre.graphlib.Graph();
   dagreGraph.setDefaultEdgeLabel(() => ({}));
-  dagreGraph.setGraph({ rankdir: "TB", nodesep: 25, ranksep: 30 });
+  dagreGraph.setGraph({ rankdir: "TB", nodesep: 50, ranksep: 100 });
 
   // Set default node dimensions for initial layout
   nodes.forEach((node) => {
     dagreGraph.setNode(node.id, { width: 300, height: 150 });
   });
 
-  // Set edges
+  // Set edges (though we don't have any in flat layout)
   edges.forEach((edge) => {
     dagreGraph.setEdge(edge.source, edge.target);
   });

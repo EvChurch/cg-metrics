@@ -1,15 +1,9 @@
 import type { Node, Edge } from "reactflow";
 import type { Group, Person } from "../hooks/useOrgChartData";
 
-// Group type ID constants
-export const GROUP_TYPE_IDS = {
-  SERVING_TEAM: 23,
-} as const;
-
 // Filter out test groups
 export const filterTestGroups = (groups: Group[]): Group[] => {
   return groups.filter((group) => {
-    // Exclude groups with "Test" in the name
     if (
       group.name.toUpperCase().includes("TEST") ||
       group.name === "Prospect" ||
@@ -37,16 +31,6 @@ export const filterGroupsByCategoriesAndLocations = (
 
   // For now, return all groups since the new data doesn't have hierarchical relationships
   return filteredGroups;
-};
-
-// Get node type based on group type ID
-export const getNodeType = (groupTypeId: number): string => {
-  switch (groupTypeId) {
-    case GROUP_TYPE_IDS.SERVING_TEAM:
-      return "teamNode";
-    default:
-      return "teamNode";
-  }
 };
 
 // Get people for a specific group

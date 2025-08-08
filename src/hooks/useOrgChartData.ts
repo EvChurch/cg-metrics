@@ -3,7 +3,10 @@ import { useQuery } from "@tanstack/react-query";
 // Function to get initial groups data from script tag
 function getInitialGroupsData() {
   const scriptTag = document.getElementById("initial-groups-data");
-  if (!scriptTag || !scriptTag.textContent) return { groups: [] };
+  if (!scriptTag || !scriptTag.textContent) {
+    console.warn("Script tag 'initial-groups-data' not found or empty");
+    return { groups: [] };
+  }
 
   try {
     return JSON.parse(scriptTag.textContent);
@@ -32,7 +35,6 @@ export interface Group {
   name: string;
   description?: string;
   people: Person[];
-  GroupTypeId?: number;
 }
 
 interface OrgChartData {
@@ -48,16 +50,6 @@ const transformConnectionStatusToGroups = (
     name: status.name,
     description: status.description,
     people: status.people,
-    GroupTypeId: 23, // SERVING_TEAM
-  }));
-};
-
-// Function to process groups for the new data structure
-const processGroups = (groups: Group[]): Group[] => {
-  return groups.map((group) => ({
-    ...group,
-    // Ensure all groups are treated as team nodes
-    GroupTypeId: 23, // SERVING_TEAM
   }));
 };
 
@@ -73,49 +65,43 @@ export const useOrgChartData = () => {
         if (USE_DYNAMIC_DATA) {
           // Get data from script tag (dynamic data from database)
           const dynamicData = getInitialGroupsData();
-          if (dynamicData.groups && dynamicData.groups.length > 0) {
-            const processedGroups = processGroups(dynamicData.groups);
-            return {
-              groups: processedGroups,
-            };
-          }
-          console.warn("No dynamic data available");
-          return { groups: [] };
-        } else {
-          // Use test data from JSON file
-          const response = await fetch("/test-data.json");
-          if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
-          }
-          const data = await response.json();
-
-          console.log("Using test data");
-
-          // Handle the new connection status structure
-          if (typeof data === "object" && !data.groups) {
-            // Transform connection status data to groups format
-            const groups = transformConnectionStatusToGroups(data);
+          if (dynamicData && Object.keys(dynamicData).length > 0) {
             console.log(
-              "Transformed connection status data to groups:",
-              groups
+              "Processing dynamic groups:",
+              Object.keys(dynamicData).length,
+              "groups"
             );
-            const processedGroups = processGroups(groups);
+            // Transform connection status data to groups format
+            const groups = transformConnectionStatusToGroups(dynamicData);
             return {
-              groups: processedGroups,
+              groups: groups,
             };
           }
-
-          // Handle the current {groups: [existing data]} structure
-          if (data.groups && Array.isArray(data.groups)) {
-            const processedGroups = processGroups(data.groups);
-            return {
-              groups: processedGroups,
-            };
-          } else {
-            console.warn("Unexpected data structure:", data);
-            return { groups: [] };
-          }
+          console.warn("No dynamic data available, falling back to test data");
         }
+
+        // Use test data from JSON file (either as fallback or primary)
+        const response = await fetch("/test-data.json");
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const data = await response.json();
+
+        console.log("Using test data");
+
+        // Handle the new connection status structure
+        if (typeof data === "object" && !data.groups) {
+          // Transform connection status data to groups format
+          const groups = transformConnectionStatusToGroups(data);
+          console.log("Transformed connection status data to groups:", groups);
+          return {
+            groups: groups,
+          };
+        }
+
+        // If we get here, the data structure is unexpected
+        console.warn("Unexpected data structure:", data);
+        return { groups: [] };
       } catch (error) {
         console.error("Failed to fetch org chart data:", error);
         return { groups: [] };

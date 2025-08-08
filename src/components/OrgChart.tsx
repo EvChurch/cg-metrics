@@ -9,15 +9,11 @@ import ReactFlow, {
 import { useMemo, useEffect, useCallback } from "react";
 import TeamNode from "./TeamNode";
 import { useOrgChartData } from "../hooks/useOrgChartData";
-import {
-  getInitialLayout,
-  repositionChildrenOfNode,
-} from "../utils/layoutUtils";
+import { getInitialLayout } from "../utils/layoutUtils";
 import {
   createNodesFromGroups,
   createEdgesFromGroups,
 } from "../utils/nodeUtils";
-import { GROUP_TYPE_IDS } from "../utils/nodeUtils";
 
 // Define custom node types outside component to prevent re-renders
 const nodeTypes = {
@@ -46,7 +42,7 @@ const OrgChart = () => {
     setEdges(flowData.edges);
   }, [flowData.nodes, flowData.edges, setNodes, setEdges]);
 
-  // Fit view when nodes change - use useCallback to prevent unnecessary re-renders
+  // Fit view when nodes change
   const handleFitView = useCallback(() => {
     if (nodes.length > 0) {
       setTimeout(() => {
@@ -64,62 +60,6 @@ const OrgChart = () => {
   useEffect(() => {
     handleFitView();
   }, [handleFitView]);
-
-  // Initial re-layout after all nodes have been measured
-  useEffect(() => {
-    if (nodes.length > 0) {
-      // Wait for all nodes to be rendered and measured
-      const timeoutId = window.setTimeout(() => {
-        // Find all TeamNodes that have children
-        const nodesWithChildren = nodes.filter((node) => {
-          const nodeData = node.data as { position?: { GroupTypeId?: number } };
-          return (
-            nodeData?.position?.GroupTypeId === GROUP_TYPE_IDS.SERVING_TEAM
-          );
-        });
-
-        // Sort nodes by hierarchy level (top to bottom)
-        // Nodes with no parents come first, then their children, etc.
-        const sortedNodes = [...nodesWithChildren].sort((a, b) => {
-          const aData = a.data as { position?: { ParentGroupId?: number } };
-          const bData = b.data as { position?: { ParentGroupId?: number } };
-
-          // If one has no parent and the other does, the one without parent comes first
-          if (!aData?.position?.ParentGroupId && bData?.position?.ParentGroupId)
-            return -1;
-          if (aData?.position?.ParentGroupId && !bData?.position?.ParentGroupId)
-            return 1;
-
-          // If both have parents, sort by parent ID (this ensures children of the same parent are grouped)
-          if (
-            aData?.position?.ParentGroupId &&
-            bData?.position?.ParentGroupId
-          ) {
-            return aData.position.ParentGroupId - bData.position.ParentGroupId;
-          }
-
-          return 0;
-        });
-
-        let updatedNodes = [...nodes];
-        sortedNodes.forEach((parentNode) => {
-          updatedNodes = repositionChildrenOfNode(
-            parentNode.id,
-            updatedNodes,
-            edges
-          );
-        });
-
-        if (JSON.stringify(updatedNodes) !== JSON.stringify(nodes)) {
-          setNodes(updatedNodes);
-        }
-      }, 200); // Longer delay to ensure all nodes are measured
-
-      return () => {
-        clearTimeout(timeoutId);
-      };
-    }
-  }, [nodes.length, edges.length, setNodes]);
 
   if (isLoading) {
     return (
