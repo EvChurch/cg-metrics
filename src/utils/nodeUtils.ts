@@ -15,6 +15,20 @@ export const createNodesFromStatuses = (
   const filteredStatuses: Record<string, ConnectionStatus> = {};
 
   Object.entries(statuses).forEach(([statusId, status]) => {
+    // Check if this is actually a ConnectionStatus object with a name property
+    if (
+      !status ||
+      typeof status !== "object" ||
+      !("name" in status) ||
+      typeof status.name !== "string"
+    ) {
+      console.warn(
+        `Skipping invalid status object for statusId ${statusId}:`,
+        status
+      );
+      return; // Skip if not a valid ConnectionStatus object
+    }
+
     if (
       status.name.toUpperCase().includes("TEST") ||
       status.name === "Prospect" ||

@@ -40,7 +40,6 @@ interface Survey {
 interface TestData {
   surveys?: Survey[];
   groups?: Record<string, ConnectionStatus>;
-  connectionStatuses?: Record<string, ConnectionStatus>;
 }
 
 interface PeopleFlowData {
@@ -66,9 +65,14 @@ export const usePeopleFlowData = () => {
               Object.keys(dynamicData).length,
               "statuses"
             );
+
+            // Handle dynamic data structure - same as test data
+            const connectionStatuses = dynamicData.groups || {};
+            const surveys = dynamicData.surveys || [];
+
             return {
-              connectionStatuses: dynamicData,
-              surveys: [],
+              connectionStatuses,
+              surveys,
             };
           }
           console.warn("No dynamic data available, falling back to test data");
@@ -84,7 +88,7 @@ export const usePeopleFlowData = () => {
         console.log("Using test data");
 
         // Handle new structure with groups or fallback to old structure
-        const connectionStatuses = data.groups || data.connectionStatuses || {};
+        const connectionStatuses = data.groups || {};
 
         return {
           connectionStatuses,
