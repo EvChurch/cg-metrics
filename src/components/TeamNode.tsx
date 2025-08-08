@@ -14,15 +14,6 @@ const TeamNode = memo(({ data, id }: NodeProps<TeamNodeData>) => {
   const { position } = data;
   const nodeRef = useRef<HTMLDivElement>(null);
 
-  // Debug logging
-  useEffect(() => {
-    console.log(`TeamNode ${id} data:`, {
-      name: position.name,
-      peopleCount: position.people?.length || 0,
-      description: position.description,
-    });
-  }, [id, position.name, position.people, position.description]);
-
   // Measure and update node dimensions when content changes
   useEffect(() => {
     if (nodeRef.current) {
@@ -63,7 +54,7 @@ const TeamNode = memo(({ data, id }: NodeProps<TeamNodeData>) => {
                 href={rockUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`text-xs p-1 rounded font-semibold text-wrap flex-1 text-center bg-brand-cool-grey text-gray-500 hover:bg-gray-300 hover:text-gray-700 transition-colors cursor-pointer`}
+                className={`text-xs p-1 rounded font-semibold text-wrap flex-1 text-center bg-brand-cool-grey text-brand-mid-grey hover:bg-gray-300 hover:text-gray-700 transition-colors text-decoration-none cursor-pointer`}
               >
                 {personName}
               </a>

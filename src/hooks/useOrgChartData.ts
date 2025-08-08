@@ -66,11 +66,6 @@ export const useOrgChartData = () => {
           // Get data from script tag (dynamic data from database)
           const dynamicData = getInitialGroupsData();
           if (dynamicData && Object.keys(dynamicData).length > 0) {
-            console.log(
-              "Processing dynamic groups:",
-              Object.keys(dynamicData).length,
-              "groups"
-            );
             // Transform connection status data to groups format
             const groups = transformConnectionStatusToGroups(dynamicData);
             return {
