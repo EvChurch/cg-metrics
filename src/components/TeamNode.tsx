@@ -54,7 +54,7 @@ const TeamNode = memo(({ data, id }: NodeProps<TeamNodeData>) => {
                 href={rockUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`block text-xs p-1 rounded font-semibold text-wrap w-full text-center bg-brand-cool-grey text-gray-500 hover:bg-gray-300 hover:text-gray-700 transition-colors cursor-pointer`}
+                className={`block text-xs p-1 rounded font-semibold text-wrap w-full text-center bg-brand-cool-grey text-brand-dark-grey text-decoration-none hover:bg-gray-300 hover:text-gray-700 transition-colors cursor-pointer`}
               >
                 {personName}
               </a>
