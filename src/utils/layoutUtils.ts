@@ -1,4 +1,3 @@
-import dagre from "dagre";
 import type { Node, Edge } from "reactflow";
 
 // Store actual node dimensions
@@ -33,37 +32,150 @@ export const updateNodeDimensions = (
   }
 };
 
-// Simple initial layout function for flat node positioning
-export const getInitialLayout = (nodes: Node[], edges: Edge[]) => {
-  const dagreGraph = new dagre.graphlib.Graph();
-  dagreGraph.setDefaultEdgeLabel(() => ({}));
-  dagreGraph.setGraph({ rankdir: "TB", nodesep: 50, ranksep: 100 });
+// Custom layout function - you can modify this to create your desired layout
+export const getCustomLayout = (nodes: Node[], edges: Edge[]) => {
+  // Create static nodes
+  const staticNodes: Node[] = [
+    {
+      id: "step-1",
+      type: "staticNode",
+      position: { x: 0, y: 0 },
+      data: {
+        label: "Awareness",
+        description: "Description",
+        isStatic: true,
+      },
+    },
+    {
+      id: "step-2",
+      type: "staticNode",
+      position: { x: 500, y: 0 },
+      data: {
+        label: "1st Contact",
+        description: "Description",
+        isStatic: true,
+      },
+    },
+    {
+      id: "step-3",
+      type: "staticNode",
+      position: { x: 1200, y: 400 },
+      data: {
+        label: "Integration",
+        description: "Description",
+        isStatic: true,
+      },
+    },
+    {
+      id: "step-4",
+      type: "staticNode",
+      position: { x: 1700, y: 400 },
+      data: {
+        label: "Church Life",
+        description: "Description",
+        isStatic: true,
+      },
+    },
+    {
+      id: "step-5",
+      type: "staticNode",
+      position: { x: 2100, y: 400 },
+      data: {
+        label: "Serving",
+        description: "Description",
+        isStatic: true,
+      },
+    },
+    {
+      id: "step-6",
+      type: "staticNode",
+      position: { x: 2500, y: 400 },
+      data: {
+        label: "Sending",
+        description: "Description",
+        isStatic: true,
+      },
+    },
+    {
+      id: "step-2-mis",
+      type: "staticNode",
+      position: { x: 1200, y: -400 },
+      data: {
+        label: "Conversion",
+        description: "Description",
+        isStatic: true,
+      },
+    },
+    {
+      id: "step-3-mis",
+      type: "staticNode",
+      position: { x: 1700, y: -400 },
+      data: {
+        label: "Follow Up",
+        description: "Description",
+        isStatic: true,
+      },
+    },
+  ];
 
-  // Set default node dimensions for initial layout
-  nodes.forEach((node) => {
-    dagreGraph.setNode(node.id, { width: 300, height: 150 });
+  // Layout the data-driven nodes
+  const layoutedNodes = nodes.map((node, index) => {
+    console.log(node);
+
+    switch (node.data.label) {
+      case "Supporter":
+        return {
+          ...node,
+          position: { x: 0, y: 300 },
+        };
+      case "Fringe":
+        return {
+          ...node,
+          position: { x: 150, y: -600 },
+        };
+      case "Visiting":
+        return {
+          ...node,
+          position: { x: 500, y: 200 },
+        };
+      case "Joining":
+        return {
+          ...node,
+          position: { x: 1200, y: 0 },
+        };
+      case "Attending":
+        return {
+          ...node,
+          position: { x: 1450, y: 600 },
+        };
+      case "Growing":
+        return {
+          ...node,
+          position: { x: 1900, y: 600 },
+        };
+      case "Investigating":
+        return {
+          ...node,
+          position: { x: 800, y: -600 },
+        };
+      case "Establishing (in faith)":
+        return {
+          ...node,
+          position: { x: 1500, y: -600 },
+        };
+      default:
+        return {
+          ...node,
+          position: { x: index * 400 + 100, y: (index % 2) * 200 + 100 },
+        };
+    }
   });
 
-  // Set edges (though we don't have any in flat layout)
-  edges.forEach((edge) => {
-    dagreGraph.setEdge(edge.source, edge.target);
-  });
+  // Combine static and data-driven nodes
+  const allNodes = [...staticNodes, ...layoutedNodes];
 
-  // Calculate layout
-  dagre.layout(dagreGraph);
-
-  // Apply layout to nodes
-  const layoutedNodes = nodes.map((node) => {
-    const nodeWithPosition = dagreGraph.node(node.id);
-    const x = nodeWithPosition.x - nodeWithPosition.width / 2;
-    const y = nodeWithPosition.y - nodeWithPosition.height / 2;
-
-    return {
-      ...node,
-      position: { x, y },
-      positionAbsolute: { x, y },
-    };
-  });
-
-  return { nodes: layoutedNodes, edges };
+  return { nodes: allNodes, edges };
 };
+
+// Keep the old function name for compatibility
+export const getInitialLayout = getCustomLayout;

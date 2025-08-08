@@ -6,18 +6,18 @@ import ReactFlow, {
   useReactFlow,
   SelectionMode,
 } from "reactflow";
+import type { Edge } from "reactflow";
 import { useMemo, useEffect, useCallback } from "react";
 import TeamNode from "./TeamNode";
+import StaticNode from "./StaticNode";
 import { usePeopleFlowData } from "../hooks/usePeopleFlowData";
 import { getInitialLayout } from "../utils/layoutUtils";
-import {
-  createNodesFromGroups,
-  createEdgesFromGroups,
-} from "../utils/nodeUtils";
+import { createNodesFromStatuses } from "../utils/nodeUtils";
 
 // Define custom node types outside component to prevent re-renders
 const nodeTypes = {
   teamNode: TeamNode,
+  staticNode: StaticNode,
 };
 
 const PeopleFlow = () => {
@@ -30,8 +30,8 @@ const PeopleFlow = () => {
   const flowData = useMemo(() => {
     if (!data) return { nodes: [], edges: [] };
 
-    const nodes = createNodesFromGroups(data.groups, []);
-    const edges = createEdgesFromGroups();
+    const nodes = createNodesFromStatuses(data.connectionStatuses);
+    const edges: Edge[] = []; // No edges needed for flat data
 
     return getInitialLayout(nodes, edges);
   }, [data]);

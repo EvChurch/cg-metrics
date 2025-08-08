@@ -5,14 +5,14 @@ function getInitialGroupsData() {
   const scriptTag = document.getElementById("initial-groups-data");
   if (!scriptTag || !scriptTag.textContent) {
     console.warn("Script tag 'initial-groups-data' not found or empty");
-    return { groups: [] };
+    return {};
   }
 
   try {
     return JSON.parse(scriptTag.textContent);
   } catch (e) {
     console.error("Failed to parse initial groups data", e);
-    return { groups: [] };
+    return {};
   }
 }
 
@@ -30,28 +30,9 @@ export interface ConnectionStatus {
   people: Person[];
 }
 
-export interface Group {
-  Id: number;
-  name: string;
-  description?: string;
-  people: Person[];
-}
-
 interface PeopleFlowData {
-  groups: Group[];
+  connectionStatuses: Record<string, ConnectionStatus>;
 }
-
-// Function to transform connection status data to groups format
-const transformConnectionStatusToGroups = (
-  data: Record<string, ConnectionStatus>
-): Group[] => {
-  return Object.entries(data).map(([statusId, status]) => ({
-    Id: parseInt(statusId),
-    name: status.name,
-    description: status.description,
-    people: status.people,
-  }));
-};
 
 // Custom hook to fetch data from JSON file
 export const usePeopleFlowData = () => {
@@ -67,14 +48,12 @@ export const usePeopleFlowData = () => {
           const dynamicData = getInitialGroupsData();
           if (dynamicData && Object.keys(dynamicData).length > 0) {
             console.log(
-              "Processing dynamic groups:",
+              "Processing dynamic connection statuses:",
               Object.keys(dynamicData).length,
-              "groups"
+              "statuses"
             );
-            // Transform connection status data to groups format
-            const groups = transformConnectionStatusToGroups(dynamicData);
             return {
-              groups: groups,
+              connectionStatuses: dynamicData,
             };
           }
           console.warn("No dynamic data available, falling back to test data");
@@ -89,22 +68,13 @@ export const usePeopleFlowData = () => {
 
         console.log("Using test data");
 
-        // Handle the new connection status structure
-        if (typeof data === "object" && !data.groups) {
-          // Transform connection status data to groups format
-          const groups = transformConnectionStatusToGroups(data);
-          console.log("Transformed connection status data to groups:", groups);
-          return {
-            groups: groups,
-          };
-        }
-
-        // If we get here, the data structure is unexpected
-        console.warn("Unexpected data structure:", data);
-        return { groups: [] };
+        // Return connection status data directly
+        return {
+          connectionStatuses: data,
+        };
       } catch (error) {
         console.error("Failed to fetch people flow data:", error);
-        return { groups: [] };
+        return { connectionStatuses: {} };
       }
     },
     refetchInterval: 30000,
