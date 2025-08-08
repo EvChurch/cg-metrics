@@ -1,7 +1,7 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ReactFlowProvider } from "reactflow";
 import "./App.css";
-import OrgChart from "./components/OrgChart.tsx";
+import PeopleFlow from "./components/PeopleFlow.tsx";
 
 // Create a client
 const queryClient = new QueryClient({
@@ -27,7 +27,7 @@ function App() {
           </div>
           {/* React Flow Container */}
           <div className="flex-1 w-full overflow-hidden">
-            <OrgChart />
+            <PeopleFlow />
           </div>
         </div>
       </ReactFlowProvider>

@@ -1,5 +1,5 @@
 import type { Node, Edge } from "reactflow";
-import type { Group, Person } from "../hooks/useOrgChartData";
+import type { Group, Person } from "../hooks/usePeopleFlowData";
 
 // Filter out test groups
 export const filterTestGroups = (groups: Group[]): Group[] => {

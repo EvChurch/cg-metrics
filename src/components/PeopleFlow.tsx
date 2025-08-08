@@ -8,7 +8,7 @@ import ReactFlow, {
 } from "reactflow";
 import { useMemo, useEffect, useCallback } from "react";
 import TeamNode from "./TeamNode";
-import { useOrgChartData } from "../hooks/useOrgChartData";
+import { usePeopleFlowData } from "../hooks/usePeopleFlowData";
 import { getInitialLayout } from "../utils/layoutUtils";
 import {
   createNodesFromGroups,
@@ -20,8 +20,8 @@ const nodeTypes = {
   teamNode: TeamNode,
 };
 
-const OrgChart = () => {
-  const { data, isLoading, error } = useOrgChartData();
+const PeopleFlow = () => {
+  const { data, isLoading, error } = usePeopleFlowData();
   const [nodes, setNodes, onNodesChange] = useNodesState([]);
   const [edges, setEdges, onEdgesChange] = useEdgesState([]);
   const { fitView } = useReactFlow();
@@ -116,4 +116,4 @@ const OrgChart = () => {
   );
 };
 
-export default OrgChart;
+export default PeopleFlow;

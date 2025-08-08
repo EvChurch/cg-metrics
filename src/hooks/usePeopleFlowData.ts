@@ -37,7 +37,7 @@ export interface Group {
   people: Person[];
 }
 
-interface OrgChartData {
+interface PeopleFlowData {
   groups: Group[];
 }
 
@@ -54,10 +54,10 @@ const transformConnectionStatusToGroups = (
 };
 
 // Custom hook to fetch data from JSON file
-export const useOrgChartData = () => {
+export const usePeopleFlowData = () => {
   return useQuery({
-    queryKey: ["orgChartData"],
-    queryFn: async (): Promise<OrgChartData> => {
+    queryKey: ["peopleFlowData"],
+    queryFn: async (): Promise<PeopleFlowData> => {
       try {
         // Toggle this flag to switch between dynamic data and test data
         const USE_DYNAMIC_DATA = true; // Set to false to use test data instead
@@ -66,6 +66,11 @@ export const useOrgChartData = () => {
           // Get data from script tag (dynamic data from database)
           const dynamicData = getInitialGroupsData();
           if (dynamicData && Object.keys(dynamicData).length > 0) {
+            console.log(
+              "Processing dynamic groups:",
+              Object.keys(dynamicData).length,
+              "groups"
+            );
             // Transform connection status data to groups format
             const groups = transformConnectionStatusToGroups(dynamicData);
             return {
@@ -98,7 +103,7 @@ export const useOrgChartData = () => {
         console.warn("Unexpected data structure:", data);
         return { groups: [] };
       } catch (error) {
-        console.error("Failed to fetch org chart data:", error);
+        console.error("Failed to fetch people flow data:", error);
         return { groups: [] };
       }
     },

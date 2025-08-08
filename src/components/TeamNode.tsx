@@ -1,6 +1,6 @@
 import { memo, useMemo, useRef, useEffect } from "react";
 import { Handle, Position, type NodeProps } from "reactflow";
-import type { Group, Person } from "../hooks/useOrgChartData";
+import type { Group, Person } from "../hooks/usePeopleFlowData";
 import { updateNodeDimensions } from "../utils/layoutUtils";
 
 interface TeamNodeData {
