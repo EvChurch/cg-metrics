@@ -1,9 +1,21 @@
 {
   "surveys": [
-    { "personId": "9640", "formId": "3109" },
-    { "personId": "9498", "formId": "3658" },
-    { "personId": "10442", "formId": "10213" },
-    { "personId": "10134", "formId": "11793" }
+    {
+      "personId": "9640",
+      "formId": "3109"
+    },
+    {
+      "personId": "9498",
+      "formId": "3658"
+    },
+    {
+      "personId": "10442",
+      "formId": "10213"
+    },
+    {
+      "personId": "10134",
+      "formId": "11793"
+    }
   ],
   "groups": {
     "65": {
@@ -697,505 +709,673 @@
           "id": 307,
           "fullName": "Alexandra Suarez",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": true
         },
         {
           "id": 358,
           "fullName": "Allana Jiang",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": true
         },
         {
           "id": 389,
           "fullName": "Alyssa Fleming",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": false,
+          "isInCG": false
         },
         {
           "id": 421,
           "fullName": "Amanda Liew",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": false,
+          "isInCG": true
         },
         {
           "id": 964,
           "fullName": "Bai Xue",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": false,
+          "isInCG": false
         },
         {
           "id": 985,
           "fullName": "Bec Downes",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": false,
+          "isInCG": true
         },
         {
           "id": 1086,
           "fullName": "Bernard Abi Rached",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": false,
+          "isInCG": true
         },
         {
           "id": 1112,
           "fullName": "Bill Wong",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": true
         },
         {
           "id": 1258,
           "fullName": "Brooke McLeish",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": true
         },
         {
           "id": 1352,
           "fullName": "Caleb Dela Cruz",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": false,
+          "isInCG": false
         },
         {
           "id": 1356,
           "fullName": "Caleb Varcoe",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": false,
+          "isInCG": false
         },
         {
           "id": 1619,
           "fullName": "Cherry Chu",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": true
         },
         {
           "id": 1746,
           "fullName": "Christine Poon",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": false,
+          "isInCG": true
         },
         {
           "id": 1797,
           "fullName": "Cindy Thompson",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": false,
+          "isInCG": false
         },
         {
           "id": 1850,
           "fullName": "Clarice Cheng",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": false,
+          "isInCG": false
         },
         {
           "id": 2030,
           "fullName": "Danielle Wang",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": false,
+          "isInCG": false
         },
         {
           "id": 2031,
           "fullName": "Daniel Kim",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": false,
+          "isInCG": false
         },
         {
           "id": 2051,
           "fullName": "Danielle Na",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": true
         },
         {
           "id": 2126,
           "fullName": "David Li",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": true
         },
         {
           "id": 2136,
           "fullName": "David Goldsmith",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": false,
+          "isInCG": false
         },
         {
           "id": 2190,
           "fullName": "Dee Wijetillake",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": false,
+          "isInCG": false
         },
         {
           "id": 2204,
           "fullName": "Delphine Fossi",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": false,
+          "isInCG": false
         },
         {
           "id": 2236,
           "fullName": "Dilshan Panamulla",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": false
         },
         {
           "id": 2287,
           "fullName": "Dominique Walker",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": false
         },
         {
           "id": 2612,
           "fullName": "Eric Jang",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": false
         },
         {
           "id": 2661,
           "fullName": "Esha Le",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": false,
+          "isInCG": true
         },
         {
           "id": 2723,
           "fullName": "Eugene Bartsaikin",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": false
         },
         {
           "id": 2990,
           "fullName": "Gary Chan",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": false,
+          "isInCG": true
         },
         {
           "id": 3130,
           "fullName": "Grace Guo",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": false,
+          "isInCG": false
         },
         {
           "id": 3140,
           "fullName": "Grace Oh",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": false,
+          "isInCG": false
         },
         {
           "id": 3262,
           "fullName": "Hannah Oliver",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": false,
+          "isInCG": true
         },
         {
           "id": 3279,
           "fullName": "Hannah Rutland",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": false,
+          "isInCG": false
         },
         {
           "id": 3516,
           "fullName": "Herim Park",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": false,
+          "isInCG": true
         },
         {
           "id": 3575,
           "fullName": "Irene Halim",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": false,
+          "isInCG": true
         },
         {
           "id": 4050,
           "fullName": "Jeanice Gomez",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": true
         },
         {
           "id": 4330,
           "fullName": "Joel Liew",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": false,
+          "isInCG": false
         },
         {
           "id": 4469,
           "fullName": "Jonathan Goldsmith",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": true
         },
         {
           "id": 4499,
           "fullName": "Jono Ng",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": false
         },
         {
           "id": 4558,
           "fullName": "Josh Fleming",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": false,
+          "isInCG": false
         },
         {
           "id": 4596,
           "fullName": "Josh Beckett",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": false,
+          "isInCG": true
         },
         {
           "id": 4694,
           "fullName": "Josiah Koh",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": false,
+          "isInCG": true
         },
         {
           "id": 4805,
           "fullName": "Justin Port",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": false,
+          "isInCG": true
         },
         {
           "id": 5054,
           "fullName": "Ken Roberts",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": false
         },
         {
           "id": 5094,
           "fullName": "Kevin Pao",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": false,
+          "isInCG": false
         },
         {
           "id": 5149,
           "fullName": "Kevin Chen",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": false,
+          "isInCG": true
         },
         {
           "id": 5593,
           "fullName": "Lorraine Firth",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": false,
+          "isInCG": false
         },
         {
           "id": 5761,
           "fullName": "MacKenzie Nichol",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": false,
+          "isInCG": false
         },
         {
           "id": 5926,
           "fullName": "Marcus Tsang",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": true
         },
         {
           "id": 5957,
           "fullName": "Marieke Dhaliwal",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": false,
+          "isInCG": true
         },
         {
           "id": 5959,
           "fullName": "Mari&#233; Willemse",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": false
         },
         {
           "id": 6112,
           "fullName": "May Choy",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": false
         },
         {
           "id": 6257,
           "fullName": "Michael Jeffs",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": false,
+          "isInCG": false
         },
         {
           "id": 6835,
           "fullName": "Oliver Firth",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": false,
+          "isInCG": false
         },
         {
           "id": 7050,
           "fullName": "Philipp Gomez",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": true
         },
         {
           "id": 7283,
           "fullName": "Rebekah Frame",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": false,
+          "isInCG": false
         },
         {
           "id": 7313,
           "fullName": "Renee Ng",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": false,
+          "isInCG": false
         },
         {
           "id": 7743,
           "fullName": "Sam Zhang",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": false
         },
         {
           "id": 7818,
           "fullName": "Sarah Millar",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": false,
+          "isInCG": true
         },
         {
           "id": 8068,
           "fullName": "Shea Van Nes",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": false,
+          "isInCG": false
         },
         {
           "id": 8336,
           "fullName": "Stef Daniels",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": true
         },
         {
           "id": 8394,
           "fullName": "Stephen Fossi",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": false
         },
         {
           "id": 8455,
           "fullName": "Sue Lee",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": false
         },
         {
           "id": 8886,
           "fullName": "Toni Roberts",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": true
         },
         {
           "id": 9042,
           "fullName": "Victoria Tan",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": false,
+          "isInCG": false
         },
         {
           "id": 9057,
           "fullName": "Vinnie Walker",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": false,
+          "isInCG": false
         },
         {
           "id": 9498,
           "fullName": "Timothy Thang",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": true
         },
         {
           "id": 9522,
           "fullName": "Charmaine Kyle",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": false,
+          "isInCG": true
         },
         {
           "id": 9523,
           "fullName": "Colin Kyle",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": false,
+          "isInCG": true
         },
         {
           "id": 9640,
           "fullName": "Debbie Port",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": false,
+          "isInCG": true
         },
         {
           "id": 9658,
           "fullName": "Colleen Cheong",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": true
         },
         {
           "id": 9820,
           "fullName": "Joyce Na",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": false,
+          "isInCG": false
         },
         {
           "id": 9853,
           "fullName": "Angela Halim",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": false,
+          "isInCG": false
         },
         {
           "id": 9858,
           "fullName": "Noel Avila",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": false,
+          "isInCG": false
         },
         {
           "id": 9891,
           "fullName": "Konny Lowe",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": false,
+          "isInCG": false
         },
         {
           "id": 9892,
           "fullName": "Swee Lee Goh",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": false,
+          "isInCG": false
         },
         {
           "id": 9893,
           "fullName": "Allen Tie",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": false,
+          "isInCG": false
         },
         {
           "id": 10133,
           "fullName": "Ben Konings",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": false,
+          "isInCG": false
         },
         {
           "id": 10134,
           "fullName": "Katja Konings",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": false,
+          "isInCG": false
         },
         {
           "id": 10157,
           "fullName": "Joel Macias",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": false,
+          "isInCG": false
         },
         {
           "id": 10176,
           "fullName": "Gabriel Tam",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": false,
+          "isInCG": false
         },
         {
           "id": 10227,
           "fullName": "Tony Kim",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": false,
+          "isInCG": false
         },
         {
           "id": 10253,
           "fullName": "Jenny Kim",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": false,
+          "isInCG": false
         },
         {
           "id": 10265,
           "fullName": "Caleb Millar",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": false,
+          "isInCG": false
         },
         {
           "id": 10442,
           "fullName": "Valerie Ong",
           "connectionStatusValueId": 146,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": false,
+          "isInCG": false
         }
       ]
     },
@@ -1363,421 +1543,561 @@
           "id": 172,
           "fullName": "Aimee Bates",
           "connectionStatusValueId": 1229,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": true
         },
         {
           "id": 526,
           "fullName": "Amy Ho",
           "connectionStatusValueId": 1229,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": true
         },
         {
           "id": 552,
           "fullName": "Amy-Rose Aubrey",
           "connectionStatusValueId": 1229,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": false,
+          "isInCG": false
         },
         {
           "id": 563,
           "fullName": "Andrew Govinden",
           "connectionStatusValueId": 1229,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": true
         },
         {
           "id": 587,
           "fullName": "Andrew Moot",
           "connectionStatusValueId": 1229,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": true
         },
         {
           "id": 650,
           "fullName": "Angela Yong",
           "connectionStatusValueId": 1229,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": true
         },
         {
           "id": 719,
           "fullName": "Annaliesa Jeffs",
           "connectionStatusValueId": 1229,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": true
         },
         {
           "id": 791,
           "fullName": "Antz Kriel",
           "connectionStatusValueId": 1229,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": true
         },
         {
           "id": 901,
           "fullName": "Ashley Stevenson",
           "connectionStatusValueId": 1229,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": true
         },
         {
           "id": 1165,
           "fullName": "Blessy Thomas",
           "connectionStatusValueId": 1229,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": true
         },
         {
           "id": 1221,
           "fullName": "Breanne Beckett",
           "connectionStatusValueId": 1229,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": false,
+          "isInCG": true
         },
         {
           "id": 1311,
           "fullName": "Caitlin Li",
           "connectionStatusValueId": 1229,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": true
         },
         {
           "id": 1474,
           "fullName": "Carol Muodza",
           "connectionStatusValueId": 1229,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": true
         },
         {
           "id": 1599,
           "fullName": "Chelsea Huang",
           "connectionStatusValueId": 1229,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": true
         },
         {
           "id": 1954,
           "fullName": "Dain Lock",
           "connectionStatusValueId": 1229,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": true
         },
         {
           "id": 1966,
           "fullName": "Dan Chae",
           "connectionStatusValueId": 1229,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": true
         },
         {
           "id": 1991,
           "fullName": "Dana Cameron",
           "connectionStatusValueId": 1229,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": true
         },
         {
           "id": 2084,
           "fullName": "David Aubrey",
           "connectionStatusValueId": 1229,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": false,
+          "isInCG": false
         },
         {
           "id": 2157,
           "fullName": "Deb Ye",
           "connectionStatusValueId": 1229,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": true
         },
         {
           "id": 2216,
           "fullName": "Denn Mark Dillague",
           "connectionStatusValueId": 1229,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": true
         },
         {
           "id": 2356,
           "fullName": "Edmond Shen",
           "connectionStatusValueId": 1229,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": true
         },
         {
           "id": 2685,
           "fullName": "Esther Shin",
           "connectionStatusValueId": 1229,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": true
         },
         {
           "id": 3153,
           "fullName": "Grace Smith",
           "connectionStatusValueId": 1229,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": true
         },
         {
           "id": 3184,
           "fullName": "Gustavo Avila",
           "connectionStatusValueId": 1229,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": true
         },
         {
           "id": 3356,
           "fullName": "Heather Moot",
           "connectionStatusValueId": 1229,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": true
         },
         {
           "id": 3426,
           "fullName": "Heidi Kwan-Tsang",
           "connectionStatusValueId": 1229,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": true
         },
         {
           "id": 3434,
           "fullName": "Henry Ye",
           "connectionStatusValueId": 1229,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": true
         },
         {
           "id": 3571,
           "fullName": "Ioana Selea",
           "connectionStatusValueId": 1229,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": true
         },
         {
           "id": 3738,
           "fullName": "Jackie Chun",
           "connectionStatusValueId": 1229,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": true
         },
         {
           "id": 3865,
           "fullName": "James Rouse",
           "connectionStatusValueId": 1229,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": false,
+          "isInCG": true
         },
         {
           "id": 3924,
           "fullName": "Jared Stevenson",
           "connectionStatusValueId": 1229,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": false
         },
         {
           "id": 4052,
           "fullName": "Jeanny Nikora",
           "connectionStatusValueId": 1229,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": true
         },
         {
           "id": 4086,
           "fullName": "Jen Sun Hong",
           "connectionStatusValueId": 1229,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": true
         },
         {
           "id": 4104,
           "fullName": "Ziwei Liu",
           "connectionStatusValueId": 1229,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": true
         },
         {
           "id": 4319,
           "fullName": "Jocelyn Noh",
           "connectionStatusValueId": 1229,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": true
         },
         {
           "id": 4347,
           "fullName": "Joel Le",
           "connectionStatusValueId": 1229,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": true
         },
         {
           "id": 4381,
           "fullName": "John Thomas",
           "connectionStatusValueId": 1229,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": true
         },
         {
           "id": 4610,
           "fullName": "Josh Ye",
           "connectionStatusValueId": 1229,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": true
         },
         {
           "id": 4788,
           "fullName": "Justin Cameron",
           "connectionStatusValueId": 1229,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": true
         },
         {
           "id": 5000,
           "fullName": "Kathryn McCall",
           "connectionStatusValueId": 1229,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": true
         },
         {
           "id": 5040,
           "fullName": "Kelly Tao",
           "connectionStatusValueId": 1229,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": true
         },
         {
           "id": 5110,
           "fullName": "Kewei Jiang",
           "connectionStatusValueId": 1229,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": true
         },
         {
           "id": 5379,
           "fullName": "Leighton Pearson",
           "connectionStatusValueId": 1229,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": true
         },
         {
           "id": 5758,
           "fullName": "Lyvie Lee",
           "connectionStatusValueId": 1229,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": false,
+          "isInCG": false
         },
         {
           "id": 5807,
           "fullName": "Magnus Kriel",
           "connectionStatusValueId": 1229,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": true
         },
         {
           "id": 5963,
           "fullName": "Marianne Goldsmith",
           "connectionStatusValueId": 1229,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": true
         },
         {
           "id": 6027,
           "fullName": "Mark McLeish",
           "connectionStatusValueId": 1229,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": true
         },
         {
           "id": 6160,
           "fullName": "Mel Dillague",
           "connectionStatusValueId": 1229,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": true
         },
         {
           "id": 6353,
           "fullName": "Mike Zhang",
           "connectionStatusValueId": 1229,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": true
         },
         {
           "id": 6362,
           "fullName": "Minsoo Lee",
           "connectionStatusValueId": 1229,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": true
         },
         {
           "id": 6383,
           "fullName": "Ming Yong",
           "connectionStatusValueId": 1229,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": false
         },
         {
           "id": 6438,
           "fullName": "Molly Cottingham",
           "connectionStatusValueId": 1229,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": true
         },
         {
           "id": 6553,
           "fullName": "Natasha Port",
           "connectionStatusValueId": 1229,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": true
         },
         {
           "id": 6751,
           "fullName": "Nisal Cottingham",
           "connectionStatusValueId": 1229,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": true
         },
         {
           "id": 6817,
           "fullName": "Olivia Ng",
           "connectionStatusValueId": 1229,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": true
         },
         {
           "id": 7221,
           "fullName": "Ray Daniels",
           "connectionStatusValueId": 1229,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": true
         },
         {
           "id": 7247,
           "fullName": "Rania Zanaty",
           "connectionStatusValueId": 1229,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": true
         },
         {
           "id": 7282,
           "fullName": "Rebeccah Patel",
           "connectionStatusValueId": 1229,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": true
         },
         {
           "id": 7307,
           "fullName": "Regan George",
           "connectionStatusValueId": 1229,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": true
         },
         {
           "id": 7463,
           "fullName": "Rochelle Port",
           "connectionStatusValueId": 1229,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": false,
+          "isInCG": true
         },
         {
           "id": 8108,
           "fullName": "Shirley Lock",
           "connectionStatusValueId": 1229,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": true
         },
         {
           "id": 8249,
           "fullName": "Siyang Cao",
           "connectionStatusValueId": 1229,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": true
         },
         {
           "id": 8310,
           "fullName": "Sophie Hermann",
           "connectionStatusValueId": 1229,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": true
         },
         {
           "id": 8594,
           "fullName": "Taylor Noh",
           "connectionStatusValueId": 1229,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": true
         },
         {
           "id": 8597,
           "fullName": "Tatai Nikora",
           "connectionStatusValueId": 1229,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": true
         },
         {
           "id": 8662,
           "fullName": "Thea Dela Cruz",
           "connectionStatusValueId": 1229,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": true
         },
         {
           "id": 8757,
           "fullName": "Tim Ho",
           "connectionStatusValueId": 1229,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": true
         },
         {
           "id": 9237,
           "fullName": "Wilson Wang",
           "connectionStatusValueId": 1229,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": true
         },
         {
           "id": 9418,
           "fullName": "Zheng Li",
           "connectionStatusValueId": 1229,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": false,
+          "isInCG": true
         },
         {
           "id": 9497,
           "fullName": "Ramen Patel",
           "connectionStatusValueId": 1229,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": true,
+          "isInCG": true
         }
       ]
     },
@@ -1908,43 +2228,57 @@
           "id": 8041,
           "fullName": "Sharon Lim",
           "connectionStatusValueId": 1406,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": false,
+          "isInCG": false
         },
         {
           "id": 10218,
           "fullName": "Michael Turner",
           "connectionStatusValueId": 1406,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": false,
+          "isInCG": false
         },
         {
           "id": 10471,
           "fullName": "Scott Ke",
           "connectionStatusValueId": 1406,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": false,
+          "isInCG": false
         },
         {
           "id": 10474,
           "fullName": "Kiri Na",
           "connectionStatusValueId": 1406,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": false,
+          "isInCG": false
         },
         {
           "id": 10561,
           "fullName": "Kayla Stober",
           "connectionStatusValueId": 1406,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": false,
+          "isInCG": false
         },
         {
           "id": 10565,
           "fullName": "Leila De Leon",
           "connectionStatusValueId": 1406,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": false,
+          "isInCG": false
         },
         {
           "id": 10566,
           "fullName": "Jay De Leon",
           "connectionStatusValueId": 1406,
-          "primaryCampusId": 2
+          "primaryCampusId": 2,
+          "isServing": false,
+          "isInCG": false
         }
       ]
     },

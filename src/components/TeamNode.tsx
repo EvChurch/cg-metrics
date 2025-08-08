@@ -54,40 +54,71 @@ const TeamNode = memo(({ data, id }: NodeProps<TeamNodeData>) => {
     );
 
     return (
-      <div className="grid grid-cols-1 gap-2 w-full">
+      <div className="grid grid-cols-2 gap-2 w-full">
         {people.map((person) => {
           const personName = person.fullName || "Unknown";
           const rockUrl = `https://rock.ev.church/Person/${person.id}`;
           const survey = surveyMap.get(person.id.toString());
           const hasDoneSurvey = !!survey;
 
-          const buttonClass = hasDoneSurvey
-            ? "block text-xs p-1 rounded font-semibold text-wrap w-full text-center bg-yellow-400 text-yellow-900 hover:bg-yellow-500 hover:text-yellow-950 transition-colors cursor-pointer"
-            : "block text-xs p-1 rounded font-semibold text-wrap w-full text-center bg-brand-cool-grey text-brand-dark-grey text-decoration-none hover:bg-gray-300 hover:text-gray-700 transition-colors cursor-pointer";
+          const buttonClass =
+            "block text-xs p-1 rounded-l font-semibold text-wrap w-full text-center bg-brand-cool-grey text-brand-dark-grey text-decoration-none hover:bg-gray-300 hover:text-gray-700 transition-colors cursor-pointer";
 
           return (
             <div key={person.id} className="w-full">
-              <div className="flex flex-col gap-0">
+              <div className="flex items-center gap-0">
                 <a
                   href={rockUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`${buttonClass}`}
+                  className={`flex-1 ${buttonClass}`}
                   onClick={(e) => e.stopPropagation()}
                 >
                   {personName}
                 </a>
-                {hasDoneSurvey && survey && (
-                  <a
-                    href={`https://rock.ev.church/Workflow/${survey.formId}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block text-xs p-1 rounded font-semibold text-wrap text-center bg-blue-500 text-white hover:bg-blue-600 transition-colors cursor-pointer"
-                    onClick={(e) => e.stopPropagation()}
-                    title="View Survey"
-                  >
-                    Serving Survey
-                  </a>
+                {/* Only show chips for Attending or Growing statuses */}
+                {(label === "Attending" || label === "Growing") && (
+                  <>
+                    {/* Connect Group Chip */}
+                    <div
+                      className={`text-xs p-1 font-semibold flex items-center justify-center ${
+                        person.isInCG
+                          ? "bg-blue-500 text-white"
+                          : "bg-gray-200 text-gray-500"
+                      }`}
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      CG
+                    </div>
+                    {/* Serving Chip */}
+                    {hasDoneSurvey && survey ? (
+                      <a
+                        href={`https://rock.ev.church/Workflow/${survey.formId}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`text-xs p-1 font-semibold cursor-pointer transition-colors flex items-center justify-center w-6 rounded-r ${
+                          person.isServing
+                            ? "bg-green-500 text-white hover:bg-green-600"
+                            : "bg-yellow-400 text-yellow-900 hover:bg-yellow-500"
+                        }`}
+                        onClick={(e) => e.stopPropagation()}
+                        title="View Survey"
+                      >
+                        S
+                      </a>
+                    ) : (
+                      <div
+                        className={`text-xs p-1 font-semibold flex items-center justify-center w-6 rounded-r ${
+                          person.isServing
+                            ? "bg-green-500 text-white"
+                            : "bg-gray-200 text-gray-500"
+                        }`}
+                        onClick={(e) => e.stopPropagation()}
+                      >
+                        S
+                      </div>
+                    )}
+                  </>
                 )}
               </div>
             </div>
@@ -104,7 +135,7 @@ const TeamNode = memo(({ data, id }: NodeProps<TeamNodeData>) => {
   return (
     <div
       ref={nodeRef}
-      className="bg-gray-50 border-2 border-gray-200 rounded-lg p-2 w-[350px] shadow-md -mt-1 cursor-pointer hover:border-gray-300 transition-all duration-300 ease-in-out"
+      className="bg-gray-50 border-2 border-gray-200 rounded-lg p-2 w-[400px] shadow-md -mt-1 cursor-pointer hover:border-gray-300 transition-all duration-300 ease-in-out"
       onClick={handleNodeClick}
     >
       <Handle

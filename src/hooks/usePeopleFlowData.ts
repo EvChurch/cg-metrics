@@ -22,6 +22,8 @@ export interface Person {
   fullName: string;
   connectionStatusValueId: number;
   primaryCampusId?: number;
+  isServing?: boolean;
+  isInCG?: boolean;
 }
 
 export interface ConnectionStatus {
