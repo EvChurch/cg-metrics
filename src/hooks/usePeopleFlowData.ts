@@ -43,6 +43,7 @@ interface TestData {
 
 interface PeopleFlowData {
   connectionStatuses: Record<string, ConnectionStatus>;
+  surveys?: Survey[];
 }
 
 // Custom hook to fetch data from JSON file
@@ -52,7 +53,7 @@ export const usePeopleFlowData = () => {
     queryFn: async (): Promise<PeopleFlowData> => {
       try {
         // Toggle this flag to switch between dynamic data and test data
-        const USE_DYNAMIC_DATA = false; // Set to false to use test data instead
+        const USE_DYNAMIC_DATA = true; // Set to false to use test data instead
 
         if (USE_DYNAMIC_DATA) {
           // Get data from script tag (dynamic data from database)
@@ -65,6 +66,7 @@ export const usePeopleFlowData = () => {
             );
             return {
               connectionStatuses: dynamicData,
+              surveys: [],
             };
           }
           console.warn("No dynamic data available, falling back to test data");
@@ -84,10 +86,11 @@ export const usePeopleFlowData = () => {
 
         return {
           connectionStatuses,
+          surveys: data.surveys || [],
         };
       } catch (error) {
         console.error("Failed to fetch people flow data:", error);
-        return { connectionStatuses: {} };
+        return { connectionStatuses: {}, surveys: [] };
       }
     },
     refetchInterval: 30000,

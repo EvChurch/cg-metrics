@@ -1,9 +1,15 @@
 import type { Node } from "reactflow";
 import type { ConnectionStatus } from "../hooks/usePeopleFlowData";
 
+interface Survey {
+  personId: string;
+  formId: string;
+}
+
 // Create nodes from connection status data
 export const createNodesFromStatuses = (
-  statuses: Record<string, ConnectionStatus>
+  statuses: Record<string, ConnectionStatus>,
+  surveys: Survey[] = []
 ): Node[] => {
   // Filter out test statuses
   const filteredStatuses: Record<string, ConnectionStatus> = {};
@@ -28,6 +34,7 @@ export const createNodesFromStatuses = (
         label: status.name,
         description: status.description,
         people: status.people || [],
+        surveys: surveys,
       },
     };
   });

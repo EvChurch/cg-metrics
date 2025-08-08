@@ -30,7 +30,10 @@ const PeopleFlow = () => {
   const flowData = useMemo(() => {
     if (!data) return { nodes: [], edges: [] };
 
-    const nodes = createNodesFromStatuses(data.connectionStatuses);
+    const nodes = createNodesFromStatuses(
+      data.connectionStatuses,
+      data.surveys
+    );
     const edges: Edge[] = []; // No edges needed for flat data
 
     return getInitialLayout(nodes, edges);
