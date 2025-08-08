@@ -5,14 +5,9 @@ import ReactFlow, {
   useEdgesState,
   useReactFlow,
   SelectionMode,
-  type Node,
 } from "reactflow";
-import { useMemo, useEffect, useCallback, useState } from "react";
+import { useMemo, useEffect, useCallback } from "react";
 import TeamNode from "./TeamNode";
-import AreaNode from "./AreaNode";
-import LocaleNode from "./LocaleNode";
-import ChartFilter from "./ChartFilter";
-import Analytics from "./Analytics";
 import { useOrgChartData } from "../hooks/useOrgChartData";
 import {
   getInitialLayout,
@@ -27,51 +22,29 @@ import { GROUP_TYPE_IDS } from "../utils/nodeUtils";
 // Define custom node types outside component to prevent re-renders
 const nodeTypes = {
   teamNode: TeamNode,
-  areaNode: AreaNode,
-  localeNode: LocaleNode,
 };
-
-interface FilterState {
-  combinations: string[];
-}
 
 const OrgChart = () => {
   const { data, isLoading, error } = useOrgChartData();
   const [nodes, setNodes, onNodesChange] = useNodesState([]);
   const [edges, setEdges, onEdgesChange] = useEdgesState([]);
   const { fitView } = useReactFlow();
-  const [selectedNodes, setSelectedNodes] = useState<Node[]>([]);
-
-  // Initialize filter state with no filters selected
-  const [filters, setFilters] = useState<FilterState>({
-    combinations: [],
-  });
-
-  // Handle selection changes
-  const handleSelectionChange = useCallback(({ nodes }: { nodes: Node[] }) => {
-    setSelectedNodes(nodes);
-  }, []);
 
   // Transform data into React Flow nodes and edges
   const flowData = useMemo(() => {
     if (!data) return { nodes: [], edges: [] };
 
-    const nodes = createNodesFromGroups(data.groups, filters.combinations);
-    const edges = createEdgesFromGroups(data.groups, filters.combinations);
+    const nodes = createNodesFromGroups(data.groups, []);
+    const edges = createEdgesFromGroups();
 
     return getInitialLayout(nodes, edges);
-  }, [data, filters]);
+  }, [data]);
 
   // Set nodes and edges when data changes
   useEffect(() => {
     setNodes(flowData.nodes);
     setEdges(flowData.edges);
   }, [flowData.nodes, flowData.edges, setNodes, setEdges]);
-
-  // Handle filter changes
-  const handleFilterChange = useCallback((newFilters: FilterState) => {
-    setFilters(newFilters);
-  }, []);
 
   // Fit view when nodes change - use useCallback to prevent unnecessary re-renders
   const handleFitView = useCallback(() => {
@@ -97,12 +70,11 @@ const OrgChart = () => {
     if (nodes.length > 0) {
       // Wait for all nodes to be rendered and measured
       const timeoutId = window.setTimeout(() => {
-        // Find all TeamNodes and AreaNodes that have children
+        // Find all TeamNodes that have children
         const nodesWithChildren = nodes.filter((node) => {
           const nodeData = node.data as { position?: { GroupTypeId?: number } };
           return (
-            nodeData?.position?.GroupTypeId === GROUP_TYPE_IDS.SERVING_TEAM ||
-            nodeData?.position?.GroupTypeId === GROUP_TYPE_IDS.AREA
+            nodeData?.position?.GroupTypeId === GROUP_TYPE_IDS.SERVING_TEAM
           );
         });
 
@@ -165,17 +137,11 @@ const OrgChart = () => {
 
   return (
     <div className="w-full h-full relative">
-      <ChartFilter
-        onFilterChange={handleFilterChange}
-        groups={data?.groups || []}
-      />
-      <Analytics nodes={nodes} selectedNodes={selectedNodes} />
       <ReactFlow
         nodes={nodes}
         onNodesChange={onNodesChange}
         edges={edges}
         onEdgesChange={onEdgesChange}
-        onSelectionChange={handleSelectionChange}
         nodeTypes={nodeTypes}
         // Auto-fit view when new nodes are added
         fitView={nodes.length > 0}

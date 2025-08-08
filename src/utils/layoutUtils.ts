@@ -120,15 +120,7 @@ export const getInitialLayout = (nodes: Node[], edges: Edge[]) => {
 
   // Set default node dimensions for initial layout
   nodes.forEach((node) => {
-    // Check if this is a locale node and use appropriate dimensions
-    const nodeData = node.data as { position?: { GroupTypeId?: number } };
-    const isLocaleNode = nodeData?.position?.GroupTypeId === 39;
-
-    if (isLocaleNode) {
-      dagreGraph.setNode(node.id, { width: 550, height: 200 });
-    } else {
-      dagreGraph.setNode(node.id, { width: 180, height: 150 });
-    }
+    dagreGraph.setNode(node.id, { width: 300, height: 150 });
   });
 
   // Set edges
