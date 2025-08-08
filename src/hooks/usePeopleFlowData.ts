@@ -21,13 +21,24 @@ export interface Person {
   id: number;
   fullName: string;
   connectionStatusValueId: number;
-  primaryCampusId: number;
+  primaryCampusId?: number;
 }
 
 export interface ConnectionStatus {
   name: string;
   description: string;
   people: Person[];
+}
+
+interface Survey {
+  personId: string;
+  formId: string;
+}
+
+interface TestData {
+  surveys?: Survey[];
+  groups?: Record<string, ConnectionStatus>;
+  connectionStatuses?: Record<string, ConnectionStatus>;
 }
 
 interface PeopleFlowData {
@@ -41,7 +52,7 @@ export const usePeopleFlowData = () => {
     queryFn: async (): Promise<PeopleFlowData> => {
       try {
         // Toggle this flag to switch between dynamic data and test data
-        const USE_DYNAMIC_DATA = true; // Set to false to use test data instead
+        const USE_DYNAMIC_DATA = false; // Set to false to use test data instead
 
         if (USE_DYNAMIC_DATA) {
           // Get data from script tag (dynamic data from database)
@@ -64,13 +75,15 @@ export const usePeopleFlowData = () => {
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
-        const data = await response.json();
+        const data: TestData = await response.json();
 
         console.log("Using test data");
 
-        // Return connection status data directly
+        // Handle new structure with groups or fallback to old structure
+        const connectionStatuses = data.groups || data.connectionStatuses || {};
+
         return {
-          connectionStatuses: data,
+          connectionStatuses,
         };
       } catch (error) {
         console.error("Failed to fetch people flow data:", error);

@@ -1,1949 +1,1957 @@
 {
-  "65": {
-    "name": "Investigating",
-    "description": "Category for those who are still investigating the claims of Christianity (Not Yet Christian) and who live locally in Auckland.",
-    "people": [
-      {
-        "id": 1424,
-        "fullName": "Carmen Leung",
-        "connectionStatusValueId": 65,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 3189,
-        "fullName": "Greg Hoffman",
-        "connectionStatusValueId": 65,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 9150,
-        "fullName": "Vivian Feng",
-        "connectionStatusValueId": 65,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 9798,
-        "fullName": "Fraser Barrons",
-        "connectionStatusValueId": 65,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10233,
-        "fullName": "Harry Qiao",
-        "connectionStatusValueId": 65,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10248,
-        "fullName": "Darroch George-Bodle",
-        "connectionStatusValueId": 65,
-        "primaryCampusId": 2
-      }
-    ]
-  },
-  "66": {
-    "name": "Visiting",
-    "description": "Initial default category for any visitor to an Ev campus. Step 1 of Ev Pathway.\n[OLD Primary people category for all newcomers to Auckland Ev.]",
-    "people": [
-      {
-        "id": 723,
-        "fullName": "Annette Foord",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 747,
-        "fullName": "Anne Koh",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 753,
-        "fullName": "Anna Xiong",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 1412,
-        "fullName": "Candi Soo",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 1869,
-        "fullName": "Connie Loi",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 2006,
-        "fullName": "Daniel Na",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 2286,
-        "fullName": "Donna Kavanagh",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 2691,
-        "fullName": "Esther Lew",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 3139,
-        "fullName": "Grace McLauchlan",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 3155,
-        "fullName": "Grace Na",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 3929,
-        "fullName": "Janice Jung",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 4039,
-        "fullName": "Jay Bonglo",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 4405,
-        "fullName": "John Charlton",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 4783,
-        "fullName": "Julie Wilson",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 5256,
-        "fullName": "Krystal Lochan",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 5589,
-        "fullName": "Liz Na",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 5904,
-        "fullName": "Marc Govinden",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 6004,
-        "fullName": "Mark Abi Rached",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 6173,
-        "fullName": "Melissa Greenie",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 6513,
-        "fullName": "Natalie Na (Tina&#39;s Friend)",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 7514,
-        "fullName": "Rose Wang",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 7751,
-        "fullName": "Sam Yick",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 7784,
-        "fullName": "Samuel Patel",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 7813,
-        "fullName": "Sarah Allan",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 7929,
-        "fullName": "Scott Allan",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 8595,
-        "fullName": "Tania Allison",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 9451,
-        "fullName": "Zhitian Wang",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 9492,
-        "fullName": "Boen Song",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 9502,
-        "fullName": "Brianna McCullough",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 9507,
-        "fullName": "Ethan Wales",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 9518,
-        "fullName": "Alice Na",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 9521,
-        "fullName": "Brittany McKenna-Tuhi",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 9527,
-        "fullName": "Dino Halim",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 9540,
-        "fullName": "Joel Yoon",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 9547,
-        "fullName": "Mike Tuhi",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 9557,
-        "fullName": "Ruth Na",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 9567,
-        "fullName": "Tommy Kwan",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 9657,
-        "fullName": "Bill Chalmers",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 9783,
-        "fullName": "Mel Chalmers",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 9804,
-        "fullName": "Bill Van",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 9854,
-        "fullName": "Rafael Cremer",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 9856,
-        "fullName": "Linda Jiang",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 9889,
-        "fullName": "Stephan Kriel",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 9890,
-        "fullName": "Liza Muller",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 9925,
-        "fullName": "Nadia Na",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 9926,
-        "fullName": "Jubin Na",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 9927,
-        "fullName": "Andy Bru",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10156,
-        "fullName": "Vimbayi Chasp",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10168,
-        "fullName": "Jun Jun Chen",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10174,
-        "fullName": "Caleb Na",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10196,
-        "fullName": "John Zanaty",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10219,
-        "fullName": "Ban Na",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10220,
-        "fullName": "Anthony Na",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10241,
-        "fullName": "Xiang Xue",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10242,
-        "fullName": "Demy Dillague",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10247,
-        "fullName": "Johan Lim",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10300,
-        "fullName": "Regina Halim",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10301,
-        "fullName": "Malia Zanaty",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10302,
-        "fullName": "Dom Estioko",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10303,
-        "fullName": "Len Estioko",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10318,
-        "fullName": "Kevin Govender",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10319,
-        "fullName": "Angela Govender",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10340,
-        "fullName": "Mei Na",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10470,
-        "fullName": "Erica Chung",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10472,
-        "fullName": "Susan Na",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10473,
-        "fullName": "Letisha Na",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10475,
-        "fullName": "Dave Na",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10477,
-        "fullName": "Sarah-May Na",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10478,
-        "fullName": "Olive Na",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10479,
-        "fullName": "Benjamin Na",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10480,
-        "fullName": "Caitlin Na",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10483,
-        "fullName": "Jeff Na",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10484,
-        "fullName": "Sonia Na",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10488,
-        "fullName": "Ray Na",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10489,
-        "fullName": "Alyssa Na",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10562,
-        "fullName": "Mikayla Miller",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10564,
-        "fullName": "Paul Miller",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10567,
-        "fullName": "Neil Na",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10568,
-        "fullName": "Winnie Na",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10605,
-        "fullName": "Grant Na",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10606,
-        "fullName": "Michael Na",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10607,
-        "fullName": "Lisa Na",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10641,
-        "fullName": "Julian Lees",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10642,
-        "fullName": "Maryanne Lees",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10656,
-        "fullName": "Alicia Carr",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10657,
-        "fullName": "Lauren O&#39;Malley",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10658,
-        "fullName": "Justin O&#39;Malley",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10675,
-        "fullName": "Amy Ho",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10685,
-        "fullName": "Abby Cao",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10705,
-        "fullName": "Joy Zhao",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10706,
-        "fullName": "Ivy Lam",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10725,
-        "fullName": "George Lam",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10727,
-        "fullName": "Alice Na",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10728,
-        "fullName": "Minkyu Na",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10736,
-        "fullName": "Paul Han",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10737,
-        "fullName": "Jasmine Cho",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10783,
-        "fullName": "Jan Na",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10786,
-        "fullName": "Ming Yong",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10817,
-        "fullName": "Marcus Na",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10818,
-        "fullName": "Alice Na",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10820,
-        "fullName": "Alice Na",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10821,
-        "fullName": "James Na",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10822,
-        "fullName": "Hannah Na",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10824,
-        "fullName": "Rebeccah Na",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10871,
-        "fullName": "Joel Macias",
-        "connectionStatusValueId": 66,
-        "primaryCampusId": 2
-      }
-    ]
-  },
-  "67": {
-    "name": "Prospect",
-    "description": "The default status given to a record that is added from the website.",
-    "people": []
-  },
-  "146": {
-    "name": "Attending",
-    "description": "Regular people category for all non-member attenders at Auckland Ev. Step 3 of Ev Pathway. \n[OLD Visitors move to this category after attending 5 times in 2 months OR tick &#39;This is my church&#39; on their Connect Card]",
-    "people": [
-      {
-        "id": 307,
-        "fullName": "Alexandra Suarez",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 358,
-        "fullName": "Allana Jiang",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 389,
-        "fullName": "Alyssa Fleming",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 421,
-        "fullName": "Amanda Liew",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 964,
-        "fullName": "Bai Xue",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 985,
-        "fullName": "Bec Downes",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 1086,
-        "fullName": "Bernard Abi Rached",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 1112,
-        "fullName": "Bill Wong",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 1221,
-        "fullName": "Breanne Beckett",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 1258,
-        "fullName": "Brooke McLeish",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 1352,
-        "fullName": "Caleb Dela Cruz",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 1356,
-        "fullName": "Caleb Varcoe",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 1619,
-        "fullName": "Cherry Chu",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 1746,
-        "fullName": "Christine Poon",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 1797,
-        "fullName": "Cindy Thompson",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 1850,
-        "fullName": "Clarice Cheng",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 2030,
-        "fullName": "Danielle Wang",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 2031,
-        "fullName": "Daniel Kim",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 2051,
-        "fullName": "Danielle Na",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 2126,
-        "fullName": "David Li",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 2136,
-        "fullName": "David Goldsmith",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 2190,
-        "fullName": "Dee Wijetillake",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 2204,
-        "fullName": "Delphine Fossi",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 2236,
-        "fullName": "Dilshan Panamulla",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 2287,
-        "fullName": "Dominique Walker",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 2612,
-        "fullName": "Eric Jang",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 2661,
-        "fullName": "Esha Le",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 2723,
-        "fullName": "Eugene Bartsaikin",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 2990,
-        "fullName": "Gary Chan",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 3130,
-        "fullName": "Grace Guo",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 3140,
-        "fullName": "Grace Oh",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 3262,
-        "fullName": "Hannah Oliver",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 3279,
-        "fullName": "Hannah Rutland",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 3516,
-        "fullName": "Herim Park",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 3575,
-        "fullName": "Irene Halim",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 3738,
-        "fullName": "Jackie Chun",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 4050,
-        "fullName": "Jeanice Gomez",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 4330,
-        "fullName": "Joel Liew",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 4469,
-        "fullName": "Jonathan Goldsmith",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 4499,
-        "fullName": "Jono Ng",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 4558,
-        "fullName": "Josh Fleming",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 4596,
-        "fullName": "Josh Beckett",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 4694,
-        "fullName": "Josiah Koh",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 4805,
-        "fullName": "Justin Port",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 5054,
-        "fullName": "Ken Roberts",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 5094,
-        "fullName": "Kevin Pao",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 5149,
-        "fullName": "Kevin Chen",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 5593,
-        "fullName": "Lorraine Firth",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 5761,
-        "fullName": "MacKenzie Nichol",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 5926,
-        "fullName": "Marcus Tsang",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 5957,
-        "fullName": "Marieke Dhaliwal",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 5959,
-        "fullName": "Mari&#233; Willemse",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 6112,
-        "fullName": "May Choy",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 6257,
-        "fullName": "Michael Jeffs",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 6835,
-        "fullName": "Oliver Firth",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 7050,
-        "fullName": "Philipp Gomez",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 7283,
-        "fullName": "Rebekah Frame",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 7313,
-        "fullName": "Renee Ng",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 7743,
-        "fullName": "Sam Zhang",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 7818,
-        "fullName": "Sarah Millar",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 8068,
-        "fullName": "Shea Van Nes",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 8336,
-        "fullName": "Stef Daniels",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 8394,
-        "fullName": "Stephen Fossi",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 8455,
-        "fullName": "Sue Lee",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 8886,
-        "fullName": "Toni Roberts",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 9042,
-        "fullName": "Victoria Tan",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 9057,
-        "fullName": "Vinnie Walker",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 9498,
-        "fullName": "Timothy Thang",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 9522,
-        "fullName": "Charmaine Kyle",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 9523,
-        "fullName": "Colin Kyle",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 9640,
-        "fullName": "Debbie Port",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 9658,
-        "fullName": "Colleen Cheong",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 9820,
-        "fullName": "Joyce Na",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 9853,
-        "fullName": "Angela Halim",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 9858,
-        "fullName": "Noel Avila",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 9891,
-        "fullName": "Konny Lowe",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 9892,
-        "fullName": "Swee Lee Goh",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 9893,
-        "fullName": "Allen Tie",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10133,
-        "fullName": "Ben Konings",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10134,
-        "fullName": "Katja Konings",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10157,
-        "fullName": "Joel Macias",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10176,
-        "fullName": "Gabriel Tam",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10227,
-        "fullName": "Tony Kim",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10253,
-        "fullName": "Jenny Kim",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10265,
-        "fullName": "Caleb Millar",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10442,
-        "fullName": "Valerie Ong",
-        "connectionStatusValueId": 146,
-        "primaryCampusId": 2
-      }
-    ]
-  },
-  "203": {
-    "name": "Fringe",
-    "description": "People Category for those who are friends of Ev or participate in non-service or ministry events or programs.",
-    "people": [
-      {
-        "id": 334,
-        "fullName": "Alexis Na",
-        "connectionStatusValueId": 203,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 497,
-        "fullName": "Amy Hou",
-        "connectionStatusValueId": 203,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 560,
-        "fullName": "Andrew Cottingham",
-        "connectionStatusValueId": 203,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 1828,
-        "fullName": "Clarisse Na",
-        "connectionStatusValueId": 203,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 2982,
-        "fullName": "Gareth Evans",
-        "connectionStatusValueId": 203,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 2991,
-        "fullName": "Gabrielle Choi",
-        "connectionStatusValueId": 203,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 3340,
-        "fullName": "Harjot Dhaliwa",
-        "connectionStatusValueId": 203,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 3950,
-        "fullName": "Janice Feng",
-        "connectionStatusValueId": 203,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 4910,
-        "fullName": "Kat Wilson",
-        "connectionStatusValueId": 203,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 6026,
-        "fullName": "Mary Hill",
-        "connectionStatusValueId": 203,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 6466,
-        "fullName": "Na Na",
-        "connectionStatusValueId": 203,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 6882,
-        "fullName": "Owen Hu",
-        "connectionStatusValueId": 203,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 6960,
-        "fullName": "Peter Jeong",
-        "connectionStatusValueId": 203,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 7156,
-        "fullName": "Rachael Siew",
-        "connectionStatusValueId": 203,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 7402,
-        "fullName": "Richard Wilson",
-        "connectionStatusValueId": 203,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 7483,
-        "fullName": "Rohi Cottingham",
-        "connectionStatusValueId": 203,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 7493,
-        "fullName": "Rooksana Govinden",
-        "connectionStatusValueId": 203,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 7849,
-        "fullName": "Sarah In",
-        "connectionStatusValueId": 203,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 8158,
-        "fullName": "Siem Ou",
-        "connectionStatusValueId": 203,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 8833,
-        "fullName": "Tina Mao",
-        "connectionStatusValueId": 203,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 8893,
-        "fullName": "Trevor Auger",
-        "connectionStatusValueId": 203,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 9734,
-        "fullName": "Amy You",
-        "connectionStatusValueId": 203,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10486,
-        "fullName": "Derrick Fleming",
-        "connectionStatusValueId": 203,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10487,
-        "fullName": "Diane Fleming",
-        "connectionStatusValueId": 203,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10723,
-        "fullName": "Royce Aubrey",
-        "connectionStatusValueId": 203,
-        "primaryCampusId": 2
-      }
-    ]
-  },
-  "1229": {
-    "name": "Growing",
-    "description": "Core people category for all those who call Ev home and are in a Connect Group (aka Growing). Step 4 of Ev Pathway.\n[Formally: Core people category for all formal members of Auckland Ev.]",
-    "people": [
-      {
-        "id": 172,
-        "fullName": "Aimee Bates",
-        "connectionStatusValueId": 1229,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 526,
-        "fullName": "Amy Ho",
-        "connectionStatusValueId": 1229,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 552,
-        "fullName": "Amy-Rose Aubrey",
-        "connectionStatusValueId": 1229,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 563,
-        "fullName": "Andrew Govinden",
-        "connectionStatusValueId": 1229,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 587,
-        "fullName": "Andrew Moot",
-        "connectionStatusValueId": 1229,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 650,
-        "fullName": "Angela Yong",
-        "connectionStatusValueId": 1229,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 719,
-        "fullName": "Annaliesa Jeffs",
-        "connectionStatusValueId": 1229,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 791,
-        "fullName": "Antz Kriel",
-        "connectionStatusValueId": 1229,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 901,
-        "fullName": "Ashley Stevenson",
-        "connectionStatusValueId": 1229,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 1165,
-        "fullName": "Blessy Thomas",
-        "connectionStatusValueId": 1229,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 1311,
-        "fullName": "Caitlin Li",
-        "connectionStatusValueId": 1229,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 1474,
-        "fullName": "Carol Muodza",
-        "connectionStatusValueId": 1229,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 1599,
-        "fullName": "Chelsea Huang",
-        "connectionStatusValueId": 1229,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 1954,
-        "fullName": "Dain Lock",
-        "connectionStatusValueId": 1229,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 1966,
-        "fullName": "Dan Chae",
-        "connectionStatusValueId": 1229,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 1991,
-        "fullName": "Dana Cameron",
-        "connectionStatusValueId": 1229,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 2084,
-        "fullName": "David Aubrey",
-        "connectionStatusValueId": 1229,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 2157,
-        "fullName": "Deb Ye",
-        "connectionStatusValueId": 1229,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 2216,
-        "fullName": "Denn Mark Dillague",
-        "connectionStatusValueId": 1229,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 2356,
-        "fullName": "Edmond Shen",
-        "connectionStatusValueId": 1229,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 2685,
-        "fullName": "Esther Shin",
-        "connectionStatusValueId": 1229,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 3153,
-        "fullName": "Grace Smith",
-        "connectionStatusValueId": 1229,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 3184,
-        "fullName": "Gustavo Avila",
-        "connectionStatusValueId": 1229,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 3356,
-        "fullName": "Heather Moot",
-        "connectionStatusValueId": 1229,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 3426,
-        "fullName": "Heidi Kwan-Tsang",
-        "connectionStatusValueId": 1229,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 3434,
-        "fullName": "Henry Ye",
-        "connectionStatusValueId": 1229,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 3571,
-        "fullName": "Ioana Selea",
-        "connectionStatusValueId": 1229,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 3865,
-        "fullName": "James Rouse",
-        "connectionStatusValueId": 1229,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 3924,
-        "fullName": "Jared Stevenson",
-        "connectionStatusValueId": 1229,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 4052,
-        "fullName": "Jeanny Nikora",
-        "connectionStatusValueId": 1229,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 4086,
-        "fullName": "Jen Sun Hong",
-        "connectionStatusValueId": 1229,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 4104,
-        "fullName": "Ziwei Liu",
-        "connectionStatusValueId": 1229,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 4319,
-        "fullName": "Jocelyn Noh",
-        "connectionStatusValueId": 1229,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 4347,
-        "fullName": "Joel Le",
-        "connectionStatusValueId": 1229,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 4381,
-        "fullName": "John Thomas",
-        "connectionStatusValueId": 1229,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 4610,
-        "fullName": "Josh Ye",
-        "connectionStatusValueId": 1229,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 4788,
-        "fullName": "Justin Cameron",
-        "connectionStatusValueId": 1229,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 5000,
-        "fullName": "Kathryn McCall",
-        "connectionStatusValueId": 1229,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 5040,
-        "fullName": "Kelly Tao",
-        "connectionStatusValueId": 1229,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 5110,
-        "fullName": "Kewei Jiang",
-        "connectionStatusValueId": 1229,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 5379,
-        "fullName": "Leighton Pearson",
-        "connectionStatusValueId": 1229,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 5758,
-        "fullName": "Lyvie Lee",
-        "connectionStatusValueId": 1229,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 5807,
-        "fullName": "Magnus Kriel",
-        "connectionStatusValueId": 1229,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 5963,
-        "fullName": "Marianne Goldsmith",
-        "connectionStatusValueId": 1229,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 6027,
-        "fullName": "Mark McLeish",
-        "connectionStatusValueId": 1229,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 6160,
-        "fullName": "Mel Dillague",
-        "connectionStatusValueId": 1229,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 6353,
-        "fullName": "Mike Zhang",
-        "connectionStatusValueId": 1229,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 6362,
-        "fullName": "Minsoo Lee",
-        "connectionStatusValueId": 1229,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 6383,
-        "fullName": "Ming Yong",
-        "connectionStatusValueId": 1229,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 6438,
-        "fullName": "Molly Cottingham",
-        "connectionStatusValueId": 1229,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 6553,
-        "fullName": "Natasha Port",
-        "connectionStatusValueId": 1229,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 6751,
-        "fullName": "Nisal Cottingham",
-        "connectionStatusValueId": 1229,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 6817,
-        "fullName": "Olivia Ng",
-        "connectionStatusValueId": 1229,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 7221,
-        "fullName": "Ray Daniels",
-        "connectionStatusValueId": 1229,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 7247,
-        "fullName": "Rania Zanaty",
-        "connectionStatusValueId": 1229,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 7282,
-        "fullName": "Rebeccah Patel",
-        "connectionStatusValueId": 1229,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 7307,
-        "fullName": "Regan George",
-        "connectionStatusValueId": 1229,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 7463,
-        "fullName": "Rochelle Port",
-        "connectionStatusValueId": 1229,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 8108,
-        "fullName": "Shirley Lock",
-        "connectionStatusValueId": 1229,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 8249,
-        "fullName": "Siyang Cao",
-        "connectionStatusValueId": 1229,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 8310,
-        "fullName": "Sophie Hermann",
-        "connectionStatusValueId": 1229,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 8594,
-        "fullName": "Taylor Noh",
-        "connectionStatusValueId": 1229,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 8597,
-        "fullName": "Tatai Nikora",
-        "connectionStatusValueId": 1229,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 8662,
-        "fullName": "Thea Dela Cruz",
-        "connectionStatusValueId": 1229,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 8757,
-        "fullName": "Tim Ho",
-        "connectionStatusValueId": 1229,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 9237,
-        "fullName": "Wilson Wang",
-        "connectionStatusValueId": 1229,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 9418,
-        "fullName": "Zheng Li",
-        "connectionStatusValueId": 1229,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 9497,
-        "fullName": "Ramen Patel",
-        "connectionStatusValueId": 1229,
-        "primaryCampusId": 2
-      }
-    ]
-  },
-  "1231": {
-    "name": "Community",
-    "description": "[OLD Not yet Christians who live locally in Auckland that we&#39;ve connected with]",
-    "people": []
-  },
-  "1232": {
-    "name": "Supporter",
-    "description": "Christians outside of Auckland Ev organisation who are supporters of our Gospel Ministry",
-    "people": [
-      {
-        "id": 771,
-        "fullName": "Antony Qiu",
-        "connectionStatusValueId": 1232,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 1051,
-        "fullName": "Belinda O&#39;Shea",
-        "connectionStatusValueId": 1232,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 1249,
-        "fullName": "Brendan Healy",
-        "connectionStatusValueId": 1232,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 1847,
-        "fullName": "CK Tey",
-        "connectionStatusValueId": 1232,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 1863,
-        "fullName": "Connan O&#39;Shea",
-        "connectionStatusValueId": 1232,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 1926,
-        "fullName": "Cynndee Yap",
-        "connectionStatusValueId": 1232,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 4734,
-        "fullName": "Joylynn Qiu",
-        "connectionStatusValueId": 1232,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 5714,
-        "fullName": "Luke Feng",
-        "connectionStatusValueId": 1232,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 6017,
-        "fullName": "Marlene Dela Cruz",
-        "connectionStatusValueId": 1232,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 7496,
-        "fullName": "Romeo Dela Cruz",
-        "connectionStatusValueId": 1232,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 9140,
-        "fullName": "Waha Melbourne",
-        "connectionStatusValueId": 1232,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 9538,
-        "fullName": "Jason Hall",
-        "connectionStatusValueId": 1232,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10298,
-        "fullName": "Uwe Balzat",
-        "connectionStatusValueId": 1232,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10299,
-        "fullName": "Viv Balzat",
-        "connectionStatusValueId": 1232,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10485,
-        "fullName": "Vincent Na",
-        "connectionStatusValueId": 1232,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10724,
-        "fullName": "Karl Abi Rached",
-        "connectionStatusValueId": 1232,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10815,
-        "fullName": "Conin Na",
-        "connectionStatusValueId": 1232,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10816,
-        "fullName": "Berlinda Na",
-        "connectionStatusValueId": 1232,
-        "primaryCampusId": 2
-      }
-    ]
-  },
-  "1406": {
-    "name": "Joining",
-    "description": "Newcomers that are in the process of join the Ev Community. Step 2 in the Ev Pathway\nTriggers: Attended 3 times in 6 weeks OR Ticked &quot;I&#39;m New&quot; (or &quot;This is My Church&quot; and haven&#39;t done Newish Connect) on their Connect Card. ",
-    "people": [
-      {
-        "id": 8041,
-        "fullName": "Sharon Lim",
-        "connectionStatusValueId": 1406,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10218,
-        "fullName": "Michael Turner",
-        "connectionStatusValueId": 1406,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10471,
-        "fullName": "Scott Ke",
-        "connectionStatusValueId": 1406,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10474,
-        "fullName": "Kiri Na",
-        "connectionStatusValueId": 1406,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10561,
-        "fullName": "Kayla Stober",
-        "connectionStatusValueId": 1406,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10565,
-        "fullName": "Leila De Leon",
-        "connectionStatusValueId": 1406,
-        "primaryCampusId": 2
-      },
-      {
-        "id": 10566,
-        "fullName": "Jay De Leon",
-        "connectionStatusValueId": 1406,
-        "primaryCampusId": 2
-      }
-    ]
-  },
-  "1407": {
-    "name": "Establishing (in faith)",
-    "description": "Category for those who have put their trust in Jesus and are being nurtured in the early days of their faith. \nMission step 2",
-    "people": []
+  "surveys": [
+    { "personId": "9640", "formId": "3109" },
+    { "personId": "9498", "formId": "3658" },
+    { "personId": "10442", "formId": "10213" },
+    { "personId": "10134", "formId": "11793" }
+  ],
+  "groups": {
+    "65": {
+      "name": "Investigating",
+      "description": "Category for those who are still investigating the claims of Christianity (Not Yet Christian) and who live locally in Auckland.",
+      "people": [
+        {
+          "id": 1424,
+          "fullName": "Carmen Leung",
+          "connectionStatusValueId": 65,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 3189,
+          "fullName": "Greg Hoffman",
+          "connectionStatusValueId": 65,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 9150,
+          "fullName": "Vivian Feng",
+          "connectionStatusValueId": 65,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 9798,
+          "fullName": "Fraser Barrons",
+          "connectionStatusValueId": 65,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10233,
+          "fullName": "Harry Qiao",
+          "connectionStatusValueId": 65,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10248,
+          "fullName": "Darroch George-Bodle",
+          "connectionStatusValueId": 65,
+          "primaryCampusId": 2
+        }
+      ]
+    },
+    "66": {
+      "name": "Visiting",
+      "description": "Initial default category for any visitor to an Ev campus. Step 1 of Ev Pathway.\n[OLD Primary people category for all newcomers to Auckland Ev.]",
+      "people": [
+        {
+          "id": 723,
+          "fullName": "Annette Foord",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 747,
+          "fullName": "Anne Koh",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 753,
+          "fullName": "Anna Xiong",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 1412,
+          "fullName": "Candi Soo",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 1869,
+          "fullName": "Connie Loi",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 2006,
+          "fullName": "Daniel Na",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 2286,
+          "fullName": "Donna Kavanagh",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 2691,
+          "fullName": "Esther Lew",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 3139,
+          "fullName": "Grace McLauchlan",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 3155,
+          "fullName": "Grace Na",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 3929,
+          "fullName": "Janice Jung",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 4039,
+          "fullName": "Jay Bonglo",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 4405,
+          "fullName": "John Charlton",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 4783,
+          "fullName": "Julie Wilson",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 5256,
+          "fullName": "Krystal Lochan",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 5589,
+          "fullName": "Liz Na",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 5904,
+          "fullName": "Marc Govinden",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 6004,
+          "fullName": "Mark Abi Rached",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 6173,
+          "fullName": "Melissa Greenie",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 6513,
+          "fullName": "Natalie Na (Tina&#39;s Friend)",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 7514,
+          "fullName": "Rose Wang",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 7751,
+          "fullName": "Sam Yick",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 7784,
+          "fullName": "Samuel Patel",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 7813,
+          "fullName": "Sarah Allan",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 7929,
+          "fullName": "Scott Allan",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 8595,
+          "fullName": "Tania Allison",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 9451,
+          "fullName": "Zhitian Wang",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 9492,
+          "fullName": "Boen Song",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 9502,
+          "fullName": "Brianna McCullough",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 9507,
+          "fullName": "Ethan Wales",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 9518,
+          "fullName": "Alice Na",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 9521,
+          "fullName": "Brittany McKenna-Tuhi",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 9527,
+          "fullName": "Dino Halim",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 9540,
+          "fullName": "Joel Yoon",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 9547,
+          "fullName": "Mike Tuhi",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 9557,
+          "fullName": "Ruth Na",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 9567,
+          "fullName": "Tommy Kwan",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 9657,
+          "fullName": "Bill Chalmers",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 9783,
+          "fullName": "Mel Chalmers",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 9804,
+          "fullName": "Bill Van",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 9854,
+          "fullName": "Rafael Cremer",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 9856,
+          "fullName": "Linda Jiang",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 9889,
+          "fullName": "Stephan Kriel",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 9890,
+          "fullName": "Liza Muller",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 9925,
+          "fullName": "Nadia Na",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 9926,
+          "fullName": "Jubin Na",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 9927,
+          "fullName": "Andy Bru",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10156,
+          "fullName": "Vimbayi Chasp",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10168,
+          "fullName": "Jun Jun Chen",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10174,
+          "fullName": "Caleb Na",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10196,
+          "fullName": "John Zanaty",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10219,
+          "fullName": "Ban Na",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10220,
+          "fullName": "Anthony Na",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10241,
+          "fullName": "Xiang Xue",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10242,
+          "fullName": "Demy Dillague",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10247,
+          "fullName": "Johan Lim",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10300,
+          "fullName": "Regina Halim",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10301,
+          "fullName": "Malia Zanaty",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10302,
+          "fullName": "Dom Estioko",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10303,
+          "fullName": "Len Estioko",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10318,
+          "fullName": "Kevin Govender",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10319,
+          "fullName": "Angela Govender",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10340,
+          "fullName": "Mei Na",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10470,
+          "fullName": "Erica Chung",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10472,
+          "fullName": "Susan Na",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10473,
+          "fullName": "Letisha Na",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10475,
+          "fullName": "Dave Na",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10477,
+          "fullName": "Sarah-May Na",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10478,
+          "fullName": "Olive Na",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10479,
+          "fullName": "Benjamin Na",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10480,
+          "fullName": "Caitlin Na",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10483,
+          "fullName": "Jeff Na",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10484,
+          "fullName": "Sonia Na",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10488,
+          "fullName": "Ray Na",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10489,
+          "fullName": "Alyssa Na",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10562,
+          "fullName": "Mikayla Miller",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10564,
+          "fullName": "Paul Miller",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10567,
+          "fullName": "Neil Na",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10568,
+          "fullName": "Winnie Na",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10605,
+          "fullName": "Grant Na",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10606,
+          "fullName": "Michael Na",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10607,
+          "fullName": "Lisa Na",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10641,
+          "fullName": "Julian Lees",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10642,
+          "fullName": "Maryanne Lees",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10656,
+          "fullName": "Alicia Carr",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10657,
+          "fullName": "Lauren O&#39;Malley",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10658,
+          "fullName": "Justin O&#39;Malley",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10675,
+          "fullName": "Amy Ho",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10685,
+          "fullName": "Abby Cao",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10705,
+          "fullName": "Joy Zhao",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10706,
+          "fullName": "Ivy Lam",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10725,
+          "fullName": "George Lam",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10727,
+          "fullName": "Alice Na",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10728,
+          "fullName": "Minkyu Na",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10736,
+          "fullName": "Paul Han",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10737,
+          "fullName": "Jasmine Cho",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10783,
+          "fullName": "Jan Na",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10786,
+          "fullName": "Ming Yong",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10817,
+          "fullName": "Marcus Na",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10818,
+          "fullName": "Alice Na",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10820,
+          "fullName": "Alice Na",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10821,
+          "fullName": "James Na",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10822,
+          "fullName": "Hannah Na",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10824,
+          "fullName": "Rebeccah Na",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10871,
+          "fullName": "Joel Macias",
+          "connectionStatusValueId": 66,
+          "primaryCampusId": 2
+        }
+      ]
+    },
+    "67": {
+      "name": "Prospect",
+      "description": "The default status given to a record that is added from the website.",
+      "people": []
+    },
+    "146": {
+      "name": "Attending",
+      "description": "Regular people category for all non-member attenders at Auckland Ev. Step 3 of Ev Pathway. \n[OLD Visitors move to this category after attending 5 times in 2 months OR tick &#39;This is my church&#39; on their Connect Card]",
+      "people": [
+        {
+          "id": 307,
+          "fullName": "Alexandra Suarez",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 358,
+          "fullName": "Allana Jiang",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 389,
+          "fullName": "Alyssa Fleming",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 421,
+          "fullName": "Amanda Liew",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 964,
+          "fullName": "Bai Xue",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 985,
+          "fullName": "Bec Downes",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 1086,
+          "fullName": "Bernard Abi Rached",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 1112,
+          "fullName": "Bill Wong",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 1258,
+          "fullName": "Brooke McLeish",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 1352,
+          "fullName": "Caleb Dela Cruz",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 1356,
+          "fullName": "Caleb Varcoe",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 1619,
+          "fullName": "Cherry Chu",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 1746,
+          "fullName": "Christine Poon",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 1797,
+          "fullName": "Cindy Thompson",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 1850,
+          "fullName": "Clarice Cheng",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 2030,
+          "fullName": "Danielle Wang",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 2031,
+          "fullName": "Daniel Kim",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 2051,
+          "fullName": "Danielle Na",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 2126,
+          "fullName": "David Li",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 2136,
+          "fullName": "David Goldsmith",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 2190,
+          "fullName": "Dee Wijetillake",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 2204,
+          "fullName": "Delphine Fossi",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 2236,
+          "fullName": "Dilshan Panamulla",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 2287,
+          "fullName": "Dominique Walker",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 2612,
+          "fullName": "Eric Jang",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 2661,
+          "fullName": "Esha Le",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 2723,
+          "fullName": "Eugene Bartsaikin",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 2990,
+          "fullName": "Gary Chan",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 3130,
+          "fullName": "Grace Guo",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 3140,
+          "fullName": "Grace Oh",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 3262,
+          "fullName": "Hannah Oliver",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 3279,
+          "fullName": "Hannah Rutland",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 3516,
+          "fullName": "Herim Park",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 3575,
+          "fullName": "Irene Halim",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 4050,
+          "fullName": "Jeanice Gomez",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 4330,
+          "fullName": "Joel Liew",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 4469,
+          "fullName": "Jonathan Goldsmith",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 4499,
+          "fullName": "Jono Ng",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 4558,
+          "fullName": "Josh Fleming",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 4596,
+          "fullName": "Josh Beckett",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 4694,
+          "fullName": "Josiah Koh",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 4805,
+          "fullName": "Justin Port",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 5054,
+          "fullName": "Ken Roberts",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 5094,
+          "fullName": "Kevin Pao",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 5149,
+          "fullName": "Kevin Chen",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 5593,
+          "fullName": "Lorraine Firth",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 5761,
+          "fullName": "MacKenzie Nichol",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 5926,
+          "fullName": "Marcus Tsang",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 5957,
+          "fullName": "Marieke Dhaliwal",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 5959,
+          "fullName": "Mari&#233; Willemse",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 6112,
+          "fullName": "May Choy",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 6257,
+          "fullName": "Michael Jeffs",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 6835,
+          "fullName": "Oliver Firth",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 7050,
+          "fullName": "Philipp Gomez",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 7283,
+          "fullName": "Rebekah Frame",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 7313,
+          "fullName": "Renee Ng",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 7743,
+          "fullName": "Sam Zhang",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 7818,
+          "fullName": "Sarah Millar",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 8068,
+          "fullName": "Shea Van Nes",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 8336,
+          "fullName": "Stef Daniels",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 8394,
+          "fullName": "Stephen Fossi",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 8455,
+          "fullName": "Sue Lee",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 8886,
+          "fullName": "Toni Roberts",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 9042,
+          "fullName": "Victoria Tan",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 9057,
+          "fullName": "Vinnie Walker",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 9498,
+          "fullName": "Timothy Thang",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 9522,
+          "fullName": "Charmaine Kyle",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 9523,
+          "fullName": "Colin Kyle",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 9640,
+          "fullName": "Debbie Port",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 9658,
+          "fullName": "Colleen Cheong",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 9820,
+          "fullName": "Joyce Na",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 9853,
+          "fullName": "Angela Halim",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 9858,
+          "fullName": "Noel Avila",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 9891,
+          "fullName": "Konny Lowe",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 9892,
+          "fullName": "Swee Lee Goh",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 9893,
+          "fullName": "Allen Tie",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10133,
+          "fullName": "Ben Konings",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10134,
+          "fullName": "Katja Konings",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10157,
+          "fullName": "Joel Macias",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10176,
+          "fullName": "Gabriel Tam",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10227,
+          "fullName": "Tony Kim",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10253,
+          "fullName": "Jenny Kim",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10265,
+          "fullName": "Caleb Millar",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10442,
+          "fullName": "Valerie Ong",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 2
+        }
+      ]
+    },
+    "203": {
+      "name": "Fringe",
+      "description": "People Category for those who are friends of Ev or participate in non-service or ministry events or programs.",
+      "people": [
+        {
+          "id": 334,
+          "fullName": "Alexis Na",
+          "connectionStatusValueId": 203,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 497,
+          "fullName": "Amy Hou",
+          "connectionStatusValueId": 203,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 560,
+          "fullName": "Andrew Cottingham",
+          "connectionStatusValueId": 203,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 1828,
+          "fullName": "Clarisse Na",
+          "connectionStatusValueId": 203,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 2982,
+          "fullName": "Gareth Evans",
+          "connectionStatusValueId": 203,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 2991,
+          "fullName": "Gabrielle Choi",
+          "connectionStatusValueId": 203,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 3340,
+          "fullName": "Harjot Dhaliwa",
+          "connectionStatusValueId": 203,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 3950,
+          "fullName": "Janice Feng",
+          "connectionStatusValueId": 203,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 4910,
+          "fullName": "Kat Wilson",
+          "connectionStatusValueId": 203,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 6026,
+          "fullName": "Mary Hill",
+          "connectionStatusValueId": 203,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 6466,
+          "fullName": "Na Na",
+          "connectionStatusValueId": 203,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 6882,
+          "fullName": "Owen Hu",
+          "connectionStatusValueId": 203,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 6960,
+          "fullName": "Peter Jeong",
+          "connectionStatusValueId": 203,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 7156,
+          "fullName": "Rachael Siew",
+          "connectionStatusValueId": 203,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 7402,
+          "fullName": "Richard Wilson",
+          "connectionStatusValueId": 203,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 7483,
+          "fullName": "Rohi Cottingham",
+          "connectionStatusValueId": 203,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 7493,
+          "fullName": "Rooksana Govinden",
+          "connectionStatusValueId": 203,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 7849,
+          "fullName": "Sarah In",
+          "connectionStatusValueId": 203,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 8158,
+          "fullName": "Siem Ou",
+          "connectionStatusValueId": 203,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 8833,
+          "fullName": "Tina Mao",
+          "connectionStatusValueId": 203,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 8893,
+          "fullName": "Trevor Auger",
+          "connectionStatusValueId": 203,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 9734,
+          "fullName": "Amy You",
+          "connectionStatusValueId": 203,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10486,
+          "fullName": "Derrick Fleming",
+          "connectionStatusValueId": 203,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10487,
+          "fullName": "Diane Fleming",
+          "connectionStatusValueId": 203,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10723,
+          "fullName": "Royce Aubrey",
+          "connectionStatusValueId": 203,
+          "primaryCampusId": 2
+        }
+      ]
+    },
+    "1229": {
+      "name": "Growing",
+      "description": "Core people category for all those who call Ev home and are in a Connect Group (aka Growing). Step 4 of Ev Pathway.\n[Formally: Core people category for all formal members of Auckland Ev.]",
+      "people": [
+        {
+          "id": 172,
+          "fullName": "Aimee Bates",
+          "connectionStatusValueId": 1229,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 526,
+          "fullName": "Amy Ho",
+          "connectionStatusValueId": 1229,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 552,
+          "fullName": "Amy-Rose Aubrey",
+          "connectionStatusValueId": 1229,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 563,
+          "fullName": "Andrew Govinden",
+          "connectionStatusValueId": 1229,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 587,
+          "fullName": "Andrew Moot",
+          "connectionStatusValueId": 1229,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 650,
+          "fullName": "Angela Yong",
+          "connectionStatusValueId": 1229,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 719,
+          "fullName": "Annaliesa Jeffs",
+          "connectionStatusValueId": 1229,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 791,
+          "fullName": "Antz Kriel",
+          "connectionStatusValueId": 1229,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 901,
+          "fullName": "Ashley Stevenson",
+          "connectionStatusValueId": 1229,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 1165,
+          "fullName": "Blessy Thomas",
+          "connectionStatusValueId": 1229,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 1221,
+          "fullName": "Breanne Beckett",
+          "connectionStatusValueId": 1229,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 1311,
+          "fullName": "Caitlin Li",
+          "connectionStatusValueId": 1229,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 1474,
+          "fullName": "Carol Muodza",
+          "connectionStatusValueId": 1229,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 1599,
+          "fullName": "Chelsea Huang",
+          "connectionStatusValueId": 1229,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 1954,
+          "fullName": "Dain Lock",
+          "connectionStatusValueId": 1229,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 1966,
+          "fullName": "Dan Chae",
+          "connectionStatusValueId": 1229,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 1991,
+          "fullName": "Dana Cameron",
+          "connectionStatusValueId": 1229,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 2084,
+          "fullName": "David Aubrey",
+          "connectionStatusValueId": 1229,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 2157,
+          "fullName": "Deb Ye",
+          "connectionStatusValueId": 1229,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 2216,
+          "fullName": "Denn Mark Dillague",
+          "connectionStatusValueId": 1229,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 2356,
+          "fullName": "Edmond Shen",
+          "connectionStatusValueId": 1229,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 2685,
+          "fullName": "Esther Shin",
+          "connectionStatusValueId": 1229,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 3153,
+          "fullName": "Grace Smith",
+          "connectionStatusValueId": 1229,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 3184,
+          "fullName": "Gustavo Avila",
+          "connectionStatusValueId": 1229,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 3356,
+          "fullName": "Heather Moot",
+          "connectionStatusValueId": 1229,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 3426,
+          "fullName": "Heidi Kwan-Tsang",
+          "connectionStatusValueId": 1229,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 3434,
+          "fullName": "Henry Ye",
+          "connectionStatusValueId": 1229,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 3571,
+          "fullName": "Ioana Selea",
+          "connectionStatusValueId": 1229,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 3738,
+          "fullName": "Jackie Chun",
+          "connectionStatusValueId": 1229,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 3865,
+          "fullName": "James Rouse",
+          "connectionStatusValueId": 1229,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 3924,
+          "fullName": "Jared Stevenson",
+          "connectionStatusValueId": 1229,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 4052,
+          "fullName": "Jeanny Nikora",
+          "connectionStatusValueId": 1229,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 4086,
+          "fullName": "Jen Sun Hong",
+          "connectionStatusValueId": 1229,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 4104,
+          "fullName": "Ziwei Liu",
+          "connectionStatusValueId": 1229,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 4319,
+          "fullName": "Jocelyn Noh",
+          "connectionStatusValueId": 1229,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 4347,
+          "fullName": "Joel Le",
+          "connectionStatusValueId": 1229,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 4381,
+          "fullName": "John Thomas",
+          "connectionStatusValueId": 1229,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 4610,
+          "fullName": "Josh Ye",
+          "connectionStatusValueId": 1229,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 4788,
+          "fullName": "Justin Cameron",
+          "connectionStatusValueId": 1229,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 5000,
+          "fullName": "Kathryn McCall",
+          "connectionStatusValueId": 1229,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 5040,
+          "fullName": "Kelly Tao",
+          "connectionStatusValueId": 1229,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 5110,
+          "fullName": "Kewei Jiang",
+          "connectionStatusValueId": 1229,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 5379,
+          "fullName": "Leighton Pearson",
+          "connectionStatusValueId": 1229,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 5758,
+          "fullName": "Lyvie Lee",
+          "connectionStatusValueId": 1229,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 5807,
+          "fullName": "Magnus Kriel",
+          "connectionStatusValueId": 1229,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 5963,
+          "fullName": "Marianne Goldsmith",
+          "connectionStatusValueId": 1229,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 6027,
+          "fullName": "Mark McLeish",
+          "connectionStatusValueId": 1229,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 6160,
+          "fullName": "Mel Dillague",
+          "connectionStatusValueId": 1229,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 6353,
+          "fullName": "Mike Zhang",
+          "connectionStatusValueId": 1229,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 6362,
+          "fullName": "Minsoo Lee",
+          "connectionStatusValueId": 1229,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 6383,
+          "fullName": "Ming Yong",
+          "connectionStatusValueId": 1229,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 6438,
+          "fullName": "Molly Cottingham",
+          "connectionStatusValueId": 1229,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 6553,
+          "fullName": "Natasha Port",
+          "connectionStatusValueId": 1229,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 6751,
+          "fullName": "Nisal Cottingham",
+          "connectionStatusValueId": 1229,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 6817,
+          "fullName": "Olivia Ng",
+          "connectionStatusValueId": 1229,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 7221,
+          "fullName": "Ray Daniels",
+          "connectionStatusValueId": 1229,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 7247,
+          "fullName": "Rania Zanaty",
+          "connectionStatusValueId": 1229,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 7282,
+          "fullName": "Rebeccah Patel",
+          "connectionStatusValueId": 1229,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 7307,
+          "fullName": "Regan George",
+          "connectionStatusValueId": 1229,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 7463,
+          "fullName": "Rochelle Port",
+          "connectionStatusValueId": 1229,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 8108,
+          "fullName": "Shirley Lock",
+          "connectionStatusValueId": 1229,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 8249,
+          "fullName": "Siyang Cao",
+          "connectionStatusValueId": 1229,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 8310,
+          "fullName": "Sophie Hermann",
+          "connectionStatusValueId": 1229,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 8594,
+          "fullName": "Taylor Noh",
+          "connectionStatusValueId": 1229,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 8597,
+          "fullName": "Tatai Nikora",
+          "connectionStatusValueId": 1229,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 8662,
+          "fullName": "Thea Dela Cruz",
+          "connectionStatusValueId": 1229,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 8757,
+          "fullName": "Tim Ho",
+          "connectionStatusValueId": 1229,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 9237,
+          "fullName": "Wilson Wang",
+          "connectionStatusValueId": 1229,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 9418,
+          "fullName": "Zheng Li",
+          "connectionStatusValueId": 1229,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 9497,
+          "fullName": "Ramen Patel",
+          "connectionStatusValueId": 1229,
+          "primaryCampusId": 2
+        }
+      ]
+    },
+    "1231": {
+      "name": "Community",
+      "description": "[OLD Not yet Christians who live locally in Auckland that we&#39;ve connected with]",
+      "people": []
+    },
+    "1232": {
+      "name": "Supporter",
+      "description": "Christians outside of Auckland Ev organisation who are supporters of our Gospel Ministry",
+      "people": [
+        {
+          "id": 771,
+          "fullName": "Antony Qiu",
+          "connectionStatusValueId": 1232,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 1051,
+          "fullName": "Belinda O&#39;Shea",
+          "connectionStatusValueId": 1232,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 1249,
+          "fullName": "Brendan Healy",
+          "connectionStatusValueId": 1232,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 1847,
+          "fullName": "CK Tey",
+          "connectionStatusValueId": 1232,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 1863,
+          "fullName": "Connan O&#39;Shea",
+          "connectionStatusValueId": 1232,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 1926,
+          "fullName": "Cynndee Yap",
+          "connectionStatusValueId": 1232,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 4734,
+          "fullName": "Joylynn Qiu",
+          "connectionStatusValueId": 1232,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 5714,
+          "fullName": "Luke Feng",
+          "connectionStatusValueId": 1232,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 6017,
+          "fullName": "Marlene Dela Cruz",
+          "connectionStatusValueId": 1232,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 7496,
+          "fullName": "Romeo Dela Cruz",
+          "connectionStatusValueId": 1232,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 9140,
+          "fullName": "Waha Melbourne",
+          "connectionStatusValueId": 1232,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 9538,
+          "fullName": "Jason Hall",
+          "connectionStatusValueId": 1232,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10298,
+          "fullName": "Uwe Balzat",
+          "connectionStatusValueId": 1232,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10299,
+          "fullName": "Viv Balzat",
+          "connectionStatusValueId": 1232,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10485,
+          "fullName": "Vincent Na",
+          "connectionStatusValueId": 1232,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10724,
+          "fullName": "Karl Abi Rached",
+          "connectionStatusValueId": 1232,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10815,
+          "fullName": "Conin Na",
+          "connectionStatusValueId": 1232,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10816,
+          "fullName": "Berlinda Na",
+          "connectionStatusValueId": 1232,
+          "primaryCampusId": 2
+        }
+      ]
+    },
+    "1406": {
+      "name": "Joining",
+      "description": "Newcomers that are in the process of join the Ev Community. Step 2 in the Ev Pathway\nTriggers: Attended 3 times in 6 weeks OR Ticked &quot;I&#39;m New&quot; (or &quot;This is My Church&quot; and haven&#39;t done Newish Connect) on their Connect Card. ",
+      "people": [
+        {
+          "id": 8041,
+          "fullName": "Sharon Lim",
+          "connectionStatusValueId": 1406,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10218,
+          "fullName": "Michael Turner",
+          "connectionStatusValueId": 1406,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10471,
+          "fullName": "Scott Ke",
+          "connectionStatusValueId": 1406,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10474,
+          "fullName": "Kiri Na",
+          "connectionStatusValueId": 1406,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10561,
+          "fullName": "Kayla Stober",
+          "connectionStatusValueId": 1406,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10565,
+          "fullName": "Leila De Leon",
+          "connectionStatusValueId": 1406,
+          "primaryCampusId": 2
+        },
+        {
+          "id": 10566,
+          "fullName": "Jay De Leon",
+          "connectionStatusValueId": 1406,
+          "primaryCampusId": 2
+        }
+      ]
+    },
+    "1407": {
+      "name": "Establishing (in faith)",
+      "description": "Category for those who have put their trust in Jesus and are being nurtured in the early days of their faith. \nMission step 2",
+      "people": []
+    }
   }
 }
