@@ -23,7 +23,7 @@ export interface Person {
   connectionStatusValueId: number;
   primaryCampusId?: number;
   isServing?: boolean;
-  isInCG?: boolean;
+  cgGroup?: string; // Changed from isInCG to cgGroup
 }
 
 export interface ConnectionStatus {

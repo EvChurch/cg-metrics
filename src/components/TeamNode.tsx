@@ -81,12 +81,13 @@ const TeamNode = memo(({ data, id }: NodeProps<TeamNodeData>) => {
                   <>
                     {/* Connect Group Chip */}
                     <div
-                      className={`text-xs p-1 font-semibold flex items-center justify-center ${
-                        person.isInCG
-                          ? "bg-blue-500 text-white"
+                      className={`text-xs p-1 font-semibold flex items-center justify-center cursor-pointer transition-colors ${
+                        person.cgGroup
+                          ? "bg-blue-500 text-white hover:bg-blue-600"
                           : "bg-gray-200 text-gray-500"
                       }`}
                       onClick={(e) => e.stopPropagation()}
+                      title={person.cgGroup || undefined}
                     >
                       CG
                     </div>
@@ -157,10 +158,9 @@ const TeamNode = memo(({ data, id }: NodeProps<TeamNodeData>) => {
         }}
       >
         <div className="flex items-center justify-center gap-2 mb-2">
-          <h4 className="font-semibold text-lg text-brand-black break-words leading-tight mt-2">
+          <h4 className="font-bold text-lg text-brand-black break-words leading-tight mt-2">
             {label} ({people.length})
           </h4>
-          <div className="text-gray-400 text-sm">{isExpanded ? "▼" : "▶"}</div>
         </div>
         {description && (
           <div className="text-xs text-gray-600 mb-2 px-2">{description}</div>

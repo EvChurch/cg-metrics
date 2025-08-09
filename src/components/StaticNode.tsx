@@ -65,7 +65,7 @@ const StaticNode = memo(({ data }: NodeProps<StaticNodeData>) => {
         style={{ top: "6px" }}
       />
       <div className="text-center">
-        <h4 className="font-semibold text-lg text-blue-800 break-words leading-tight">
+        <h4 className="font-black text-lg text-blue-800 break-words leading-tight">
           {label}
         </h4>
         {description && (

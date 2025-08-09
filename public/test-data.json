@@ -180,7 +180,7 @@
         },
         {
           "id": 6513,
-          "fullName": "Natalie Na (Tina&#39;s Friend)",
+          "fullName": "Natalie Na (Tina's Friend)",
           "connectionStatusValueId": 66,
           "primaryCampusId": 2
         },
@@ -576,13 +576,13 @@
         },
         {
           "id": 10657,
-          "fullName": "Lauren O&#39;Malley",
+          "fullName": "Lauren O'Malley",
           "connectionStatusValueId": 66,
           "primaryCampusId": 2
         },
         {
           "id": 10658,
-          "fullName": "Justin O&#39;Malley",
+          "fullName": "Justin O'Malley",
           "connectionStatusValueId": 66,
           "primaryCampusId": 2
         },
@@ -703,7 +703,7 @@
     },
     "146": {
       "name": "Attending",
-      "description": "Regular people category for all non-member attenders at Auckland Ev. Step 3 of Ev Pathway. \n[OLD Visitors move to this category after attending 5 times in 2 months OR tick &#39;This is my church&#39; on their Connect Card]",
+      "description": "Regular people category for all non-member attenders at Auckland Ev. Step 3 of Ev Pathway. \n[OLD Visitors move to this category after attending 5 times in 2 months OR tick 'This is my church' on their Connect Card]",
       "people": [
         {
           "id": 307,
@@ -711,7 +711,7 @@
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
           "isServing": true,
-          "isInCG": true
+          "cgGroup": "Edmond and Danielle's CG"
         },
         {
           "id": 358,
@@ -719,15 +719,14 @@
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
           "isServing": true,
-          "isInCG": true
+          "cgGroup": "Ashley's - Mum's CG"
         },
         {
           "id": 389,
           "fullName": "Alyssa Fleming",
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
-          "isServing": false,
-          "isInCG": false
+          "isServing": false
         },
         {
           "id": 421,
@@ -735,15 +734,14 @@
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
           "isServing": false,
-          "isInCG": true
+          "cgGroup": "Josh and Tim's CG"
         },
         {
           "id": 964,
           "fullName": "Bai Xue",
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
-          "isServing": false,
-          "isInCG": false
+          "isServing": false
         },
         {
           "id": 985,
@@ -751,7 +749,7 @@
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
           "isServing": false,
-          "isInCG": true
+          "cgGroup": "Josh and Tim's CG"
         },
         {
           "id": 1086,
@@ -759,7 +757,7 @@
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
           "isServing": false,
-          "isInCG": true
+          "cgGroup": "Albany Group"
         },
         {
           "id": 1112,
@@ -767,7 +765,7 @@
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
           "isServing": true,
-          "isInCG": true
+          "cgGroup": "Sunday Lunch group (Bill and Cherry host)"
         },
         {
           "id": 1258,
@@ -775,23 +773,21 @@
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
           "isServing": true,
-          "isInCG": true
+          "cgGroup": "Mark and Brooke's CG"
         },
         {
           "id": 1352,
           "fullName": "Caleb Dela Cruz",
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
-          "isServing": false,
-          "isInCG": false
+          "isServing": false
         },
         {
           "id": 1356,
           "fullName": "Caleb Varcoe",
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
-          "isServing": false,
-          "isInCG": false
+          "isServing": false
         },
         {
           "id": 1619,
@@ -799,7 +795,7 @@
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
           "isServing": true,
-          "isInCG": true
+          "cgGroup": "Sunday Lunch group (Bill and Cherry host)"
         },
         {
           "id": 1746,
@@ -807,31 +803,28 @@
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
           "isServing": false,
-          "isInCG": true
+          "cgGroup": "Josh and Tim's CG"
         },
         {
           "id": 1797,
           "fullName": "Cindy Thompson",
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
-          "isServing": false,
-          "isInCG": false
+          "isServing": false
         },
         {
           "id": 1850,
           "fullName": "Clarice Cheng",
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
-          "isServing": false,
-          "isInCG": false
+          "isServing": false
         },
         {
           "id": 2030,
           "fullName": "Danielle Wang",
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
-          "isServing": false,
-          "isInCG": false
+          "isServing": false
         },
         {
           "id": 2031,
@@ -839,7 +832,7 @@
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
           "isServing": false,
-          "isInCG": false
+          "cgGroup": "Ray and Regan's CG"
         },
         {
           "id": 2051,
@@ -847,7 +840,7 @@
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
           "isServing": true,
-          "isInCG": true
+          "cgGroup": "Edmond and Danielle's CG"
         },
         {
           "id": 2126,
@@ -855,55 +848,49 @@
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
           "isServing": true,
-          "isInCG": true
+          "cgGroup": "Sunday Lunch group (Bill and Cherry host)"
         },
         {
           "id": 2136,
           "fullName": "David Goldsmith",
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
-          "isServing": false,
-          "isInCG": false
+          "isServing": false
         },
         {
           "id": 2190,
           "fullName": "Dee Wijetillake",
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
-          "isServing": false,
-          "isInCG": false
+          "isServing": false
         },
         {
           "id": 2204,
           "fullName": "Delphine Fossi",
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
-          "isServing": false,
-          "isInCG": false
+          "isServing": false
         },
         {
           "id": 2236,
           "fullName": "Dilshan Panamulla",
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
-          "isServing": true,
-          "isInCG": false
+          "isServing": true
         },
         {
           "id": 2287,
           "fullName": "Dominique Walker",
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
-          "isServing": true,
-          "isInCG": false
+          "isServing": true
         },
         {
           "id": 2612,
           "fullName": "Eric Jang",
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
-          "isServing": true,
-          "isInCG": false
+          "isServing": true
         },
         {
           "id": 2661,
@@ -911,15 +898,14 @@
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
           "isServing": false,
-          "isInCG": true
+          "cgGroup": "Ashley's - Mum's CG"
         },
         {
           "id": 2723,
           "fullName": "Eugene Bartsaikin",
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
-          "isServing": true,
-          "isInCG": false
+          "isServing": true
         },
         {
           "id": 2990,
@@ -927,15 +913,14 @@
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
           "isServing": false,
-          "isInCG": true
+          "cgGroup": "Josh and Tim's CG"
         },
         {
           "id": 3130,
           "fullName": "Grace Guo",
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
-          "isServing": false,
-          "isInCG": false
+          "isServing": false
         },
         {
           "id": 3140,
@@ -943,7 +928,7 @@
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
           "isServing": false,
-          "isInCG": false
+          "cgGroup": "Ray and Regan's CG"
         },
         {
           "id": 3262,
@@ -951,15 +936,14 @@
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
           "isServing": false,
-          "isInCG": true
+          "cgGroup": "Mark and Brooke's CG"
         },
         {
           "id": 3279,
           "fullName": "Hannah Rutland",
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
-          "isServing": false,
-          "isInCG": false
+          "isServing": false
         },
         {
           "id": 3516,
@@ -967,7 +951,7 @@
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
           "isServing": false,
-          "isInCG": true
+          "cgGroup": "Sunday Lunch group (Bill and Cherry host)"
         },
         {
           "id": 3575,
@@ -975,7 +959,7 @@
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
           "isServing": false,
-          "isInCG": true
+          "cgGroup": "Ashley's - Mum's CG"
         },
         {
           "id": 4050,
@@ -983,39 +967,35 @@
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
           "isServing": true,
-          "isInCG": true
+          "cgGroup": "Sunday Lunch group (Bill and Cherry host)"
         },
         {
           "id": 4330,
           "fullName": "Joel Liew",
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
-          "isServing": false,
-          "isInCG": false
+          "isServing": false
         },
         {
           "id": 4469,
           "fullName": "Jonathan Goldsmith",
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
-          "isServing": true,
-          "isInCG": true
+          "isServing": true
         },
         {
           "id": 4499,
           "fullName": "Jono Ng",
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
-          "isServing": true,
-          "isInCG": false
+          "isServing": true
         },
         {
           "id": 4558,
           "fullName": "Josh Fleming",
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
-          "isServing": false,
-          "isInCG": false
+          "isServing": false
         },
         {
           "id": 4596,
@@ -1023,7 +1003,7 @@
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
           "isServing": false,
-          "isInCG": true
+          "cgGroup": "Mark and Brooke's CG"
         },
         {
           "id": 4694,
@@ -1031,7 +1011,7 @@
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
           "isServing": false,
-          "isInCG": true
+          "cgGroup": "Josh and Tim's CG"
         },
         {
           "id": 4805,
@@ -1039,23 +1019,21 @@
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
           "isServing": false,
-          "isInCG": true
+          "cgGroup": "Justin & Dana's CG"
         },
         {
           "id": 5054,
           "fullName": "Ken Roberts",
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
-          "isServing": true,
-          "isInCG": false
+          "isServing": true
         },
         {
           "id": 5094,
           "fullName": "Kevin Pao",
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
-          "isServing": false,
-          "isInCG": false
+          "isServing": false
         },
         {
           "id": 5149,
@@ -1063,23 +1041,21 @@
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
           "isServing": false,
-          "isInCG": true
+          "cgGroup": "Leighton and Natasha's CG"
         },
         {
           "id": 5593,
           "fullName": "Lorraine Firth",
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
-          "isServing": false,
-          "isInCG": false
+          "isServing": false
         },
         {
           "id": 5761,
           "fullName": "MacKenzie Nichol",
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
-          "isServing": false,
-          "isInCG": false
+          "isServing": false
         },
         {
           "id": 5926,
@@ -1087,7 +1063,7 @@
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
           "isServing": true,
-          "isInCG": true
+          "cgGroup": "Josh and Tim's CG"
         },
         {
           "id": 5957,
@@ -1095,39 +1071,35 @@
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
           "isServing": false,
-          "isInCG": true
+          "cgGroup": "Marianne - Mums group CG"
         },
         {
           "id": 5959,
-          "fullName": "Mari&#233; Willemse",
+          "fullName": "Marié Willemse",
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
-          "isServing": true,
-          "isInCG": false
+          "isServing": true
         },
         {
           "id": 6112,
           "fullName": "May Choy",
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
-          "isServing": true,
-          "isInCG": false
+          "isServing": true
         },
         {
           "id": 6257,
           "fullName": "Michael Jeffs",
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
-          "isServing": false,
-          "isInCG": false
+          "isServing": false
         },
         {
           "id": 6835,
           "fullName": "Oliver Firth",
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
-          "isServing": false,
-          "isInCG": false
+          "isServing": false
         },
         {
           "id": 7050,
@@ -1135,31 +1107,28 @@
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
           "isServing": true,
-          "isInCG": true
+          "cgGroup": "Sunday Lunch group (Bill and Cherry host)"
         },
         {
           "id": 7283,
           "fullName": "Rebekah Frame",
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
-          "isServing": false,
-          "isInCG": false
+          "isServing": false
         },
         {
           "id": 7313,
           "fullName": "Renee Ng",
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
-          "isServing": false,
-          "isInCG": false
+          "isServing": false
         },
         {
           "id": 7743,
           "fullName": "Sam Zhang",
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
-          "isServing": true,
-          "isInCG": false
+          "isServing": true
         },
         {
           "id": 7818,
@@ -1167,15 +1136,14 @@
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
           "isServing": false,
-          "isInCG": true
+          "cgGroup": "Ashley's - Mum's CG"
         },
         {
           "id": 8068,
           "fullName": "Shea Van Nes",
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
-          "isServing": false,
-          "isInCG": false
+          "isServing": false
         },
         {
           "id": 8336,
@@ -1183,23 +1151,21 @@
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
           "isServing": true,
-          "isInCG": true
+          "cgGroup": "Ray and Regan's CG"
         },
         {
           "id": 8394,
           "fullName": "Stephen Fossi",
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
-          "isServing": true,
-          "isInCG": false
+          "isServing": true
         },
         {
           "id": 8455,
           "fullName": "Sue Lee",
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
-          "isServing": true,
-          "isInCG": false
+          "isServing": true
         },
         {
           "id": 8886,
@@ -1207,23 +1173,21 @@
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
           "isServing": true,
-          "isInCG": true
+          "cgGroup": "Albany Group"
         },
         {
           "id": 9042,
           "fullName": "Victoria Tan",
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
-          "isServing": false,
-          "isInCG": false
+          "isServing": false
         },
         {
           "id": 9057,
           "fullName": "Vinnie Walker",
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
-          "isServing": false,
-          "isInCG": false
+          "isServing": false
         },
         {
           "id": 9498,
@@ -1231,7 +1195,7 @@
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
           "isServing": true,
-          "isInCG": true
+          "cgGroup": "Leighton and Natasha's CG"
         },
         {
           "id": 9522,
@@ -1239,7 +1203,7 @@
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
           "isServing": false,
-          "isInCG": true
+          "cgGroup": "Ray and Regan's CG"
         },
         {
           "id": 9523,
@@ -1247,7 +1211,7 @@
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
           "isServing": false,
-          "isInCG": true
+          "cgGroup": "Ray and Regan's CG"
         },
         {
           "id": 9640,
@@ -1255,7 +1219,7 @@
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
           "isServing": false,
-          "isInCG": true
+          "cgGroup": "Justin & Dana's CG"
         },
         {
           "id": 9658,
@@ -1263,119 +1227,105 @@
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
           "isServing": true,
-          "isInCG": true
+          "cgGroup": "Leighton and Natasha's CG"
         },
         {
           "id": 9820,
           "fullName": "Joyce Na",
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
-          "isServing": false,
-          "isInCG": false
+          "isServing": false
         },
         {
           "id": 9853,
           "fullName": "Angela Halim",
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
-          "isServing": false,
-          "isInCG": false
+          "isServing": false
         },
         {
           "id": 9858,
           "fullName": "Noel Avila",
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
-          "isServing": false,
-          "isInCG": false
+          "isServing": false
         },
         {
           "id": 9891,
           "fullName": "Konny Lowe",
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
-          "isServing": false,
-          "isInCG": false
+          "isServing": false
         },
         {
           "id": 9892,
           "fullName": "Swee Lee Goh",
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
-          "isServing": false,
-          "isInCG": false
+          "isServing": false
         },
         {
           "id": 9893,
           "fullName": "Allen Tie",
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
-          "isServing": false,
-          "isInCG": false
+          "isServing": false
         },
         {
           "id": 10133,
           "fullName": "Ben Konings",
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
-          "isServing": false,
-          "isInCG": false
+          "isServing": false
         },
         {
           "id": 10134,
           "fullName": "Katja Konings",
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
-          "isServing": false,
-          "isInCG": false
+          "isServing": false
         },
         {
           "id": 10157,
           "fullName": "Joel Macias",
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
-          "isServing": false,
-          "isInCG": false
+          "isServing": false
         },
         {
           "id": 10176,
           "fullName": "Gabriel Tam",
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
-          "isServing": false,
-          "isInCG": false
+          "isServing": false
         },
         {
           "id": 10227,
           "fullName": "Tony Kim",
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
-          "isServing": false,
-          "isInCG": false
+          "isServing": false
         },
         {
           "id": 10253,
           "fullName": "Jenny Kim",
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
-          "isServing": false,
-          "isInCG": false
+          "isServing": false
         },
         {
           "id": 10265,
           "fullName": "Caleb Millar",
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
-          "isServing": false,
-          "isInCG": false
+          "isServing": false
         },
         {
           "id": 10442,
           "fullName": "Valerie Ong",
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
-          "isServing": false,
-          "isInCG": false
+          "isServing": false
         }
       ]
     },
@@ -1545,7 +1495,7 @@
           "connectionStatusValueId": 1229,
           "primaryCampusId": 2,
           "isServing": true,
-          "isInCG": true
+          "cgGroup": "Justin & Dana's CG"
         },
         {
           "id": 526,
@@ -1553,15 +1503,14 @@
           "connectionStatusValueId": 1229,
           "primaryCampusId": 2,
           "isServing": true,
-          "isInCG": true
+          "cgGroup": "Marianne - Mums group CG"
         },
         {
           "id": 552,
           "fullName": "Amy-Rose Aubrey",
           "connectionStatusValueId": 1229,
           "primaryCampusId": 2,
-          "isServing": false,
-          "isInCG": false
+          "isServing": false
         },
         {
           "id": 563,
@@ -1569,7 +1518,7 @@
           "connectionStatusValueId": 1229,
           "primaryCampusId": 2,
           "isServing": true,
-          "isInCG": true
+          "cgGroup": "Leighton and Natasha's CG"
         },
         {
           "id": 587,
@@ -1577,7 +1526,7 @@
           "connectionStatusValueId": 1229,
           "primaryCampusId": 2,
           "isServing": true,
-          "isInCG": true
+          "cgGroup": "Albany Group"
         },
         {
           "id": 650,
@@ -1585,7 +1534,7 @@
           "connectionStatusValueId": 1229,
           "primaryCampusId": 2,
           "isServing": true,
-          "isInCG": true
+          "cgGroup": "Marianne - Mums group CG"
         },
         {
           "id": 719,
@@ -1593,7 +1542,7 @@
           "connectionStatusValueId": 1229,
           "primaryCampusId": 2,
           "isServing": true,
-          "isInCG": true
+          "cgGroup": "Ashley's - Mum's CG"
         },
         {
           "id": 791,
@@ -1601,7 +1550,7 @@
           "connectionStatusValueId": 1229,
           "primaryCampusId": 2,
           "isServing": true,
-          "isInCG": true
+          "cgGroup": "Marianne - Mums group CG"
         },
         {
           "id": 901,
@@ -1609,7 +1558,7 @@
           "connectionStatusValueId": 1229,
           "primaryCampusId": 2,
           "isServing": true,
-          "isInCG": true
+          "cgGroup": "Ashley's - Mum's CG"
         },
         {
           "id": 1165,
@@ -1617,7 +1566,7 @@
           "connectionStatusValueId": 1229,
           "primaryCampusId": 2,
           "isServing": true,
-          "isInCG": true
+          "cgGroup": "Justin & Dana's CG"
         },
         {
           "id": 1221,
@@ -1625,7 +1574,7 @@
           "connectionStatusValueId": 1229,
           "primaryCampusId": 2,
           "isServing": false,
-          "isInCG": true
+          "cgGroup": "Mark and Brooke's CG"
         },
         {
           "id": 1311,
@@ -1633,7 +1582,7 @@
           "connectionStatusValueId": 1229,
           "primaryCampusId": 2,
           "isServing": true,
-          "isInCG": true
+          "cgGroup": "Edmond and Danielle's CG"
         },
         {
           "id": 1474,
@@ -1641,7 +1590,7 @@
           "connectionStatusValueId": 1229,
           "primaryCampusId": 2,
           "isServing": true,
-          "isInCG": true
+          "cgGroup": "Mark and Brooke's CG"
         },
         {
           "id": 1599,
@@ -1649,7 +1598,7 @@
           "connectionStatusValueId": 1229,
           "primaryCampusId": 2,
           "isServing": true,
-          "isInCG": true
+          "cgGroup": "Josh and Tim's CG"
         },
         {
           "id": 1954,
@@ -1657,7 +1606,7 @@
           "connectionStatusValueId": 1229,
           "primaryCampusId": 2,
           "isServing": true,
-          "isInCG": true
+          "cgGroup": "Albany Group"
         },
         {
           "id": 1966,
@@ -1665,7 +1614,7 @@
           "connectionStatusValueId": 1229,
           "primaryCampusId": 2,
           "isServing": true,
-          "isInCG": true
+          "cgGroup": "Mark and Brooke's CG"
         },
         {
           "id": 1991,
@@ -1673,15 +1622,14 @@
           "connectionStatusValueId": 1229,
           "primaryCampusId": 2,
           "isServing": true,
-          "isInCG": true
+          "cgGroup": "Justin & Dana's CG"
         },
         {
           "id": 2084,
           "fullName": "David Aubrey",
           "connectionStatusValueId": 1229,
           "primaryCampusId": 2,
-          "isServing": false,
-          "isInCG": false
+          "isServing": false
         },
         {
           "id": 2157,
@@ -1689,7 +1637,7 @@
           "connectionStatusValueId": 1229,
           "primaryCampusId": 2,
           "isServing": true,
-          "isInCG": true
+          "cgGroup": "Ashley's - Mum's CG"
         },
         {
           "id": 2216,
@@ -1697,7 +1645,7 @@
           "connectionStatusValueId": 1229,
           "primaryCampusId": 2,
           "isServing": true,
-          "isInCG": true
+          "cgGroup": "Edmond and Danielle's CG"
         },
         {
           "id": 2356,
@@ -1705,7 +1653,7 @@
           "connectionStatusValueId": 1229,
           "primaryCampusId": 2,
           "isServing": true,
-          "isInCG": true
+          "cgGroup": "Edmond and Danielle's CG"
         },
         {
           "id": 2685,
@@ -1713,7 +1661,7 @@
           "connectionStatusValueId": 1229,
           "primaryCampusId": 2,
           "isServing": true,
-          "isInCG": true
+          "cgGroup": "Edmond and Danielle's CG"
         },
         {
           "id": 3153,
@@ -1721,7 +1669,7 @@
           "connectionStatusValueId": 1229,
           "primaryCampusId": 2,
           "isServing": true,
-          "isInCG": true
+          "cgGroup": "Edmond and Danielle's CG"
         },
         {
           "id": 3184,
@@ -1729,7 +1677,7 @@
           "connectionStatusValueId": 1229,
           "primaryCampusId": 2,
           "isServing": true,
-          "isInCG": true
+          "cgGroup": "Mark and Brooke's CG"
         },
         {
           "id": 3356,
@@ -1737,7 +1685,7 @@
           "connectionStatusValueId": 1229,
           "primaryCampusId": 2,
           "isServing": true,
-          "isInCG": true
+          "cgGroup": "Ashley's - Mum's CG"
         },
         {
           "id": 3426,
@@ -1745,7 +1693,7 @@
           "connectionStatusValueId": 1229,
           "primaryCampusId": 2,
           "isServing": true,
-          "isInCG": true
+          "cgGroup": "Marianne - Mums group CG"
         },
         {
           "id": 3434,
@@ -1753,7 +1701,7 @@
           "connectionStatusValueId": 1229,
           "primaryCampusId": 2,
           "isServing": true,
-          "isInCG": true
+          "cgGroup": "Edmond and Danielle's CG"
         },
         {
           "id": 3571,
@@ -1761,7 +1709,7 @@
           "connectionStatusValueId": 1229,
           "primaryCampusId": 2,
           "isServing": true,
-          "isInCG": true
+          "cgGroup": "Josh and Tim's CG"
         },
         {
           "id": 3738,
@@ -1769,7 +1717,7 @@
           "connectionStatusValueId": 1229,
           "primaryCampusId": 2,
           "isServing": true,
-          "isInCG": true
+          "cgGroup": "Edmond and Danielle's CG"
         },
         {
           "id": 3865,
@@ -1777,15 +1725,14 @@
           "connectionStatusValueId": 1229,
           "primaryCampusId": 2,
           "isServing": false,
-          "isInCG": true
+          "cgGroup": "Josh and Tim's CG"
         },
         {
           "id": 3924,
           "fullName": "Jared Stevenson",
           "connectionStatusValueId": 1229,
           "primaryCampusId": 2,
-          "isServing": true,
-          "isInCG": false
+          "isServing": true
         },
         {
           "id": 4052,
@@ -1793,7 +1740,7 @@
           "connectionStatusValueId": 1229,
           "primaryCampusId": 2,
           "isServing": true,
-          "isInCG": true
+          "cgGroup": "Edmond and Danielle's CG"
         },
         {
           "id": 4086,
@@ -1801,7 +1748,7 @@
           "connectionStatusValueId": 1229,
           "primaryCampusId": 2,
           "isServing": true,
-          "isInCG": true
+          "cgGroup": "Josh and Tim's CG"
         },
         {
           "id": 4104,
@@ -1809,7 +1756,7 @@
           "connectionStatusValueId": 1229,
           "primaryCampusId": 2,
           "isServing": true,
-          "isInCG": true
+          "cgGroup": "Marianne - Mums group CG"
         },
         {
           "id": 4319,
@@ -1817,7 +1764,7 @@
           "connectionStatusValueId": 1229,
           "primaryCampusId": 2,
           "isServing": true,
-          "isInCG": true
+          "cgGroup": "Marianne - Mums group CG"
         },
         {
           "id": 4347,
@@ -1825,7 +1772,7 @@
           "connectionStatusValueId": 1229,
           "primaryCampusId": 2,
           "isServing": true,
-          "isInCG": true
+          "cgGroup": "Edmond and Danielle's CG"
         },
         {
           "id": 4381,
@@ -1833,7 +1780,7 @@
           "connectionStatusValueId": 1229,
           "primaryCampusId": 2,
           "isServing": true,
-          "isInCG": true
+          "cgGroup": "Justin & Dana's CG"
         },
         {
           "id": 4610,
@@ -1841,7 +1788,7 @@
           "connectionStatusValueId": 1229,
           "primaryCampusId": 2,
           "isServing": true,
-          "isInCG": true
+          "cgGroup": "Josh and Tim's CG"
         },
         {
           "id": 4788,
@@ -1849,7 +1796,7 @@
           "connectionStatusValueId": 1229,
           "primaryCampusId": 2,
           "isServing": true,
-          "isInCG": true
+          "cgGroup": "Justin & Dana's CG"
         },
         {
           "id": 5000,
@@ -1857,7 +1804,7 @@
           "connectionStatusValueId": 1229,
           "primaryCampusId": 2,
           "isServing": true,
-          "isInCG": true
+          "cgGroup": "Edmond and Danielle's CG"
         },
         {
           "id": 5040,
@@ -1865,7 +1812,7 @@
           "connectionStatusValueId": 1229,
           "primaryCampusId": 2,
           "isServing": true,
-          "isInCG": true
+          "cgGroup": "Mark and Brooke's CG"
         },
         {
           "id": 5110,
@@ -1873,7 +1820,7 @@
           "connectionStatusValueId": 1229,
           "primaryCampusId": 2,
           "isServing": true,
-          "isInCG": true
+          "cgGroup": "Albany Group"
         },
         {
           "id": 5379,
@@ -1881,15 +1828,14 @@
           "connectionStatusValueId": 1229,
           "primaryCampusId": 2,
           "isServing": true,
-          "isInCG": true
+          "cgGroup": "Leighton and Natasha's CG"
         },
         {
           "id": 5758,
           "fullName": "Lyvie Lee",
           "connectionStatusValueId": 1229,
           "primaryCampusId": 2,
-          "isServing": false,
-          "isInCG": false
+          "isServing": false
         },
         {
           "id": 5807,
@@ -1897,7 +1843,7 @@
           "connectionStatusValueId": 1229,
           "primaryCampusId": 2,
           "isServing": true,
-          "isInCG": true
+          "cgGroup": "Justin & Dana's CG"
         },
         {
           "id": 5963,
@@ -1905,7 +1851,7 @@
           "connectionStatusValueId": 1229,
           "primaryCampusId": 2,
           "isServing": true,
-          "isInCG": true
+          "cgGroup": "Marianne - Mums group CG"
         },
         {
           "id": 6027,
@@ -1913,7 +1859,7 @@
           "connectionStatusValueId": 1229,
           "primaryCampusId": 2,
           "isServing": true,
-          "isInCG": true
+          "cgGroup": "Mark and Brooke's CG"
         },
         {
           "id": 6160,
@@ -1921,7 +1867,7 @@
           "connectionStatusValueId": 1229,
           "primaryCampusId": 2,
           "isServing": true,
-          "isInCG": true
+          "cgGroup": "Edmond and Danielle's CG"
         },
         {
           "id": 6353,
@@ -1929,7 +1875,7 @@
           "connectionStatusValueId": 1229,
           "primaryCampusId": 2,
           "isServing": true,
-          "isInCG": true
+          "cgGroup": "Mark and Brooke's CG"
         },
         {
           "id": 6362,
@@ -1937,15 +1883,14 @@
           "connectionStatusValueId": 1229,
           "primaryCampusId": 2,
           "isServing": true,
-          "isInCG": true
+          "cgGroup": "Justin & Dana's CG"
         },
         {
           "id": 6383,
           "fullName": "Ming Yong",
           "connectionStatusValueId": 1229,
           "primaryCampusId": 2,
-          "isServing": true,
-          "isInCG": false
+          "isServing": true
         },
         {
           "id": 6438,
@@ -1953,7 +1898,7 @@
           "connectionStatusValueId": 1229,
           "primaryCampusId": 2,
           "isServing": true,
-          "isInCG": true
+          "cgGroup": "Albany Group"
         },
         {
           "id": 6553,
@@ -1961,7 +1906,7 @@
           "connectionStatusValueId": 1229,
           "primaryCampusId": 2,
           "isServing": true,
-          "isInCG": true
+          "cgGroup": "Leighton and Natasha's CG"
         },
         {
           "id": 6751,
@@ -1969,7 +1914,7 @@
           "connectionStatusValueId": 1229,
           "primaryCampusId": 2,
           "isServing": true,
-          "isInCG": true
+          "cgGroup": "Albany Group"
         },
         {
           "id": 6817,
@@ -1977,7 +1922,7 @@
           "connectionStatusValueId": 1229,
           "primaryCampusId": 2,
           "isServing": true,
-          "isInCG": true
+          "cgGroup": "Ashley's - Mum's CG"
         },
         {
           "id": 7221,
@@ -1985,7 +1930,7 @@
           "connectionStatusValueId": 1229,
           "primaryCampusId": 2,
           "isServing": true,
-          "isInCG": true
+          "cgGroup": "Ray and Regan's CG"
         },
         {
           "id": 7247,
@@ -1993,7 +1938,7 @@
           "connectionStatusValueId": 1229,
           "primaryCampusId": 2,
           "isServing": true,
-          "isInCG": true
+          "cgGroup": "Albany Group"
         },
         {
           "id": 7282,
@@ -2001,7 +1946,7 @@
           "connectionStatusValueId": 1229,
           "primaryCampusId": 2,
           "isServing": true,
-          "isInCG": true
+          "cgGroup": "Sunday Lunch group (Bill and Cherry host)"
         },
         {
           "id": 7307,
@@ -2009,7 +1954,7 @@
           "connectionStatusValueId": 1229,
           "primaryCampusId": 2,
           "isServing": true,
-          "isInCG": true
+          "cgGroup": "Ray and Regan's CG"
         },
         {
           "id": 7463,
@@ -2017,7 +1962,7 @@
           "connectionStatusValueId": 1229,
           "primaryCampusId": 2,
           "isServing": false,
-          "isInCG": true
+          "cgGroup": "Josh and Tim's CG"
         },
         {
           "id": 8108,
@@ -2025,7 +1970,7 @@
           "connectionStatusValueId": 1229,
           "primaryCampusId": 2,
           "isServing": true,
-          "isInCG": true
+          "cgGroup": "Marianne - Mums group CG"
         },
         {
           "id": 8249,
@@ -2033,7 +1978,7 @@
           "connectionStatusValueId": 1229,
           "primaryCampusId": 2,
           "isServing": true,
-          "isInCG": true
+          "cgGroup": "Leighton and Natasha's CG"
         },
         {
           "id": 8310,
@@ -2041,7 +1986,7 @@
           "connectionStatusValueId": 1229,
           "primaryCampusId": 2,
           "isServing": true,
-          "isInCG": true
+          "cgGroup": "Leighton and Natasha's CG"
         },
         {
           "id": 8594,
@@ -2049,7 +1994,7 @@
           "connectionStatusValueId": 1229,
           "primaryCampusId": 2,
           "isServing": true,
-          "isInCG": true
+          "cgGroup": "Justin & Dana's CG"
         },
         {
           "id": 8597,
@@ -2057,7 +2002,7 @@
           "connectionStatusValueId": 1229,
           "primaryCampusId": 2,
           "isServing": true,
-          "isInCG": true
+          "cgGroup": "Edmond and Danielle's CG"
         },
         {
           "id": 8662,
@@ -2065,7 +2010,7 @@
           "connectionStatusValueId": 1229,
           "primaryCampusId": 2,
           "isServing": true,
-          "isInCG": true
+          "cgGroup": "Leighton and Natasha's CG"
         },
         {
           "id": 8757,
@@ -2073,7 +2018,7 @@
           "connectionStatusValueId": 1229,
           "primaryCampusId": 2,
           "isServing": true,
-          "isInCG": true
+          "cgGroup": "Josh and Tim's CG"
         },
         {
           "id": 9237,
@@ -2081,7 +2026,7 @@
           "connectionStatusValueId": 1229,
           "primaryCampusId": 2,
           "isServing": true,
-          "isInCG": true
+          "cgGroup": "Leighton and Natasha's CG"
         },
         {
           "id": 9418,
@@ -2089,7 +2034,7 @@
           "connectionStatusValueId": 1229,
           "primaryCampusId": 2,
           "isServing": false,
-          "isInCG": true
+          "cgGroup": "Edmond and Danielle's CG"
         },
         {
           "id": 9497,
@@ -2097,13 +2042,13 @@
           "connectionStatusValueId": 1229,
           "primaryCampusId": 2,
           "isServing": true,
-          "isInCG": true
+          "cgGroup": "Sunday Lunch group (Bill and Cherry host)"
         }
       ]
     },
     "1231": {
       "name": "Community",
-      "description": "[OLD Not yet Christians who live locally in Auckland that we&#39;ve connected with]",
+      "description": "[OLD Not yet Christians who live locally in Auckland that we've connected with]",
       "people": []
     },
     "1232": {
@@ -2118,7 +2063,7 @@
         },
         {
           "id": 1051,
-          "fullName": "Belinda O&#39;Shea",
+          "fullName": "Belinda O'Shea",
           "connectionStatusValueId": 1232,
           "primaryCampusId": 2
         },
@@ -2129,14 +2074,8 @@
           "primaryCampusId": 2
         },
         {
-          "id": 1847,
-          "fullName": "CK Tey",
-          "connectionStatusValueId": 1232,
-          "primaryCampusId": 2
-        },
-        {
           "id": 1863,
-          "fullName": "Connan O&#39;Shea",
+          "fullName": "Connan O'Shea",
           "connectionStatusValueId": 1232,
           "primaryCampusId": 2
         },
@@ -2222,63 +2161,56 @@
     },
     "1406": {
       "name": "Joining",
-      "description": "Newcomers that are in the process of join the Ev Community. Step 2 in the Ev Pathway\nTriggers: Attended 3 times in 6 weeks OR Ticked &quot;I&#39;m New&quot; (or &quot;This is My Church&quot; and haven&#39;t done Newish Connect) on their Connect Card. ",
+      "description": "Newcomers that are in the process of join the Ev Community. Step 2 in the Ev Pathway\nTriggers: Attended 3 times in 6 weeks OR Ticked \"I'm New\" (or \"This is My Church\" and haven't done Newish Connect) on their Connect Card. ",
       "people": [
         {
           "id": 8041,
           "fullName": "Sharon Lim",
           "connectionStatusValueId": 1406,
           "primaryCampusId": 2,
-          "isServing": false,
-          "isInCG": false
+          "isServing": false
         },
         {
           "id": 10218,
           "fullName": "Michael Turner",
           "connectionStatusValueId": 1406,
           "primaryCampusId": 2,
-          "isServing": false,
-          "isInCG": false
+          "isServing": false
         },
         {
           "id": 10471,
           "fullName": "Scott Ke",
           "connectionStatusValueId": 1406,
           "primaryCampusId": 2,
-          "isServing": false,
-          "isInCG": false
+          "isServing": false
         },
         {
           "id": 10474,
           "fullName": "Kiri Na",
           "connectionStatusValueId": 1406,
           "primaryCampusId": 2,
-          "isServing": false,
-          "isInCG": false
+          "isServing": false
         },
         {
           "id": 10561,
           "fullName": "Kayla Stober",
           "connectionStatusValueId": 1406,
           "primaryCampusId": 2,
-          "isServing": false,
-          "isInCG": false
+          "isServing": false
         },
         {
           "id": 10565,
           "fullName": "Leila De Leon",
           "connectionStatusValueId": 1406,
           "primaryCampusId": 2,
-          "isServing": false,
-          "isInCG": false
+          "isServing": false
         },
         {
           "id": 10566,
           "fullName": "Jay De Leon",
           "connectionStatusValueId": 1406,
           "primaryCampusId": 2,
-          "isServing": false,
-          "isInCG": false
+          "isServing": false
         }
       ]
     },
