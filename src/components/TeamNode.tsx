@@ -139,7 +139,14 @@ const TeamNode = memo(({ data, id }: NodeProps<TeamNodeData>) => {
       onClick={handleNodeClick}
     >
       <Handle
+        id="top"
         type="target"
+        position={Position.Top}
+        className="w-0 h-0 opacity-0"
+      />
+      <Handle
+        id="top-out"
+        type="source"
         position={Position.Top}
         className="w-0 h-0 opacity-0"
       />
@@ -167,9 +174,17 @@ const TeamNode = memo(({ data, id }: NodeProps<TeamNodeData>) => {
         </div>
       </div>
       <Handle
+        id="bottom"
         type="source"
         position={Position.Bottom}
         className="w-0 h-0 opacity-0"
+      />
+      <Handle
+        id="bottom-in"
+        type="target"
+        position={Position.Bottom}
+        className="w-0 h-0 opacity-0"
+        style={{ bottom: "6px" }}
       />
     </div>
   );
