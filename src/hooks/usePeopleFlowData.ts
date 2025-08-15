@@ -48,9 +48,9 @@ interface PeopleFlowData {
 }
 
 // Custom hook to fetch data from JSON file
-export const usePeopleFlowData = () => {
+export const usePeopleFlowData = (campusFilter?: string | null) => {
   return useQuery({
-    queryKey: ["peopleFlowData"],
+    queryKey: ["peopleFlowData", campusFilter],
     queryFn: async (): Promise<PeopleFlowData> => {
       try {
         // Toggle this flag to switch between dynamic data and test data
@@ -67,8 +67,24 @@ export const usePeopleFlowData = () => {
             );
 
             // Handle dynamic data structure - same as test data
-            const connectionStatuses = dynamicData.groups || {};
+            let connectionStatuses = dynamicData.groups || {};
             const surveys = dynamicData.surveys || [];
+
+            // Apply campus filter if provided
+            if (campusFilter) {
+              connectionStatuses = Object.fromEntries(
+                Object.entries(connectionStatuses).map(([key, status]) => [
+                  key,
+                  {
+                    ...(status as ConnectionStatus),
+                    people: (status as ConnectionStatus).people.filter(
+                      (person: Person) =>
+                        person.primaryCampusId?.toString() === campusFilter
+                    ),
+                  },
+                ])
+              );
+            }
 
             return {
               connectionStatuses,
@@ -88,7 +104,23 @@ export const usePeopleFlowData = () => {
         console.log("Using test data");
 
         // Handle new structure with groups or fallback to old structure
-        const connectionStatuses = data.groups || {};
+        let connectionStatuses = data.groups || {};
+
+        // Apply campus filter if provided
+        if (campusFilter) {
+          connectionStatuses = Object.fromEntries(
+            Object.entries(connectionStatuses).map(([key, status]) => [
+              key,
+              {
+                ...(status as ConnectionStatus),
+                people: (status as ConnectionStatus).people.filter(
+                  (person: Person) =>
+                    person.primaryCampusId?.toString() === campusFilter
+                ),
+              },
+            ])
+          );
+        }
 
         return {
           connectionStatuses,

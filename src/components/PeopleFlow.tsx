@@ -20,8 +20,12 @@ const nodeTypes = {
   staticNode: StaticNode,
 };
 
-const PeopleFlow = () => {
-  const { data, isLoading, error } = usePeopleFlowData();
+interface PeopleFlowProps {
+  campusFilter?: string | null;
+}
+
+const PeopleFlow = ({ campusFilter }: PeopleFlowProps) => {
+  const { data, isLoading, error } = usePeopleFlowData(campusFilter);
   const [nodes, setNodes, onNodesChange] = useNodesState([]);
   const [edges, setEdges, onEdgesChange] = useEdgesState([]);
   const { fitView } = useReactFlow();

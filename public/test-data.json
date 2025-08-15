@@ -57,6 +57,18 @@
           "fullName": "Darroch George-Bodle",
           "connectionStatusValueId": 65,
           "primaryCampusId": 2
+        },
+        {
+          "id": 10249,
+          "fullName": "Unichurch Investigator",
+          "connectionStatusValueId": 65,
+          "primaryCampusId": 4
+        },
+        {
+          "id": 10250,
+          "fullName": "Central Investigator",
+          "connectionStatusValueId": 65,
+          "primaryCampusId": 3
         }
       ]
     },
@@ -693,13 +705,20 @@
           "fullName": "Joel Macias",
           "connectionStatusValueId": 66,
           "primaryCampusId": 2
+        },
+        {
+          "id": 10251,
+          "fullName": "Unichurch Visitor",
+          "connectionStatusValueId": 65,
+          "primaryCampusId": 4
+        },
+        {
+          "id": 10252,
+          "fullName": "Central Visitor",
+          "connectionStatusValueId": 65,
+          "primaryCampusId": 3
         }
       ]
-    },
-    "67": {
-      "name": "Prospect",
-      "description": "The default status given to a record that is added from the website.",
-      "people": []
     },
     "146": {
       "name": "Attending",
@@ -1326,6 +1345,22 @@
           "connectionStatusValueId": 146,
           "primaryCampusId": 2,
           "isServing": false
+        },
+        {
+          "id": 10253,
+          "fullName": "Unichurch Attender",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 4,
+          "isServing": true,
+          "cgGroup": "UC CG group"
+        },
+        {
+          "id": 10254,
+          "fullName": "Central Attender",
+          "connectionStatusValueId": 146,
+          "primaryCampusId": 3,
+          "isServing": true,
+          "cgGroup": "Central CG group"
         }
       ]
     },
@@ -1482,6 +1517,18 @@
           "fullName": "Royce Aubrey",
           "connectionStatusValueId": 203,
           "primaryCampusId": 2
+        },
+        {
+          "id": 10254,
+          "fullName": "Unichurch Fringe",
+          "connectionStatusValueId": 203,
+          "primaryCampusId": 4
+        },
+        {
+          "id": 10255,
+          "fullName": "Central Fringe",
+          "connectionStatusValueId": 203,
+          "primaryCampusId": 3
         }
       ]
     },
@@ -2043,6 +2090,22 @@
           "primaryCampusId": 2,
           "isServing": true,
           "cgGroup": "Sunday Lunch group (Bill and Cherry host)"
+        },
+        {
+          "id": 10256,
+          "fullName": "Unichurch Growing",
+          "connectionStatusValueId": 1229,
+          "primaryCampusId": 4,
+          "isServing": true,
+          "cgGroup": "UC CG group"
+        },
+        {
+          "id": 10257,
+          "fullName": "Central Growing",
+          "connectionStatusValueId": 1229,
+          "primaryCampusId": 3,
+          "isServing": true,
+          "cgGroup": "Central CG group"
         }
       ]
     },
@@ -2156,6 +2219,18 @@
           "fullName": "Berlinda Na",
           "connectionStatusValueId": 1232,
           "primaryCampusId": 2
+        },
+        {
+          "id": 10258,
+          "fullName": "Unichurch Supporter",
+          "connectionStatusValueId": 1229,
+          "primaryCampusId": 4
+        },
+        {
+          "id": 10259,
+          "fullName": "Central Supporter",
+          "connectionStatusValueId": 1229,
+          "primaryCampusId": 3
         }
       ]
     },
@@ -2211,6 +2286,18 @@
           "connectionStatusValueId": 1406,
           "primaryCampusId": 2,
           "isServing": false
+        },
+        {
+          "id": 10260,
+          "fullName": "Unichurch Joining",
+          "connectionStatusValueId": 1406,
+          "primaryCampusId": 4
+        },
+        {
+          "id": 10261,
+          "fullName": "Central Joining",
+          "connectionStatusValueId": 1406,
+          "primaryCampusId": 3
         }
       ]
     },
