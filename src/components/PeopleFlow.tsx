@@ -3,11 +3,10 @@ import ReactFlow, {
   Background,
   useNodesState,
   useEdgesState,
-  useReactFlow,
   SelectionMode,
 } from "reactflow";
 import type { Edge } from "reactflow";
-import { useMemo, useEffect, useCallback } from "react";
+import { useMemo, useEffect } from "react";
 import TeamNode from "./TeamNode";
 import StaticNode from "./StaticNode";
 import { usePeopleFlowData } from "../hooks/usePeopleFlowData";
@@ -28,7 +27,6 @@ const PeopleFlow = ({ campusFilter }: PeopleFlowProps) => {
   const { data, isLoading, error } = usePeopleFlowData(campusFilter);
   const [nodes, setNodes, onNodesChange] = useNodesState([]);
   const [edges, setEdges, onEdgesChange] = useEdgesState([]);
-  const { fitView } = useReactFlow();
 
   // Transform data into React Flow nodes and edges
   const flowData = useMemo(() => {
@@ -48,25 +46,6 @@ const PeopleFlow = ({ campusFilter }: PeopleFlowProps) => {
     setNodes(flowData.nodes);
     setEdges(flowData.edges);
   }, [flowData.nodes, flowData.edges, setNodes, setEdges]);
-
-  // Fit view when nodes change
-  const handleFitView = useCallback(() => {
-    if (nodes.length > 0) {
-      setTimeout(() => {
-        fitView({
-          padding: 0.1,
-          includeHiddenNodes: false,
-          minZoom: 0.1,
-          maxZoom: 2,
-          duration: 800,
-        });
-      }, 200);
-    }
-  }, [nodes.length, fitView]);
-
-  useEffect(() => {
-    handleFitView();
-  }, [handleFitView]);
 
   if (isLoading) {
     return (

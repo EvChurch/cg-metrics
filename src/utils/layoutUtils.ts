@@ -73,7 +73,7 @@ export const getCustomLayout = (nodes: Node[], edges: Edge[]) => {
     {
       id: "churchLife",
       type: "staticNode",
-      position: { x: 1700, y: 400 },
+      position: { x: 1650, y: 400 },
       draggable: false,
       data: {
         label: "Church Life",
@@ -82,9 +82,20 @@ export const getCustomLayout = (nodes: Node[], edges: Edge[]) => {
       },
     },
     {
+      id: "growth",
+      type: "staticNode",
+      position: { x: 2150, y: 400 },
+      draggable: false,
+      data: {
+        label: "Growth",
+        description: "Description",
+        isStatic: true,
+      },
+    },
+    {
       id: "serving",
       type: "staticNode",
-      position: { x: 2100, y: 400 },
+      position: { x: 2550, y: 400 },
       draggable: false,
       data: {
         label: "Serving",
@@ -95,7 +106,7 @@ export const getCustomLayout = (nodes: Node[], edges: Edge[]) => {
     {
       id: "sending",
       type: "staticNode",
-      position: { x: 2500, y: 400 },
+      position: { x: 2900, y: 400 },
       draggable: false,
       data: {
         label: "Sending",
@@ -189,7 +200,7 @@ export const getCustomLayout = (nodes: Node[], edges: Edge[]) => {
     {
       id: "custom-position-integration-churchLife",
       type: "staticNode",
-      position: { x: 1550, y: 400 }, // Midpoint between Integration (1200, 400) and Church Life (1700, 400)
+      position: { x: 1550, y: 400 },
       draggable: false,
       data: {
         label: "",
@@ -197,11 +208,11 @@ export const getCustomLayout = (nodes: Node[], edges: Edge[]) => {
         isStatic: true,
       },
     },
-    // Custom position node for the midpoint of Church Life to Serving edge
+    // Custom position node for the midpoint of Church Life to Growth edge
     {
-      id: "custom-position-churchLife-serving",
+      id: "custom-position-churchLife-growth",
       type: "staticNode",
-      position: { x: 2000, y: 400 }, // Midpoint between Church Life (1700, 400) and Serving (2100, 400)
+      position: { x: 2000, y: 400 },
       draggable: false,
       data: {
         label: "",
@@ -265,8 +276,23 @@ export const getCustomLayout = (nodes: Node[], edges: Edge[]) => {
       },
     },
     {
-      id: "edge-step4-step5",
+      id: "edge-step4-step4b",
       source: "churchLife",
+      target: "growth",
+      type: "default",
+      sourceHandle: "right",
+      targetHandle: "left",
+      style: { stroke: "#000000", strokeWidth: 2 },
+      markerEnd: {
+        type: MarkerType.ArrowClosed,
+        width: 20,
+        height: 20,
+        color: "#000000",
+      },
+    },
+    {
+      id: "edge-step4b-step5",
+      source: "growth",
       target: "serving",
       type: "default",
       sourceHandle: "right",
@@ -468,11 +494,11 @@ export const getCustomLayout = (nodes: Node[], edges: Edge[]) => {
         color: "#e5e7eb",
       },
     },
-    // Edge from Growing to the edge between Church Life and Serving
+    // Edge from Growing to the edge between Church Life and Growth
     {
-      id: "edge-growing-to-churchLife-serving",
+      id: "edge-growing-to-churchLife-growth",
       source: "1229",
-      target: "custom-position-churchLife-serving",
+      target: "custom-position-churchLife-growth",
       type: "default",
       sourceHandle: "top-out",
       targetHandle: "bottom",
