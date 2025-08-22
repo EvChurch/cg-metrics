@@ -37,7 +37,7 @@ export type ConnectionStatus = z.infer<typeof connectionStatusSchema>;
 type PeopleFlowData = z.infer<typeof peopleFlowDataSchema>;
 
 const messageEventDataSchema = z.object({
-  target: z.string(),
+  target: z.literal("ev-pathways"),
   data: z.unknown(),
 });
 
@@ -86,7 +86,8 @@ export function usePeopleFlowData(campusFilter?: string | null): {
         return;
 
       const result = messageEventDataSchema.safeParse(event.data);
-      if (!result.success || result.data.target !== "ev-pathways") {
+      if (!result.success) {
+        console.error("Invalid message event", event);
         return;
       }
 
