@@ -64,7 +64,7 @@ const TeamNode = memo(({ data, id }: NodeProps<TeamNodeData>) => {
               <div className="flex items-center gap-0">
                 <a
                   href={rockUrl}
-                  target="_blank"
+                  target="_parent"
                   rel="noopener noreferrer"
                   className={`flex-1 ${buttonClass}`}
                   onClick={(e) => {
@@ -94,7 +94,7 @@ const TeamNode = memo(({ data, id }: NodeProps<TeamNodeData>) => {
                     {hasDoneSurvey ? (
                       <a
                         href={`https://rock.ev.church/Workflow/${survey.formId}`}
-                        target="_blank"
+                        target="_parent"
                         rel="noopener noreferrer"
                         className={`text-xs p-1 font-semibold cursor-pointer transition-colors flex items-center justify-center w-6 rounded-r ${
                           person.isServing
