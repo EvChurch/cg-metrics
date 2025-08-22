@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
-import z from "zod";
+import { z } from "zod";
 
 const personSchema = z.object({
   id: z.number(),

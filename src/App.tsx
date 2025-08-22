@@ -7,16 +7,12 @@ import CampusFilterButtons from "./components/CampusFilterButtons.tsx";
 function App() {
   const [selectedCampusId, setSelectedCampusId] = useState<string | null>("3");
 
-  const handleCampusFilter = (campusId: string | null) => {
-    setSelectedCampusId(campusId);
-  };
-
   return (
     <ReactFlowProvider>
       <div className="h-screen w-screen flex flex-col overflow-hidden">
         {/* Campus Filter Buttons */}
         <CampusFilterButtons
-          onCampusFilter={handleCampusFilter}
+          onCampusFilter={setSelectedCampusId}
           selectedCampusId={selectedCampusId}
         />
 
