@@ -1,6 +1,13 @@
 import type { Node, Edge } from "reactflow";
 import { MarkerType } from "reactflow";
 
+// Define the expected node data structure
+interface NodeData {
+  label: string;
+  description?: string;
+  isStatic?: boolean;
+}
+
 // Store actual node dimensions
 const actualNodeDimensions = new Map<
   string,
@@ -34,9 +41,9 @@ export const updateNodeDimensions = (
 };
 
 // Custom layout function - you can modify this to create your desired layout
-export const getCustomLayout = (nodes: Node[], edges: Edge[]) => {
+export const getCustomLayout = (nodes: Node<NodeData>[], edges: Edge[]) => {
   // Create static nodes
-  const staticNodes: Node[] = [
+  const staticNodes: Node<NodeData>[] = [
     {
       id: "awareness",
       type: "staticNode",

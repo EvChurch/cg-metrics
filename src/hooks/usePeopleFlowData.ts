@@ -36,6 +36,11 @@ export type Survey = z.infer<typeof surveySchema>;
 export type ConnectionStatus = z.infer<typeof connectionStatusSchema>;
 type PeopleFlowData = z.infer<typeof peopleFlowDataSchema>;
 
+const messageEventDataSchema = z.object({
+  target: z.string(),
+  data: z.unknown(),
+});
+
 export function usePeopleFlowData(campusFilter?: string | null): {
   data: PeopleFlowData;
   isLoading: boolean;
@@ -73,13 +78,17 @@ export function usePeopleFlowData(campusFilter?: string | null): {
       if (
         !["https://rock.ev.church", "http://localhost:5173"].includes(
           event.origin
-        ) ||
-        event.data?.target !== "ev-pathways"
+        )
       )
         return;
 
+      const result = messageEventDataSchema.safeParse(event.data);
+      if (!result.success || result.data.target !== "ev-pathways") {
+        return;
+      }
+
       try {
-        const data = peopleFlowDataSchema.parse(event.data?.data);
+        const data = peopleFlowDataSchema.parse(result.data.data);
         setData(data);
         setIsLoading(false);
       } catch (error) {
@@ -93,7 +102,9 @@ export function usePeopleFlowData(campusFilter?: string | null): {
     }
 
     window.addEventListener("message", onMessage);
-    return () => window.removeEventListener("message", onMessage);
+    return () => {
+      window.removeEventListener("message", onMessage);
+    };
   }, []);
 
   return {

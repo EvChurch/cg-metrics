@@ -122,7 +122,7 @@ const TeamNode = memo(({ data, id }: NodeProps<TeamNodeData>) => {
         })}
       </div>
     );
-  }, [people, surveys]);
+  }, [people, surveys, label]);
 
   const handleNodeClick = () => {
     setIsExpanded(!isExpanded);

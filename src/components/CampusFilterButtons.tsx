@@ -18,6 +18,7 @@ const CampusFilterButtons = ({
       {campuses.map((campus) => (
         <button
           key={campus.id}
+          type="button"
           onClick={() =>
             onCampusFilter(selectedCampusId === campus.id ? null : campus.id)
           }
