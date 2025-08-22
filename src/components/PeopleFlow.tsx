@@ -30,7 +30,7 @@ const PeopleFlow = ({ campusFilter }: PeopleFlowProps) => {
 
   // Transform data into React Flow nodes and edges
   const flowData = useMemo(() => {
-    if (!data) return { nodes: [], edges: [] };
+    if (isLoading) return { nodes: [], edges: [] };
 
     const nodes = createNodesFromStatuses(
       data.connectionStatuses,
@@ -39,7 +39,7 @@ const PeopleFlow = ({ campusFilter }: PeopleFlowProps) => {
     const edges: Edge[] = []; // No edges needed for flat data
 
     return getInitialLayout(nodes, edges);
-  }, [data]);
+  }, [data, isLoading]);
 
   // Set nodes and edges when data changes
   useEffect(() => {

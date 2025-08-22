@@ -12,7 +12,6 @@ export const createNodesFromStatuses = (
   Object.entries(statuses).forEach(([statusId, status]) => {
     // Check if this is actually a ConnectionStatus object with a name property
     if (
-      !status ||
       typeof status !== "object" ||
       !("name" in status) ||
       typeof status.name !== "string"
@@ -42,7 +41,7 @@ export const createNodesFromStatuses = (
       data: {
         label: status.name,
         description: status.description,
-        people: status.people || [],
+        people: status.people,
         surveys: surveys,
       },
     };

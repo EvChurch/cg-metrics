@@ -20,7 +20,7 @@ const CampusFilterButtons = ({
           key={campus.id}
           type="button"
           onClick={() =>
-            onCampusFilter(selectedCampusId === campus.id ? null : campus.id)
+            { onCampusFilter(selectedCampusId === campus.id ? null : campus.id); }
           }
           className={`font-bold py-1 px-2 sm:py-1.5 sm:px-3 rounded-md shadow-lg text-xs sm:text-sm border-0 focus:outline-none ${
             selectedCampusId === campus.id
