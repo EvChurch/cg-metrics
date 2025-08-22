@@ -59,4 +59,4 @@ The GitHub Actions workflow (`.github/workflows/deploy.yml`) will:
 - Build the production bundle
 - Deploy to GitHub Pages
 
-Your app will be available at: `https://[username].github.io/ev-pathways/`
+Your app will be available at: `https://[username].github.io/pathways/`

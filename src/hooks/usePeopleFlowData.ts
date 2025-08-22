@@ -80,6 +80,7 @@ export function usePeopleFlowData(campusFilter?: string | null): {
           "https://rock.ev.church",
           "http://localhost:5173",
           "https://ev-pathways.netlify.app",
+          "https://evchurch.github.io",
         ].includes(event.origin)
       )
         return;
