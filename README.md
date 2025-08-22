@@ -38,25 +38,12 @@ This project uses the following technologies:
 
 This project is configured to automatically deploy to GitHub Pages using GitHub Actions.
 
-### Setup Instructions
-
-1. **Enable GitHub Pages** in your repository:
-   - Go to Settings → Pages
-   - Set Source to "GitHub Actions"
-
-2. **Push to main/master branch**: The workflow will automatically trigger on pushes to main branch
-
-3. **Manual deployment** (optional):
-   ```bash
-   npm run deploy
-   ```
-
 ### Workflow Details
 
 The GitHub Actions workflow (`.github/workflows/deploy.yml`) will:
-- Build the project using Node.js 18
+- Build the project using Node.js
 - Run linting and type checking
 - Build the production bundle
 - Deploy to GitHub Pages
 
-Your app will be available at: `https://[username].github.io/pathways/`
+The app will be available at: `https://evchurch.github.io/pathways/`
