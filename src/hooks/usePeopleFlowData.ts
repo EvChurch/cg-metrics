@@ -5,7 +5,7 @@ const personSchema = z.object({
   id: z.number(),
   fullName: z.string(),
   connectionStatusValueId: z.number(),
-  primaryCampusId: z.number().optional(),
+  primaryCampusId: z.number().optional().nullable(),
   isServing: z.boolean().optional(),
   cgGroup: z.string().optional(),
 });
