@@ -7,6 +7,6 @@ export default defineConfig({
   build: {
     outDir: "dist",
     assetsDir: "assets",
-    sourcemap: process.env.NODE_ENV === "development",
+    sourcemap: true,
   },
 });
