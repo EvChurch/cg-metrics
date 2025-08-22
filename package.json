@@ -15,7 +15,8 @@
     "dagre": "^0.8.5",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "reactflow": "^11.11.4"
+    "reactflow": "^11.11.4",
+    "zod": "^4.0.17"
   },
   "devDependencies": {
     "@eslint/js": "^9.29.0",

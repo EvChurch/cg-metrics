@@ -1,137 +1,104 @@
-import { useQuery } from "@tanstack/react-query";
+import { useEffect, useMemo, useState } from "react";
+import z from "zod";
 
-// Function to get initial groups data from script tag
-function getInitialGroupsData() {
-  const scriptTag = document.getElementById("initial-groups-data");
-  if (!scriptTag || !scriptTag.textContent) {
-    console.warn("Script tag 'initial-groups-data' not found or empty");
-    return {};
-  }
+const personSchema = z.object({
+  id: z.number(),
+  fullName: z.string(),
+  connectionStatusValueId: z.number(),
+  primaryCampusId: z.number().optional(),
+  isServing: z.boolean().optional(),
+  cgGroup: z.string().optional(),
+});
 
-  try {
-    return JSON.parse(scriptTag.textContent);
-  } catch (e) {
-    console.error("Failed to parse initial groups data", e);
-    return {};
-  }
-}
+const surveySchema = z.object({
+  personId: z.string(),
+  formId: z.string(),
+});
 
-// Types based on your data structure
-export interface Person {
-  id: number;
-  fullName: string;
-  connectionStatusValueId: number;
-  primaryCampusId?: number;
-  isServing?: boolean;
-  cgGroup?: string; // Changed from isInCG to cgGroup
-}
+const connectionStatusSchema = z.object({
+  name: z.string(),
+  description: z.string(),
+  people: z.array(personSchema),
+});
 
-export interface ConnectionStatus {
-  name: string;
-  description: string;
-  people: Person[];
-}
+const peopleFlowDataSchema = z
+  .object({
+    groups: z.record(z.string(), connectionStatusSchema),
+    surveys: z.array(surveySchema).optional(),
+  })
+  .transform((data) => ({
+    connectionStatuses: data.groups,
+    surveys: data.surveys ?? [],
+  }));
 
-interface Survey {
-  personId: string;
-  formId: string;
-}
+export type Person = z.infer<typeof personSchema>;
+export type Survey = z.infer<typeof surveySchema>;
+export type ConnectionStatus = z.infer<typeof connectionStatusSchema>;
+type PeopleFlowData = z.infer<typeof peopleFlowDataSchema>;
 
-interface TestData {
-  surveys?: Survey[];
-  groups?: Record<string, ConnectionStatus>;
-}
-
-interface PeopleFlowData {
-  connectionStatuses: Record<string, ConnectionStatus>;
-  surveys?: Survey[];
-}
-
-// Custom hook to fetch data from JSON file
-export const usePeopleFlowData = (campusFilter?: string | null) => {
-  return useQuery({
-    queryKey: ["peopleFlowData", campusFilter],
-    queryFn: async (): Promise<PeopleFlowData> => {
-      try {
-        // Toggle this flag to switch between dynamic data and test data
-        const USE_DYNAMIC_DATA = true; // Set to false to use test data instead
-
-        if (USE_DYNAMIC_DATA) {
-          // Get data from script tag (dynamic data from database)
-          const dynamicData = getInitialGroupsData();
-          if (dynamicData && Object.keys(dynamicData).length > 0) {
-            console.log(
-              "Processing dynamic connection statuses:",
-              Object.keys(dynamicData).length,
-              "statuses"
-            );
-
-            // Handle dynamic data structure - same as test data
-            let connectionStatuses = dynamicData.groups || {};
-            const surveys = dynamicData.surveys || [];
-
-            // Apply campus filter if provided
-            if (campusFilter) {
-              connectionStatuses = Object.fromEntries(
-                Object.entries(connectionStatuses).map(([key, status]) => [
-                  key,
-                  {
-                    ...(status as ConnectionStatus),
-                    people: (status as ConnectionStatus).people.filter(
-                      (person: Person) =>
-                        person.primaryCampusId?.toString() === campusFilter
-                    ),
-                  },
-                ])
-              );
-            }
-
-            return {
-              connectionStatuses,
-              surveys,
-            };
-          }
-          console.warn("No dynamic data available, falling back to test data");
-        }
-
-        // Use test data from JSON file (either as fallback or primary)
-        const response = await fetch("/test-data.json");
-        if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        const data: TestData = await response.json();
-
-        console.log("Using test data");
-
-        // Handle new structure with groups or fallback to old structure
-        let connectionStatuses = data.groups || {};
-
-        // Apply campus filter if provided
-        if (campusFilter) {
-          connectionStatuses = Object.fromEntries(
-            Object.entries(connectionStatuses).map(([key, status]) => [
-              key,
-              {
-                ...(status as ConnectionStatus),
-                people: (status as ConnectionStatus).people.filter(
-                  (person: Person) =>
-                    person.primaryCampusId?.toString() === campusFilter
-                ),
-              },
-            ])
-          );
-        }
-
-        return {
-          connectionStatuses,
-          surveys: data.surveys || [],
-        };
-      } catch (error) {
-        console.error("Failed to fetch people flow data:", error);
-        return { connectionStatuses: {}, surveys: [] };
-      }
-    },
-    refetchInterval: 30000,
-    refetchIntervalInBackground: true,
+export function usePeopleFlowData(campusFilter?: string | null): {
+  data: PeopleFlowData;
+  isLoading: boolean;
+  error: Error | undefined;
+} {
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState<Error>();
+  const [{ connectionStatuses, surveys }, setData] = useState<PeopleFlowData>({
+    connectionStatuses: {},
+    surveys: [],
   });
-};
+  const filteredData = useMemo(() => {
+    let filteredConnectionStatuses = connectionStatuses;
+    if (campusFilter != null) {
+      filteredConnectionStatuses = Object.fromEntries(
+        Object.entries(connectionStatuses).map(([key, status]) => [
+          key,
+          {
+            ...status,
+            people: status.people.filter(
+              (person) => person.primaryCampusId?.toString() === campusFilter
+            ),
+          },
+        ])
+      );
+    }
+    return {
+      connectionStatuses: filteredConnectionStatuses,
+      surveys,
+    };
+  }, [connectionStatuses, surveys, campusFilter]);
+
+  useEffect(() => {
+    function onMessage(event: MessageEvent) {
+      if (
+        !["https://rock.ev.church", "http://localhost:5173"].includes(
+          event.origin
+        ) ||
+        event.data?.target !== "ev-pathways"
+      )
+        return;
+
+      try {
+        const data = peopleFlowDataSchema.parse(event.data?.data);
+        setData(data);
+        setIsLoading(false);
+      } catch (error) {
+        if (error instanceof Error) {
+          setError(error);
+        } else {
+          setError(new Error("Failed to parse people flow data"));
+        }
+        setIsLoading(false);
+      }
+    }
+
+    window.addEventListener("message", onMessage);
+    return () => window.removeEventListener("message", onMessage);
+  }, []);
+
+  return {
+    data: filteredData,
+    isLoading,
+    error,
+  };
+}

@@ -514,8 +514,6 @@ export const getCustomLayout = (nodes: Node[], edges: Edge[]) => {
 
   // Layout the data-driven nodes
   const layoutedNodes = nodes.map((node, index) => {
-    console.log(node);
-
     switch (node.data.label) {
       case "Supporter":
         return {

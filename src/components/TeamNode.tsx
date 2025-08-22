@@ -1,12 +1,7 @@
 import { memo, useMemo, useRef, useEffect, useState } from "react";
 import { Handle, Position, type NodeProps } from "reactflow";
-import type { Person } from "../hooks/usePeopleFlowData";
+import type { Person, Survey } from "../hooks/usePeopleFlowData";
 import { updateNodeDimensions } from "../utils/layoutUtils";
-
-interface Survey {
-  personId: string;
-  formId: string;
-}
 
 interface TeamNodeData {
   label?: string;

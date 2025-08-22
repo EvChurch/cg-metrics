@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EV Pathways - People pathways</title>
+  </head>
+  <body style="margin: 0; padding: 0">
+    <iframe
+      id="ev-pathways-iframe"
+      src="/"
+      style="width: 100svw; height: 100svh"
+      frameborder="0"
+    ></iframe>
+    <script>
+      fetch("./test-data.json")
+        .then((response) => response.json())
+        .then((data) => {
+          const iframe = document.getElementById("ev-pathways-iframe");
+          iframe.onload = () =>
+            iframe.contentWindow.postMessage({ target: "ev-pathways", data });
+        });
+    </script>
+  </body>
+</html>

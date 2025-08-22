@@ -1,10 +1,5 @@
 import type { Node } from "reactflow";
-import type { ConnectionStatus } from "../hooks/usePeopleFlowData";
-
-interface Survey {
-  personId: string;
-  formId: string;
-}
+import type { ConnectionStatus, Survey } from "../hooks/usePeopleFlowData";
 
 // Create nodes from connection status data
 export const createNodesFromStatuses = (
