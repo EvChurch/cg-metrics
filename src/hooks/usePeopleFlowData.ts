@@ -76,9 +76,11 @@ export function usePeopleFlowData(campusFilter?: string | null): {
   useEffect(() => {
     function onMessage(event: MessageEvent) {
       if (
-        !["https://rock.ev.church", "http://localhost:5173"].includes(
-          event.origin
-        )
+        ![
+          "https://rock.ev.church",
+          "http://localhost:5173",
+          "https://ev-pathways.netlify.app",
+        ].includes(event.origin)
       )
         return;
 
