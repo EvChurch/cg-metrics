@@ -85,6 +85,10 @@ function TeamNodeDrawer() {
                   people={filteredPeople}
                   surveys={[]}
                   label={selectedTeamNode.data.label}
+                  hasActiveFilters={
+                    filteredPeople.length !==
+                    selectedTeamNode.data.people.length
+                  }
                 />
               </div>
             </>

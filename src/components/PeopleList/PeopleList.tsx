@@ -5,13 +5,23 @@ interface PeopleListProps {
   people: Person[];
   surveys: Survey[];
   label?: string;
+  hasActiveFilters?: boolean;
 }
 
-function PeopleList({ people, surveys, label }: PeopleListProps) {
+function PeopleList({
+  people,
+  surveys,
+  label,
+  hasActiveFilters,
+}: PeopleListProps) {
   if (people.length === 0) {
     return (
-      <div className="text-center">
-        <div className="text-xs text-gray-500">No people</div>
+      <div className="text-center mt-4">
+        <div className="text-xs text-gray-500 bg-gray-50 rounded-lg py-3 px-4 border border-gray-200">
+          {hasActiveFilters
+            ? "No people match your filters."
+            : `No people in this ${label ?? "category"}`}
+        </div>
       </div>
     );
   }
