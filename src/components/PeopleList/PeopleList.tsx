@@ -16,11 +16,10 @@ function PeopleList({ people, surveys, label }: PeopleListProps) {
     );
   }
 
-  // Create a map of person ID to survey for quick lookup
   const surveyMap = new Map(surveys.map((survey) => [survey.personId, survey]));
 
   return (
-    <div className="grid grid-cols-2 gap-2 w-full">
+    <div className="flex flex-col divide-y-2 divide-gray-100 mx-[-16px]">
       {people.map((person) => (
         <PeopleListItem
           key={person.id}
