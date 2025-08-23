@@ -4,7 +4,7 @@ import PeopleListItem from "./PeopleListItem";
 interface PeopleListProps {
   people: Person[];
   surveys: Survey[];
-  label: string;
+  label?: string;
 }
 
 function PeopleList({ people, surveys, label }: PeopleListProps) {

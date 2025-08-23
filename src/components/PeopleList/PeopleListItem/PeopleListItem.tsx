@@ -3,7 +3,7 @@ import type { Person, Survey } from "../../../hooks/usePeopleFlowData";
 interface PeopleListItemProps {
   person: Person;
   survey: Survey | undefined;
-  label: string;
+  label?: string;
 }
 
 function PeopleListItem({ person, survey, label }: PeopleListItemProps) {

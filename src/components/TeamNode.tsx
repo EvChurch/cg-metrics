@@ -1,18 +1,11 @@
 import { memo } from "react";
 import { Handle, Position, type NodeProps } from "reactflow";
-import type { Person, Survey } from "../hooks/usePeopleFlowData";
 import { usePathway } from "../hooks/usePathway";
 import { selectTeamNode, deselectTeamNode } from "../contexts/pathwayActions";
-
-interface TeamNodeData {
-  label?: string;
-  description?: string;
-  people: Person[];
-  surveys?: Survey[];
-}
+import type { TeamNodeData } from "../contexts/PathwayContext";
 
 const TeamNode = memo(({ data, id }: NodeProps<TeamNodeData>) => {
-  const { label, description, people } = data;
+  const { label, people } = data;
   const {
     state: { selectedTeamNode },
     dispatch,
@@ -28,12 +21,7 @@ const TeamNode = memo(({ data, id }: NodeProps<TeamNodeData>) => {
       // Select this team node
       dispatch(
         selectTeamNode({
-          data: {
-            id,
-            name: label ?? "",
-            description: description ?? "",
-            people,
-          },
+          data,
           id,
         })
       );

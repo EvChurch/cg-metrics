@@ -34,7 +34,7 @@ function TeamNodeDrawer() {
       {/* Fixed Header */}
       <div className="flex items-center justify-between p-4 border-b border-gray-200 bg-white">
         <h2 className="text-lg font-semibold text-gray-900">
-          {selectedTeamNode?.data.name ?? "Team Details"}
+          {selectedTeamNode?.data.label ?? "Team Details"}
         </h2>
         <button
           type="button"
@@ -84,7 +84,7 @@ function TeamNodeDrawer() {
                 <PeopleList
                   people={filteredPeople}
                   surveys={[]}
-                  label={selectedTeamNode.data.name}
+                  label={selectedTeamNode.data.label}
                 />
               </div>
             </>

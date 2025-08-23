@@ -4,8 +4,8 @@ import type { Person } from "../hooks/usePeopleFlowData";
 // Types
 export interface TeamNodeData {
   id: string;
-  name: string;
-  description: string;
+  label?: string;
+  description?: string;
   people: Person[];
 }
 
