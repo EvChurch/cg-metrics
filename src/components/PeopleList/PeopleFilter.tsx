@@ -10,6 +10,8 @@ function PeopleFilter({ people, onFilterChange }: PeopleFilterProps) {
   const [searchTerm, setSearchTerm] = useState("");
   const [showOnlyCG, setShowOnlyCG] = useState(false);
   const [showOnlyServing, setShowOnlyServing] = useState(false);
+  const [excludeCG, setExcludeCG] = useState(false);
+  const [excludeServing, setExcludeServing] = useState(false);
 
   const filteredPeople = useMemo(() => {
     return people
@@ -20,15 +22,32 @@ function PeopleFilter({ people, onFilterChange }: PeopleFilterProps) {
           .includes(searchTerm.toLowerCase());
 
         // CG group filter
-        const matchesCG = !showOnlyCG || person.cgGroup;
+        let matchesCG = true;
+        if (showOnlyCG) {
+          matchesCG = !!person.cgGroup;
+        } else if (excludeCG) {
+          matchesCG = !person.cgGroup;
+        }
 
         // Serving filter
-        const matchesServing = !showOnlyServing || person.isServing;
+        let matchesServing = true;
+        if (showOnlyServing) {
+          matchesServing = !!person.isServing;
+        } else if (excludeServing) {
+          matchesServing = !person.isServing;
+        }
 
         return matchesSearch && matchesCG && matchesServing;
       })
       .sort((a, b) => a.fullName.localeCompare(b.fullName));
-  }, [people, searchTerm, showOnlyCG, showOnlyServing]);
+  }, [
+    people,
+    searchTerm,
+    showOnlyCG,
+    showOnlyServing,
+    excludeCG,
+    excludeServing,
+  ]);
 
   // Update parent component when filters change
   useMemo(() => {
@@ -83,11 +102,21 @@ function PeopleFilter({ people, onFilterChange }: PeopleFilterProps) {
           <button
             type="button"
             onClick={() => {
-              setShowOnlyCG(!showOnlyCG);
+              if (showOnlyCG) {
+                setShowOnlyCG(false);
+                setExcludeCG(true);
+              } else if (excludeCG) {
+                setExcludeCG(false);
+              } else {
+                setShowOnlyCG(true);
+                setExcludeCG(false);
+              }
             }}
             className={`text-xs px-3 py-1.5 font-semibold rounded-full transition-colors ${
               showOnlyCG
                 ? "bg-blue-500 text-white"
+                : excludeCG
+                ? "bg-red-500 text-white"
                 : "bg-gray-200 text-gray-700 hover:bg-gray-300"
             }`}
           >
@@ -100,11 +129,21 @@ function PeopleFilter({ people, onFilterChange }: PeopleFilterProps) {
           <button
             type="button"
             onClick={() => {
-              setShowOnlyServing(!showOnlyServing);
+              if (showOnlyServing) {
+                setShowOnlyServing(false);
+                setExcludeServing(true);
+              } else if (excludeServing) {
+                setExcludeServing(false);
+              } else {
+                setShowOnlyServing(true);
+                setExcludeServing(false);
+              }
             }}
             className={`text-xs px-3 py-1.5 font-semibold rounded-full transition-colors ${
               showOnlyServing
                 ? "bg-green-500 text-white"
+                : excludeServing
+                ? "bg-red-500 text-white"
                 : "bg-gray-200 text-gray-700 hover:bg-gray-400"
             }`}
           >
@@ -113,13 +152,19 @@ function PeopleFilter({ people, onFilterChange }: PeopleFilterProps) {
         )}
 
         {/* Clear Filters Button */}
-        {(searchTerm || showOnlyCG || showOnlyServing) && (
+        {(searchTerm ||
+          showOnlyCG ||
+          showOnlyServing ||
+          excludeCG ||
+          excludeServing) && (
           <button
             type="button"
             onClick={() => {
               setSearchTerm("");
               setShowOnlyCG(false);
               setShowOnlyServing(false);
+              setExcludeCG(false);
+              setExcludeServing(false);
             }}
             className="text-xs px-3 py-1.5 font-semibold rounded-full bg-gray-300 text-gray-700 hover:bg-gray-400 transition-colors"
           >

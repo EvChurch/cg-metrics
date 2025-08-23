@@ -8,24 +8,27 @@ interface PeopleListItemProps {
 
 function PeopleListItem({ person, survey, label }: PeopleListItemProps) {
   const personName = person.fullName || "Unknown";
-  const rockUrl = `https://rock.ev.church/Person/${person.id.toString()}`;
   const hasDoneSurvey = survey != null;
 
   return (
-    <a
-      className="flex items-center gap-2 py-2 px-4 hover:bg-gray-100 transition-colors cursor-pointer"
-      href={rockUrl}
-      target="_parent"
-      rel="noopener noreferrer"
-    >
-      <img
-        src={`https://rock.ev.church/GetAvatar.ashx?PersonId=${person.id.toString()}&Size=32`}
-        alt={personName}
-        className="w-6 h-6 rounded-full"
-      />
-      <div className="grow font-semibold text-wrap text-gray-700">
-        {personName}
-      </div>
+    <div className="flex items-center gap-2 py-2 px-4 hover:bg-gray-100 transition-colors">
+      {/* Person link - avatar and name */}
+      <a
+        className="flex items-center gap-2 grow cursor-pointer"
+        href={`https://rock.ev.church/Person/${person.id.toString()}`}
+        target="_parent"
+        rel="noopener noreferrer"
+      >
+        <img
+          src={`https://rock.ev.church/GetAvatar.ashx?PersonId=${person.id.toString()}&Size=32`}
+          alt={personName}
+          className="w-6 h-6 rounded-full"
+        />
+        <div className="font-semibold text-wrap text-gray-700">
+          {personName}
+        </div>
+      </a>
+
       {/* Only show chips for Attending or Growing statuses */}
       {(label === "Attending" || label === "Growing") && (
         <>
@@ -68,7 +71,7 @@ function PeopleListItem({ person, survey, label }: PeopleListItemProps) {
           )}
         </>
       )}
-    </a>
+    </div>
   );
 }
 
