@@ -4,23 +4,32 @@ import PeopleListItem from "./PeopleListItem";
 interface PeopleListProps {
   people: Person[];
   surveys: Survey[];
-  label: string;
+  label?: string;
+  hasActiveFilters?: boolean;
 }
 
-function PeopleList({ people, surveys, label }: PeopleListProps) {
+function PeopleList({
+  people,
+  surveys,
+  label,
+  hasActiveFilters,
+}: PeopleListProps) {
   if (people.length === 0) {
     return (
-      <div className="text-center">
-        <div className="text-xs text-gray-500">No people</div>
+      <div className="text-center mt-4">
+        <div className="text-xs text-gray-500 bg-gray-50 rounded-lg py-3 px-4 border border-gray-200">
+          {hasActiveFilters
+            ? "No people match your filters."
+            : `No people in this ${label ?? "category"}`}
+        </div>
       </div>
     );
   }
 
-  // Create a map of person ID to survey for quick lookup
   const surveyMap = new Map(surveys.map((survey) => [survey.personId, survey]));
 
   return (
-    <div className="grid grid-cols-2 gap-2 w-full">
+    <div className="flex flex-col divide-y-2 divide-gray-100 mx-[-16px]">
       {people.map((person) => (
         <PeopleListItem
           key={person.id}

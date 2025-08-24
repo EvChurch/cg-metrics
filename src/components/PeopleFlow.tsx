@@ -12,6 +12,9 @@ import StaticNode from "./StaticNode";
 import { usePeopleFlowData } from "../hooks/usePeopleFlowData";
 import { getInitialLayout } from "../utils/layoutUtils";
 import { createNodesFromStatuses } from "../utils/nodeUtils";
+import { usePathway } from "../hooks/usePathway";
+import { selectTeamNode } from "../contexts/pathwayActions";
+import type { SelectedTeamNode } from "../contexts/PathwayContext";
 
 // Define custom node types outside component to prevent re-renders
 const nodeTypes = {
@@ -27,6 +30,10 @@ const PeopleFlow = ({ campusFilter }: PeopleFlowProps) => {
   const { data, isLoading, error } = usePeopleFlowData(campusFilter);
   const [nodes, setNodes, onNodesChange] = useNodesState([]);
   const [edges, setEdges, onEdgesChange] = useEdgesState([]);
+  const {
+    state: { selectedTeamNode },
+    dispatch,
+  } = usePathway();
 
   // Transform data into React Flow nodes and edges
   const flowData = useMemo(() => {
@@ -43,8 +50,17 @@ const PeopleFlow = ({ campusFilter }: PeopleFlowProps) => {
 
   // Set nodes and edges when data changes
   useEffect(() => {
+    if (selectedTeamNode) {
+      const teamNode = flowData.nodes.find(
+        (node) => node.id == selectedTeamNode.id
+      );
+      if (teamNode) {
+        dispatch(selectTeamNode(teamNode as unknown as SelectedTeamNode));
+      }
+    }
     setNodes(flowData.nodes);
     setEdges(flowData.edges);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [flowData.nodes, flowData.edges, setNodes, setEdges]);
 
   if (isLoading) {
@@ -62,7 +78,11 @@ const PeopleFlow = ({ campusFilter }: PeopleFlowProps) => {
   }
 
   return (
-    <div className="w-full h-full relative">
+    <div
+      className={`h-full relative transition-all duration-300 ease-in-out ${
+        selectedTeamNode ? "w-[calc(100%-320px)]" : "w-full"
+      }`}
+    >
       <ReactFlow
         nodes={nodes}
         onNodesChange={onNodesChange}
