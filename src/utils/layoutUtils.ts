@@ -80,7 +80,7 @@ export const getCustomLayout = (nodes: Node<NodeData>[], edges: Edge[]) => {
     {
       id: "churchLife",
       type: "staticNode",
-      position: { x: 1650, y: 400 },
+      position: { x: 1600, y: 400 },
       draggable: false,
       data: {
         label: "Church Life",
@@ -91,7 +91,7 @@ export const getCustomLayout = (nodes: Node<NodeData>[], edges: Edge[]) => {
     {
       id: "growth",
       type: "staticNode",
-      position: { x: 2150, y: 400 },
+      position: { x: 2000, y: 400 },
       draggable: false,
       data: {
         label: "Growth",
@@ -102,7 +102,7 @@ export const getCustomLayout = (nodes: Node<NodeData>[], edges: Edge[]) => {
     {
       id: "serving",
       type: "staticNode",
-      position: { x: 2550, y: 400 },
+      position: { x: 2400, y: 400 },
       draggable: false,
       data: {
         label: "Serving",
@@ -113,7 +113,7 @@ export const getCustomLayout = (nodes: Node<NodeData>[], edges: Edge[]) => {
     {
       id: "sending",
       type: "staticNode",
-      position: { x: 2900, y: 400 },
+      position: { x: 2800, y: 400 },
       draggable: false,
       data: {
         label: "Sending",
@@ -207,7 +207,7 @@ export const getCustomLayout = (nodes: Node<NodeData>[], edges: Edge[]) => {
     {
       id: "custom-position-integration-churchLife",
       type: "staticNode",
-      position: { x: 1550, y: 400 },
+      position: { x: 1500, y: 400 },
       draggable: false,
       data: {
         label: "",
@@ -215,11 +215,11 @@ export const getCustomLayout = (nodes: Node<NodeData>[], edges: Edge[]) => {
         isStatic: true,
       },
     },
-    // Custom position node for the midpoint of Church Life to Growth edge
+    // Custom position node for the midpoint of Growth to Serving edge
     {
       id: "custom-position-churchLife-growth",
       type: "staticNode",
-      position: { x: 2000, y: 400 },
+      position: { x: 2300, y: 400 },
       draggable: false,
       data: {
         label: "",
@@ -501,7 +501,7 @@ export const getCustomLayout = (nodes: Node<NodeData>[], edges: Edge[]) => {
         color: "#e5e7eb",
       },
     },
-    // Edge from Growing to the edge between Church Life and Growth
+    // Edge from Growing to the midpoint of Growth to Serving edge
     {
       id: "edge-growing-to-churchLife-growth",
       source: "1229",
@@ -545,12 +545,12 @@ export const getCustomLayout = (nodes: Node<NodeData>[], edges: Edge[]) => {
       case "Attending":
         return {
           ...node,
-          position: { x: 1350, y: 600 },
+          position: { x: 1300, y: 600 },
         };
       case "Growing":
         return {
           ...node,
-          position: { x: 1850, y: 600 },
+          position: { x: 2110, y: 600 },
         };
       case "Investigating":
         return {

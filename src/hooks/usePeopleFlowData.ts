@@ -41,7 +41,7 @@ const messageEventDataSchema = z.object({
   data: z.unknown(),
 });
 
-export function usePeopleFlowData(campusFilter?: string | null): {
+export function usePeopleFlowData(campusFilter?: string[]): {
   data: PeopleFlowData;
   isLoading: boolean;
   error: Error | undefined;
@@ -54,14 +54,14 @@ export function usePeopleFlowData(campusFilter?: string | null): {
   });
   const filteredData = useMemo(() => {
     let filteredConnectionStatuses = connectionStatuses;
-    if (campusFilter != null) {
+    if (campusFilter && campusFilter.length > 0) {
       filteredConnectionStatuses = Object.fromEntries(
         Object.entries(connectionStatuses).map(([key, status]) => [
           key,
           {
             ...status,
-            people: status.people.filter(
-              (person) => person.primaryCampusId?.toString() === campusFilter
+            people: status.people.filter((person) =>
+              campusFilter.includes(person.primaryCampusId?.toString() || "")
             ),
           },
         ])

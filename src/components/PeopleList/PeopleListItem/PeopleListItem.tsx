@@ -16,7 +16,7 @@ function PeopleListItem({ person, survey, label }: PeopleListItemProps) {
       <a
         className="flex items-center gap-2 grow cursor-pointer"
         href={`https://rock.ev.church/Person/${person.id.toString()}`}
-        target="_parent"
+        target="_blank"
         rel="noopener noreferrer"
       >
         <img
@@ -47,7 +47,7 @@ function PeopleListItem({ person, survey, label }: PeopleListItemProps) {
           {hasDoneSurvey ? (
             <a
               href={`https://rock.ev.church/Workflow/${survey.formId}`}
-              target="_parent"
+              target="_blank"
               rel="noopener noreferrer"
               className={`text-xs p-1 font-semibold cursor-pointer transition-colors flex items-center justify-center w-6 rounded ${
                 person.isServing

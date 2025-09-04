@@ -7,7 +7,7 @@ import TeamNodeDrawer from "./components/TeamNodeDrawer.tsx";
 import { PathwayProvider } from "./contexts/PathwayProvider.tsx";
 
 function App() {
-  const [selectedCampusId, setSelectedCampusId] = useState<string | null>("3");
+  const [selectedCampusIds, setSelectedCampusIds] = useState<string[]>(["3"]);
 
   return (
     <PathwayProvider>
@@ -15,13 +15,13 @@ function App() {
         <div className="h-screen w-screen flex flex-col overflow-hidden">
           {/* Campus Filter Buttons */}
           <CampusFilterButtons
-            onCampusFilter={setSelectedCampusId}
-            selectedCampusId={selectedCampusId}
+            onCampusFilter={setSelectedCampusIds}
+            selectedCampusIds={selectedCampusIds}
           />
 
           {/* React Flow Container */}
           <div className="flex-1 w-full overflow-hidden">
-            <PeopleFlow campusFilter={selectedCampusId} />
+            <PeopleFlow campusFilter={selectedCampusIds} />
           </div>
 
           {/* Team Node Drawer */}

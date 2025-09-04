@@ -23,7 +23,7 @@ const nodeTypes = {
 };
 
 interface PeopleFlowProps {
-  campusFilter?: string | null;
+  campusFilter?: string[];
 }
 
 const PeopleFlow = ({ campusFilter }: PeopleFlowProps) => {
