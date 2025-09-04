@@ -61,7 +61,7 @@ export function usePeopleFlowData(campusFilter?: string[]): {
           {
             ...status,
             people: status.people.filter((person) =>
-              campusFilter.includes(person.primaryCampusId?.toString() || "")
+              campusFilter.includes(person.primaryCampusId?.toString() ?? "")
             ),
           },
         ])
