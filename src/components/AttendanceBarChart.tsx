@@ -117,7 +117,7 @@ const options: ChartOptions<'bar'> = {
 
 export default function AttendanceBarChart(): JSX.Element {
   return (
-    <div className="w-full rounded-2xl bg-white p-4 sm:p-6 shadow-[0_4px_20px_rgba(0,0,0,0.06)]">
+    <div className="w-full rounded-2xl bg-white">
       <div className="h-64 sm:h-80">
         <Bar data={data} options={options} />
       </div>
