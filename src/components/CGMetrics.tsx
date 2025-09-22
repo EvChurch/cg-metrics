@@ -39,7 +39,7 @@ const CGMetrics = ({ group }: CGMetricsProps) => {
           People Dropping Off
         </div>
         <div className="w-full overflow-x-auto">
-          <div className="w-full">
+          <div className="min-w-[700px]">
             <table className="w-full table-fixed">
               <thead>
                 <tr className="text-[#505050] text-center">
