@@ -1,4 +1,3 @@
-import React from 'react';
 import type { Group } from '../utils/cgMetricsTypes';
 import CGMetrics from './CGMetrics';
 

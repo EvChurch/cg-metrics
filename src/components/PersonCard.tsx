@@ -1,4 +1,3 @@
-import React from 'react';
 import type { PersonAttendance } from '../utils/cgMetricsTypes';
 
 interface PersonCardProps {
