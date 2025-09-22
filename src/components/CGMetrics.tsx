@@ -139,7 +139,7 @@ const CGMetrics = ({ group }: CGMetricsProps) => {
   const monthlyAttendance = () => {
     return (
       <>
-        <div className="text-3xl font-bold text-black my-6">
+        <div className="text-3xl font-bold text-black mt-14 mb-6">
           Average Monthly Attendance
         </div>
         <AttendanceBarChart />
@@ -150,7 +150,7 @@ const CGMetrics = ({ group }: CGMetricsProps) => {
   const individualAttendance = () => {
     return (
       <>
-        <div className="text-3xl font-bold text-black mb-4">
+        <div className="text-3xl font-bold text-black mt-14 mb-4">
           Individual Attendance
         </div>
         <div className="grid gap-5 [grid-template-columns:repeat(auto-fit,minmax(300px,1fr))]">
