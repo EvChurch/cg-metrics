@@ -1,12 +1,10 @@
-# EV Pathways
+# CG Metrics
 
-A React-based organization chart application built with TypeScript and Vite.
+A React-based connect group metrics page built with TypeScript and Vite.
 
 ## Features
 
-- Interactive organization chart visualization
 - Built with React 19, TypeScript, and Vite
-- Uses ReactFlow for chart rendering
 - Tailwind CSS for styling
 - ESLint configuration for code quality
 
@@ -21,17 +19,17 @@ This project uses the following technologies:
 
 1. Install dependencies:
    ```bash
-   npm install
+   pnpm install
    ```
 
 2. Start the development server:
    ```bash
-   npm run dev
+   pnpm dev
    ```
 
 3. Build for production:
    ```bash
-   npm run build
+   pnpm build
    ```
 
 ## GitHub Pages Deployment
@@ -46,4 +44,4 @@ The GitHub Actions workflow (`.github/workflows/deploy.yml`) will:
 - Build the production bundle
 - Deploy to GitHub Pages
 
-The app will be available at: `https://evchurch.github.io/pathways/`
+The app will be available at: `https://evchurch.github.io/cg-metrics/`
