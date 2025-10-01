@@ -63,7 +63,7 @@ export function useRockData(): {
     function onMessage(event: MessageEvent) {
       if (
         ![
-          "https://rock.ev.church",
+          "https://www.ev.church",
           "http://localhost:5173",
           "https://evchurch.github.io",
         ].includes(event.origin)
