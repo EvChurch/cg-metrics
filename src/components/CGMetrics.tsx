@@ -13,7 +13,7 @@ const CGMetrics = ({ group }: CGMetricsProps) => {
   );
 
   return (
-    <div className="px-10 py-20 border-[3px]">
+    <>
       <div className="text-5xl font-bold text-black mb-12">
         My Connect Group
       </div>
@@ -123,7 +123,7 @@ const CGMetrics = ({ group }: CGMetricsProps) => {
           <PersonCard key={member.person.id} personAttendance={member} />
         ))}
       </div>
-    </div>
+    </>
   );
 };
 
