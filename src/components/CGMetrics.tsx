@@ -1,6 +1,7 @@
-import PersonCard from "./PersonCard";
-import AttendanceBarChart from "./AttendanceBarChart";
 import type { Group } from "../hooks/useRockData";
+
+import AttendanceBarChart from "./AttendanceBarChart";
+import PersonCard from "./PersonCard";
 
 interface CGMetricsProps {
   group: Group;

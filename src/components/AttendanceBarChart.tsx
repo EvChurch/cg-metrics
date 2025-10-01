@@ -1,4 +1,3 @@
-import { type JSX } from 'react';
 import {
   Chart as ChartJS,
   BarElement,
@@ -8,6 +7,7 @@ import {
   Legend,
 } from 'chart.js';
 import type { Plugin, ChartData, ChartOptions, TooltipItem } from 'chart.js';
+import { type JSX } from 'react';
 import { Bar } from 'react-chartjs-2';
 
 ChartJS.register(BarElement, CategoryScale, LinearScale, Tooltip, Legend);
