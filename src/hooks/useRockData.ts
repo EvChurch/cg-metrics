@@ -65,17 +65,13 @@ export function useRockData(): {
         ![
           "https://rock.ev.church",
           "http://localhost:5173",
-          "https://ev-pathways.netlify.app",
           "https://evchurch.github.io",
         ].includes(event.origin)
       )
         return;
 
       const result = messageEventDataSchema.safeParse(event.data);
-      if (!result.success) {
-        console.error("Invalid message event", event);
-        return;
-      }
+      if (!result.success) return;
 
       try {
         const data = rockDataSchema.parse(result.data.data);
