@@ -1,13 +1,13 @@
-import { ReactFlowProvider } from 'reactflow';
-import './App.css';
-import { PathwayProvider } from './contexts/PathwayProvider.tsx';
-import testData from './utils/cg-metrics-test.json';
-import type { Group } from './utils/cgMetricsTypes.ts';
-import CoachMetrics from './components/CoachMetrics.tsx';
+import { ReactFlowProvider } from "reactflow";
+import "./App.css";
+import testData from "./utils/cg-metrics-test.json";
+import CoachMetrics from "./components/CoachMetrics.tsx";
+import { CgReportProvider } from "./contexts/CgReportProvider.tsx";
+import type { Group } from "./hooks/useCgMetricsData.ts";
 
 function App() {
   return (
-    <PathwayProvider>
+    <CgReportProvider>
       <ReactFlowProvider>
         <div className="h-screen w-screen flex flex-col overflow-hidden">
           {/* React Flow Container */}
@@ -16,7 +16,7 @@ function App() {
           </div>
         </div>
       </ReactFlowProvider>
-    </PathwayProvider>
+    </CgReportProvider>
   );
 }
 

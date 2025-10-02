@@ -1,12 +1,12 @@
-import type { Group, PersonDropOff } from '../utils/cgMetricsTypes';
-import PersonCard from './PersonCard';
-import AttendanceBarChart from './AttendanceBarChart';
+import PersonCard from "./PersonCard";
+import AttendanceBarChart from "./AttendanceBarChart";
+import type { Group, PersonDropOff } from "../hooks/useCgMetricsData";
 
-interface CGMetricsProps {
+interface CgMetricsProps {
   group: Group;
 }
 
-const CGMetrics = ({ group }: CGMetricsProps) => {
+const CgMetrics = ({ group }: CgMetricsProps) => {
   const countDropOff = (attendance: boolean[]) => {
     let count = 0;
     for (let i = attendance.length - 1; i >= 0; i--) {
@@ -174,4 +174,4 @@ const CGMetrics = ({ group }: CGMetricsProps) => {
   );
 };
 
-export default CGMetrics;
+export default CgMetrics;

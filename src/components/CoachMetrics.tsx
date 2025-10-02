@@ -1,5 +1,5 @@
-import type { Group } from '../utils/cgMetricsTypes';
-import CGMetrics from './CGMetrics';
+import type { Group } from "../hooks/useCgMetricsData";
+import CgMetrics from "./CgMetrics";
 
 interface CoachMetricsProps {
   groups: Group[];
@@ -9,7 +9,7 @@ const CoachMetrics = ({ groups }: CoachMetricsProps) => {
   return (
     <div className="overflow-y-auto max-h-[100vh] border-none">
       {groups.map((group, index) => (
-        <CGMetrics key={index} group={group} />
+        <CgMetrics key={index} group={group} />
       ))}
     </div>
   );

@@ -1,4 +1,4 @@
-import type { PersonAttendance } from '../utils/cgMetricsTypes';
+import type { PersonAttendance } from "../hooks/useCgMetricsData";
 
 interface PersonCardProps {
   personAttendance: PersonAttendance;
