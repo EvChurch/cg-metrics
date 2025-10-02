@@ -3,11 +3,11 @@ import type { Group } from "../hooks/useRockData";
 import AttendanceBarChart from "./AttendanceBarChart";
 import PersonCard from "./PersonCard";
 
-interface CgMetricsProps {
+interface CGMetricsProps {
   group: Group;
 }
 
-const CgMetrics = ({ group }: CgMetricsProps) => {
+const CGMetrics = ({ group }: CGMetricsProps) => {
   const getPeopleDroppingOffList = () => {
     return group.members.filter(
       (member) => member.cgDropOff >= 2 || member.churchDropOff >= 2
@@ -157,4 +157,4 @@ const CgMetrics = ({ group }: CgMetricsProps) => {
   );
 };
 
-export default CgMetrics;
+export default CGMetrics;
