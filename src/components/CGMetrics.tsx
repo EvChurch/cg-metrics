@@ -1,35 +1,17 @@
-import PersonCard from "./PersonCard";
+import type { Group } from "../hooks/useRockData";
+
 import AttendanceBarChart from "./AttendanceBarChart";
-import type { Group, PersonDropOff } from "../hooks/useCgMetricsData";
+import PersonCard from "./PersonCard";
 
 interface CgMetricsProps {
   group: Group;
 }
 
 const CgMetrics = ({ group }: CgMetricsProps) => {
-  const countDropOff = (attendance: boolean[]) => {
-    let count = 0;
-    for (let i = attendance.length - 1; i >= 0; i--) {
-      if (!attendance[i]) {
-        count++;
-      } else {
-        break;
-      }
-    }
-    return count;
-  };
-
-  const getPeopleDroppingOffList = (): PersonDropOff[] => {
-    return group.members
-      .map(
-        (member) =>
-          ({
-            person: member.person,
-            cgDropOff: countDropOff(member.cgAttendance),
-            churchDropOff: countDropOff(member.churchAttendance),
-          } as PersonDropOff)
-      )
-      .filter((member) => member.cgDropOff >= 2 || member.churchDropOff >= 2);
+  const getPeopleDroppingOffList = () => {
+    return group.members.filter(
+      (member) => member.cgDropOff >= 2 || member.churchDropOff >= 2
+    );
   };
 
   const peopleDroppingOff = () => {
@@ -56,10 +38,11 @@ const CgMetrics = ({ group }: CgMetricsProps) => {
               </thead>
 
               <tbody className="text-gray-900">
-                {getPeopleDroppingOffList().map((member: PersonDropOff) => (
+                {getPeopleDroppingOffList().map((member) => (
                   <tr
                     key={member.person.id}
-                    className="border-b border-gray-200">
+                    className="border-b border-gray-200"
+                  >
                     <td className="px-5 pl-8 py-4">
                       <div className="flex items-center gap-4">
                         <img

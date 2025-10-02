@@ -1,4 +1,4 @@
-import type { PersonAttendance } from "../hooks/useCgMetricsData";
+import type { PersonAttendance } from "../hooks/useRockData";
 
 interface PersonCardProps {
   personAttendance: PersonAttendance;
@@ -41,7 +41,8 @@ const PersonCard = ({ personAttendance }: PersonCardProps) => {
       <div className="mt-6 flex justify-center">
         <a
           href="#"
-          className="inline-flex items-center justify-center rounded-full border-2 border-[#E22A30] px-5 py-2 text-sm font-medium text-[#E22A30] hover:bg-red-50 hover:!text-[#E22A30] focus:outline-none focus:ring-2 focus:ring-red-500/50">
+          className="inline-flex items-center justify-center rounded-full border-2 border-[#E22A30] px-5 py-2 text-sm font-medium text-[#E22A30] hover:bg-red-50 hover:!text-[#E22A30] focus:outline-none focus:ring-2 focus:ring-red-500/50"
+        >
           View Stats
         </a>
       </div>

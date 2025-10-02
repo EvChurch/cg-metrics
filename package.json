@@ -1,8 +1,9 @@
 {
-  "name": "ev-pathways",
+  "name": "cg-metrics",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "license": "GPL-3.0-or-later",
   "packageManager": "pnpm@10.15.0",
   "scripts": {
     "dev": "vite",
@@ -11,23 +12,22 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@iframe-resizer/child": "^5.5.7",
     "chart.js": "^4.5.0",
-    "dagre": "^0.8.5",
     "react": "^19.1.0",
     "react-chartjs-2": "^5.3.0",
     "react-dom": "^19.1.0",
-    "reactflow": "^11.11.4",
     "zod": "^4.0.17"
   },
   "devDependencies": {
     "@eslint/js": "^9.29.0",
-    "@types/dagre": "^0.7.52",
     "@types/node": "^24.3.0",
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
     "@vitejs/plugin-react": "^4.5.2",
     "autoprefixer": "^10.4.21",
     "eslint": "^9.29.0",
+    "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-react-dom": "^1.52.6",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.20",

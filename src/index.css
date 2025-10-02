@@ -39,7 +39,7 @@
 /* Ensure full height and width for React Flow */
 html,
 body,
-#ev-pathways-app {
+#cg-metrics-app {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -47,7 +47,7 @@ body,
 }
 
 /* Ensure no padding on the main container */
-#ev-pathways-app > div {
+#cg-metrics-app > div {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -55,7 +55,7 @@ body,
 }
 
 /* CSS isolation for embedded app to prevent conflicts with Rock RMS */
-#ev-pathways-app {
+#cg-metrics-app {
   /* Reset any inherited styles that might conflict */
   all: initial;
   font-family: "Proxima Nova", system-ui, -apple-system, BlinkMacSystemFont,
@@ -78,7 +78,7 @@ body,
 }
 
 /* Ensure all child elements inherit the font */
-#ev-pathways-app * {
+#cg-metrics-app * {
   font-family: inherit;
   box-sizing: border-box;
 }
@@ -109,8 +109,6 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
 }
 
 h1 {
@@ -137,11 +135,6 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-/* React Flow subflow node styling */
-.react-flow__node.react-flow__node-positionNode.nopan.selectable.parent {
-  border: 2px solid #3b82f6; /* Blue solid border for subflow containers */
-  border-radius: 8px;
-}
 
 /* Override Rock's container-fluid padding for our app */
 .container-fluid {

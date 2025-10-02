@@ -1,17 +1,16 @@
-import type { Group } from "../hooks/useCgMetricsData";
-import CgMetrics from "./CgMetrics";
+import { useRockData } from "../hooks/useRockData";
 
-interface CoachMetricsProps {
-  groups: Group[];
-}
+import CGMetrics from "./CGMetrics";
 
-const CoachMetrics = ({ groups }: CoachMetricsProps) => {
+const CoachMetrics = () => {
+  const { data } = useRockData();
+
   return (
-    <div className="overflow-y-auto max-h-[100vh] border-none">
-      {groups.map((group, index) => (
-        <CgMetrics key={index} group={group} />
+    <>
+      {data.map((group, index) => (
+        <CGMetrics key={index} group={group} />
       ))}
-    </div>
+    </>
   );
 };
 

@@ -4,22 +4,25 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EV Pathways - People pathways</title>
+    <title>Ev Church - Connect Group Metrics</title>
   </head>
   <body style="margin: 0; padding: 0">
-    <iframe
-      id="ev-pathways-iframe"
-      src="."
-      style="width: 100svw; height: 100svh"
-      frameborder="0"
-    ></iframe>
+    <style>
+      iframe {
+        width: 100%;
+        height: 100svh;
+      }
+    </style>
+    <iframe id="cg-metrics-iframe" src="." frameborder="0"></iframe>
+    <script src="https://cdn.jsdelivr.net/npm/@iframe-resizer/parent@5.5.7"></script>
     <script>
+      iframeResize({ license: "GPLv3" }, "#cg-metrics-iframe");
       fetch("./test-data.json")
         .then((response) => response.json())
         .then((data) => {
-          const iframe = document.getElementById("ev-pathways-iframe");
+          const iframe = document.getElementById("cg-metrics-iframe");
           iframe.onload = () =>
-            iframe.contentWindow.postMessage({ target: "ev-pathways", data });
+            iframe.contentWindow.postMessage({ target: "cg-metrics", data });
         });
     </script>
   </body>
