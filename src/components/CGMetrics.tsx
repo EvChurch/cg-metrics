@@ -1,4 +1,4 @@
-import type { Group } from "../hooks/useRockData";
+import type { Group } from "../utils/types";
 
 import AttendanceBarChart from "./AttendanceBarChart";
 import PersonCard from "./PersonCard";
@@ -8,9 +8,11 @@ interface CGMetricsProps {
 }
 
 const CGMetrics = ({ group }: CGMetricsProps) => {
-  const peopleDroppingOff = group.members.filter(
-    (member) => member.cgDropOff >= 2 || member.churchDropOff >= 2
-  );
+  const peopleDroppingOff = group.members
+    .filter((member) => member.cgDropOff >= 2 || member.churchDropOff >= 2)
+    .sort(
+      (a, b) => b.cgDropOff + b.churchDropOff - (a.cgDropOff + a.churchDropOff)
+    );
 
   return (
     <>
@@ -51,7 +53,7 @@ const CGMetrics = ({ group }: CGMetricsProps) => {
                           {member.person.name}
                         </div>
                         <div className="text-gray-500 text-sm">
-                          {member.person.mobile}
+                          {member.person.phoneNumber}
                         </div>
                       </div>
                     </div>
@@ -64,49 +66,6 @@ const CGMetrics = ({ group }: CGMetricsProps) => {
                   </td>
                 </tr>
               ))}
-
-              <tr className="border-b border-gray-200">
-                <td className="px-5 py-4">
-                  <div className="flex items-center gap-4">
-                    <img
-                      src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=64&h=64&fit=crop"
-                      alt="Isabella Garcia"
-                      className="h-10 w-10 rounded-full object-cover"
-                    />
-                    <div>
-                      <div className="font-semibold">Isabella Garcia</div>
-                      <div className="text-gray-500 text-sm">0223882912</div>
-                    </div>
-                  </div>
-                </td>
-                <td className="px-5 py-4 text-center">
-                  <span className="font-bold">3</span>
-                </td>
-                <td className="px-5 py-4 text-center">
-                  <span className="font-bold">2</span>
-                </td>
-              </tr>
-              <tr className="">
-                <td className="px-5 py-4">
-                  <div className="flex items-center gap-4">
-                    <img
-                      src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&w=64&h=64&fit=crop"
-                      alt="Ethan Brooks"
-                      className="h-10 w-10 rounded-full object-cover"
-                    />
-                    <div>
-                      <div className="font-semibold">Ethan Brooks</div>
-                      <div className="text-gray-500 text-sm">0271021992</div>
-                    </div>
-                  </div>
-                </td>
-                <td className="px-5 py-4 text-center">
-                  <span className="font-bold">1</span>
-                </td>
-                <td className="px-5 py-4 text-center">
-                  <span className="font-bold">2</span>
-                </td>
-              </tr>
             </tbody>
           </table>
         </div>
@@ -114,7 +73,7 @@ const CGMetrics = ({ group }: CGMetricsProps) => {
       <div className="text-3xl font-bold text-black mt-14 mb-6">
         Average Monthly Attendance
       </div>
-      <AttendanceBarChart />
+      <AttendanceBarChart group={group} />
       <div className="text-3xl font-bold text-black mt-14 mb-4">
         Individual Attendance
       </div>

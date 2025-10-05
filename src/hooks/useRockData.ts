@@ -1,49 +1,73 @@
 import { useEffect, useState } from "react";
 import { z } from "zod";
+import testData from "../../public/test-data.json";
+import type { Group } from "../utils/types";
+import { countDropOff } from "../utils/dropOff";
 
-const countDropOff = (attendance: boolean[]) => {
-  let count = 0;
-  for (let i = attendance.length - 1; i >= 0; i--) {
-    if (!attendance[i]) {
-      count++;
-    } else {
-      break;
-    }
-  }
-  return count;
+const buildAttendanceData = (
+  attendance: z.infer<typeof attendanceSchema>[],
+  personId: number
+) => {
+  return attendance
+    .filter((att) => att.PersonId === personId)
+    .map((att) => ({
+      didAttend: att.DidAttend,
+      date: new Date(att.Date),
+    }))
+    .sort((a, b) => a.date.getTime() - b.date.getTime());
+};
+
+const buildGroupData = (rockGroup: z.infer<typeof groupSchema>): Group => {
+  return {
+    members: rockGroup.members.map((member) => {
+      const cgAttendance = buildAttendanceData(
+        rockGroup.cgAttendance,
+        member.Id
+      );
+      const churchAttendance = buildAttendanceData(
+        rockGroup.churchAttendance,
+        member.Id
+      );
+      return {
+        person: {
+          id: member.Id,
+          name: member.Name,
+          profile: member.Profile,
+          phoneNumber: member.PhoneNumber,
+          isLeader: Boolean(member.IsLeader),
+        },
+        cgAttendance,
+        churchAttendance,
+        cgDropOff: countDropOff(cgAttendance),
+        churchDropOff: countDropOff(churchAttendance),
+      };
+    }),
+  };
 };
 
 const personSchema = z.object({
-  id: z.number(),
-  name: z.string(),
-  profile: z.string(),
-  mobile: z.string(),
+  Id: z.number(),
+  Name: z.string(),
+  Profile: z.string(),
+  PhoneNumber: z.string(),
+  IsLeader: z.number(),
 });
 
-const personAttendanceSchema = z
-  .object({
-    person: personSchema,
-    cgAttendance: z.array(z.boolean()),
-    churchAttendance: z.array(z.boolean()),
-  })
-  .transform((data) => ({
-    ...data,
-    cgDropOff: countDropOff(data.cgAttendance),
-    churchDropOff: countDropOff(data.churchAttendance),
-  }));
+const attendanceSchema = z.object({
+  PersonId: z.number(),
+  DidAttend: z.boolean(),
+  Date: z.string(),
+});
 
 const groupSchema = z.object({
-  leaders: z.array(personSchema).optional(),
-  members: z.array(personAttendanceSchema),
+  members: z.array(personSchema),
+  cgAttendance: z.array(attendanceSchema),
+  churchAttendance: z.array(attendanceSchema),
 });
 
 const rockDataSchema = z.array(groupSchema);
 
 export type Person = z.infer<typeof personSchema>;
-export type PersonAttendance = z.infer<typeof personAttendanceSchema>;
-export type Group = z.infer<typeof groupSchema>;
-
-type RockData = z.infer<typeof rockDataSchema>;
 
 const messageEventDataSchema = z.object({
   target: z.literal("cg-metrics"),
@@ -51,15 +75,20 @@ const messageEventDataSchema = z.object({
 });
 
 export function useRockData(): {
-  data: RockData;
+  data: Group[];
   isLoading: boolean;
   error: Error | undefined;
 } {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<Error>();
-  const [data, setData] = useState<RockData>([]);
+  const [data, setData] = useState<Group[]>([]);
 
   useEffect(() => {
+    console.log(testData);
+    const data = rockDataSchema.parse(testData);
+    setData(data.map((group) => buildGroupData(group)));
+    console.log(data.map((group) => buildGroupData(group)));
+    setIsLoading(false);
     function onMessage(event: MessageEvent) {
       if (
         ![
@@ -75,7 +104,7 @@ export function useRockData(): {
 
       try {
         const data = rockDataSchema.parse(result.data.data);
-        setData(data);
+        setData(data.map((group) => buildGroupData(group)));
         setIsLoading(false);
       } catch (error) {
         if (error instanceof Error) {
