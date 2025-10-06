@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { z } from "zod";
-import testData from "../../public/test-data.json";
+// import testData from "../../public/test-data.json";
 import type { Group } from "../utils/types";
 import { countDropOff } from "../utils/dropOff";
 
