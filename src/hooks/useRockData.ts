@@ -84,11 +84,11 @@ export function useRockData(): {
   const [data, setData] = useState<Group[]>([]);
 
   useEffect(() => {
-    console.log(testData);
-    const data = rockDataSchema.parse(testData);
-    setData(data.map((group) => buildGroupData(group)));
-    console.log(data.map((group) => buildGroupData(group)));
-    setIsLoading(false);
+    // console.log(testData);
+    // const data = rockDataSchema.parse(testData);
+    // setData(data.map((group) => buildGroupData(group)));
+    // console.log(data.map((group) => buildGroupData(group)));
+    // setIsLoading(false);
     function onMessage(event: MessageEvent) {
       if (
         ![

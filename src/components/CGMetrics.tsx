@@ -70,10 +70,20 @@ const CGMetrics = ({ group }: CGMetricsProps) => {
           </table>
         </div>
       </div>
-      <div className="text-3xl font-bold text-black mt-14 mb-6">
-        Average Monthly Attendance
+      <div className="flex items-center justify-between gap-10">
+        <div className="flex-1">
+          <div className="text-3xl font-bold text-black mt-14 mb-6">
+            Average Monthly Attendance
+          </div>
+          <AttendanceBarChart group={group} />
+        </div>
+        {/* <div>
+          <div className="text-3xl font-bold text-black mt-14 mb-6">
+            Average Attendance This Year
+          </div>
+        </div> */}
       </div>
-      <AttendanceBarChart group={group} />
+
       <div className="text-3xl font-bold text-black mt-14 mb-4">
         Individual Attendance
       </div>
