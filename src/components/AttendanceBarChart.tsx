@@ -59,23 +59,16 @@ export default function AttendanceBarChart({
 
   ChartJS.register(ValueInsideBarPlugin);
 
-  const labels = [
-    "Mar",
-    "Apr",
-    "May",
-    "Jun",
-    "Jul",
-    "Aug",
-    "Sept",
-    "Oct",
-    "Nov",
-    "Dec",
-  ];
+  const now = new Date();
+  const lastMonth = now.getMonth();
+  const labels = Array.from({ length: lastMonth }, (_, i) =>
+    new Date(0, i).toLocaleString("default", { month: "short" })
+  );
 
   const calculateMonthlyAverageAttendance = (members: PersonAttendance[]) => {
     const now = new Date();
     const lastMonth = now.getMonth() - 1;
-    const months = Array.from({ length: lastMonth }, (_, i) => i);
+    const months = Array.from({ length: lastMonth + 1 }, (_, i) => i);
     return months.map((month) => {
       const maxMonthAttendance =
         members[0].cgAttendance.filter((att) => att.date.getMonth() === month)
