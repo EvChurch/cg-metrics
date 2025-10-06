@@ -105,6 +105,7 @@ export function useRockData(): {
       if (!result.success) return;
 
       try {
+        console.log("result: ", result.data.data);
         const data = rockDataSchema.parse(result.data.data);
         setData(data.map((group) => buildGroupData(group)));
         setIsLoading(false);
