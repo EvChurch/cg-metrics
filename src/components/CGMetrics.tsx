@@ -44,8 +44,8 @@ const CGMetrics = ({ group }: CGMetricsProps) => {
                   <td className="px-5 pl-8 py-4">
                     <div className="flex items-center gap-4">
                       <img
-                        src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?q=80&w=64&h=64&fit=crop"
-                        alt="Simeon Reed"
+                        src={member.person.profile}
+                        alt={member.person.name}
                         className="h-10 w-10 rounded-full object-cover"
                       />
                       <div>
