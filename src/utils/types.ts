@@ -1,24 +1,24 @@
-export type Person = {
+export interface Person {
   id: number;
   name: string;
   profile: string;
   phoneNumber: string;
   isLeader: boolean;
-};
+}
 
-export type AttendanceEntry = {
+export interface AttendanceEntry {
   didAttend: boolean;
   date: Date;
-};
+}
 
-export type PersonAttendance = {
+export interface PersonAttendance {
   person: Person;
   cgAttendance: AttendanceEntry[];
   churchAttendance: AttendanceEntry[];
   cgDropOff: number;
   churchDropOff: number;
-};
+}
 
-export type Group = {
+export interface Group {
   members: PersonAttendance[];
-};
+}

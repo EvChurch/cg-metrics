@@ -1,7 +1,9 @@
 import { useMemo, useState } from "react";
 import type { ReactNode } from "react";
-import { CgReportContext } from "./CgReportContext";
+
 import type { Group } from "../utils/types";
+
+import { CgReportContext } from "./CgReportContext";
 
 interface CgReportProviderProps {
   children: ReactNode;

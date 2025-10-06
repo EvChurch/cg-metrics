@@ -1,4 +1,5 @@
 import { createContext } from "react";
+
 import type { Group } from "../utils/types";
 
 interface CgReportContextType {

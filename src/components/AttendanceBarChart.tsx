@@ -9,6 +9,7 @@ import {
 import type { Plugin, ChartData, ChartOptions, TooltipItem } from "chart.js";
 import { type JSX } from "react";
 import { Bar } from "react-chartjs-2";
+
 import type { Group, PersonAttendance } from "../utils/types";
 
 interface AttendanceBarChartProps {
@@ -79,7 +80,7 @@ export default function AttendanceBarChart({
       const maxMonthAttendance =
         members[0].cgAttendance.filter((att) => att.date.getMonth() === month)
           .length * members.length;
-      const monthAttendance = !!maxMonthAttendance
+      const monthAttendance = maxMonthAttendance
         ? (members
             .map((member) =>
               member.cgAttendance.filter(
