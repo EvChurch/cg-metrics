@@ -2,7 +2,7 @@ export interface Person {
   id: number;
   name: string;
   profile: string;
-  phoneNumber: string;
+  phoneNumber?: string;
   isLeader: boolean;
 }
 

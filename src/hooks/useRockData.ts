@@ -51,7 +51,7 @@ const personSchema = z.object({
   Id: z.number(),
   Name: z.string(),
   Profile: z.string(),
-  PhoneNumber: z.string(),
+  PhoneNumber: z.string().optional(),
   IsLeader: z.number(),
 });
 
