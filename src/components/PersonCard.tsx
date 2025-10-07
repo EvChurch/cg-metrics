@@ -66,18 +66,18 @@ const PersonCard = ({ personAttendance }: PersonCardProps) => {
 
         <div className="text-gray-600 text-right mr-6">CG</div>
         <div className="text-center text-2xl font-semibold text-gray-900">
-          {`${Math.round(cgMonth)}%`}
+          {`${String(Math.round(cgMonth))}%`}
         </div>
         <div className="text-center text-2xl font-semibold text-gray-900">
-          {`${Math.round(cgYear)}%`}
+          {`${String(Math.round(cgYear))}%`}
         </div>
 
         <div className="text-gray-600 text-right mr-6">Church</div>
         <div className="text-center text-2xl font-semibold text-gray-900">
-          {`${Math.round(churchMonth)}%`}
+          {`${String(Math.round(churchMonth))}%`}
         </div>
         <div className="text-center text-2xl font-semibold text-gray-900">
-          {`${Math.round(churchYear)}%`}
+          {`${String(Math.round(churchYear))}%`}
         </div>
       </div>
       <div className="mt-6 flex justify-center">
