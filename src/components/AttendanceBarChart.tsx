@@ -66,13 +66,17 @@ export default function AttendanceBarChart({
   );
 
   const calculateMonthlyAverageAttendance = (members: PersonAttendance[]) => {
+    const maxAttendance = members.reduce((max, member) =>
+      member.cgAttendance.length > max.cgAttendance.length ? member : max
+    );
     const now = new Date();
     const lastMonth = now.getMonth() - 1;
     const months = Array.from({ length: lastMonth + 1 }, (_, i) => i);
     return months.map((month) => {
       const maxMonthAttendance =
-        members[0].cgAttendance.filter((att) => att.date.getMonth() === month)
-          .length * members.length;
+        maxAttendance.cgAttendance.filter(
+          (att) => att.date.getMonth() === month
+        ).length * members.length;
       const monthAttendance = maxMonthAttendance
         ? (members
             .map((member) =>
