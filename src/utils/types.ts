@@ -3,6 +3,7 @@ export interface Person {
   name: string;
   profile: string;
   phoneNumber?: string | null;
+  birthDate?: string | null;
   isLeader: boolean;
 }
 

@@ -6,10 +6,11 @@ import {
   Tooltip,
   Legend,
 } from "chart.js";
-import type { Plugin, ChartData, ChartOptions, TooltipItem } from "chart.js";
+import type { Plugin } from "chart.js";
 import { type JSX } from "react";
 import { Bar } from "react-chartjs-2";
 
+import { barChartData, barChartOptions } from "../utils/barChart";
 import type { Group, PersonAttendance } from "../utils/types";
 
 interface AttendanceBarChartProps {
@@ -94,57 +95,8 @@ export default function AttendanceBarChart({
 
   const monthlyAverageData = calculateMonthlyAverageAttendance(group.members);
 
-  const data: ChartData<"bar"> = {
-    labels,
-    datasets: [
-      {
-        label: "Attendance",
-        data: monthlyAverageData,
-        backgroundColor: "#E3342F", // red
-        borderRadius: 16,
-        borderSkipped: false,
-        categoryPercentage: 0.8,
-        barPercentage: 1,
-      },
-    ],
-  };
-
-  const options: ChartOptions<"bar"> = {
-    responsive: true,
-    maintainAspectRatio: false,
-    plugins: {
-      legend: { display: false },
-      tooltip: {
-        callbacks: {
-          label: (ctx: TooltipItem<"bar">): string =>
-            `${String(ctx.parsed.y)}%`,
-        },
-        displayColors: false,
-      },
-    },
-    scales: {
-      x: {
-        grid: { display: false },
-        ticks: {
-          color: "#6B7280", // gray-500
-          font: { weight: "bold" },
-        },
-      },
-      y: {
-        beginAtZero: true,
-        max: 100,
-        ticks: {
-          stepSize: 25,
-          callback: (value: string | number): string => `${String(value)}%`,
-          color: "#6B7280",
-        },
-        grid: {
-          color: "#E5E7EB", // gray-200
-          // drawBorder: false,
-        },
-      },
-    },
-  };
+  const data = barChartData(labels, monthlyAverageData);
+  const options = barChartOptions();
 
   return (
     <div className="w-full rounded-2xl bg-white">

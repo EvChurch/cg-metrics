@@ -1,7 +1,7 @@
 import { useMemo, useState } from "react";
 import type { ReactNode } from "react";
 
-import type { Group } from "../utils/types";
+import type { Group, PersonAttendance } from "../utils/types";
 
 import { CgReportContext } from "./CgReportContext";
 
@@ -11,11 +11,13 @@ interface CgReportProviderProps {
 
 export function CgReportProvider({ children }: CgReportProviderProps) {
   const [groups, setGroups] = useState<Group[]>([]);
-  const [selectedPersonId, setSelectedPersonId] = useState<number | null>(null);
+  const [selectedPerson, setSelectedPerson] = useState<PersonAttendance | null>(
+    null
+  );
 
   const contextValue = useMemo(
-    () => ({ groups, setGroups, selectedPersonId, setSelectedPersonId }),
-    [groups, setGroups, selectedPersonId, setSelectedPersonId]
+    () => ({ groups, setGroups, selectedPerson, setSelectedPerson }),
+    [groups, setGroups, selectedPerson, setSelectedPerson]
   );
 
   return <CgReportContext value={contextValue}>{children}</CgReportContext>;

@@ -1,0 +1,251 @@
+import { Icon } from "@iconify/react";
+import type { ActiveElement, ChartEvent } from "chart.js";
+import { useState } from "react";
+import { Bar } from "react-chartjs-2";
+
+import { useCgReport } from "../hooks/useCgReport";
+import {
+  getCgMonthAverage,
+  getCgYearAverage,
+  getChurchMonthAverage,
+  getChurchYearAverage,
+} from "../utils/attendanceStats";
+import { barChartData, barChartOptions } from "../utils/barChart";
+import type { AttendanceEntry } from "../utils/types";
+
+const PersonPanel = () => {
+  const { selectedPerson, setSelectedPerson } = useCgReport();
+
+  const now = new Date();
+  const lastMonth = now.getMonth() === 0 ? 0 : now.getMonth() - 1;
+  const currentYear = now.getFullYear();
+  const [selectedMonthCg, setSelectedMonthCg] = useState<number>(lastMonth);
+  const [selectedMonthChurch, setSelectedMonthChurch] =
+    useState<number>(lastMonth);
+
+  if (selectedPerson) {
+    const summaryMetrics = () => {
+      const cgMonthAverage = getCgMonthAverage(
+        selectedPerson.cgAttendance,
+        lastMonth,
+        currentYear
+      );
+      const cgYearAverage = getCgYearAverage(selectedPerson.cgAttendance);
+
+      const churchMonthAverage = getChurchMonthAverage(
+        selectedPerson.churchAttendance,
+        lastMonth,
+        currentYear
+      );
+
+      const churchYearAverage = getChurchYearAverage(
+        selectedPerson.churchAttendance
+      );
+
+      return (
+        <div className="mt-10 mb-16 grid grid-cols-[auto_1fr_1fr] items-center gap-y-6 text-2xl">
+          <div></div>
+          <div className="text-center text-gray-500">Last month</div>
+          <div className="text-center text-gray-500">This year</div>
+
+          <div className="text-gray-600 text-left mr-6">CG</div>
+          <div className="text-center text-4xl font-semibold text-zinc-900">
+            {`${String(Math.round(cgMonthAverage))}%`}
+          </div>
+          <div className="text-center text-4xl font-semibold text-zinc-900">
+            {`${String(Math.round(cgYearAverage))}%`}
+          </div>
+
+          <div className="text-gray-600 text-left mr-6">Church</div>
+          <div className="text-center text-4xl font-semibold text-zinc-900">
+            {`${String(Math.round(churchMonthAverage))}%`}
+          </div>
+          <div className="text-center text-4xl font-semibold text-zinc-900">
+            {`${String(Math.round(churchYearAverage))}%`}
+          </div>
+        </div>
+      );
+    };
+
+    const monthlyAttendanceChart = (
+      attendance: AttendanceEntry[],
+      cg: boolean
+    ) => {
+      const now = new Date();
+      const lastMonth = now.getMonth();
+      const labels = Array.from({ length: lastMonth }, (_, i) =>
+        new Date(0, i).toLocaleString("default", { month: "short" })
+      );
+      const monthlyAverageData = Array.from(
+        { length: lastMonth },
+        (_, i) => i
+      ).map((month) => getCgMonthAverage(attendance, month, currentYear));
+      const chartData = barChartData(
+        labels,
+        monthlyAverageData,
+        cg ? selectedMonthCg : selectedMonthChurch
+      );
+
+      const onClick = (_event: ChartEvent, activeElements: ActiveElement[]) => {
+        if (activeElements.length > 0) {
+          const activeElement = activeElements[0];
+          const dataIndex = activeElement.index;
+          if (cg) {
+            setSelectedMonthCg(dataIndex);
+          } else {
+            setSelectedMonthChurch(dataIndex);
+          }
+        }
+      };
+
+      const chartOptions = barChartOptions(onClick);
+      return (
+        <div className="h-64 sm:h-80 mb-8">
+          <Bar data={chartData} options={chartOptions} />
+        </div>
+      );
+    };
+
+    const getAttendanceGridStyle = (status: boolean | null) => {
+      return status === null
+        ? "border-[5px] border-[#D9D9D9]"
+        : status
+        ? "bg-[#CEF0C7]"
+        : "border-[5px] border-[#F4C6CF]";
+    };
+
+    const getAttendanceGridIcon = (status: boolean | null) => {
+      return status === null ? (
+        <Icon icon="fa7-solid:minus" color="#898E9B" height="30" />
+      ) : status ? (
+        <Icon icon="fa7-solid:check-circle" color="#6EC45D" height="26" />
+      ) : (
+        <Icon icon="fa7-solid:xmark" color="#B03E60" height="26" />
+      );
+    };
+
+    const getAttendanceGrid = (status: boolean | null) => {
+      return (
+        <div
+          className={`w-full h-[65px] rounded-[10px] flex items-center justify-center ${getAttendanceGridStyle(
+            status
+          )}`}>
+          {getAttendanceGridIcon(status)}
+        </div>
+      );
+    };
+
+    const weeklyAttendanceGrid = (
+      attendance: AttendanceEntry[],
+      cg: boolean
+    ) => {
+      const selectedMonth = cg ? selectedMonthCg : selectedMonthChurch;
+      const cgMonthAverage = getCgMonthAverage(
+        attendance,
+        selectedMonth,
+        currentYear
+      );
+      const dayOfWeek = new Date(attendance[0].date).getDay();
+      const numDaysInMonth = new Date(
+        currentYear,
+        selectedMonth + 1,
+        0
+      ).getDate();
+
+      const daysInMonth = Array.from(
+        { length: numDaysInMonth },
+        (_, i) => new Date(currentYear, selectedMonth, i + 1)
+      ).filter((d) => d.getDay() === dayOfWeek);
+
+      return (
+        <div>
+          <div className="text-3xl font-semibold text-zinc-900 mb-4">
+            {`${new Date(0, selectedMonth).toLocaleString("default", {
+              month: "long",
+            })} Attendance (${String(Math.round(cgMonthAverage))}%)`}
+          </div>
+          <div className="flex gap-8 w-full">
+            {daysInMonth.map((date, index) => (
+              <div key={index} className="flex-1 flex flex-col items-center">
+                {getAttendanceGrid(
+                  attendance.find((a) => a.date.getTime() === date.getTime())
+                    ?.didAttend ?? null
+                )}
+                <div>
+                  {date.toLocaleDateString("en-GB", {
+                    day: "numeric",
+                    month: "short",
+                  })}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      );
+    };
+
+    return (
+      <div
+        className="fixed inset-0 p-6 bg-black/35"
+        onClick={() => {
+          setSelectedPerson(null);
+        }}>
+        <div
+          onClick={(e) => {
+            e.stopPropagation();
+          }}
+          className="ml-auto h-full max-w-[820px] rounded-3xl bg-white shadow-xl ring-1 ring-black/5">
+          <div className="w-full h-[200px] bg-[#F2F2F2] rounded-t-3xl"></div>
+          <div className="pr-16 pb-12 pl-16 flex flex-col transform -translate-y-[128px] h-[calc(100%-72px)]">
+            <img
+              className="relative h-64 w-64 shrink-0 rounded-full border-[8px] border-white mb-8"
+              src={selectedPerson.person.profile}
+              alt={selectedPerson.person.name}
+            />
+            <h1 className="text-6xl font-semibold leading-tight tracking-tight text-zinc-900">
+              {selectedPerson.person.name}
+            </h1>
+            <div className="mt-2 flex flex-wrap items-center gap-5 text-sm text-zinc-500">
+              {selectedPerson.person.phoneNumber && (
+                <div className="flex items-center gap-2">
+                  <Icon icon="fa7-solid:phone" color="#898E9B" />
+                  {selectedPerson.person.phoneNumber}
+                </div>
+              )}
+              {selectedPerson.person.birthDate && (
+                <div className="flex items-center gap-2 text-2xl font-medium text-[#898E9B]">
+                  <Icon
+                    className="mb-[6px]"
+                    icon="fa7-solid:birthday-cake"
+                    color="#898E9B"
+                  />
+                  {new Date(
+                    selectedPerson.person.birthDate
+                  ).toLocaleDateString()}
+                </div>
+              )}
+            </div>
+            <div className="overflow-auto [&::-webkit-scrollbar-track]:bg-transparent">
+              {summaryMetrics()}
+
+              <h1 className="text-4xl font-semibold leading-tight tracking-tight text-zinc-900 mb-6">
+                Monthly CG Attendance
+              </h1>
+              {monthlyAttendanceChart(selectedPerson.cgAttendance, true)}
+              {weeklyAttendanceGrid(selectedPerson.cgAttendance, true)}
+              <h1 className="text-4xl font-semibold leading-tight tracking-tight text-zinc-900 mt-16 mb-6">
+                Monthly Church Attendance
+              </h1>
+              {monthlyAttendanceChart(selectedPerson.churchAttendance, false)}
+              {weeklyAttendanceGrid(selectedPerson.churchAttendance, false)}
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  } else {
+    return <></>;
+  }
+};
+
+export default PersonPanel;
