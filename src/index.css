@@ -39,6 +39,7 @@
 /* Ensure full height and width for React Flow */
 html,
 body,
+#root,
 #cg-metrics-app {
   margin: 0;
   padding: 0;
@@ -134,7 +135,6 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
-
 
 /* Override Rock's container-fluid padding for our app */
 .container-fluid {

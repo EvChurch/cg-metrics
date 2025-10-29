@@ -1,10 +1,9 @@
 import { useEffect, useState } from "react";
 import { z } from "zod";
 
-import { countDropOff } from "../utils/dropOff";
-import type { Group } from "../utils/types";
-
 // import testData from "../../public/test-data.json";
+import { countDropOff } from "../utils/attendanceStats";
+import type { Group } from "../utils/types";
 
 const buildAttendanceData = (
   attendance: z.infer<typeof attendanceSchema>[],
@@ -36,6 +35,7 @@ const buildGroupData = (rockGroup: z.infer<typeof groupSchema>): Group => {
           name: member.Name,
           profile: member.Profile,
           phoneNumber: member.PhoneNumber,
+          birthDate: member.BirthDate,
           isLeader: Boolean(member.IsLeader),
         },
         cgAttendance,
@@ -52,6 +52,7 @@ const personSchema = z.object({
   Name: z.string(),
   Profile: z.string(),
   PhoneNumber: z.string().nullable().optional(),
+  BirthDate: z.string().nullable().optional(),
   IsLeader: z.number(),
 });
 
