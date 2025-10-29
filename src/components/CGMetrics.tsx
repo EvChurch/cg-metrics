@@ -2,6 +2,7 @@ import type { Group } from "../utils/types";
 
 import AttendanceBarChart from "./AttendanceBarChart";
 import PersonCard from "./PersonCard";
+import PersonPanel from "./PersonPanel";
 
 interface CGMetricsProps {
   group: Group;
@@ -87,6 +88,7 @@ const CGMetrics = ({ group }: CGMetricsProps) => {
       <div className="text-3xl font-bold text-black mt-14 mb-4">
         Individual Attendance
       </div>
+      <PersonPanel />
       <div className="grid gap-5 [grid-template-columns:repeat(auto-fit,minmax(300px,1fr))]">
         {group.members.map((member) => (
           <PersonCard key={member.person.id} personAttendance={member} />

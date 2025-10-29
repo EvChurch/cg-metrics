@@ -12,7 +12,7 @@ interface PersonCardProps {
 }
 
 const PersonCard = ({ personAttendance }: PersonCardProps) => {
-  const { setSelectedPerson } = useCgReport();
+  const { selectedPerson, setSelectedPerson } = useCgReport();
   const now = new Date();
   const lastMonth = now.getMonth() === 0 ? 11 : now.getMonth() - 1;
   const yearOfLastMonth =
@@ -69,13 +69,23 @@ const PersonCard = ({ personAttendance }: PersonCardProps) => {
         </div>
       </div>
       <div className="mt-6 flex justify-center">
-        <div
-          onClick={() => {
-            setSelectedPerson(personAttendance);
-          }}
-          className="inline-flex items-center justify-center rounded-full border-2 border-[#E22A30] px-5 py-2 text-sm font-medium text-[#E22A30] hover:bg-red-50 hover:!text-[#E22A30] focus:outline-none focus:ring-2 focus:ring-red-500/50 cursor-pointer">
-          View Stats
-        </div>
+        {selectedPerson?.person.id === personAttendance.person.id ? (
+          <div
+            onClick={() => {
+              setSelectedPerson(null);
+            }}
+            className="inline-flex items-center justify-center rounded-full border-2 border-[#E22A30] bg-[#E22A30] px-5 py-2 text-sm font-bold text-white hover:bg-[#89161a] hover:border-[#89161a] focus:outline-none focus:ring-2 focus:ring-red-500/50 cursor-pointer">
+            Close Stats
+          </div>
+        ) : (
+          <div
+            onClick={() => {
+              setSelectedPerson(personAttendance);
+            }}
+            className="inline-flex items-center justify-center rounded-full border-2 border-[#E22A30] px-5 py-2 text-sm font-medium text-[#E22A30] hover:bg-red-50 hover:!text-[#E22A30] focus:outline-none focus:ring-2 focus:ring-red-500/50 cursor-pointer">
+            View Stats
+          </div>
+        )}
       </div>
     </div>
   );
