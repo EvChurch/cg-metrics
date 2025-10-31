@@ -102,10 +102,10 @@ const PersonPanel = () => {
 
   const getAttendanceGridStyle = (status: boolean | null) => {
     return status === null
-      ? "border-[5px] border-[#D9D9D9]"
+      ? "border-[3px] border-[#D9D9D9]"
       : status
       ? "bg-[#CEF0C7]"
-      : "border-[5px] border-[#F4C6CF]";
+      : "border-[3px] border-[#F4C6CF]";
   };
 
   const getAttendanceGridIcon = (status: boolean | null) => {
@@ -152,7 +152,7 @@ const PersonPanel = () => {
 
     return (
       <div>
-        <div className="text-3xl font-semibold text-zinc-900 mb-4">
+        <div className="text-xl font-semibold text-zinc-900 mb-4">
           {`${new Date(0, selectedMonth).toLocaleString("default", {
             month: "long",
           })} Attendance (${String(Math.round(cgMonthAverage))}%)`}
@@ -164,7 +164,7 @@ const PersonPanel = () => {
                 attendance.find((a) => a.date.getTime() === date.getTime())
                   ?.didAttend ?? null
               )}
-              <div>
+              <div className="mt-2">
                 {date.toLocaleDateString("en-GB", {
                   day: "numeric",
                   month: "short",
@@ -188,14 +188,14 @@ const PersonPanel = () => {
         selectedPerson ? "border-2 border-[#DDDDDD]" : ""
       }  bg-white shadow-[2px_2px_14px_0_rgba(0,0,0,0.05)] overflow-hidden transition-[max-height] duration-500 ease-in-out`}
       style={{ maxHeight: selectedPerson ? "2000px" : 0 }}>
-      <div className="w-full h-[180px] bg-[#F2F2F2] rounded-t-3xl"></div>
-      <div className="pr-16 pb-12 pl-16 flex flex-col -mt-[128px] h-[calc(100%-72px)]">
+      <div className="w-full h-[125px] bg-[#F2F2F2] rounded-t-3xl"></div>
+      <div className="pr-16 pb-12 pl-16 flex flex-col -mt-[88px] h-[calc(100%-72px)]">
         <img
-          className="relative h-64 w-64 shrink-0 rounded-full border-[8px] border-white mb-8"
+          className="relative h-44 w-44 shrink-0 rounded-full border-[8px] border-white mb-8"
           src={selectedPerson?.person.profile}
           alt={selectedPerson?.person.name}
         />
-        <h1 className="text-5xl font-semibold leading-tight tracking-tight text-zinc-900">
+        <h1 className="text-3xl font-semibold leading-tight tracking-tight text-zinc-900">
           {selectedPerson?.person.name}
         </h1>
         <div className="mt-2 flex flex-wrap items-center gap-5 text-sm text-zinc-500">
@@ -219,12 +219,12 @@ const PersonPanel = () => {
         <div>
           {/* {summaryMetrics()} */}
 
-          <h1 className="mt-5 text-3xl font-semibold leading-tight tracking-tight text-zinc-900 mb-6">
+          <h1 className="mt-5 text-2xl font-semibold leading-tight tracking-tight text-zinc-900 mb-6">
             Monthly CG Attendance
           </h1>
           {monthlyAttendanceChart(selectedPerson?.cgAttendance ?? [], true)}
           {weeklyAttendanceGrid(selectedPerson?.cgAttendance ?? [], true)}
-          <h1 className="text-3xl font-semibold leading-tight tracking-tight text-zinc-900 mt-16 mb-6">
+          <h1 className="text-2xl font-semibold leading-tight tracking-tight text-zinc-900 mt-16 mb-6">
             Monthly Church Attendance
           </h1>
           {monthlyAttendanceChart(
