@@ -188,10 +188,10 @@ const PersonPanel = () => {
         selectedPerson ? "border-2 border-[#DDDDDD]" : ""
       }  bg-white shadow-[2px_2px_14px_0_rgba(0,0,0,0.05)] overflow-hidden transition-[max-height] duration-500 ease-in-out`}
       style={{ maxHeight: selectedPerson ? "2000px" : 0 }}>
-      <div className="w-full h-[125px] bg-[#F2F2F2] rounded-t-3xl"></div>
+      <div className="w-full h-[125px] bg-[#F2F2F2] rounded-t-2xl"></div>
       <div className="pr-16 pb-12 pl-16 flex flex-col -mt-[88px] h-[calc(100%-72px)]">
         <img
-          className="relative h-44 w-44 shrink-0 rounded-full border-[8px] border-white mb-8"
+          className="relative h-44 w-44 shrink-0 rounded-full border-[8px] border-white mb-5"
           src={selectedPerson?.person.profile}
           alt={selectedPerson?.person.name}
         />
@@ -206,9 +206,9 @@ const PersonPanel = () => {
             </div>
           )}
           {selectedPerson?.person.birthDate && (
-            <div className="flex items-center gap-2 text-2xl font-medium text-[#898E9B]">
+            <div className="flex items-center gap-2 text-lg font-medium text-[#898E9B]">
               <Icon
-                className="mb-[6px]"
+                className="mb-[4px]"
                 icon="fa7-solid:birthday-cake"
                 color="#898E9B"
               />

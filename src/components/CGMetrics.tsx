@@ -85,7 +85,9 @@ const CGMetrics = ({ group }: CGMetricsProps) => {
         </div> */}
       </div>
 
-      <div className="text-3xl font-bold text-black mt-14 mb-4">
+      <div
+        id="individual-attendance"
+        className="text-3xl font-bold text-black mt-14 mb-4">
         Individual Attendance
       </div>
       <PersonPanel />
