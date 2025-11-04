@@ -17,25 +17,35 @@ const CGMetrics = ({ group }: CGMetricsProps) => {
 
   return (
     <>
-      <div className="text-5xl font-bold text-black mb-12">
+      <div className="text-4xl [@media(min-width:480px)]:text-5xl font-bold text-black mb-12">
         My Connect Group
       </div>
-      <div className="text-3xl font-bold text-black mb-6">
+      <div className="text-2xl [@media(min-width:480px)]:text-3xl font-bold text-black mb-6">
         People Dropping Off
       </div>
-      <div className="w-full overflow-x-auto">
-        <div className="min-w-[700px]">
+      <div className="">
+        <div className="min-w-0">
           <table className="w-full table-fixed">
             <thead>
               <tr className="text-[#505050] text-center">
                 <th className="text-left rounded-l-2xl bg-gray-100 px-5 py-3 pl-8 font-bold">
                   Name
                 </th>
-                <th className="bg-gray-100 px-5 py-3 font-bold">
-                  No. weeks missed CG
+                <th className="bg-gray-100 px-5 py-3 font-bold whitespace-normal break-words min-w-0">
+                  <span className="hidden [@media(min-width:480px)]:inline">
+                    No. weeks missed CG
+                  </span>
+                  <span className="inline [@media(min-width:480px)]:hidden">
+                    # CG missed
+                  </span>
                 </th>
-                <th className="rounded-r-2xl bg-gray-100 px-5 py-3 font-bold">
-                  No. weeks missed church
+                <th className="rounded-r-2xl bg-gray-100 px-5 py-3 font-bold whitespace-normal break-words min-w-0">
+                  <span className="hidden [@media(min-width:480px)]:inline">
+                    No. weeks missed church
+                  </span>
+                  <span className="inline [@media(min-width:480px)]:hidden">
+                    # Church missed
+                  </span>
                 </th>
               </tr>
             </thead>
@@ -47,7 +57,7 @@ const CGMetrics = ({ group }: CGMetricsProps) => {
                       <img
                         src={member.person.profile}
                         alt={member.person.name}
-                        className="h-10 w-10 rounded-full object-cover"
+                        className="h-10 w-10 rounded-full object-cover [@media(max-width:480px)]:hidden"
                       />
                       <div>
                         <div className="font-semibold">
