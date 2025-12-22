@@ -1,9 +1,7 @@
 import { useCgReport } from "../hooks/useCgReport";
 import {
-  getCgMonthAverage,
-  getCgYearAverage,
-  getChurchMonthAverage,
-  getChurchYearAverage,
+  getAttendanceMonthAverage,
+  getAttendanceYearAverage,
 } from "../utils/attendanceStats";
 import type { PersonAttendance } from "../utils/types";
 
@@ -18,20 +16,21 @@ const PersonCard = ({ personAttendance }: PersonCardProps) => {
   const yearOfLastMonth =
     now.getMonth() === 0 ? now.getFullYear() - 1 : now.getFullYear();
 
-  const cgMonthAverage = getCgMonthAverage(
+  const cgMonthAverage = getAttendanceMonthAverage(
     personAttendance.cgAttendance,
     lastMonth,
     yearOfLastMonth
   );
-  const cgYearAverage = getCgYearAverage(personAttendance.cgAttendance);
 
-  const churchMonthAverage = getChurchMonthAverage(
+  const cgYearAverage = getAttendanceYearAverage(personAttendance.cgAttendance);
+
+  const churchMonthAverage = getAttendanceMonthAverage(
     personAttendance.churchAttendance,
     lastMonth,
     yearOfLastMonth
   );
 
-  const churchYearAverage = getChurchYearAverage(
+  const churchYearAverage = getAttendanceYearAverage(
     personAttendance.churchAttendance
   );
 
@@ -54,18 +53,22 @@ const PersonCard = ({ personAttendance }: PersonCardProps) => {
 
         <div className="text-gray-600 text-right mr-6">CG</div>
         <div className="text-center text-2xl font-semibold text-gray-900">
-          {`${String(Math.round(cgMonthAverage))}%`}
+          {cgMonthAverage ? `${String(Math.round(cgMonthAverage))}%` : "–"}
         </div>
         <div className="text-center text-2xl font-semibold text-gray-900">
-          {`${String(Math.round(cgYearAverage))}%`}
+          {cgYearAverage ? `${String(Math.round(cgYearAverage))}%` : "–"}
         </div>
 
         <div className="text-gray-600 text-right mr-6">Church</div>
         <div className="text-center text-2xl font-semibold text-gray-900">
-          {`${String(Math.round(churchMonthAverage))}%`}
+          {churchMonthAverage
+            ? `${String(Math.round(churchMonthAverage))}%`
+            : "–"}
         </div>
         <div className="text-center text-2xl font-semibold text-gray-900">
-          {`${String(Math.round(churchYearAverage))}%`}
+          {churchYearAverage
+            ? `${String(Math.round(churchYearAverage))}%`
+            : "–"}
         </div>
       </div>
       <div className="mt-6 flex justify-center">

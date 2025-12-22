@@ -20,6 +20,13 @@ export interface PersonAttendance {
   churchDropOff: number;
 }
 
+export interface GroupDetails {
+  name: string;
+  leaders: string[];
+  healthy: boolean;
+}
+
 export interface Group {
   members: PersonAttendance[];
+  groupDetails: GroupDetails;
 }

@@ -2,1342 +2,4547 @@
   {
     "cgAttendance": [
       {
-        "PersonId": 4986,
-        "DidAttend": true,
-        "Date": "2025-10-17T00:00:00"
-      },
-      {
-        "PersonId": 4986,
-        "DidAttend": true,
-        "Date": "2025-09-26T00:00:00"
-      },
-      {
-        "PersonId": 4986,
+        "PersonId": 2477,
         "DidAttend": false,
-        "Date": "2025-09-19T00:00:00"
+        "Date": "2025-12-10T00:00:00"
       },
       {
-        "PersonId": 4986,
-        "DidAttend": true,
-        "Date": "2025-08-29T00:00:00"
-      },
-      {
-        "PersonId": 4986,
-        "DidAttend": true,
-        "Date": "2025-08-22T00:00:00"
-      },
-      {
-        "PersonId": 4986,
-        "DidAttend": true,
-        "Date": "2025-08-15T00:00:00"
-      },
-      {
-        "PersonId": 4986,
-        "DidAttend": true,
-        "Date": "2025-08-08T00:00:00"
-      },
-      {
-        "PersonId": 4986,
-        "DidAttend": true,
-        "Date": "2025-08-01T00:00:00"
-      },
-      {
-        "PersonId": 5573,
-        "DidAttend": true,
-        "Date": "2025-10-17T00:00:00"
-      },
-      {
-        "PersonId": 5573,
-        "DidAttend": true,
-        "Date": "2025-09-26T00:00:00"
-      },
-      {
-        "PersonId": 5573,
-        "DidAttend": true,
-        "Date": "2025-09-19T00:00:00"
-      },
-      {
-        "PersonId": 5573,
-        "DidAttend": true,
-        "Date": "2025-08-29T00:00:00"
-      },
-      {
-        "PersonId": 5573,
-        "DidAttend": true,
-        "Date": "2025-08-22T00:00:00"
-      },
-      {
-        "PersonId": 5573,
-        "DidAttend": true,
-        "Date": "2025-08-15T00:00:00"
-      },
-      {
-        "PersonId": 5573,
-        "DidAttend": true,
-        "Date": "2025-08-08T00:00:00"
-      },
-      {
-        "PersonId": 5573,
-        "DidAttend": true,
-        "Date": "2025-08-01T00:00:00"
-      },
-      {
-        "PersonId": 5573,
-        "DidAttend": true,
-        "Date": "2025-06-06T00:00:00"
-      },
-      {
-        "PersonId": 5573,
-        "DidAttend": true,
-        "Date": "2025-05-30T00:00:00"
-      },
-      {
-        "PersonId": 8403,
+        "PersonId": 2477,
         "DidAttend": false,
-        "Date": "2025-10-17T00:00:00"
+        "Date": "2025-12-03T00:00:00"
       },
       {
-        "PersonId": 8403,
-        "DidAttend": false,
-        "Date": "2025-09-26T00:00:00"
-      },
-      {
-        "PersonId": 8403,
+        "PersonId": 2477,
         "DidAttend": true,
-        "Date": "2025-09-19T00:00:00"
+        "Date": "2025-11-26T00:00:00"
       },
       {
-        "PersonId": 8403,
-        "DidAttend": false,
-        "Date": "2025-08-29T00:00:00"
-      },
-      {
-        "PersonId": 8403,
-        "DidAttend": false,
-        "Date": "2025-08-22T00:00:00"
-      },
-      {
-        "PersonId": 8403,
-        "DidAttend": false,
-        "Date": "2025-08-15T00:00:00"
-      },
-      {
-        "PersonId": 8403,
+        "PersonId": 2477,
         "DidAttend": true,
-        "Date": "2025-08-08T00:00:00"
+        "Date": "2025-11-19T00:00:00"
       },
       {
-        "PersonId": 8403,
-        "DidAttend": false,
-        "Date": "2025-08-01T00:00:00"
-      },
-      {
-        "PersonId": 8403,
+        "PersonId": 2477,
         "DidAttend": true,
-        "Date": "2025-06-06T00:00:00"
+        "Date": "2025-11-12T00:00:00"
       },
       {
-        "PersonId": 8403,
+        "PersonId": 2477,
         "DidAttend": true,
-        "Date": "2025-05-30T00:00:00"
+        "Date": "2025-10-29T00:00:00"
       },
       {
-        "PersonId": 9885,
-        "DidAttend": false,
-        "Date": "2025-10-17T00:00:00"
-      },
-      {
-        "PersonId": 9885,
-        "DidAttend": false,
-        "Date": "2025-09-26T00:00:00"
-      },
-      {
-        "PersonId": 9885,
-        "DidAttend": false,
-        "Date": "2025-09-19T00:00:00"
-      },
-      {
-        "PersonId": 9885,
+        "PersonId": 2477,
         "DidAttend": true,
-        "Date": "2025-08-29T00:00:00"
+        "Date": "2025-10-22T00:00:00"
       },
       {
-        "PersonId": 9885,
+        "PersonId": 2477,
+        "DidAttend": true,
+        "Date": "2025-10-15T00:00:00"
+      },
+      {
+        "PersonId": 2477,
+        "DidAttend": true,
+        "Date": "2025-10-08T00:00:00"
+      },
+      {
+        "PersonId": 2477,
+        "DidAttend": true,
+        "Date": "2025-09-17T00:00:00"
+      },
+      {
+        "PersonId": 2477,
+        "DidAttend": true,
+        "Date": "2025-09-10T00:00:00"
+      },
+      {
+        "PersonId": 2477,
+        "DidAttend": true,
+        "Date": "2025-09-03T00:00:00"
+      },
+      {
+        "PersonId": 2477,
+        "DidAttend": true,
+        "Date": "2025-08-27T00:00:00"
+      },
+      {
+        "PersonId": 2477,
+        "DidAttend": true,
+        "Date": "2025-08-20T00:00:00"
+      },
+      {
+        "PersonId": 2477,
+        "DidAttend": true,
+        "Date": "2025-08-13T00:00:00"
+      },
+      {
+        "PersonId": 2477,
+        "DidAttend": true,
+        "Date": "2025-08-06T00:00:00"
+      },
+      {
+        "PersonId": 2477,
+        "DidAttend": true,
+        "Date": "2025-07-30T00:00:00"
+      },
+      {
+        "PersonId": 2477,
+        "DidAttend": true,
+        "Date": "2025-07-23T00:00:00"
+      },
+      {
+        "PersonId": 2477,
+        "DidAttend": true,
+        "Date": "2025-07-16T00:00:00"
+      },
+      {
+        "PersonId": 2477,
+        "DidAttend": true,
+        "Date": "2025-04-30T00:00:00"
+      },
+      {
+        "PersonId": 2477,
+        "DidAttend": true,
+        "Date": "2025-02-25T00:00:00"
+      },
+      {
+        "PersonId": 2477,
+        "DidAttend": true,
+        "Date": "2025-02-19T00:00:00"
+      },
+      {
+        "PersonId": 2550,
+        "DidAttend": true,
+        "Date": "2025-12-10T00:00:00"
+      },
+      {
+        "PersonId": 2550,
+        "DidAttend": true,
+        "Date": "2025-12-03T00:00:00"
+      },
+      {
+        "PersonId": 2550,
         "DidAttend": false,
-        "Date": "2025-08-22T00:00:00"
+        "Date": "2025-11-26T00:00:00"
       },
       {
-        "PersonId": 9885,
+        "PersonId": 2550,
         "DidAttend": true,
-        "Date": "2025-08-15T00:00:00"
+        "Date": "2025-11-19T00:00:00"
       },
       {
-        "PersonId": 9885,
+        "PersonId": 2550,
+        "DidAttend": true,
+        "Date": "2025-11-12T00:00:00"
+      },
+      {
+        "PersonId": 2550,
         "DidAttend": false,
-        "Date": "2025-08-08T00:00:00"
+        "Date": "2025-10-29T00:00:00"
       },
       {
-        "PersonId": 9885,
+        "PersonId": 2550,
         "DidAttend": true,
-        "Date": "2025-08-01T00:00:00"
+        "Date": "2025-10-22T00:00:00"
       },
       {
-        "PersonId": 9885,
+        "PersonId": 2550,
         "DidAttend": true,
-        "Date": "2025-06-06T00:00:00"
+        "Date": "2025-10-15T00:00:00"
       },
       {
-        "PersonId": 9885,
+        "PersonId": 2550,
+        "DidAttend": true,
+        "Date": "2025-10-08T00:00:00"
+      },
+      {
+        "PersonId": 2550,
+        "DidAttend": true,
+        "Date": "2025-09-17T00:00:00"
+      },
+      {
+        "PersonId": 2550,
+        "DidAttend": true,
+        "Date": "2025-09-10T00:00:00"
+      },
+      {
+        "PersonId": 2550,
+        "DidAttend": true,
+        "Date": "2025-09-03T00:00:00"
+      },
+      {
+        "PersonId": 2550,
+        "DidAttend": true,
+        "Date": "2025-08-27T00:00:00"
+      },
+      {
+        "PersonId": 2550,
+        "DidAttend": true,
+        "Date": "2025-08-20T00:00:00"
+      },
+      {
+        "PersonId": 2550,
+        "DidAttend": true,
+        "Date": "2025-08-13T00:00:00"
+      },
+      {
+        "PersonId": 2550,
         "DidAttend": false,
-        "Date": "2025-05-30T00:00:00"
+        "Date": "2025-08-06T00:00:00"
       },
       {
-        "PersonId": 9909,
+        "PersonId": 2550,
         "DidAttend": true,
-        "Date": "2025-10-17T00:00:00"
+        "Date": "2025-07-30T00:00:00"
       },
       {
-        "PersonId": 9909,
+        "PersonId": 2550,
         "DidAttend": true,
-        "Date": "2025-09-26T00:00:00"
+        "Date": "2025-07-23T00:00:00"
       },
       {
-        "PersonId": 9909,
-        "DidAttend": true,
-        "Date": "2025-09-19T00:00:00"
-      },
-      {
-        "PersonId": 9909,
-        "DidAttend": true,
-        "Date": "2025-08-29T00:00:00"
-      },
-      {
-        "PersonId": 9909,
-        "DidAttend": true,
-        "Date": "2025-08-22T00:00:00"
-      },
-      {
-        "PersonId": 9909,
-        "DidAttend": true,
-        "Date": "2025-08-15T00:00:00"
-      },
-      {
-        "PersonId": 9909,
-        "DidAttend": true,
-        "Date": "2025-08-08T00:00:00"
-      },
-      {
-        "PersonId": 10569,
+        "PersonId": 2550,
         "DidAttend": false,
-        "Date": "2025-10-17T00:00:00"
+        "Date": "2025-07-16T00:00:00"
       },
       {
-        "PersonId": 10569,
-        "DidAttend": false,
-        "Date": "2025-09-26T00:00:00"
-      },
-      {
-        "PersonId": 10569,
-        "DidAttend": false,
-        "Date": "2025-09-19T00:00:00"
-      },
-      {
-        "PersonId": 10569,
-        "DidAttend": false,
-        "Date": "2025-08-29T00:00:00"
-      },
-      {
-        "PersonId": 10569,
+        "PersonId": 2550,
         "DidAttend": true,
-        "Date": "2025-08-22T00:00:00"
+        "Date": "2025-04-30T00:00:00"
       },
       {
-        "PersonId": 10569,
-        "DidAttend": false,
-        "Date": "2025-08-15T00:00:00"
+        "PersonId": 2550,
+        "DidAttend": true,
+        "Date": "2025-02-25T00:00:00"
       },
       {
-        "PersonId": 10569,
-        "DidAttend": false,
-        "Date": "2025-08-08T00:00:00"
+        "PersonId": 2550,
+        "DidAttend": true,
+        "Date": "2025-02-19T00:00:00"
       },
       {
-        "PersonId": 10569,
+        "PersonId": 3185,
+        "DidAttend": true,
+        "Date": "2025-12-10T00:00:00"
+      },
+      {
+        "PersonId": 3185,
+        "DidAttend": true,
+        "Date": "2025-12-03T00:00:00"
+      },
+      {
+        "PersonId": 3185,
         "DidAttend": false,
-        "Date": "2025-08-01T00:00:00"
+        "Date": "2025-11-26T00:00:00"
+      },
+      {
+        "PersonId": 3185,
+        "DidAttend": false,
+        "Date": "2025-11-19T00:00:00"
+      },
+      {
+        "PersonId": 3185,
+        "DidAttend": true,
+        "Date": "2025-11-12T00:00:00"
+      },
+      {
+        "PersonId": 3185,
+        "DidAttend": false,
+        "Date": "2025-10-29T00:00:00"
+      },
+      {
+        "PersonId": 3185,
+        "DidAttend": false,
+        "Date": "2025-10-22T00:00:00"
+      },
+      {
+        "PersonId": 3185,
+        "DidAttend": false,
+        "Date": "2025-10-15T00:00:00"
+      },
+      {
+        "PersonId": 3185,
+        "DidAttend": false,
+        "Date": "2025-10-08T00:00:00"
+      },
+      {
+        "PersonId": 3185,
+        "DidAttend": false,
+        "Date": "2025-09-17T00:00:00"
+      },
+      {
+        "PersonId": 3185,
+        "DidAttend": false,
+        "Date": "2025-09-10T00:00:00"
+      },
+      {
+        "PersonId": 3185,
+        "DidAttend": false,
+        "Date": "2025-09-03T00:00:00"
+      },
+      {
+        "PersonId": 3185,
+        "DidAttend": false,
+        "Date": "2025-08-27T00:00:00"
+      },
+      {
+        "PersonId": 3185,
+        "DidAttend": true,
+        "Date": "2025-08-20T00:00:00"
+      },
+      {
+        "PersonId": 3185,
+        "DidAttend": false,
+        "Date": "2025-08-13T00:00:00"
+      },
+      {
+        "PersonId": 3185,
+        "DidAttend": true,
+        "Date": "2025-08-06T00:00:00"
+      },
+      {
+        "PersonId": 3185,
+        "DidAttend": false,
+        "Date": "2025-07-30T00:00:00"
+      },
+      {
+        "PersonId": 3185,
+        "DidAttend": true,
+        "Date": "2025-07-23T00:00:00"
+      },
+      {
+        "PersonId": 3185,
+        "DidAttend": false,
+        "Date": "2025-07-16T00:00:00"
+      },
+      {
+        "PersonId": 3185,
+        "DidAttend": false,
+        "Date": "2025-04-30T00:00:00"
+      },
+      {
+        "PersonId": 3185,
+        "DidAttend": false,
+        "Date": "2025-02-25T00:00:00"
+      },
+      {
+        "PersonId": 3185,
+        "DidAttend": true,
+        "Date": "2025-02-19T00:00:00"
+      },
+      {
+        "PersonId": 3823,
+        "DidAttend": true,
+        "Date": "2025-12-10T00:00:00"
+      },
+      {
+        "PersonId": 3823,
+        "DidAttend": true,
+        "Date": "2025-12-03T00:00:00"
+      },
+      {
+        "PersonId": 3823,
+        "DidAttend": true,
+        "Date": "2025-11-26T00:00:00"
+      },
+      {
+        "PersonId": 3823,
+        "DidAttend": true,
+        "Date": "2025-11-19T00:00:00"
+      },
+      {
+        "PersonId": 3823,
+        "DidAttend": true,
+        "Date": "2025-11-12T00:00:00"
+      },
+      {
+        "PersonId": 3823,
+        "DidAttend": true,
+        "Date": "2025-10-29T00:00:00"
+      },
+      {
+        "PersonId": 3823,
+        "DidAttend": false,
+        "Date": "2025-10-22T00:00:00"
+      },
+      {
+        "PersonId": 3823,
+        "DidAttend": true,
+        "Date": "2025-10-15T00:00:00"
+      },
+      {
+        "PersonId": 3823,
+        "DidAttend": true,
+        "Date": "2025-10-08T00:00:00"
+      },
+      {
+        "PersonId": 3823,
+        "DidAttend": true,
+        "Date": "2025-09-17T00:00:00"
+      },
+      {
+        "PersonId": 3823,
+        "DidAttend": true,
+        "Date": "2025-09-10T00:00:00"
+      },
+      {
+        "PersonId": 3823,
+        "DidAttend": true,
+        "Date": "2025-09-03T00:00:00"
+      },
+      {
+        "PersonId": 3823,
+        "DidAttend": true,
+        "Date": "2025-08-27T00:00:00"
+      },
+      {
+        "PersonId": 3823,
+        "DidAttend": true,
+        "Date": "2025-08-20T00:00:00"
+      },
+      {
+        "PersonId": 3823,
+        "DidAttend": true,
+        "Date": "2025-08-13T00:00:00"
+      },
+      {
+        "PersonId": 3823,
+        "DidAttend": true,
+        "Date": "2025-08-06T00:00:00"
+      },
+      {
+        "PersonId": 3823,
+        "DidAttend": true,
+        "Date": "2025-07-30T00:00:00"
+      },
+      {
+        "PersonId": 3823,
+        "DidAttend": true,
+        "Date": "2025-07-23T00:00:00"
+      },
+      {
+        "PersonId": 3823,
+        "DidAttend": true,
+        "Date": "2025-07-16T00:00:00"
+      },
+      {
+        "PersonId": 3823,
+        "DidAttend": true,
+        "Date": "2025-04-30T00:00:00"
+      },
+      {
+        "PersonId": 3823,
+        "DidAttend": true,
+        "Date": "2025-02-25T00:00:00"
+      },
+      {
+        "PersonId": 3823,
+        "DidAttend": true,
+        "Date": "2025-02-19T00:00:00"
+      },
+      {
+        "PersonId": 5813,
+        "DidAttend": false,
+        "Date": "2025-12-10T00:00:00"
+      },
+      {
+        "PersonId": 5813,
+        "DidAttend": false,
+        "Date": "2025-12-03T00:00:00"
+      },
+      {
+        "PersonId": 5813,
+        "DidAttend": true,
+        "Date": "2025-11-26T00:00:00"
+      },
+      {
+        "PersonId": 5813,
+        "DidAttend": true,
+        "Date": "2025-11-19T00:00:00"
+      },
+      {
+        "PersonId": 5813,
+        "DidAttend": false,
+        "Date": "2025-11-12T00:00:00"
+      },
+      {
+        "PersonId": 5813,
+        "DidAttend": false,
+        "Date": "2025-10-29T00:00:00"
+      },
+      {
+        "PersonId": 5813,
+        "DidAttend": true,
+        "Date": "2025-10-22T00:00:00"
+      },
+      {
+        "PersonId": 5813,
+        "DidAttend": false,
+        "Date": "2025-10-15T00:00:00"
+      },
+      {
+        "PersonId": 5813,
+        "DidAttend": false,
+        "Date": "2025-10-08T00:00:00"
+      },
+      {
+        "PersonId": 5813,
+        "DidAttend": false,
+        "Date": "2025-09-17T00:00:00"
+      },
+      {
+        "PersonId": 5813,
+        "DidAttend": false,
+        "Date": "2025-09-10T00:00:00"
+      },
+      {
+        "PersonId": 5813,
+        "DidAttend": false,
+        "Date": "2025-09-03T00:00:00"
+      },
+      {
+        "PersonId": 5813,
+        "DidAttend": false,
+        "Date": "2025-08-27T00:00:00"
+      },
+      {
+        "PersonId": 5813,
+        "DidAttend": false,
+        "Date": "2025-08-20T00:00:00"
+      },
+      {
+        "PersonId": 5813,
+        "DidAttend": true,
+        "Date": "2025-08-13T00:00:00"
+      },
+      {
+        "PersonId": 5813,
+        "DidAttend": false,
+        "Date": "2025-08-06T00:00:00"
+      },
+      {
+        "PersonId": 5813,
+        "DidAttend": true,
+        "Date": "2025-07-30T00:00:00"
+      },
+      {
+        "PersonId": 5813,
+        "DidAttend": true,
+        "Date": "2025-07-23T00:00:00"
+      },
+      {
+        "PersonId": 5813,
+        "DidAttend": true,
+        "Date": "2025-07-16T00:00:00"
+      },
+      {
+        "PersonId": 5813,
+        "DidAttend": true,
+        "Date": "2025-04-30T00:00:00"
+      },
+      {
+        "PersonId": 5813,
+        "DidAttend": true,
+        "Date": "2025-02-25T00:00:00"
+      },
+      {
+        "PersonId": 5813,
+        "DidAttend": true,
+        "Date": "2025-02-19T00:00:00"
+      },
+      {
+        "PersonId": 6077,
+        "DidAttend": false,
+        "Date": "2025-12-10T00:00:00"
+      },
+      {
+        "PersonId": 6077,
+        "DidAttend": true,
+        "Date": "2025-12-03T00:00:00"
+      },
+      {
+        "PersonId": 6077,
+        "DidAttend": true,
+        "Date": "2025-11-26T00:00:00"
+      },
+      {
+        "PersonId": 6077,
+        "DidAttend": false,
+        "Date": "2025-11-19T00:00:00"
+      },
+      {
+        "PersonId": 6077,
+        "DidAttend": true,
+        "Date": "2025-11-12T00:00:00"
+      },
+      {
+        "PersonId": 6077,
+        "DidAttend": true,
+        "Date": "2025-10-29T00:00:00"
+      },
+      {
+        "PersonId": 6077,
+        "DidAttend": true,
+        "Date": "2025-10-22T00:00:00"
+      },
+      {
+        "PersonId": 6077,
+        "DidAttend": true,
+        "Date": "2025-10-15T00:00:00"
+      },
+      {
+        "PersonId": 6077,
+        "DidAttend": false,
+        "Date": "2025-10-08T00:00:00"
+      },
+      {
+        "PersonId": 6077,
+        "DidAttend": true,
+        "Date": "2025-09-17T00:00:00"
+      },
+      {
+        "PersonId": 6077,
+        "DidAttend": true,
+        "Date": "2025-09-10T00:00:00"
+      },
+      {
+        "PersonId": 6077,
+        "DidAttend": true,
+        "Date": "2025-09-03T00:00:00"
+      },
+      {
+        "PersonId": 6077,
+        "DidAttend": true,
+        "Date": "2025-08-27T00:00:00"
+      },
+      {
+        "PersonId": 6077,
+        "DidAttend": true,
+        "Date": "2025-08-20T00:00:00"
+      },
+      {
+        "PersonId": 6077,
+        "DidAttend": true,
+        "Date": "2025-08-13T00:00:00"
+      },
+      {
+        "PersonId": 6077,
+        "DidAttend": false,
+        "Date": "2025-08-06T00:00:00"
+      },
+      {
+        "PersonId": 6077,
+        "DidAttend": true,
+        "Date": "2025-07-30T00:00:00"
+      },
+      {
+        "PersonId": 6077,
+        "DidAttend": false,
+        "Date": "2025-07-23T00:00:00"
+      },
+      {
+        "PersonId": 6077,
+        "DidAttend": true,
+        "Date": "2025-07-16T00:00:00"
+      },
+      {
+        "PersonId": 6077,
+        "DidAttend": false,
+        "Date": "2025-04-30T00:00:00"
+      },
+      {
+        "PersonId": 6077,
+        "DidAttend": true,
+        "Date": "2025-02-25T00:00:00"
+      },
+      {
+        "PersonId": 6077,
+        "DidAttend": true,
+        "Date": "2025-02-19T00:00:00"
+      },
+      {
+        "PersonId": 6341,
+        "DidAttend": true,
+        "Date": "2025-12-10T00:00:00"
+      },
+      {
+        "PersonId": 6341,
+        "DidAttend": true,
+        "Date": "2025-12-03T00:00:00"
+      },
+      {
+        "PersonId": 6341,
+        "DidAttend": true,
+        "Date": "2025-11-26T00:00:00"
+      },
+      {
+        "PersonId": 6341,
+        "DidAttend": true,
+        "Date": "2025-11-19T00:00:00"
+      },
+      {
+        "PersonId": 6341,
+        "DidAttend": true,
+        "Date": "2025-11-12T00:00:00"
+      },
+      {
+        "PersonId": 6341,
+        "DidAttend": true,
+        "Date": "2025-10-29T00:00:00"
+      },
+      {
+        "PersonId": 6341,
+        "DidAttend": true,
+        "Date": "2025-10-22T00:00:00"
+      },
+      {
+        "PersonId": 6341,
+        "DidAttend": true,
+        "Date": "2025-10-15T00:00:00"
+      },
+      {
+        "PersonId": 6341,
+        "DidAttend": true,
+        "Date": "2025-10-08T00:00:00"
+      },
+      {
+        "PersonId": 6341,
+        "DidAttend": true,
+        "Date": "2025-09-17T00:00:00"
+      },
+      {
+        "PersonId": 6341,
+        "DidAttend": true,
+        "Date": "2025-09-10T00:00:00"
+      },
+      {
+        "PersonId": 6341,
+        "DidAttend": true,
+        "Date": "2025-09-03T00:00:00"
+      },
+      {
+        "PersonId": 6341,
+        "DidAttend": true,
+        "Date": "2025-08-27T00:00:00"
+      },
+      {
+        "PersonId": 6341,
+        "DidAttend": false,
+        "Date": "2025-08-20T00:00:00"
+      },
+      {
+        "PersonId": 6341,
+        "DidAttend": true,
+        "Date": "2025-08-13T00:00:00"
+      },
+      {
+        "PersonId": 6341,
+        "DidAttend": true,
+        "Date": "2025-08-06T00:00:00"
+      },
+      {
+        "PersonId": 6341,
+        "DidAttend": true,
+        "Date": "2025-07-30T00:00:00"
+      },
+      {
+        "PersonId": 6341,
+        "DidAttend": true,
+        "Date": "2025-07-23T00:00:00"
+      },
+      {
+        "PersonId": 6341,
+        "DidAttend": true,
+        "Date": "2025-07-16T00:00:00"
+      },
+      {
+        "PersonId": 6341,
+        "DidAttend": true,
+        "Date": "2025-04-30T00:00:00"
+      },
+      {
+        "PersonId": 6341,
+        "DidAttend": true,
+        "Date": "2025-02-25T00:00:00"
+      },
+      {
+        "PersonId": 6341,
+        "DidAttend": true,
+        "Date": "2025-02-19T00:00:00"
+      },
+      {
+        "PersonId": 6633,
+        "DidAttend": true,
+        "Date": "2025-12-10T00:00:00"
+      },
+      {
+        "PersonId": 6633,
+        "DidAttend": true,
+        "Date": "2025-12-03T00:00:00"
+      },
+      {
+        "PersonId": 6633,
+        "DidAttend": true,
+        "Date": "2025-11-26T00:00:00"
+      },
+      {
+        "PersonId": 6633,
+        "DidAttend": true,
+        "Date": "2025-11-19T00:00:00"
+      },
+      {
+        "PersonId": 6633,
+        "DidAttend": true,
+        "Date": "2025-11-12T00:00:00"
+      },
+      {
+        "PersonId": 6633,
+        "DidAttend": true,
+        "Date": "2025-10-29T00:00:00"
+      },
+      {
+        "PersonId": 6633,
+        "DidAttend": true,
+        "Date": "2025-10-22T00:00:00"
+      },
+      {
+        "PersonId": 6633,
+        "DidAttend": true,
+        "Date": "2025-10-15T00:00:00"
+      },
+      {
+        "PersonId": 6633,
+        "DidAttend": true,
+        "Date": "2025-10-08T00:00:00"
+      },
+      {
+        "PersonId": 6633,
+        "DidAttend": true,
+        "Date": "2025-09-17T00:00:00"
+      },
+      {
+        "PersonId": 6633,
+        "DidAttend": true,
+        "Date": "2025-09-10T00:00:00"
+      },
+      {
+        "PersonId": 6633,
+        "DidAttend": true,
+        "Date": "2025-09-03T00:00:00"
+      },
+      {
+        "PersonId": 6633,
+        "DidAttend": true,
+        "Date": "2025-08-27T00:00:00"
+      },
+      {
+        "PersonId": 6633,
+        "DidAttend": true,
+        "Date": "2025-08-20T00:00:00"
+      },
+      {
+        "PersonId": 6633,
+        "DidAttend": true,
+        "Date": "2025-08-13T00:00:00"
+      },
+      {
+        "PersonId": 6633,
+        "DidAttend": true,
+        "Date": "2025-08-06T00:00:00"
+      },
+      {
+        "PersonId": 6633,
+        "DidAttend": true,
+        "Date": "2025-07-30T00:00:00"
+      },
+      {
+        "PersonId": 6633,
+        "DidAttend": true,
+        "Date": "2025-07-23T00:00:00"
+      },
+      {
+        "PersonId": 6633,
+        "DidAttend": true,
+        "Date": "2025-07-16T00:00:00"
+      },
+      {
+        "PersonId": 6633,
+        "DidAttend": true,
+        "Date": "2025-04-30T00:00:00"
+      },
+      {
+        "PersonId": 6633,
+        "DidAttend": true,
+        "Date": "2025-02-25T00:00:00"
+      },
+      {
+        "PersonId": 6633,
+        "DidAttend": true,
+        "Date": "2025-02-19T00:00:00"
+      },
+      {
+        "PersonId": 7636,
+        "DidAttend": true,
+        "Date": "2025-12-10T00:00:00"
+      },
+      {
+        "PersonId": 7636,
+        "DidAttend": false,
+        "Date": "2025-12-03T00:00:00"
+      },
+      {
+        "PersonId": 7636,
+        "DidAttend": true,
+        "Date": "2025-11-26T00:00:00"
+      },
+      {
+        "PersonId": 7636,
+        "DidAttend": true,
+        "Date": "2025-11-19T00:00:00"
+      },
+      {
+        "PersonId": 7636,
+        "DidAttend": true,
+        "Date": "2025-11-12T00:00:00"
+      },
+      {
+        "PersonId": 7636,
+        "DidAttend": false,
+        "Date": "2025-10-29T00:00:00"
+      },
+      {
+        "PersonId": 7636,
+        "DidAttend": false,
+        "Date": "2025-10-22T00:00:00"
+      },
+      {
+        "PersonId": 7636,
+        "DidAttend": false,
+        "Date": "2025-10-15T00:00:00"
+      },
+      {
+        "PersonId": 7636,
+        "DidAttend": false,
+        "Date": "2025-10-08T00:00:00"
+      },
+      {
+        "PersonId": 7636,
+        "DidAttend": true,
+        "Date": "2025-09-17T00:00:00"
+      },
+      {
+        "PersonId": 7636,
+        "DidAttend": true,
+        "Date": "2025-09-10T00:00:00"
+      },
+      {
+        "PersonId": 7636,
+        "DidAttend": true,
+        "Date": "2025-09-03T00:00:00"
+      },
+      {
+        "PersonId": 7636,
+        "DidAttend": true,
+        "Date": "2025-08-27T00:00:00"
+      },
+      {
+        "PersonId": 7636,
+        "DidAttend": true,
+        "Date": "2025-08-20T00:00:00"
+      },
+      {
+        "PersonId": 7636,
+        "DidAttend": false,
+        "Date": "2025-08-13T00:00:00"
+      },
+      {
+        "PersonId": 7636,
+        "DidAttend": true,
+        "Date": "2025-08-06T00:00:00"
+      },
+      {
+        "PersonId": 7636,
+        "DidAttend": false,
+        "Date": "2025-07-30T00:00:00"
+      },
+      {
+        "PersonId": 7636,
+        "DidAttend": true,
+        "Date": "2025-07-23T00:00:00"
+      },
+      {
+        "PersonId": 7636,
+        "DidAttend": true,
+        "Date": "2025-07-16T00:00:00"
+      },
+      {
+        "PersonId": 7636,
+        "DidAttend": false,
+        "Date": "2025-04-30T00:00:00"
+      },
+      {
+        "PersonId": 7636,
+        "DidAttend": true,
+        "Date": "2025-02-25T00:00:00"
+      },
+      {
+        "PersonId": 7636,
+        "DidAttend": true,
+        "Date": "2025-02-19T00:00:00"
+      },
+      {
+        "PersonId": 7975,
+        "DidAttend": true,
+        "Date": "2025-12-10T00:00:00"
+      },
+      {
+        "PersonId": 7975,
+        "DidAttend": true,
+        "Date": "2025-12-03T00:00:00"
+      },
+      {
+        "PersonId": 7975,
+        "DidAttend": true,
+        "Date": "2025-11-26T00:00:00"
+      },
+      {
+        "PersonId": 7975,
+        "DidAttend": true,
+        "Date": "2025-11-19T00:00:00"
+      },
+      {
+        "PersonId": 7975,
+        "DidAttend": true,
+        "Date": "2025-11-12T00:00:00"
+      },
+      {
+        "PersonId": 7975,
+        "DidAttend": true,
+        "Date": "2025-10-29T00:00:00"
+      },
+      {
+        "PersonId": 7975,
+        "DidAttend": true,
+        "Date": "2025-10-22T00:00:00"
+      },
+      {
+        "PersonId": 7975,
+        "DidAttend": true,
+        "Date": "2025-10-15T00:00:00"
+      },
+      {
+        "PersonId": 7975,
+        "DidAttend": false,
+        "Date": "2025-10-08T00:00:00"
+      },
+      {
+        "PersonId": 7975,
+        "DidAttend": true,
+        "Date": "2025-09-17T00:00:00"
+      },
+      {
+        "PersonId": 7975,
+        "DidAttend": true,
+        "Date": "2025-09-10T00:00:00"
+      },
+      {
+        "PersonId": 7975,
+        "DidAttend": true,
+        "Date": "2025-09-03T00:00:00"
+      },
+      {
+        "PersonId": 7975,
+        "DidAttend": true,
+        "Date": "2025-08-27T00:00:00"
+      },
+      {
+        "PersonId": 7975,
+        "DidAttend": true,
+        "Date": "2025-08-20T00:00:00"
+      },
+      {
+        "PersonId": 7975,
+        "DidAttend": true,
+        "Date": "2025-08-13T00:00:00"
+      },
+      {
+        "PersonId": 7975,
+        "DidAttend": true,
+        "Date": "2025-08-06T00:00:00"
+      },
+      {
+        "PersonId": 7975,
+        "DidAttend": true,
+        "Date": "2025-07-30T00:00:00"
+      },
+      {
+        "PersonId": 7975,
+        "DidAttend": true,
+        "Date": "2025-07-23T00:00:00"
+      },
+      {
+        "PersonId": 7975,
+        "DidAttend": false,
+        "Date": "2025-07-16T00:00:00"
+      },
+      {
+        "PersonId": 7975,
+        "DidAttend": false,
+        "Date": "2025-04-30T00:00:00"
+      },
+      {
+        "PersonId": 7975,
+        "DidAttend": true,
+        "Date": "2025-02-25T00:00:00"
+      },
+      {
+        "PersonId": 7975,
+        "DidAttend": true,
+        "Date": "2025-02-19T00:00:00"
+      },
+      {
+        "PersonId": 8204,
+        "DidAttend": true,
+        "Date": "2025-12-10T00:00:00"
+      },
+      {
+        "PersonId": 8204,
+        "DidAttend": true,
+        "Date": "2025-12-03T00:00:00"
+      },
+      {
+        "PersonId": 8204,
+        "DidAttend": true,
+        "Date": "2025-11-26T00:00:00"
+      },
+      {
+        "PersonId": 8204,
+        "DidAttend": true,
+        "Date": "2025-11-19T00:00:00"
+      },
+      {
+        "PersonId": 8204,
+        "DidAttend": true,
+        "Date": "2025-11-12T00:00:00"
+      },
+      {
+        "PersonId": 8204,
+        "DidAttend": true,
+        "Date": "2025-10-29T00:00:00"
+      },
+      {
+        "PersonId": 8204,
+        "DidAttend": false,
+        "Date": "2025-10-22T00:00:00"
+      },
+      {
+        "PersonId": 8204,
+        "DidAttend": true,
+        "Date": "2025-10-15T00:00:00"
+      },
+      {
+        "PersonId": 8204,
+        "DidAttend": true,
+        "Date": "2025-10-08T00:00:00"
+      },
+      {
+        "PersonId": 8204,
+        "DidAttend": true,
+        "Date": "2025-09-17T00:00:00"
+      },
+      {
+        "PersonId": 8204,
+        "DidAttend": false,
+        "Date": "2025-09-10T00:00:00"
+      },
+      {
+        "PersonId": 8204,
+        "DidAttend": true,
+        "Date": "2025-09-03T00:00:00"
+      },
+      {
+        "PersonId": 8204,
+        "DidAttend": true,
+        "Date": "2025-08-27T00:00:00"
+      },
+      {
+        "PersonId": 8204,
+        "DidAttend": true,
+        "Date": "2025-08-20T00:00:00"
+      },
+      {
+        "PersonId": 8204,
+        "DidAttend": true,
+        "Date": "2025-08-13T00:00:00"
+      },
+      {
+        "PersonId": 8204,
+        "DidAttend": true,
+        "Date": "2025-08-06T00:00:00"
+      },
+      {
+        "PersonId": 8204,
+        "DidAttend": true,
+        "Date": "2025-07-30T00:00:00"
+      },
+      {
+        "PersonId": 8204,
+        "DidAttend": true,
+        "Date": "2025-07-23T00:00:00"
+      },
+      {
+        "PersonId": 8204,
+        "DidAttend": true,
+        "Date": "2025-07-16T00:00:00"
+      },
+      {
+        "PersonId": 8204,
+        "DidAttend": true,
+        "Date": "2025-04-30T00:00:00"
+      },
+      {
+        "PersonId": 8204,
+        "DidAttend": true,
+        "Date": "2025-02-25T00:00:00"
+      },
+      {
+        "PersonId": 8204,
+        "DidAttend": true,
+        "Date": "2025-02-19T00:00:00"
+      },
+      {
+        "PersonId": 9393,
+        "DidAttend": true,
+        "Date": "2025-12-10T00:00:00"
+      },
+      {
+        "PersonId": 9393,
+        "DidAttend": true,
+        "Date": "2025-12-03T00:00:00"
+      },
+      {
+        "PersonId": 9393,
+        "DidAttend": false,
+        "Date": "2025-11-26T00:00:00"
+      },
+      {
+        "PersonId": 9393,
+        "DidAttend": true,
+        "Date": "2025-11-19T00:00:00"
+      },
+      {
+        "PersonId": 9393,
+        "DidAttend": false,
+        "Date": "2025-11-12T00:00:00"
+      },
+      {
+        "PersonId": 9393,
+        "DidAttend": true,
+        "Date": "2025-10-29T00:00:00"
+      },
+      {
+        "PersonId": 9393,
+        "DidAttend": true,
+        "Date": "2025-10-22T00:00:00"
+      },
+      {
+        "PersonId": 9393,
+        "DidAttend": true,
+        "Date": "2025-10-15T00:00:00"
+      },
+      {
+        "PersonId": 9393,
+        "DidAttend": false,
+        "Date": "2025-10-08T00:00:00"
+      },
+      {
+        "PersonId": 9393,
+        "DidAttend": true,
+        "Date": "2025-09-17T00:00:00"
+      },
+      {
+        "PersonId": 9393,
+        "DidAttend": false,
+        "Date": "2025-09-10T00:00:00"
+      },
+      {
+        "PersonId": 9393,
+        "DidAttend": true,
+        "Date": "2025-09-03T00:00:00"
+      },
+      {
+        "PersonId": 9393,
+        "DidAttend": true,
+        "Date": "2025-08-27T00:00:00"
+      },
+      {
+        "PersonId": 9393,
+        "DidAttend": false,
+        "Date": "2025-08-20T00:00:00"
+      },
+      {
+        "PersonId": 9393,
+        "DidAttend": true,
+        "Date": "2025-08-13T00:00:00"
+      },
+      {
+        "PersonId": 9393,
+        "DidAttend": true,
+        "Date": "2025-08-06T00:00:00"
+      },
+      {
+        "PersonId": 9393,
+        "DidAttend": false,
+        "Date": "2025-07-30T00:00:00"
+      },
+      {
+        "PersonId": 9393,
+        "DidAttend": true,
+        "Date": "2025-07-23T00:00:00"
+      },
+      {
+        "PersonId": 9393,
+        "DidAttend": true,
+        "Date": "2025-07-16T00:00:00"
+      },
+      {
+        "PersonId": 9393,
+        "DidAttend": true,
+        "Date": "2025-04-30T00:00:00"
+      },
+      {
+        "PersonId": 9393,
+        "DidAttend": true,
+        "Date": "2025-02-25T00:00:00"
+      },
+      {
+        "PersonId": 9393,
+        "DidAttend": true,
+        "Date": "2025-02-19T00:00:00"
       }
     ],
     "churchAttendance": [
       {
-        "PersonId": 4986,
+        "PersonId": 2477,
+        "DidAttend": true,
+        "Date": "2025-12-14T00:00:00"
+      },
+      {
+        "PersonId": 2477,
+        "DidAttend": true,
+        "Date": "2025-12-07T00:00:00"
+      },
+      {
+        "PersonId": 2477,
+        "DidAttend": true,
+        "Date": "2025-11-30T00:00:00"
+      },
+      {
+        "PersonId": 2477,
+        "DidAttend": true,
+        "Date": "2025-11-23T00:00:00"
+      },
+      {
+        "PersonId": 2477,
+        "DidAttend": true,
+        "Date": "2025-11-16T00:00:00"
+      },
+      {
+        "PersonId": 2477,
+        "DidAttend": true,
+        "Date": "2025-11-09T00:00:00"
+      },
+      {
+        "PersonId": 2477,
+        "DidAttend": true,
+        "Date": "2025-11-02T00:00:00"
+      },
+      {
+        "PersonId": 2477,
+        "DidAttend": true,
+        "Date": "2025-10-26T00:00:00"
+      },
+      {
+        "PersonId": 2477,
+        "DidAttend": true,
+        "Date": "2025-10-19T00:00:00"
+      },
+      {
+        "PersonId": 2477,
         "DidAttend": true,
         "Date": "2025-10-12T00:00:00"
       },
       {
-        "PersonId": 4986,
+        "PersonId": 2477,
         "DidAttend": true,
         "Date": "2025-10-05T00:00:00"
       },
       {
-        "PersonId": 4986,
+        "PersonId": 2477,
         "DidAttend": true,
         "Date": "2025-09-28T00:00:00"
       },
       {
-        "PersonId": 4986,
+        "PersonId": 2477,
         "DidAttend": true,
         "Date": "2025-09-21T00:00:00"
       },
       {
-        "PersonId": 4986,
+        "PersonId": 2477,
         "DidAttend": true,
         "Date": "2025-09-14T00:00:00"
       },
       {
-        "PersonId": 4986,
-        "DidAttend": false,
-        "Date": "2025-09-07T00:00:00"
-      },
-      {
-        "PersonId": 4986,
-        "DidAttend": false,
-        "Date": "2025-08-31T00:00:00"
-      },
-      {
-        "PersonId": 4986,
-        "DidAttend": true,
-        "Date": "2025-08-24T00:00:00"
-      },
-      {
-        "PersonId": 4986,
-        "DidAttend": true,
-        "Date": "2025-08-17T00:00:00"
-      },
-      {
-        "PersonId": 4986,
-        "DidAttend": true,
-        "Date": "2025-08-10T00:00:00"
-      },
-      {
-        "PersonId": 4986,
-        "DidAttend": true,
-        "Date": "2025-08-03T00:00:00"
-      },
-      {
-        "PersonId": 4986,
-        "DidAttend": true,
-        "Date": "2025-07-27T00:00:00"
-      },
-      {
-        "PersonId": 4986,
-        "DidAttend": false,
-        "Date": "2025-07-20T00:00:00"
-      },
-      {
-        "PersonId": 4986,
-        "DidAttend": false,
-        "Date": "2025-07-13T00:00:00"
-      },
-      {
-        "PersonId": 4986,
-        "DidAttend": false,
-        "Date": "2025-07-06T00:00:00"
-      },
-      {
-        "PersonId": 4986,
-        "DidAttend": false,
-        "Date": "2025-06-29T00:00:00"
-      },
-      {
-        "PersonId": 4986,
-        "DidAttend": true,
-        "Date": "2025-06-22T00:00:00"
-      },
-      {
-        "PersonId": 4986,
-        "DidAttend": true,
-        "Date": "2025-06-15T00:00:00"
-      },
-      {
-        "PersonId": 4986,
-        "DidAttend": true,
-        "Date": "2025-06-08T00:00:00"
-      },
-      {
-        "PersonId": 4986,
-        "DidAttend": true,
-        "Date": "2025-06-01T00:00:00"
-      },
-      {
-        "PersonId": 4986,
-        "DidAttend": false,
-        "Date": "2025-05-25T00:00:00"
-      },
-      {
-        "PersonId": 4986,
-        "DidAttend": true,
-        "Date": "2025-05-18T00:00:00"
-      },
-      {
-        "PersonId": 4986,
-        "DidAttend": true,
-        "Date": "2025-05-11T00:00:00"
-      },
-      {
-        "PersonId": 4986,
-        "DidAttend": true,
-        "Date": "2025-05-04T00:00:00"
-      },
-      {
-        "PersonId": 4986,
-        "DidAttend": true,
-        "Date": "2025-04-27T00:00:00"
-      },
-      {
-        "PersonId": 4986,
-        "DidAttend": false,
-        "Date": "2025-04-20T00:00:00"
-      },
-      {
-        "PersonId": 4986,
-        "DidAttend": false,
-        "Date": "2025-04-18T00:00:00"
-      },
-      {
-        "PersonId": 4986,
-        "DidAttend": false,
-        "Date": "2025-04-17T00:00:00"
-      },
-      {
-        "PersonId": 4986,
-        "DidAttend": false,
-        "Date": "2025-04-13T00:00:00"
-      },
-      {
-        "PersonId": 4986,
-        "DidAttend": true,
-        "Date": "2025-04-06T00:00:00"
-      },
-      {
-        "PersonId": 4986,
-        "DidAttend": true,
-        "Date": "2025-03-30T00:00:00"
-      },
-      {
-        "PersonId": 4986,
-        "DidAttend": false,
-        "Date": "2025-03-23T00:00:00"
-      },
-      {
-        "PersonId": 4986,
-        "DidAttend": true,
-        "Date": "2025-03-16T00:00:00"
-      },
-      {
-        "PersonId": 4986,
-        "DidAttend": true,
-        "Date": "2025-03-09T00:00:00"
-      },
-      {
-        "PersonId": 4986,
-        "DidAttend": true,
-        "Date": "2025-03-02T00:00:00"
-      },
-      {
-        "PersonId": 4986,
-        "DidAttend": true,
-        "Date": "2025-02-23T00:00:00"
-      },
-      {
-        "PersonId": 4986,
-        "DidAttend": false,
-        "Date": "2025-02-16T00:00:00"
-      },
-      {
-        "PersonId": 4986,
-        "DidAttend": false,
-        "Date": "2025-02-09T00:00:00"
-      },
-      {
-        "PersonId": 4986,
-        "DidAttend": false,
-        "Date": "2025-02-02T00:00:00"
-      },
-      {
-        "PersonId": 4986,
-        "DidAttend": false,
-        "Date": "2025-01-26T00:00:00"
-      },
-      {
-        "PersonId": 4986,
-        "DidAttend": false,
-        "Date": "2025-01-19T00:00:00"
-      },
-      {
-        "PersonId": 4986,
-        "DidAttend": false,
-        "Date": "2025-01-12T00:00:00"
-      },
-      {
-        "PersonId": 4986,
-        "DidAttend": false,
-        "Date": "2025-01-05T00:00:00"
-      },
-      {
-        "PersonId": 5573,
-        "DidAttend": true,
-        "Date": "2025-10-12T00:00:00"
-      },
-      {
-        "PersonId": 5573,
-        "DidAttend": false,
-        "Date": "2025-10-05T00:00:00"
-      },
-      {
-        "PersonId": 5573,
-        "DidAttend": true,
-        "Date": "2025-09-28T00:00:00"
-      },
-      {
-        "PersonId": 5573,
-        "DidAttend": true,
-        "Date": "2025-09-21T00:00:00"
-      },
-      {
-        "PersonId": 5573,
-        "DidAttend": true,
-        "Date": "2025-09-14T00:00:00"
-      },
-      {
-        "PersonId": 5573,
+        "PersonId": 2477,
         "DidAttend": true,
         "Date": "2025-09-07T00:00:00"
       },
       {
-        "PersonId": 5573,
+        "PersonId": 2477,
         "DidAttend": true,
         "Date": "2025-08-31T00:00:00"
       },
       {
-        "PersonId": 5573,
+        "PersonId": 2477,
         "DidAttend": true,
         "Date": "2025-08-24T00:00:00"
       },
       {
-        "PersonId": 5573,
+        "PersonId": 2477,
         "DidAttend": true,
         "Date": "2025-08-17T00:00:00"
       },
       {
-        "PersonId": 5573,
+        "PersonId": 2477,
         "DidAttend": true,
         "Date": "2025-08-10T00:00:00"
       },
       {
-        "PersonId": 5573,
+        "PersonId": 2477,
         "DidAttend": true,
         "Date": "2025-08-03T00:00:00"
       },
       {
-        "PersonId": 5573,
-        "DidAttend": false,
+        "PersonId": 2477,
+        "DidAttend": true,
         "Date": "2025-07-27T00:00:00"
       },
       {
-        "PersonId": 5573,
+        "PersonId": 2477,
         "DidAttend": true,
         "Date": "2025-07-20T00:00:00"
       },
       {
-        "PersonId": 5573,
+        "PersonId": 2477,
         "DidAttend": true,
         "Date": "2025-07-13T00:00:00"
       },
       {
-        "PersonId": 5573,
+        "PersonId": 2477,
         "DidAttend": true,
         "Date": "2025-07-06T00:00:00"
       },
       {
-        "PersonId": 5573,
+        "PersonId": 2477,
         "DidAttend": true,
         "Date": "2025-06-29T00:00:00"
       },
       {
-        "PersonId": 5573,
+        "PersonId": 2477,
         "DidAttend": true,
         "Date": "2025-06-22T00:00:00"
       },
       {
-        "PersonId": 5573,
+        "PersonId": 2477,
         "DidAttend": true,
         "Date": "2025-06-15T00:00:00"
       },
       {
-        "PersonId": 5573,
+        "PersonId": 2477,
         "DidAttend": true,
         "Date": "2025-06-08T00:00:00"
       },
       {
-        "PersonId": 5573,
+        "PersonId": 2477,
         "DidAttend": true,
         "Date": "2025-06-01T00:00:00"
       },
       {
-        "PersonId": 5573,
+        "PersonId": 2477,
         "DidAttend": true,
         "Date": "2025-05-25T00:00:00"
       },
       {
-        "PersonId": 5573,
-        "DidAttend": false,
+        "PersonId": 2477,
+        "DidAttend": true,
         "Date": "2025-05-18T00:00:00"
       },
       {
-        "PersonId": 5573,
-        "DidAttend": false,
+        "PersonId": 2477,
+        "DidAttend": true,
         "Date": "2025-05-11T00:00:00"
       },
       {
-        "PersonId": 5573,
+        "PersonId": 2477,
         "DidAttend": true,
         "Date": "2025-05-04T00:00:00"
       },
       {
-        "PersonId": 5573,
-        "DidAttend": true,
+        "PersonId": 2477,
+        "DidAttend": false,
         "Date": "2025-04-27T00:00:00"
       },
       {
-        "PersonId": 5573,
+        "PersonId": 2477,
         "DidAttend": true,
         "Date": "2025-04-20T00:00:00"
       },
       {
-        "PersonId": 5573,
-        "DidAttend": true,
+        "PersonId": 2477,
+        "DidAttend": false,
         "Date": "2025-04-18T00:00:00"
       },
       {
-        "PersonId": 5573,
-        "DidAttend": true,
+        "PersonId": 2477,
+        "DidAttend": false,
         "Date": "2025-04-17T00:00:00"
       },
       {
-        "PersonId": 5573,
+        "PersonId": 2477,
         "DidAttend": true,
         "Date": "2025-04-13T00:00:00"
       },
       {
-        "PersonId": 5573,
+        "PersonId": 2477,
         "DidAttend": true,
         "Date": "2025-04-06T00:00:00"
       },
       {
-        "PersonId": 5573,
+        "PersonId": 2477,
         "DidAttend": true,
         "Date": "2025-03-30T00:00:00"
       },
       {
-        "PersonId": 5573,
+        "PersonId": 2477,
         "DidAttend": true,
         "Date": "2025-03-23T00:00:00"
       },
       {
-        "PersonId": 5573,
+        "PersonId": 2477,
         "DidAttend": true,
         "Date": "2025-03-16T00:00:00"
       },
       {
-        "PersonId": 5573,
+        "PersonId": 2477,
         "DidAttend": true,
         "Date": "2025-03-09T00:00:00"
       },
       {
-        "PersonId": 5573,
+        "PersonId": 2477,
         "DidAttend": true,
         "Date": "2025-03-02T00:00:00"
       },
       {
-        "PersonId": 5573,
+        "PersonId": 2477,
         "DidAttend": true,
         "Date": "2025-02-23T00:00:00"
       },
       {
-        "PersonId": 5573,
+        "PersonId": 2477,
         "DidAttend": true,
         "Date": "2025-02-16T00:00:00"
       },
       {
-        "PersonId": 5573,
+        "PersonId": 2477,
         "DidAttend": true,
         "Date": "2025-02-09T00:00:00"
       },
       {
-        "PersonId": 5573,
+        "PersonId": 2477,
         "DidAttend": true,
         "Date": "2025-02-02T00:00:00"
       },
       {
-        "PersonId": 5573,
-        "DidAttend": false,
+        "PersonId": 2477,
+        "DidAttend": true,
         "Date": "2025-01-26T00:00:00"
       },
       {
-        "PersonId": 5573,
+        "PersonId": 2477,
         "DidAttend": true,
         "Date": "2025-01-19T00:00:00"
       },
       {
-        "PersonId": 5573,
+        "PersonId": 2477,
         "DidAttend": true,
         "Date": "2025-01-12T00:00:00"
       },
       {
-        "PersonId": 5573,
+        "PersonId": 2477,
+        "DidAttend": false,
+        "Date": "2025-01-05T00:00:00"
+      },
+      {
+        "PersonId": 2550,
+        "DidAttend": true,
+        "Date": "2025-12-14T00:00:00"
+      },
+      {
+        "PersonId": 2550,
+        "DidAttend": true,
+        "Date": "2025-12-07T00:00:00"
+      },
+      {
+        "PersonId": 2550,
+        "DidAttend": true,
+        "Date": "2025-11-30T00:00:00"
+      },
+      {
+        "PersonId": 2550,
+        "DidAttend": false,
+        "Date": "2025-11-23T00:00:00"
+      },
+      {
+        "PersonId": 2550,
+        "DidAttend": true,
+        "Date": "2025-11-16T00:00:00"
+      },
+      {
+        "PersonId": 2550,
+        "DidAttend": true,
+        "Date": "2025-11-09T00:00:00"
+      },
+      {
+        "PersonId": 2550,
+        "DidAttend": true,
+        "Date": "2025-11-02T00:00:00"
+      },
+      {
+        "PersonId": 2550,
+        "DidAttend": true,
+        "Date": "2025-10-26T00:00:00"
+      },
+      {
+        "PersonId": 2550,
+        "DidAttend": true,
+        "Date": "2025-10-19T00:00:00"
+      },
+      {
+        "PersonId": 2550,
+        "DidAttend": true,
+        "Date": "2025-10-12T00:00:00"
+      },
+      {
+        "PersonId": 2550,
+        "DidAttend": true,
+        "Date": "2025-10-05T00:00:00"
+      },
+      {
+        "PersonId": 2550,
+        "DidAttend": true,
+        "Date": "2025-09-28T00:00:00"
+      },
+      {
+        "PersonId": 2550,
+        "DidAttend": true,
+        "Date": "2025-09-21T00:00:00"
+      },
+      {
+        "PersonId": 2550,
+        "DidAttend": true,
+        "Date": "2025-09-14T00:00:00"
+      },
+      {
+        "PersonId": 2550,
+        "DidAttend": true,
+        "Date": "2025-09-07T00:00:00"
+      },
+      {
+        "PersonId": 2550,
+        "DidAttend": false,
+        "Date": "2025-08-31T00:00:00"
+      },
+      {
+        "PersonId": 2550,
+        "DidAttend": false,
+        "Date": "2025-08-24T00:00:00"
+      },
+      {
+        "PersonId": 2550,
+        "DidAttend": true,
+        "Date": "2025-08-17T00:00:00"
+      },
+      {
+        "PersonId": 2550,
+        "DidAttend": true,
+        "Date": "2025-08-10T00:00:00"
+      },
+      {
+        "PersonId": 2550,
+        "DidAttend": true,
+        "Date": "2025-08-03T00:00:00"
+      },
+      {
+        "PersonId": 2550,
+        "DidAttend": true,
+        "Date": "2025-07-27T00:00:00"
+      },
+      {
+        "PersonId": 2550,
+        "DidAttend": true,
+        "Date": "2025-07-20T00:00:00"
+      },
+      {
+        "PersonId": 2550,
+        "DidAttend": true,
+        "Date": "2025-07-13T00:00:00"
+      },
+      {
+        "PersonId": 2550,
+        "DidAttend": false,
+        "Date": "2025-07-06T00:00:00"
+      },
+      {
+        "PersonId": 2550,
+        "DidAttend": true,
+        "Date": "2025-06-29T00:00:00"
+      },
+      {
+        "PersonId": 2550,
+        "DidAttend": true,
+        "Date": "2025-06-22T00:00:00"
+      },
+      {
+        "PersonId": 2550,
+        "DidAttend": true,
+        "Date": "2025-06-15T00:00:00"
+      },
+      {
+        "PersonId": 2550,
+        "DidAttend": true,
+        "Date": "2025-06-08T00:00:00"
+      },
+      {
+        "PersonId": 2550,
+        "DidAttend": true,
+        "Date": "2025-06-01T00:00:00"
+      },
+      {
+        "PersonId": 2550,
+        "DidAttend": true,
+        "Date": "2025-05-25T00:00:00"
+      },
+      {
+        "PersonId": 2550,
+        "DidAttend": true,
+        "Date": "2025-05-18T00:00:00"
+      },
+      {
+        "PersonId": 2550,
+        "DidAttend": false,
+        "Date": "2025-05-11T00:00:00"
+      },
+      {
+        "PersonId": 2550,
+        "DidAttend": true,
+        "Date": "2025-05-04T00:00:00"
+      },
+      {
+        "PersonId": 2550,
+        "DidAttend": false,
+        "Date": "2025-04-27T00:00:00"
+      },
+      {
+        "PersonId": 2550,
+        "DidAttend": true,
+        "Date": "2025-04-20T00:00:00"
+      },
+      {
+        "PersonId": 2550,
+        "DidAttend": true,
+        "Date": "2025-04-18T00:00:00"
+      },
+      {
+        "PersonId": 2550,
+        "DidAttend": false,
+        "Date": "2025-04-17T00:00:00"
+      },
+      {
+        "PersonId": 2550,
+        "DidAttend": false,
+        "Date": "2025-04-13T00:00:00"
+      },
+      {
+        "PersonId": 2550,
+        "DidAttend": true,
+        "Date": "2025-04-06T00:00:00"
+      },
+      {
+        "PersonId": 2550,
+        "DidAttend": true,
+        "Date": "2025-03-30T00:00:00"
+      },
+      {
+        "PersonId": 2550,
+        "DidAttend": false,
+        "Date": "2025-03-23T00:00:00"
+      },
+      {
+        "PersonId": 2550,
+        "DidAttend": false,
+        "Date": "2025-03-16T00:00:00"
+      },
+      {
+        "PersonId": 2550,
+        "DidAttend": true,
+        "Date": "2025-03-09T00:00:00"
+      },
+      {
+        "PersonId": 2550,
+        "DidAttend": true,
+        "Date": "2025-03-02T00:00:00"
+      },
+      {
+        "PersonId": 2550,
+        "DidAttend": true,
+        "Date": "2025-02-23T00:00:00"
+      },
+      {
+        "PersonId": 2550,
+        "DidAttend": true,
+        "Date": "2025-02-16T00:00:00"
+      },
+      {
+        "PersonId": 2550,
+        "DidAttend": true,
+        "Date": "2025-02-09T00:00:00"
+      },
+      {
+        "PersonId": 2550,
+        "DidAttend": true,
+        "Date": "2025-02-02T00:00:00"
+      },
+      {
+        "PersonId": 2550,
+        "DidAttend": false,
+        "Date": "2025-01-26T00:00:00"
+      },
+      {
+        "PersonId": 2550,
+        "DidAttend": true,
+        "Date": "2025-01-19T00:00:00"
+      },
+      {
+        "PersonId": 2550,
+        "DidAttend": true,
+        "Date": "2025-01-12T00:00:00"
+      },
+      {
+        "PersonId": 2550,
+        "DidAttend": false,
+        "Date": "2025-01-05T00:00:00"
+      },
+      {
+        "PersonId": 3185,
+        "DidAttend": true,
+        "Date": "2025-12-14T00:00:00"
+      },
+      {
+        "PersonId": 3185,
+        "DidAttend": true,
+        "Date": "2025-12-07T00:00:00"
+      },
+      {
+        "PersonId": 3185,
+        "DidAttend": true,
+        "Date": "2025-11-30T00:00:00"
+      },
+      {
+        "PersonId": 3185,
+        "DidAttend": true,
+        "Date": "2025-11-23T00:00:00"
+      },
+      {
+        "PersonId": 3185,
+        "DidAttend": false,
+        "Date": "2025-11-16T00:00:00"
+      },
+      {
+        "PersonId": 3185,
+        "DidAttend": true,
+        "Date": "2025-11-09T00:00:00"
+      },
+      {
+        "PersonId": 3185,
+        "DidAttend": true,
+        "Date": "2025-11-02T00:00:00"
+      },
+      {
+        "PersonId": 3185,
+        "DidAttend": false,
+        "Date": "2025-10-26T00:00:00"
+      },
+      {
+        "PersonId": 3185,
+        "DidAttend": false,
+        "Date": "2025-10-19T00:00:00"
+      },
+      {
+        "PersonId": 3185,
+        "DidAttend": true,
+        "Date": "2025-10-12T00:00:00"
+      },
+      {
+        "PersonId": 3185,
+        "DidAttend": false,
+        "Date": "2025-10-05T00:00:00"
+      },
+      {
+        "PersonId": 3185,
+        "DidAttend": false,
+        "Date": "2025-09-28T00:00:00"
+      },
+      {
+        "PersonId": 3185,
+        "DidAttend": false,
+        "Date": "2025-09-21T00:00:00"
+      },
+      {
+        "PersonId": 3185,
+        "DidAttend": false,
+        "Date": "2025-09-14T00:00:00"
+      },
+      {
+        "PersonId": 3185,
+        "DidAttend": false,
+        "Date": "2025-09-07T00:00:00"
+      },
+      {
+        "PersonId": 3185,
+        "DidAttend": false,
+        "Date": "2025-08-31T00:00:00"
+      },
+      {
+        "PersonId": 3185,
+        "DidAttend": true,
+        "Date": "2025-08-24T00:00:00"
+      },
+      {
+        "PersonId": 3185,
+        "DidAttend": true,
+        "Date": "2025-08-17T00:00:00"
+      },
+      {
+        "PersonId": 3185,
+        "DidAttend": false,
+        "Date": "2025-08-10T00:00:00"
+      },
+      {
+        "PersonId": 3185,
+        "DidAttend": false,
+        "Date": "2025-08-03T00:00:00"
+      },
+      {
+        "PersonId": 3185,
+        "DidAttend": false,
+        "Date": "2025-07-27T00:00:00"
+      },
+      {
+        "PersonId": 3185,
+        "DidAttend": true,
+        "Date": "2025-07-20T00:00:00"
+      },
+      {
+        "PersonId": 3185,
+        "DidAttend": true,
+        "Date": "2025-07-13T00:00:00"
+      },
+      {
+        "PersonId": 3185,
+        "DidAttend": true,
+        "Date": "2025-07-06T00:00:00"
+      },
+      {
+        "PersonId": 3185,
+        "DidAttend": true,
+        "Date": "2025-06-29T00:00:00"
+      },
+      {
+        "PersonId": 3185,
+        "DidAttend": true,
+        "Date": "2025-06-22T00:00:00"
+      },
+      {
+        "PersonId": 3185,
+        "DidAttend": false,
+        "Date": "2025-06-15T00:00:00"
+      },
+      {
+        "PersonId": 3185,
+        "DidAttend": true,
+        "Date": "2025-06-08T00:00:00"
+      },
+      {
+        "PersonId": 3185,
+        "DidAttend": false,
+        "Date": "2025-06-01T00:00:00"
+      },
+      {
+        "PersonId": 3185,
+        "DidAttend": false,
+        "Date": "2025-05-25T00:00:00"
+      },
+      {
+        "PersonId": 3185,
+        "DidAttend": true,
+        "Date": "2025-05-18T00:00:00"
+      },
+      {
+        "PersonId": 3185,
+        "DidAttend": false,
+        "Date": "2025-05-11T00:00:00"
+      },
+      {
+        "PersonId": 3185,
+        "DidAttend": true,
+        "Date": "2025-05-04T00:00:00"
+      },
+      {
+        "PersonId": 3185,
+        "DidAttend": true,
+        "Date": "2025-04-27T00:00:00"
+      },
+      {
+        "PersonId": 3185,
+        "DidAttend": true,
+        "Date": "2025-04-20T00:00:00"
+      },
+      {
+        "PersonId": 3185,
+        "DidAttend": false,
+        "Date": "2025-04-18T00:00:00"
+      },
+      {
+        "PersonId": 3185,
+        "DidAttend": false,
+        "Date": "2025-04-17T00:00:00"
+      },
+      {
+        "PersonId": 3185,
+        "DidAttend": false,
+        "Date": "2025-04-13T00:00:00"
+      },
+      {
+        "PersonId": 3185,
+        "DidAttend": true,
+        "Date": "2025-04-06T00:00:00"
+      },
+      {
+        "PersonId": 3185,
+        "DidAttend": false,
+        "Date": "2025-03-30T00:00:00"
+      },
+      {
+        "PersonId": 3185,
+        "DidAttend": false,
+        "Date": "2025-03-23T00:00:00"
+      },
+      {
+        "PersonId": 3185,
+        "DidAttend": true,
+        "Date": "2025-03-16T00:00:00"
+      },
+      {
+        "PersonId": 3185,
+        "DidAttend": true,
+        "Date": "2025-03-09T00:00:00"
+      },
+      {
+        "PersonId": 3185,
+        "DidAttend": true,
+        "Date": "2025-03-02T00:00:00"
+      },
+      {
+        "PersonId": 3185,
+        "DidAttend": true,
+        "Date": "2025-02-23T00:00:00"
+      },
+      {
+        "PersonId": 3185,
+        "DidAttend": true,
+        "Date": "2025-02-16T00:00:00"
+      },
+      {
+        "PersonId": 3185,
+        "DidAttend": false,
+        "Date": "2025-02-09T00:00:00"
+      },
+      {
+        "PersonId": 3185,
+        "DidAttend": true,
+        "Date": "2025-02-02T00:00:00"
+      },
+      {
+        "PersonId": 3185,
+        "DidAttend": true,
+        "Date": "2025-01-26T00:00:00"
+      },
+      {
+        "PersonId": 3185,
+        "DidAttend": false,
+        "Date": "2025-01-19T00:00:00"
+      },
+      {
+        "PersonId": 3185,
+        "DidAttend": true,
+        "Date": "2025-01-12T00:00:00"
+      },
+      {
+        "PersonId": 3185,
+        "DidAttend": false,
+        "Date": "2025-01-05T00:00:00"
+      },
+      {
+        "PersonId": 3823,
+        "DidAttend": true,
+        "Date": "2025-12-14T00:00:00"
+      },
+      {
+        "PersonId": 3823,
+        "DidAttend": true,
+        "Date": "2025-12-07T00:00:00"
+      },
+      {
+        "PersonId": 3823,
+        "DidAttend": true,
+        "Date": "2025-11-30T00:00:00"
+      },
+      {
+        "PersonId": 3823,
+        "DidAttend": true,
+        "Date": "2025-11-23T00:00:00"
+      },
+      {
+        "PersonId": 3823,
+        "DidAttend": true,
+        "Date": "2025-11-16T00:00:00"
+      },
+      {
+        "PersonId": 3823,
+        "DidAttend": true,
+        "Date": "2025-11-09T00:00:00"
+      },
+      {
+        "PersonId": 3823,
+        "DidAttend": true,
+        "Date": "2025-11-02T00:00:00"
+      },
+      {
+        "PersonId": 3823,
+        "DidAttend": false,
+        "Date": "2025-10-26T00:00:00"
+      },
+      {
+        "PersonId": 3823,
+        "DidAttend": false,
+        "Date": "2025-10-19T00:00:00"
+      },
+      {
+        "PersonId": 3823,
+        "DidAttend": true,
+        "Date": "2025-10-12T00:00:00"
+      },
+      {
+        "PersonId": 3823,
+        "DidAttend": false,
+        "Date": "2025-10-05T00:00:00"
+      },
+      {
+        "PersonId": 3823,
+        "DidAttend": true,
+        "Date": "2025-09-28T00:00:00"
+      },
+      {
+        "PersonId": 3823,
+        "DidAttend": true,
+        "Date": "2025-09-21T00:00:00"
+      },
+      {
+        "PersonId": 3823,
+        "DidAttend": true,
+        "Date": "2025-09-14T00:00:00"
+      },
+      {
+        "PersonId": 3823,
+        "DidAttend": true,
+        "Date": "2025-09-07T00:00:00"
+      },
+      {
+        "PersonId": 3823,
+        "DidAttend": true,
+        "Date": "2025-08-31T00:00:00"
+      },
+      {
+        "PersonId": 3823,
+        "DidAttend": true,
+        "Date": "2025-08-24T00:00:00"
+      },
+      {
+        "PersonId": 3823,
+        "DidAttend": true,
+        "Date": "2025-08-17T00:00:00"
+      },
+      {
+        "PersonId": 3823,
+        "DidAttend": true,
+        "Date": "2025-08-10T00:00:00"
+      },
+      {
+        "PersonId": 3823,
+        "DidAttend": true,
+        "Date": "2025-08-03T00:00:00"
+      },
+      {
+        "PersonId": 3823,
+        "DidAttend": true,
+        "Date": "2025-07-27T00:00:00"
+      },
+      {
+        "PersonId": 3823,
+        "DidAttend": true,
+        "Date": "2025-07-20T00:00:00"
+      },
+      {
+        "PersonId": 3823,
+        "DidAttend": true,
+        "Date": "2025-07-13T00:00:00"
+      },
+      {
+        "PersonId": 3823,
+        "DidAttend": true,
+        "Date": "2025-07-06T00:00:00"
+      },
+      {
+        "PersonId": 3823,
+        "DidAttend": false,
+        "Date": "2025-06-29T00:00:00"
+      },
+      {
+        "PersonId": 3823,
+        "DidAttend": false,
+        "Date": "2025-06-22T00:00:00"
+      },
+      {
+        "PersonId": 3823,
+        "DidAttend": false,
+        "Date": "2025-06-15T00:00:00"
+      },
+      {
+        "PersonId": 3823,
+        "DidAttend": false,
+        "Date": "2025-06-08T00:00:00"
+      },
+      {
+        "PersonId": 3823,
+        "DidAttend": false,
+        "Date": "2025-06-01T00:00:00"
+      },
+      {
+        "PersonId": 3823,
+        "DidAttend": false,
+        "Date": "2025-05-25T00:00:00"
+      },
+      {
+        "PersonId": 3823,
+        "DidAttend": false,
+        "Date": "2025-05-18T00:00:00"
+      },
+      {
+        "PersonId": 3823,
+        "DidAttend": false,
+        "Date": "2025-05-11T00:00:00"
+      },
+      {
+        "PersonId": 3823,
+        "DidAttend": true,
+        "Date": "2025-05-04T00:00:00"
+      },
+      {
+        "PersonId": 3823,
+        "DidAttend": true,
+        "Date": "2025-04-27T00:00:00"
+      },
+      {
+        "PersonId": 3823,
+        "DidAttend": true,
+        "Date": "2025-04-20T00:00:00"
+      },
+      {
+        "PersonId": 3823,
+        "DidAttend": true,
+        "Date": "2025-04-18T00:00:00"
+      },
+      {
+        "PersonId": 3823,
+        "DidAttend": true,
+        "Date": "2025-04-17T00:00:00"
+      },
+      {
+        "PersonId": 3823,
+        "DidAttend": true,
+        "Date": "2025-04-13T00:00:00"
+      },
+      {
+        "PersonId": 3823,
+        "DidAttend": true,
+        "Date": "2025-04-06T00:00:00"
+      },
+      {
+        "PersonId": 3823,
+        "DidAttend": true,
+        "Date": "2025-03-30T00:00:00"
+      },
+      {
+        "PersonId": 3823,
+        "DidAttend": true,
+        "Date": "2025-03-23T00:00:00"
+      },
+      {
+        "PersonId": 3823,
+        "DidAttend": false,
+        "Date": "2025-03-16T00:00:00"
+      },
+      {
+        "PersonId": 3823,
+        "DidAttend": true,
+        "Date": "2025-03-09T00:00:00"
+      },
+      {
+        "PersonId": 3823,
+        "DidAttend": true,
+        "Date": "2025-03-02T00:00:00"
+      },
+      {
+        "PersonId": 3823,
+        "DidAttend": true,
+        "Date": "2025-02-23T00:00:00"
+      },
+      {
+        "PersonId": 3823,
+        "DidAttend": true,
+        "Date": "2025-02-16T00:00:00"
+      },
+      {
+        "PersonId": 3823,
+        "DidAttend": true,
+        "Date": "2025-02-09T00:00:00"
+      },
+      {
+        "PersonId": 3823,
+        "DidAttend": true,
+        "Date": "2025-02-02T00:00:00"
+      },
+      {
+        "PersonId": 3823,
+        "DidAttend": true,
+        "Date": "2025-01-26T00:00:00"
+      },
+      {
+        "PersonId": 3823,
+        "DidAttend": true,
+        "Date": "2025-01-19T00:00:00"
+      },
+      {
+        "PersonId": 3823,
+        "DidAttend": true,
+        "Date": "2025-01-12T00:00:00"
+      },
+      {
+        "PersonId": 3823,
         "DidAttend": true,
         "Date": "2025-01-05T00:00:00"
       },
       {
-        "PersonId": 8403,
-        "DidAttend": false,
-        "Date": "2025-10-12T00:00:00"
-      },
-      {
-        "PersonId": 8403,
-        "DidAttend": false,
-        "Date": "2025-10-05T00:00:00"
-      },
-      {
-        "PersonId": 8403,
+        "PersonId": 5813,
         "DidAttend": true,
-        "Date": "2025-09-28T00:00:00"
+        "Date": "2025-12-14T00:00:00"
       },
       {
-        "PersonId": 8403,
+        "PersonId": 5813,
+        "DidAttend": false,
+        "Date": "2025-12-07T00:00:00"
+      },
+      {
+        "PersonId": 5813,
         "DidAttend": true,
-        "Date": "2025-09-21T00:00:00"
+        "Date": "2025-11-30T00:00:00"
       },
       {
-        "PersonId": 8403,
+        "PersonId": 5813,
         "DidAttend": true,
-        "Date": "2025-09-14T00:00:00"
+        "Date": "2025-11-23T00:00:00"
       },
       {
-        "PersonId": 8403,
+        "PersonId": 5813,
         "DidAttend": true,
-        "Date": "2025-09-07T00:00:00"
+        "Date": "2025-11-16T00:00:00"
       },
       {
-        "PersonId": 8403,
-        "DidAttend": false,
-        "Date": "2025-08-31T00:00:00"
-      },
-      {
-        "PersonId": 8403,
-        "DidAttend": false,
-        "Date": "2025-08-24T00:00:00"
-      },
-      {
-        "PersonId": 8403,
+        "PersonId": 5813,
         "DidAttend": true,
-        "Date": "2025-08-17T00:00:00"
+        "Date": "2025-11-09T00:00:00"
       },
       {
-        "PersonId": 8403,
-        "DidAttend": false,
-        "Date": "2025-08-10T00:00:00"
-      },
-      {
-        "PersonId": 8403,
-        "DidAttend": false,
-        "Date": "2025-08-03T00:00:00"
-      },
-      {
-        "PersonId": 8403,
+        "PersonId": 5813,
         "DidAttend": true,
-        "Date": "2025-07-27T00:00:00"
+        "Date": "2025-11-02T00:00:00"
       },
       {
-        "PersonId": 8403,
+        "PersonId": 5813,
         "DidAttend": true,
-        "Date": "2025-07-20T00:00:00"
+        "Date": "2025-10-26T00:00:00"
       },
       {
-        "PersonId": 8403,
+        "PersonId": 5813,
         "DidAttend": true,
-        "Date": "2025-07-13T00:00:00"
+        "Date": "2025-10-19T00:00:00"
       },
       {
-        "PersonId": 8403,
-        "DidAttend": false,
-        "Date": "2025-07-06T00:00:00"
-      },
-      {
-        "PersonId": 8403,
-        "DidAttend": false,
-        "Date": "2025-06-29T00:00:00"
-      },
-      {
-        "PersonId": 8403,
-        "DidAttend": false,
-        "Date": "2025-06-22T00:00:00"
-      },
-      {
-        "PersonId": 8403,
-        "DidAttend": false,
-        "Date": "2025-06-15T00:00:00"
-      },
-      {
-        "PersonId": 8403,
-        "DidAttend": false,
-        "Date": "2025-06-08T00:00:00"
-      },
-      {
-        "PersonId": 8403,
-        "DidAttend": true,
-        "Date": "2025-06-01T00:00:00"
-      },
-      {
-        "PersonId": 8403,
-        "DidAttend": false,
-        "Date": "2025-05-11T00:00:00"
-      },
-      {
-        "PersonId": 8403,
-        "DidAttend": false,
-        "Date": "2025-05-04T00:00:00"
-      },
-      {
-        "PersonId": 9885,
+        "PersonId": 5813,
         "DidAttend": true,
         "Date": "2025-10-12T00:00:00"
       },
       {
-        "PersonId": 9885,
+        "PersonId": 5813,
         "DidAttend": true,
         "Date": "2025-10-05T00:00:00"
       },
       {
-        "PersonId": 9885,
+        "PersonId": 5813,
         "DidAttend": true,
         "Date": "2025-09-28T00:00:00"
       },
       {
-        "PersonId": 9885,
+        "PersonId": 5813,
         "DidAttend": true,
         "Date": "2025-09-21T00:00:00"
       },
       {
-        "PersonId": 9885,
+        "PersonId": 5813,
         "DidAttend": true,
         "Date": "2025-09-14T00:00:00"
       },
       {
-        "PersonId": 9885,
-        "DidAttend": true,
+        "PersonId": 5813,
+        "DidAttend": false,
         "Date": "2025-09-07T00:00:00"
       },
       {
-        "PersonId": 9885,
+        "PersonId": 5813,
         "DidAttend": true,
         "Date": "2025-08-31T00:00:00"
       },
       {
-        "PersonId": 9885,
+        "PersonId": 5813,
         "DidAttend": true,
         "Date": "2025-08-24T00:00:00"
       },
       {
-        "PersonId": 9885,
+        "PersonId": 5813,
         "DidAttend": true,
         "Date": "2025-08-17T00:00:00"
       },
       {
-        "PersonId": 9885,
+        "PersonId": 5813,
         "DidAttend": true,
         "Date": "2025-08-10T00:00:00"
       },
       {
-        "PersonId": 9885,
+        "PersonId": 5813,
         "DidAttend": false,
         "Date": "2025-08-03T00:00:00"
       },
       {
-        "PersonId": 9885,
+        "PersonId": 5813,
         "DidAttend": true,
         "Date": "2025-07-27T00:00:00"
       },
       {
-        "PersonId": 9885,
+        "PersonId": 5813,
         "DidAttend": true,
         "Date": "2025-07-20T00:00:00"
       },
       {
-        "PersonId": 9885,
-        "DidAttend": true,
+        "PersonId": 5813,
+        "DidAttend": false,
         "Date": "2025-07-13T00:00:00"
       },
       {
-        "PersonId": 9885,
+        "PersonId": 5813,
         "DidAttend": true,
         "Date": "2025-07-06T00:00:00"
       },
       {
-        "PersonId": 9885,
+        "PersonId": 5813,
         "DidAttend": true,
         "Date": "2025-06-29T00:00:00"
       },
       {
-        "PersonId": 9885,
+        "PersonId": 5813,
         "DidAttend": true,
         "Date": "2025-06-22T00:00:00"
       },
       {
-        "PersonId": 9885,
+        "PersonId": 5813,
         "DidAttend": true,
         "Date": "2025-06-15T00:00:00"
       },
       {
-        "PersonId": 9885,
+        "PersonId": 5813,
         "DidAttend": true,
         "Date": "2025-06-08T00:00:00"
       },
       {
-        "PersonId": 9885,
-        "DidAttend": false,
+        "PersonId": 5813,
+        "DidAttend": true,
         "Date": "2025-06-01T00:00:00"
       },
       {
-        "PersonId": 9885,
-        "DidAttend": true,
+        "PersonId": 5813,
+        "DidAttend": false,
         "Date": "2025-05-25T00:00:00"
       },
       {
-        "PersonId": 9885,
-        "DidAttend": false,
-        "Date": "2025-05-18T00:00:00"
-      },
-      {
-        "PersonId": 9885,
-        "DidAttend": false,
-        "Date": "2025-05-11T00:00:00"
-      },
-      {
-        "PersonId": 9885,
-        "DidAttend": true,
-        "Date": "2025-05-04T00:00:00"
-      },
-      {
-        "PersonId": 9885,
-        "DidAttend": true,
-        "Date": "2025-04-27T00:00:00"
-      },
-      {
-        "PersonId": 9885,
-        "DidAttend": true,
-        "Date": "2025-04-20T00:00:00"
-      },
-      {
-        "PersonId": 9885,
-        "DidAttend": false,
-        "Date": "2025-04-18T00:00:00"
-      },
-      {
-        "PersonId": 9885,
-        "DidAttend": false,
-        "Date": "2025-04-17T00:00:00"
-      },
-      {
-        "PersonId": 9885,
-        "DidAttend": true,
-        "Date": "2025-04-13T00:00:00"
-      },
-      {
-        "PersonId": 9885,
-        "DidAttend": false,
-        "Date": "2025-04-06T00:00:00"
-      },
-      {
-        "PersonId": 9885,
-        "DidAttend": false,
-        "Date": "2025-03-30T00:00:00"
-      },
-      {
-        "PersonId": 9885,
-        "DidAttend": false,
-        "Date": "2025-03-23T00:00:00"
-      },
-      {
-        "PersonId": 9885,
-        "DidAttend": false,
-        "Date": "2025-03-16T00:00:00"
-      },
-      {
-        "PersonId": 9885,
-        "DidAttend": true,
-        "Date": "2025-03-09T00:00:00"
-      },
-      {
-        "PersonId": 9885,
-        "DidAttend": false,
-        "Date": "2025-03-02T00:00:00"
-      },
-      {
-        "PersonId": 9885,
-        "DidAttend": false,
-        "Date": "2025-02-23T00:00:00"
-      },
-      {
-        "PersonId": 9885,
-        "DidAttend": false,
-        "Date": "2025-02-16T00:00:00"
-      },
-      {
-        "PersonId": 9885,
-        "DidAttend": false,
-        "Date": "2025-02-09T00:00:00"
-      },
-      {
-        "PersonId": 9885,
-        "DidAttend": false,
-        "Date": "2025-02-02T00:00:00"
-      },
-      {
-        "PersonId": 9885,
-        "DidAttend": false,
-        "Date": "2025-01-19T00:00:00"
-      },
-      {
-        "PersonId": 9909,
-        "DidAttend": true,
-        "Date": "2025-10-12T00:00:00"
-      },
-      {
-        "PersonId": 9909,
-        "DidAttend": true,
-        "Date": "2025-10-05T00:00:00"
-      },
-      {
-        "PersonId": 9909,
-        "DidAttend": true,
-        "Date": "2025-09-28T00:00:00"
-      },
-      {
-        "PersonId": 9909,
-        "DidAttend": true,
-        "Date": "2025-09-21T00:00:00"
-      },
-      {
-        "PersonId": 9909,
-        "DidAttend": false,
-        "Date": "2025-09-14T00:00:00"
-      },
-      {
-        "PersonId": 9909,
-        "DidAttend": false,
-        "Date": "2025-09-07T00:00:00"
-      },
-      {
-        "PersonId": 9909,
-        "DidAttend": true,
-        "Date": "2025-08-31T00:00:00"
-      },
-      {
-        "PersonId": 9909,
-        "DidAttend": true,
-        "Date": "2025-08-24T00:00:00"
-      },
-      {
-        "PersonId": 9909,
-        "DidAttend": false,
-        "Date": "2025-08-17T00:00:00"
-      },
-      {
-        "PersonId": 9909,
-        "DidAttend": true,
-        "Date": "2025-08-10T00:00:00"
-      },
-      {
-        "PersonId": 9909,
-        "DidAttend": true,
-        "Date": "2025-08-03T00:00:00"
-      },
-      {
-        "PersonId": 9909,
-        "DidAttend": true,
-        "Date": "2025-07-27T00:00:00"
-      },
-      {
-        "PersonId": 9909,
-        "DidAttend": true,
-        "Date": "2025-07-20T00:00:00"
-      },
-      {
-        "PersonId": 9909,
-        "DidAttend": false,
-        "Date": "2025-07-13T00:00:00"
-      },
-      {
-        "PersonId": 9909,
-        "DidAttend": false,
-        "Date": "2025-07-06T00:00:00"
-      },
-      {
-        "PersonId": 9909,
-        "DidAttend": false,
-        "Date": "2025-06-29T00:00:00"
-      },
-      {
-        "PersonId": 9909,
-        "DidAttend": true,
-        "Date": "2025-06-22T00:00:00"
-      },
-      {
-        "PersonId": 9909,
-        "DidAttend": true,
-        "Date": "2025-06-15T00:00:00"
-      },
-      {
-        "PersonId": 9909,
-        "DidAttend": true,
-        "Date": "2025-06-08T00:00:00"
-      },
-      {
-        "PersonId": 9909,
-        "DidAttend": false,
-        "Date": "2025-06-01T00:00:00"
-      },
-      {
-        "PersonId": 9909,
-        "DidAttend": true,
-        "Date": "2025-05-25T00:00:00"
-      },
-      {
-        "PersonId": 9909,
+        "PersonId": 5813,
         "DidAttend": true,
         "Date": "2025-05-18T00:00:00"
       },
       {
-        "PersonId": 9909,
+        "PersonId": 5813,
         "DidAttend": false,
         "Date": "2025-05-11T00:00:00"
       },
       {
-        "PersonId": 9909,
+        "PersonId": 5813,
         "DidAttend": true,
         "Date": "2025-05-04T00:00:00"
       },
       {
-        "PersonId": 9909,
+        "PersonId": 5813,
         "DidAttend": false,
         "Date": "2025-04-27T00:00:00"
       },
       {
-        "PersonId": 9909,
+        "PersonId": 5813,
         "DidAttend": false,
         "Date": "2025-04-20T00:00:00"
       },
       {
-        "PersonId": 9909,
+        "PersonId": 5813,
         "DidAttend": false,
         "Date": "2025-04-18T00:00:00"
       },
       {
-        "PersonId": 9909,
+        "PersonId": 5813,
         "DidAttend": false,
         "Date": "2025-04-17T00:00:00"
       },
       {
-        "PersonId": 9909,
+        "PersonId": 5813,
         "DidAttend": true,
         "Date": "2025-04-13T00:00:00"
       },
       {
-        "PersonId": 9909,
-        "DidAttend": false,
+        "PersonId": 5813,
+        "DidAttend": true,
         "Date": "2025-04-06T00:00:00"
       },
       {
-        "PersonId": 9909,
-        "DidAttend": false,
+        "PersonId": 5813,
+        "DidAttend": true,
         "Date": "2025-03-30T00:00:00"
       },
       {
-        "PersonId": 9909,
+        "PersonId": 5813,
         "DidAttend": true,
         "Date": "2025-03-23T00:00:00"
       },
       {
-        "PersonId": 9909,
+        "PersonId": 5813,
         "DidAttend": true,
         "Date": "2025-03-16T00:00:00"
       },
       {
-        "PersonId": 9909,
+        "PersonId": 5813,
         "DidAttend": true,
         "Date": "2025-03-09T00:00:00"
       },
       {
-        "PersonId": 9909,
-        "DidAttend": false,
+        "PersonId": 5813,
+        "DidAttend": true,
         "Date": "2025-03-02T00:00:00"
       },
       {
-        "PersonId": 9909,
-        "DidAttend": false,
+        "PersonId": 5813,
+        "DidAttend": true,
         "Date": "2025-02-23T00:00:00"
       },
       {
-        "PersonId": 9909,
-        "DidAttend": false,
+        "PersonId": 5813,
+        "DidAttend": true,
         "Date": "2025-02-16T00:00:00"
       },
       {
-        "PersonId": 9909,
+        "PersonId": 5813,
         "DidAttend": false,
         "Date": "2025-02-09T00:00:00"
       },
       {
-        "PersonId": 9909,
-        "DidAttend": false,
+        "PersonId": 5813,
+        "DidAttend": true,
         "Date": "2025-02-02T00:00:00"
       },
       {
-        "PersonId": 9909,
-        "DidAttend": false,
+        "PersonId": 5813,
+        "DidAttend": true,
+        "Date": "2025-01-26T00:00:00"
+      },
+      {
+        "PersonId": 5813,
+        "DidAttend": true,
         "Date": "2025-01-19T00:00:00"
       },
       {
-        "PersonId": 10569,
+        "PersonId": 5813,
         "DidAttend": true,
+        "Date": "2025-01-12T00:00:00"
+      },
+      {
+        "PersonId": 5813,
+        "DidAttend": true,
+        "Date": "2025-01-05T00:00:00"
+      },
+      {
+        "PersonId": 6077,
+        "DidAttend": true,
+        "Date": "2025-12-14T00:00:00"
+      },
+      {
+        "PersonId": 6077,
+        "DidAttend": false,
+        "Date": "2025-12-07T00:00:00"
+      },
+      {
+        "PersonId": 6077,
+        "DidAttend": false,
+        "Date": "2025-11-30T00:00:00"
+      },
+      {
+        "PersonId": 6077,
+        "DidAttend": false,
+        "Date": "2025-11-23T00:00:00"
+      },
+      {
+        "PersonId": 6077,
+        "DidAttend": true,
+        "Date": "2025-11-16T00:00:00"
+      },
+      {
+        "PersonId": 6077,
+        "DidAttend": false,
+        "Date": "2025-11-09T00:00:00"
+      },
+      {
+        "PersonId": 6077,
+        "DidAttend": false,
+        "Date": "2025-11-02T00:00:00"
+      },
+      {
+        "PersonId": 6077,
+        "DidAttend": false,
+        "Date": "2025-10-26T00:00:00"
+      },
+      {
+        "PersonId": 6077,
+        "DidAttend": false,
+        "Date": "2025-10-19T00:00:00"
+      },
+      {
+        "PersonId": 6077,
+        "DidAttend": false,
         "Date": "2025-10-12T00:00:00"
       },
       {
-        "PersonId": 10569,
-        "DidAttend": true,
+        "PersonId": 6077,
+        "DidAttend": false,
         "Date": "2025-10-05T00:00:00"
       },
       {
-        "PersonId": 10569,
-        "DidAttend": true,
+        "PersonId": 6077,
+        "DidAttend": false,
         "Date": "2025-09-28T00:00:00"
       },
       {
-        "PersonId": 10569,
+        "PersonId": 6077,
         "DidAttend": false,
         "Date": "2025-09-21T00:00:00"
       },
       {
-        "PersonId": 10569,
-        "DidAttend": true,
+        "PersonId": 6077,
+        "DidAttend": false,
         "Date": "2025-09-14T00:00:00"
       },
       {
-        "PersonId": 10569,
+        "PersonId": 6077,
         "DidAttend": false,
         "Date": "2025-09-07T00:00:00"
       },
       {
-        "PersonId": 10569,
+        "PersonId": 6077,
         "DidAttend": false,
         "Date": "2025-08-31T00:00:00"
       },
       {
-        "PersonId": 10569,
-        "DidAttend": false,
+        "PersonId": 6077,
+        "DidAttend": true,
         "Date": "2025-08-24T00:00:00"
       },
       {
-        "PersonId": 10569,
-        "DidAttend": true,
+        "PersonId": 6077,
+        "DidAttend": false,
         "Date": "2025-08-17T00:00:00"
       },
       {
-        "PersonId": 10569,
-        "DidAttend": false,
+        "PersonId": 6077,
+        "DidAttend": true,
         "Date": "2025-08-10T00:00:00"
       },
       {
-        "PersonId": 10569,
-        "DidAttend": true,
+        "PersonId": 6077,
+        "DidAttend": false,
         "Date": "2025-08-03T00:00:00"
       },
       {
-        "PersonId": 10569,
+        "PersonId": 6077,
         "DidAttend": true,
         "Date": "2025-07-27T00:00:00"
       },
       {
-        "PersonId": 10569,
+        "PersonId": 6077,
         "DidAttend": false,
         "Date": "2025-07-20T00:00:00"
       },
       {
-        "PersonId": 10569,
+        "PersonId": 6077,
         "DidAttend": false,
         "Date": "2025-07-13T00:00:00"
       },
       {
-        "PersonId": 10569,
+        "PersonId": 6077,
+        "DidAttend": true,
+        "Date": "2025-07-06T00:00:00"
+      },
+      {
+        "PersonId": 6077,
+        "DidAttend": true,
+        "Date": "2025-06-29T00:00:00"
+      },
+      {
+        "PersonId": 6077,
+        "DidAttend": false,
+        "Date": "2025-06-22T00:00:00"
+      },
+      {
+        "PersonId": 6077,
+        "DidAttend": false,
+        "Date": "2025-06-15T00:00:00"
+      },
+      {
+        "PersonId": 6077,
+        "DidAttend": false,
+        "Date": "2025-06-08T00:00:00"
+      },
+      {
+        "PersonId": 6077,
+        "DidAttend": false,
+        "Date": "2025-06-01T00:00:00"
+      },
+      {
+        "PersonId": 6077,
+        "DidAttend": false,
+        "Date": "2025-05-25T00:00:00"
+      },
+      {
+        "PersonId": 6077,
+        "DidAttend": true,
+        "Date": "2025-05-18T00:00:00"
+      },
+      {
+        "PersonId": 6077,
+        "DidAttend": false,
+        "Date": "2025-05-11T00:00:00"
+      },
+      {
+        "PersonId": 6077,
+        "DidAttend": true,
+        "Date": "2025-05-04T00:00:00"
+      },
+      {
+        "PersonId": 6077,
+        "DidAttend": false,
+        "Date": "2025-04-27T00:00:00"
+      },
+      {
+        "PersonId": 6077,
+        "DidAttend": false,
+        "Date": "2025-04-20T00:00:00"
+      },
+      {
+        "PersonId": 6077,
+        "DidAttend": false,
+        "Date": "2025-04-18T00:00:00"
+      },
+      {
+        "PersonId": 6077,
+        "DidAttend": true,
+        "Date": "2025-04-17T00:00:00"
+      },
+      {
+        "PersonId": 6077,
+        "DidAttend": false,
+        "Date": "2025-04-13T00:00:00"
+      },
+      {
+        "PersonId": 6077,
+        "DidAttend": true,
+        "Date": "2025-04-06T00:00:00"
+      },
+      {
+        "PersonId": 6077,
+        "DidAttend": true,
+        "Date": "2025-03-30T00:00:00"
+      },
+      {
+        "PersonId": 6077,
+        "DidAttend": true,
+        "Date": "2025-03-23T00:00:00"
+      },
+      {
+        "PersonId": 6077,
+        "DidAttend": false,
+        "Date": "2025-03-16T00:00:00"
+      },
+      {
+        "PersonId": 6077,
+        "DidAttend": false,
+        "Date": "2025-03-09T00:00:00"
+      },
+      {
+        "PersonId": 6077,
+        "DidAttend": true,
+        "Date": "2025-03-02T00:00:00"
+      },
+      {
+        "PersonId": 6077,
+        "DidAttend": false,
+        "Date": "2025-02-23T00:00:00"
+      },
+      {
+        "PersonId": 6077,
+        "DidAttend": true,
+        "Date": "2025-02-16T00:00:00"
+      },
+      {
+        "PersonId": 6077,
+        "DidAttend": false,
+        "Date": "2025-02-09T00:00:00"
+      },
+      {
+        "PersonId": 6077,
+        "DidAttend": true,
+        "Date": "2025-02-02T00:00:00"
+      },
+      {
+        "PersonId": 6077,
+        "DidAttend": false,
+        "Date": "2025-01-26T00:00:00"
+      },
+      {
+        "PersonId": 6077,
+        "DidAttend": false,
+        "Date": "2025-01-19T00:00:00"
+      },
+      {
+        "PersonId": 6077,
+        "DidAttend": true,
+        "Date": "2025-01-12T00:00:00"
+      },
+      {
+        "PersonId": 6077,
+        "DidAttend": true,
+        "Date": "2025-01-05T00:00:00"
+      },
+      {
+        "PersonId": 6341,
+        "DidAttend": true,
+        "Date": "2025-12-14T00:00:00"
+      },
+      {
+        "PersonId": 6341,
+        "DidAttend": true,
+        "Date": "2025-12-07T00:00:00"
+      },
+      {
+        "PersonId": 6341,
+        "DidAttend": true,
+        "Date": "2025-11-30T00:00:00"
+      },
+      {
+        "PersonId": 6341,
+        "DidAttend": true,
+        "Date": "2025-11-23T00:00:00"
+      },
+      {
+        "PersonId": 6341,
+        "DidAttend": true,
+        "Date": "2025-11-16T00:00:00"
+      },
+      {
+        "PersonId": 6341,
+        "DidAttend": true,
+        "Date": "2025-11-09T00:00:00"
+      },
+      {
+        "PersonId": 6341,
+        "DidAttend": true,
+        "Date": "2025-11-02T00:00:00"
+      },
+      {
+        "PersonId": 6341,
+        "DidAttend": true,
+        "Date": "2025-10-26T00:00:00"
+      },
+      {
+        "PersonId": 6341,
+        "DidAttend": true,
+        "Date": "2025-10-19T00:00:00"
+      },
+      {
+        "PersonId": 6341,
+        "DidAttend": true,
+        "Date": "2025-10-12T00:00:00"
+      },
+      {
+        "PersonId": 6341,
+        "DidAttend": true,
+        "Date": "2025-10-05T00:00:00"
+      },
+      {
+        "PersonId": 6341,
+        "DidAttend": true,
+        "Date": "2025-09-28T00:00:00"
+      },
+      {
+        "PersonId": 6341,
+        "DidAttend": true,
+        "Date": "2025-09-21T00:00:00"
+      },
+      {
+        "PersonId": 6341,
+        "DidAttend": true,
+        "Date": "2025-09-14T00:00:00"
+      },
+      {
+        "PersonId": 6341,
+        "DidAttend": true,
+        "Date": "2025-09-07T00:00:00"
+      },
+      {
+        "PersonId": 6341,
+        "DidAttend": true,
+        "Date": "2025-08-31T00:00:00"
+      },
+      {
+        "PersonId": 6341,
+        "DidAttend": true,
+        "Date": "2025-08-24T00:00:00"
+      },
+      {
+        "PersonId": 6341,
+        "DidAttend": true,
+        "Date": "2025-08-17T00:00:00"
+      },
+      {
+        "PersonId": 6341,
+        "DidAttend": true,
+        "Date": "2025-08-10T00:00:00"
+      },
+      {
+        "PersonId": 6341,
+        "DidAttend": true,
+        "Date": "2025-08-03T00:00:00"
+      },
+      {
+        "PersonId": 6341,
+        "DidAttend": true,
+        "Date": "2025-07-27T00:00:00"
+      },
+      {
+        "PersonId": 6341,
+        "DidAttend": true,
+        "Date": "2025-07-20T00:00:00"
+      },
+      {
+        "PersonId": 6341,
+        "DidAttend": true,
+        "Date": "2025-07-13T00:00:00"
+      },
+      {
+        "PersonId": 6341,
+        "DidAttend": true,
+        "Date": "2025-07-06T00:00:00"
+      },
+      {
+        "PersonId": 6341,
+        "DidAttend": true,
+        "Date": "2025-06-29T00:00:00"
+      },
+      {
+        "PersonId": 6341,
+        "DidAttend": true,
+        "Date": "2025-06-22T00:00:00"
+      },
+      {
+        "PersonId": 6341,
+        "DidAttend": true,
+        "Date": "2025-06-15T00:00:00"
+      },
+      {
+        "PersonId": 6341,
+        "DidAttend": true,
+        "Date": "2025-06-08T00:00:00"
+      },
+      {
+        "PersonId": 6341,
+        "DidAttend": true,
+        "Date": "2025-06-01T00:00:00"
+      },
+      {
+        "PersonId": 6341,
+        "DidAttend": true,
+        "Date": "2025-05-25T00:00:00"
+      },
+      {
+        "PersonId": 6341,
+        "DidAttend": true,
+        "Date": "2025-05-18T00:00:00"
+      },
+      {
+        "PersonId": 6341,
+        "DidAttend": true,
+        "Date": "2025-05-11T00:00:00"
+      },
+      {
+        "PersonId": 6341,
+        "DidAttend": true,
+        "Date": "2025-05-04T00:00:00"
+      },
+      {
+        "PersonId": 6341,
+        "DidAttend": true,
+        "Date": "2025-04-27T00:00:00"
+      },
+      {
+        "PersonId": 6341,
+        "DidAttend": true,
+        "Date": "2025-04-20T00:00:00"
+      },
+      {
+        "PersonId": 6341,
+        "DidAttend": true,
+        "Date": "2025-04-18T00:00:00"
+      },
+      {
+        "PersonId": 6341,
+        "DidAttend": true,
+        "Date": "2025-04-17T00:00:00"
+      },
+      {
+        "PersonId": 6341,
+        "DidAttend": true,
+        "Date": "2025-04-13T00:00:00"
+      },
+      {
+        "PersonId": 6341,
+        "DidAttend": true,
+        "Date": "2025-04-06T00:00:00"
+      },
+      {
+        "PersonId": 6341,
+        "DidAttend": true,
+        "Date": "2025-03-30T00:00:00"
+      },
+      {
+        "PersonId": 6341,
+        "DidAttend": true,
+        "Date": "2025-03-23T00:00:00"
+      },
+      {
+        "PersonId": 6341,
+        "DidAttend": false,
+        "Date": "2025-03-16T00:00:00"
+      },
+      {
+        "PersonId": 6341,
+        "DidAttend": true,
+        "Date": "2025-03-09T00:00:00"
+      },
+      {
+        "PersonId": 6341,
+        "DidAttend": true,
+        "Date": "2025-03-02T00:00:00"
+      },
+      {
+        "PersonId": 6341,
+        "DidAttend": true,
+        "Date": "2025-02-23T00:00:00"
+      },
+      {
+        "PersonId": 6341,
+        "DidAttend": true,
+        "Date": "2025-02-16T00:00:00"
+      },
+      {
+        "PersonId": 6341,
+        "DidAttend": true,
+        "Date": "2025-02-09T00:00:00"
+      },
+      {
+        "PersonId": 6341,
+        "DidAttend": true,
+        "Date": "2025-02-02T00:00:00"
+      },
+      {
+        "PersonId": 6341,
+        "DidAttend": true,
+        "Date": "2025-01-26T00:00:00"
+      },
+      {
+        "PersonId": 6341,
+        "DidAttend": true,
+        "Date": "2025-01-19T00:00:00"
+      },
+      {
+        "PersonId": 6341,
+        "DidAttend": true,
+        "Date": "2025-01-12T00:00:00"
+      },
+      {
+        "PersonId": 6341,
+        "DidAttend": false,
+        "Date": "2025-01-05T00:00:00"
+      },
+      {
+        "PersonId": 6633,
+        "DidAttend": false,
+        "Date": "2025-12-14T00:00:00"
+      },
+      {
+        "PersonId": 6633,
+        "DidAttend": false,
+        "Date": "2025-12-07T00:00:00"
+      },
+      {
+        "PersonId": 6633,
+        "DidAttend": true,
+        "Date": "2025-11-30T00:00:00"
+      },
+      {
+        "PersonId": 6633,
+        "DidAttend": false,
+        "Date": "2025-11-23T00:00:00"
+      },
+      {
+        "PersonId": 6633,
+        "DidAttend": true,
+        "Date": "2025-11-16T00:00:00"
+      },
+      {
+        "PersonId": 6633,
+        "DidAttend": true,
+        "Date": "2025-11-09T00:00:00"
+      },
+      {
+        "PersonId": 6633,
+        "DidAttend": false,
+        "Date": "2025-11-02T00:00:00"
+      },
+      {
+        "PersonId": 6633,
+        "DidAttend": true,
+        "Date": "2025-10-26T00:00:00"
+      },
+      {
+        "PersonId": 6633,
+        "DidAttend": false,
+        "Date": "2025-10-19T00:00:00"
+      },
+      {
+        "PersonId": 6633,
+        "DidAttend": false,
+        "Date": "2025-10-12T00:00:00"
+      },
+      {
+        "PersonId": 6633,
+        "DidAttend": true,
+        "Date": "2025-10-05T00:00:00"
+      },
+      {
+        "PersonId": 6633,
+        "DidAttend": false,
+        "Date": "2025-09-28T00:00:00"
+      },
+      {
+        "PersonId": 6633,
+        "DidAttend": false,
+        "Date": "2025-09-21T00:00:00"
+      },
+      {
+        "PersonId": 6633,
+        "DidAttend": false,
+        "Date": "2025-09-14T00:00:00"
+      },
+      {
+        "PersonId": 6633,
+        "DidAttend": false,
+        "Date": "2025-09-07T00:00:00"
+      },
+      {
+        "PersonId": 6633,
+        "DidAttend": true,
+        "Date": "2025-08-31T00:00:00"
+      },
+      {
+        "PersonId": 6633,
+        "DidAttend": true,
+        "Date": "2025-08-24T00:00:00"
+      },
+      {
+        "PersonId": 6633,
+        "DidAttend": true,
+        "Date": "2025-08-17T00:00:00"
+      },
+      {
+        "PersonId": 6633,
+        "DidAttend": false,
+        "Date": "2025-08-10T00:00:00"
+      },
+      {
+        "PersonId": 6633,
+        "DidAttend": true,
+        "Date": "2025-08-03T00:00:00"
+      },
+      {
+        "PersonId": 6633,
+        "DidAttend": true,
+        "Date": "2025-07-27T00:00:00"
+      },
+      {
+        "PersonId": 6633,
+        "DidAttend": true,
+        "Date": "2025-07-20T00:00:00"
+      },
+      {
+        "PersonId": 6633,
+        "DidAttend": true,
+        "Date": "2025-07-13T00:00:00"
+      },
+      {
+        "PersonId": 6633,
+        "DidAttend": true,
+        "Date": "2025-07-06T00:00:00"
+      },
+      {
+        "PersonId": 6633,
+        "DidAttend": false,
+        "Date": "2025-06-29T00:00:00"
+      },
+      {
+        "PersonId": 6633,
+        "DidAttend": false,
+        "Date": "2025-06-22T00:00:00"
+      },
+      {
+        "PersonId": 6633,
+        "DidAttend": false,
+        "Date": "2025-06-15T00:00:00"
+      },
+      {
+        "PersonId": 6633,
+        "DidAttend": true,
+        "Date": "2025-06-08T00:00:00"
+      },
+      {
+        "PersonId": 6633,
+        "DidAttend": false,
+        "Date": "2025-06-01T00:00:00"
+      },
+      {
+        "PersonId": 6633,
+        "DidAttend": true,
+        "Date": "2025-05-25T00:00:00"
+      },
+      {
+        "PersonId": 6633,
+        "DidAttend": true,
+        "Date": "2025-05-18T00:00:00"
+      },
+      {
+        "PersonId": 6633,
+        "DidAttend": false,
+        "Date": "2025-05-11T00:00:00"
+      },
+      {
+        "PersonId": 6633,
+        "DidAttend": true,
+        "Date": "2025-05-04T00:00:00"
+      },
+      {
+        "PersonId": 6633,
+        "DidAttend": true,
+        "Date": "2025-04-27T00:00:00"
+      },
+      {
+        "PersonId": 6633,
+        "DidAttend": true,
+        "Date": "2025-04-20T00:00:00"
+      },
+      {
+        "PersonId": 6633,
+        "DidAttend": false,
+        "Date": "2025-04-18T00:00:00"
+      },
+      {
+        "PersonId": 6633,
+        "DidAttend": false,
+        "Date": "2025-04-17T00:00:00"
+      },
+      {
+        "PersonId": 6633,
+        "DidAttend": true,
+        "Date": "2025-04-13T00:00:00"
+      },
+      {
+        "PersonId": 6633,
+        "DidAttend": true,
+        "Date": "2025-04-06T00:00:00"
+      },
+      {
+        "PersonId": 6633,
+        "DidAttend": false,
+        "Date": "2025-03-30T00:00:00"
+      },
+      {
+        "PersonId": 6633,
+        "DidAttend": true,
+        "Date": "2025-03-23T00:00:00"
+      },
+      {
+        "PersonId": 6633,
+        "DidAttend": true,
+        "Date": "2025-03-16T00:00:00"
+      },
+      {
+        "PersonId": 6633,
+        "DidAttend": true,
+        "Date": "2025-03-09T00:00:00"
+      },
+      {
+        "PersonId": 6633,
+        "DidAttend": true,
+        "Date": "2025-03-02T00:00:00"
+      },
+      {
+        "PersonId": 6633,
+        "DidAttend": false,
+        "Date": "2025-02-23T00:00:00"
+      },
+      {
+        "PersonId": 6633,
+        "DidAttend": false,
+        "Date": "2025-02-16T00:00:00"
+      },
+      {
+        "PersonId": 6633,
+        "DidAttend": true,
+        "Date": "2025-02-09T00:00:00"
+      },
+      {
+        "PersonId": 6633,
+        "DidAttend": true,
+        "Date": "2025-02-02T00:00:00"
+      },
+      {
+        "PersonId": 6633,
+        "DidAttend": false,
+        "Date": "2025-01-26T00:00:00"
+      },
+      {
+        "PersonId": 6633,
+        "DidAttend": false,
+        "Date": "2025-01-19T00:00:00"
+      },
+      {
+        "PersonId": 6633,
+        "DidAttend": true,
+        "Date": "2025-01-12T00:00:00"
+      },
+      {
+        "PersonId": 6633,
+        "DidAttend": true,
+        "Date": "2025-01-05T00:00:00"
+      },
+      {
+        "PersonId": 7636,
+        "DidAttend": true,
+        "Date": "2025-12-14T00:00:00"
+      },
+      {
+        "PersonId": 7636,
+        "DidAttend": false,
+        "Date": "2025-12-07T00:00:00"
+      },
+      {
+        "PersonId": 7636,
+        "DidAttend": true,
+        "Date": "2025-11-30T00:00:00"
+      },
+      {
+        "PersonId": 7636,
+        "DidAttend": true,
+        "Date": "2025-11-23T00:00:00"
+      },
+      {
+        "PersonId": 7636,
+        "DidAttend": true,
+        "Date": "2025-11-16T00:00:00"
+      },
+      {
+        "PersonId": 7636,
+        "DidAttend": true,
+        "Date": "2025-11-09T00:00:00"
+      },
+      {
+        "PersonId": 7636,
+        "DidAttend": false,
+        "Date": "2025-11-02T00:00:00"
+      },
+      {
+        "PersonId": 7636,
+        "DidAttend": true,
+        "Date": "2025-10-26T00:00:00"
+      },
+      {
+        "PersonId": 7636,
+        "DidAttend": false,
+        "Date": "2025-10-19T00:00:00"
+      },
+      {
+        "PersonId": 7636,
+        "DidAttend": false,
+        "Date": "2025-10-12T00:00:00"
+      },
+      {
+        "PersonId": 7636,
+        "DidAttend": false,
+        "Date": "2025-10-05T00:00:00"
+      },
+      {
+        "PersonId": 7636,
+        "DidAttend": false,
+        "Date": "2025-09-28T00:00:00"
+      },
+      {
+        "PersonId": 7636,
+        "DidAttend": true,
+        "Date": "2025-09-21T00:00:00"
+      },
+      {
+        "PersonId": 7636,
+        "DidAttend": true,
+        "Date": "2025-09-14T00:00:00"
+      },
+      {
+        "PersonId": 7636,
+        "DidAttend": true,
+        "Date": "2025-09-07T00:00:00"
+      },
+      {
+        "PersonId": 7636,
+        "DidAttend": true,
+        "Date": "2025-08-31T00:00:00"
+      },
+      {
+        "PersonId": 7636,
+        "DidAttend": true,
+        "Date": "2025-08-24T00:00:00"
+      },
+      {
+        "PersonId": 7636,
+        "DidAttend": true,
+        "Date": "2025-08-17T00:00:00"
+      },
+      {
+        "PersonId": 7636,
+        "DidAttend": true,
+        "Date": "2025-08-10T00:00:00"
+      },
+      {
+        "PersonId": 7636,
+        "DidAttend": true,
+        "Date": "2025-08-03T00:00:00"
+      },
+      {
+        "PersonId": 7636,
+        "DidAttend": false,
+        "Date": "2025-07-27T00:00:00"
+      },
+      {
+        "PersonId": 7636,
+        "DidAttend": true,
+        "Date": "2025-07-20T00:00:00"
+      },
+      {
+        "PersonId": 7636,
+        "DidAttend": true,
+        "Date": "2025-07-13T00:00:00"
+      },
+      {
+        "PersonId": 7636,
+        "DidAttend": true,
+        "Date": "2025-07-06T00:00:00"
+      },
+      {
+        "PersonId": 7636,
+        "DidAttend": true,
+        "Date": "2025-06-29T00:00:00"
+      },
+      {
+        "PersonId": 7636,
+        "DidAttend": true,
+        "Date": "2025-06-22T00:00:00"
+      },
+      {
+        "PersonId": 7636,
+        "DidAttend": true,
+        "Date": "2025-06-15T00:00:00"
+      },
+      {
+        "PersonId": 7636,
+        "DidAttend": true,
+        "Date": "2025-06-08T00:00:00"
+      },
+      {
+        "PersonId": 7636,
+        "DidAttend": true,
+        "Date": "2025-06-01T00:00:00"
+      },
+      {
+        "PersonId": 7636,
+        "DidAttend": true,
+        "Date": "2025-05-25T00:00:00"
+      },
+      {
+        "PersonId": 7636,
+        "DidAttend": true,
+        "Date": "2025-05-18T00:00:00"
+      },
+      {
+        "PersonId": 7636,
+        "DidAttend": false,
+        "Date": "2025-05-11T00:00:00"
+      },
+      {
+        "PersonId": 7636,
+        "DidAttend": false,
+        "Date": "2025-05-04T00:00:00"
+      },
+      {
+        "PersonId": 7636,
+        "DidAttend": false,
+        "Date": "2025-04-27T00:00:00"
+      },
+      {
+        "PersonId": 7636,
+        "DidAttend": false,
+        "Date": "2025-04-20T00:00:00"
+      },
+      {
+        "PersonId": 7636,
+        "DidAttend": true,
+        "Date": "2025-04-18T00:00:00"
+      },
+      {
+        "PersonId": 7636,
+        "DidAttend": false,
+        "Date": "2025-04-17T00:00:00"
+      },
+      {
+        "PersonId": 7636,
+        "DidAttend": true,
+        "Date": "2025-04-13T00:00:00"
+      },
+      {
+        "PersonId": 7636,
+        "DidAttend": true,
+        "Date": "2025-04-06T00:00:00"
+      },
+      {
+        "PersonId": 7636,
+        "DidAttend": true,
+        "Date": "2025-03-30T00:00:00"
+      },
+      {
+        "PersonId": 7636,
+        "DidAttend": true,
+        "Date": "2025-03-23T00:00:00"
+      },
+      {
+        "PersonId": 7636,
+        "DidAttend": true,
+        "Date": "2025-03-16T00:00:00"
+      },
+      {
+        "PersonId": 7636,
+        "DidAttend": true,
+        "Date": "2025-03-09T00:00:00"
+      },
+      {
+        "PersonId": 7636,
+        "DidAttend": true,
+        "Date": "2025-03-02T00:00:00"
+      },
+      {
+        "PersonId": 7636,
+        "DidAttend": true,
+        "Date": "2025-02-23T00:00:00"
+      },
+      {
+        "PersonId": 7636,
+        "DidAttend": true,
+        "Date": "2025-02-16T00:00:00"
+      },
+      {
+        "PersonId": 7636,
+        "DidAttend": true,
+        "Date": "2025-02-09T00:00:00"
+      },
+      {
+        "PersonId": 7636,
+        "DidAttend": true,
+        "Date": "2025-02-02T00:00:00"
+      },
+      {
+        "PersonId": 7636,
+        "DidAttend": true,
+        "Date": "2025-01-26T00:00:00"
+      },
+      {
+        "PersonId": 7636,
+        "DidAttend": true,
+        "Date": "2025-01-19T00:00:00"
+      },
+      {
+        "PersonId": 7636,
+        "DidAttend": true,
+        "Date": "2025-01-12T00:00:00"
+      },
+      {
+        "PersonId": 7636,
+        "DidAttend": true,
+        "Date": "2025-01-05T00:00:00"
+      },
+      {
+        "PersonId": 7975,
+        "DidAttend": true,
+        "Date": "2025-12-14T00:00:00"
+      },
+      {
+        "PersonId": 7975,
+        "DidAttend": false,
+        "Date": "2025-12-07T00:00:00"
+      },
+      {
+        "PersonId": 7975,
+        "DidAttend": true,
+        "Date": "2025-11-30T00:00:00"
+      },
+      {
+        "PersonId": 7975,
+        "DidAttend": true,
+        "Date": "2025-11-23T00:00:00"
+      },
+      {
+        "PersonId": 7975,
+        "DidAttend": true,
+        "Date": "2025-11-16T00:00:00"
+      },
+      {
+        "PersonId": 7975,
+        "DidAttend": true,
+        "Date": "2025-11-09T00:00:00"
+      },
+      {
+        "PersonId": 7975,
+        "DidAttend": true,
+        "Date": "2025-11-02T00:00:00"
+      },
+      {
+        "PersonId": 7975,
+        "DidAttend": true,
+        "Date": "2025-10-26T00:00:00"
+      },
+      {
+        "PersonId": 7975,
+        "DidAttend": true,
+        "Date": "2025-10-19T00:00:00"
+      },
+      {
+        "PersonId": 7975,
+        "DidAttend": true,
+        "Date": "2025-10-12T00:00:00"
+      },
+      {
+        "PersonId": 7975,
+        "DidAttend": true,
+        "Date": "2025-10-05T00:00:00"
+      },
+      {
+        "PersonId": 7975,
+        "DidAttend": true,
+        "Date": "2025-09-28T00:00:00"
+      },
+      {
+        "PersonId": 7975,
+        "DidAttend": true,
+        "Date": "2025-09-21T00:00:00"
+      },
+      {
+        "PersonId": 7975,
+        "DidAttend": true,
+        "Date": "2025-09-14T00:00:00"
+      },
+      {
+        "PersonId": 7975,
+        "DidAttend": true,
+        "Date": "2025-09-07T00:00:00"
+      },
+      {
+        "PersonId": 7975,
+        "DidAttend": true,
+        "Date": "2025-08-31T00:00:00"
+      },
+      {
+        "PersonId": 7975,
+        "DidAttend": true,
+        "Date": "2025-08-24T00:00:00"
+      },
+      {
+        "PersonId": 7975,
+        "DidAttend": true,
+        "Date": "2025-08-17T00:00:00"
+      },
+      {
+        "PersonId": 7975,
+        "DidAttend": true,
+        "Date": "2025-08-10T00:00:00"
+      },
+      {
+        "PersonId": 7975,
+        "DidAttend": true,
+        "Date": "2025-08-03T00:00:00"
+      },
+      {
+        "PersonId": 7975,
+        "DidAttend": true,
+        "Date": "2025-07-27T00:00:00"
+      },
+      {
+        "PersonId": 7975,
+        "DidAttend": true,
+        "Date": "2025-07-20T00:00:00"
+      },
+      {
+        "PersonId": 7975,
+        "DidAttend": true,
+        "Date": "2025-07-13T00:00:00"
+      },
+      {
+        "PersonId": 7975,
+        "DidAttend": true,
+        "Date": "2025-07-06T00:00:00"
+      },
+      {
+        "PersonId": 7975,
+        "DidAttend": true,
+        "Date": "2025-06-29T00:00:00"
+      },
+      {
+        "PersonId": 7975,
+        "DidAttend": true,
+        "Date": "2025-06-22T00:00:00"
+      },
+      {
+        "PersonId": 7975,
+        "DidAttend": true,
+        "Date": "2025-06-15T00:00:00"
+      },
+      {
+        "PersonId": 7975,
+        "DidAttend": true,
+        "Date": "2025-06-08T00:00:00"
+      },
+      {
+        "PersonId": 7975,
+        "DidAttend": true,
+        "Date": "2025-06-01T00:00:00"
+      },
+      {
+        "PersonId": 7975,
+        "DidAttend": true,
+        "Date": "2025-05-25T00:00:00"
+      },
+      {
+        "PersonId": 7975,
+        "DidAttend": true,
+        "Date": "2025-05-18T00:00:00"
+      },
+      {
+        "PersonId": 7975,
+        "DidAttend": true,
+        "Date": "2025-05-11T00:00:00"
+      },
+      {
+        "PersonId": 7975,
+        "DidAttend": false,
+        "Date": "2025-05-04T00:00:00"
+      },
+      {
+        "PersonId": 7975,
+        "DidAttend": false,
+        "Date": "2025-04-27T00:00:00"
+      },
+      {
+        "PersonId": 7975,
+        "DidAttend": true,
+        "Date": "2025-04-20T00:00:00"
+      },
+      {
+        "PersonId": 7975,
+        "DidAttend": false,
+        "Date": "2025-04-18T00:00:00"
+      },
+      {
+        "PersonId": 7975,
+        "DidAttend": true,
+        "Date": "2025-04-17T00:00:00"
+      },
+      {
+        "PersonId": 7975,
+        "DidAttend": true,
+        "Date": "2025-04-13T00:00:00"
+      },
+      {
+        "PersonId": 7975,
+        "DidAttend": true,
+        "Date": "2025-04-06T00:00:00"
+      },
+      {
+        "PersonId": 7975,
+        "DidAttend": true,
+        "Date": "2025-03-30T00:00:00"
+      },
+      {
+        "PersonId": 7975,
+        "DidAttend": true,
+        "Date": "2025-03-23T00:00:00"
+      },
+      {
+        "PersonId": 7975,
+        "DidAttend": true,
+        "Date": "2025-03-16T00:00:00"
+      },
+      {
+        "PersonId": 7975,
+        "DidAttend": true,
+        "Date": "2025-03-09T00:00:00"
+      },
+      {
+        "PersonId": 7975,
+        "DidAttend": true,
+        "Date": "2025-03-02T00:00:00"
+      },
+      {
+        "PersonId": 7975,
+        "DidAttend": true,
+        "Date": "2025-02-23T00:00:00"
+      },
+      {
+        "PersonId": 7975,
+        "DidAttend": true,
+        "Date": "2025-02-16T00:00:00"
+      },
+      {
+        "PersonId": 7975,
+        "DidAttend": false,
+        "Date": "2025-02-09T00:00:00"
+      },
+      {
+        "PersonId": 7975,
+        "DidAttend": true,
+        "Date": "2025-02-02T00:00:00"
+      },
+      {
+        "PersonId": 7975,
+        "DidAttend": false,
+        "Date": "2025-01-26T00:00:00"
+      },
+      {
+        "PersonId": 7975,
+        "DidAttend": true,
+        "Date": "2025-01-19T00:00:00"
+      },
+      {
+        "PersonId": 7975,
+        "DidAttend": true,
+        "Date": "2025-01-12T00:00:00"
+      },
+      {
+        "PersonId": 7975,
+        "DidAttend": true,
+        "Date": "2025-01-05T00:00:00"
+      },
+      {
+        "PersonId": 8204,
+        "DidAttend": true,
+        "Date": "2025-12-14T00:00:00"
+      },
+      {
+        "PersonId": 8204,
+        "DidAttend": true,
+        "Date": "2025-12-07T00:00:00"
+      },
+      {
+        "PersonId": 8204,
+        "DidAttend": true,
+        "Date": "2025-11-30T00:00:00"
+      },
+      {
+        "PersonId": 8204,
+        "DidAttend": true,
+        "Date": "2025-11-23T00:00:00"
+      },
+      {
+        "PersonId": 8204,
+        "DidAttend": true,
+        "Date": "2025-11-16T00:00:00"
+      },
+      {
+        "PersonId": 8204,
+        "DidAttend": true,
+        "Date": "2025-11-09T00:00:00"
+      },
+      {
+        "PersonId": 8204,
+        "DidAttend": true,
+        "Date": "2025-11-02T00:00:00"
+      },
+      {
+        "PersonId": 8204,
+        "DidAttend": false,
+        "Date": "2025-10-26T00:00:00"
+      },
+      {
+        "PersonId": 8204,
+        "DidAttend": true,
+        "Date": "2025-10-19T00:00:00"
+      },
+      {
+        "PersonId": 8204,
+        "DidAttend": true,
+        "Date": "2025-10-12T00:00:00"
+      },
+      {
+        "PersonId": 8204,
+        "DidAttend": true,
+        "Date": "2025-10-05T00:00:00"
+      },
+      {
+        "PersonId": 8204,
+        "DidAttend": true,
+        "Date": "2025-09-28T00:00:00"
+      },
+      {
+        "PersonId": 8204,
+        "DidAttend": true,
+        "Date": "2025-09-21T00:00:00"
+      },
+      {
+        "PersonId": 8204,
+        "DidAttend": true,
+        "Date": "2025-09-14T00:00:00"
+      },
+      {
+        "PersonId": 8204,
+        "DidAttend": true,
+        "Date": "2025-09-07T00:00:00"
+      },
+      {
+        "PersonId": 8204,
+        "DidAttend": true,
+        "Date": "2025-08-31T00:00:00"
+      },
+      {
+        "PersonId": 8204,
+        "DidAttend": true,
+        "Date": "2025-08-24T00:00:00"
+      },
+      {
+        "PersonId": 8204,
+        "DidAttend": false,
+        "Date": "2025-08-17T00:00:00"
+      },
+      {
+        "PersonId": 8204,
+        "DidAttend": true,
+        "Date": "2025-08-10T00:00:00"
+      },
+      {
+        "PersonId": 8204,
+        "DidAttend": true,
+        "Date": "2025-08-03T00:00:00"
+      },
+      {
+        "PersonId": 8204,
+        "DidAttend": true,
+        "Date": "2025-07-27T00:00:00"
+      },
+      {
+        "PersonId": 8204,
+        "DidAttend": true,
+        "Date": "2025-07-20T00:00:00"
+      },
+      {
+        "PersonId": 8204,
+        "DidAttend": true,
+        "Date": "2025-07-13T00:00:00"
+      },
+      {
+        "PersonId": 8204,
+        "DidAttend": true,
+        "Date": "2025-07-06T00:00:00"
+      },
+      {
+        "PersonId": 8204,
+        "DidAttend": true,
+        "Date": "2025-06-29T00:00:00"
+      },
+      {
+        "PersonId": 8204,
+        "DidAttend": false,
+        "Date": "2025-06-22T00:00:00"
+      },
+      {
+        "PersonId": 8204,
+        "DidAttend": true,
+        "Date": "2025-06-15T00:00:00"
+      },
+      {
+        "PersonId": 8204,
+        "DidAttend": true,
+        "Date": "2025-06-08T00:00:00"
+      },
+      {
+        "PersonId": 8204,
+        "DidAttend": true,
+        "Date": "2025-06-01T00:00:00"
+      },
+      {
+        "PersonId": 8204,
+        "DidAttend": true,
+        "Date": "2025-05-25T00:00:00"
+      },
+      {
+        "PersonId": 8204,
+        "DidAttend": true,
+        "Date": "2025-05-18T00:00:00"
+      },
+      {
+        "PersonId": 8204,
+        "DidAttend": false,
+        "Date": "2025-05-11T00:00:00"
+      },
+      {
+        "PersonId": 8204,
+        "DidAttend": true,
+        "Date": "2025-05-04T00:00:00"
+      },
+      {
+        "PersonId": 8204,
+        "DidAttend": true,
+        "Date": "2025-04-27T00:00:00"
+      },
+      {
+        "PersonId": 8204,
+        "DidAttend": true,
+        "Date": "2025-04-20T00:00:00"
+      },
+      {
+        "PersonId": 8204,
+        "DidAttend": true,
+        "Date": "2025-04-18T00:00:00"
+      },
+      {
+        "PersonId": 8204,
+        "DidAttend": false,
+        "Date": "2025-04-17T00:00:00"
+      },
+      {
+        "PersonId": 8204,
+        "DidAttend": true,
+        "Date": "2025-04-13T00:00:00"
+      },
+      {
+        "PersonId": 8204,
+        "DidAttend": true,
+        "Date": "2025-04-06T00:00:00"
+      },
+      {
+        "PersonId": 8204,
+        "DidAttend": true,
+        "Date": "2025-03-30T00:00:00"
+      },
+      {
+        "PersonId": 8204,
+        "DidAttend": true,
+        "Date": "2025-03-23T00:00:00"
+      },
+      {
+        "PersonId": 8204,
+        "DidAttend": true,
+        "Date": "2025-03-16T00:00:00"
+      },
+      {
+        "PersonId": 8204,
+        "DidAttend": true,
+        "Date": "2025-03-09T00:00:00"
+      },
+      {
+        "PersonId": 8204,
+        "DidAttend": true,
+        "Date": "2025-03-02T00:00:00"
+      },
+      {
+        "PersonId": 8204,
+        "DidAttend": true,
+        "Date": "2025-02-23T00:00:00"
+      },
+      {
+        "PersonId": 8204,
+        "DidAttend": false,
+        "Date": "2025-02-16T00:00:00"
+      },
+      {
+        "PersonId": 8204,
+        "DidAttend": false,
+        "Date": "2025-02-09T00:00:00"
+      },
+      {
+        "PersonId": 8204,
+        "DidAttend": true,
+        "Date": "2025-02-02T00:00:00"
+      },
+      {
+        "PersonId": 8204,
+        "DidAttend": false,
+        "Date": "2025-01-26T00:00:00"
+      },
+      {
+        "PersonId": 8204,
+        "DidAttend": false,
+        "Date": "2025-01-19T00:00:00"
+      },
+      {
+        "PersonId": 8204,
+        "DidAttend": true,
+        "Date": "2025-01-12T00:00:00"
+      },
+      {
+        "PersonId": 8204,
+        "DidAttend": true,
+        "Date": "2025-01-05T00:00:00"
+      },
+      {
+        "PersonId": 9393,
+        "DidAttend": true,
+        "Date": "2025-12-14T00:00:00"
+      },
+      {
+        "PersonId": 9393,
+        "DidAttend": true,
+        "Date": "2025-12-07T00:00:00"
+      },
+      {
+        "PersonId": 9393,
+        "DidAttend": true,
+        "Date": "2025-11-30T00:00:00"
+      },
+      {
+        "PersonId": 9393,
+        "DidAttend": true,
+        "Date": "2025-11-23T00:00:00"
+      },
+      {
+        "PersonId": 9393,
+        "DidAttend": true,
+        "Date": "2025-11-16T00:00:00"
+      },
+      {
+        "PersonId": 9393,
+        "DidAttend": false,
+        "Date": "2025-11-09T00:00:00"
+      },
+      {
+        "PersonId": 9393,
+        "DidAttend": false,
+        "Date": "2025-11-02T00:00:00"
+      },
+      {
+        "PersonId": 9393,
+        "DidAttend": true,
+        "Date": "2025-10-26T00:00:00"
+      },
+      {
+        "PersonId": 9393,
+        "DidAttend": false,
+        "Date": "2025-10-19T00:00:00"
+      },
+      {
+        "PersonId": 9393,
+        "DidAttend": true,
+        "Date": "2025-10-12T00:00:00"
+      },
+      {
+        "PersonId": 9393,
+        "DidAttend": true,
+        "Date": "2025-10-05T00:00:00"
+      },
+      {
+        "PersonId": 9393,
+        "DidAttend": true,
+        "Date": "2025-09-28T00:00:00"
+      },
+      {
+        "PersonId": 9393,
+        "DidAttend": true,
+        "Date": "2025-09-21T00:00:00"
+      },
+      {
+        "PersonId": 9393,
+        "DidAttend": true,
+        "Date": "2025-09-14T00:00:00"
+      },
+      {
+        "PersonId": 9393,
+        "DidAttend": false,
+        "Date": "2025-09-07T00:00:00"
+      },
+      {
+        "PersonId": 9393,
+        "DidAttend": true,
+        "Date": "2025-08-31T00:00:00"
+      },
+      {
+        "PersonId": 9393,
+        "DidAttend": true,
+        "Date": "2025-08-24T00:00:00"
+      },
+      {
+        "PersonId": 9393,
+        "DidAttend": true,
+        "Date": "2025-08-17T00:00:00"
+      },
+      {
+        "PersonId": 9393,
+        "DidAttend": true,
+        "Date": "2025-08-10T00:00:00"
+      },
+      {
+        "PersonId": 9393,
+        "DidAttend": true,
+        "Date": "2025-08-03T00:00:00"
+      },
+      {
+        "PersonId": 9393,
+        "DidAttend": true,
+        "Date": "2025-07-27T00:00:00"
+      },
+      {
+        "PersonId": 9393,
+        "DidAttend": true,
+        "Date": "2025-07-20T00:00:00"
+      },
+      {
+        "PersonId": 9393,
+        "DidAttend": true,
+        "Date": "2025-07-13T00:00:00"
+      },
+      {
+        "PersonId": 9393,
         "DidAttend": false,
         "Date": "2025-07-06T00:00:00"
       },
       {
-        "PersonId": 10569,
-        "DidAttend": true,
+        "PersonId": 9393,
+        "DidAttend": false,
         "Date": "2025-06-29T00:00:00"
+      },
+      {
+        "PersonId": 9393,
+        "DidAttend": true,
+        "Date": "2025-06-22T00:00:00"
+      },
+      {
+        "PersonId": 9393,
+        "DidAttend": true,
+        "Date": "2025-06-15T00:00:00"
+      },
+      {
+        "PersonId": 9393,
+        "DidAttend": true,
+        "Date": "2025-06-08T00:00:00"
+      },
+      {
+        "PersonId": 9393,
+        "DidAttend": true,
+        "Date": "2025-06-01T00:00:00"
+      },
+      {
+        "PersonId": 9393,
+        "DidAttend": true,
+        "Date": "2025-05-25T00:00:00"
+      },
+      {
+        "PersonId": 9393,
+        "DidAttend": true,
+        "Date": "2025-05-18T00:00:00"
+      },
+      {
+        "PersonId": 9393,
+        "DidAttend": false,
+        "Date": "2025-05-11T00:00:00"
+      },
+      {
+        "PersonId": 9393,
+        "DidAttend": true,
+        "Date": "2025-05-04T00:00:00"
+      },
+      {
+        "PersonId": 9393,
+        "DidAttend": true,
+        "Date": "2025-04-27T00:00:00"
+      },
+      {
+        "PersonId": 9393,
+        "DidAttend": true,
+        "Date": "2025-04-20T00:00:00"
+      },
+      {
+        "PersonId": 9393,
+        "DidAttend": false,
+        "Date": "2025-04-18T00:00:00"
+      },
+      {
+        "PersonId": 9393,
+        "DidAttend": false,
+        "Date": "2025-04-17T00:00:00"
+      },
+      {
+        "PersonId": 9393,
+        "DidAttend": true,
+        "Date": "2025-04-13T00:00:00"
+      },
+      {
+        "PersonId": 9393,
+        "DidAttend": true,
+        "Date": "2025-04-06T00:00:00"
+      },
+      {
+        "PersonId": 9393,
+        "DidAttend": true,
+        "Date": "2025-03-30T00:00:00"
+      },
+      {
+        "PersonId": 9393,
+        "DidAttend": true,
+        "Date": "2025-03-23T00:00:00"
+      },
+      {
+        "PersonId": 9393,
+        "DidAttend": true,
+        "Date": "2025-03-16T00:00:00"
+      },
+      {
+        "PersonId": 9393,
+        "DidAttend": true,
+        "Date": "2025-03-09T00:00:00"
+      },
+      {
+        "PersonId": 9393,
+        "DidAttend": false,
+        "Date": "2025-03-02T00:00:00"
+      },
+      {
+        "PersonId": 9393,
+        "DidAttend": true,
+        "Date": "2025-02-23T00:00:00"
+      },
+      {
+        "PersonId": 9393,
+        "DidAttend": true,
+        "Date": "2025-02-16T00:00:00"
+      },
+      {
+        "PersonId": 9393,
+        "DidAttend": true,
+        "Date": "2025-02-09T00:00:00"
+      },
+      {
+        "PersonId": 9393,
+        "DidAttend": false,
+        "Date": "2025-02-02T00:00:00"
+      },
+      {
+        "PersonId": 9393,
+        "DidAttend": false,
+        "Date": "2025-01-26T00:00:00"
+      },
+      {
+        "PersonId": 9393,
+        "DidAttend": true,
+        "Date": "2025-01-19T00:00:00"
+      },
+      {
+        "PersonId": 9393,
+        "DidAttend": true,
+        "Date": "2025-01-12T00:00:00"
+      },
+      {
+        "PersonId": 9393,
+        "DidAttend": true,
+        "Date": "2025-01-05T00:00:00"
       }
     ],
     "members": [
       {
-        "Id": 4986,
-        "Name": "Katie Chua（三 姐）",
-        "Phone": "020 419 09889",
-        "BirthDate": "",
-        "Profile": "https://rock.ev.church/GetImage.ashx?id=839",
+        "Id": 2477,
+        "Name": "Ellen Chua",
+        "Phone": "027 595 3243",
+        "BirthDate": "31 May 2001",
+        "Profile": "https://rock.ev.church/GetImage.ashx?id=475",
         "IsLeader": 0
       },
       {
-        "Id": 5573,
-        "Name": "Liz Halliday",
-        "Phone": "027 512 5972",
-        "BirthDate": "28 Nov 2001",
-        "Profile": "https://rock.ev.church/GetImage.ashx?id=1841",
+        "Id": 2550,
+        "Name": "Emily Donaldson",
+        "Phone": "027 491 5590",
+        "BirthDate": "15 Nov 2001",
+        "Profile": "https://rock.ev.church/GetImage.ashx?id=2821",
+        "IsLeader": 0
+      },
+      {
+        "Id": 3185,
+        "Name": "Grayson Morton",
+        "Phone": "0223431050",
+        "BirthDate": "",
+        "Profile": "https://rock.ev.church/GetImage.ashx?id=591",
+        "IsLeader": 0
+      },
+      {
+        "Id": 3823,
+        "Name": "James Donaldson",
+        "Phone": "027 490 3367",
+        "BirthDate": "11 Apr 1999",
+        "Profile": "https://rock.ev.church/GetImage.ashx?id=679",
+        "IsLeader": 0
+      },
+      {
+        "Id": 5813,
+        "Name": "Mae Savill",
+        "Phone": "027 267 9965",
+        "BirthDate": "15 Oct 2002",
+        "Profile": "https://rock.ev.church/GetImage.ashx?id=3861",
+        "IsLeader": 0
+      },
+      {
+        "Id": 6077,
+        "Name": "Matthew Cranfield",
+        "Phone": "021 143 7024",
+        "BirthDate": "21 Mar 1998",
+        "Profile": "https://rock.ev.church/GetImage.ashx?id=1011",
+        "IsLeader": 0
+      },
+      {
+        "Id": 6341,
+        "Name": "Michael Nuysink",
+        "Phone": "021 032 6345",
+        "BirthDate": "14 Nov 1997",
+        "Profile": "https://rock.ev.church/GetImage.ashx?id=1051",
         "IsLeader": 1
       },
       {
-        "Id": 8403,
-        "Name": "Stephanie Franca Palmer",
-        "Phone": "022 422 3082",
-        "BirthDate": "",
-        "Profile": "https://rock.ev.church/GetImage.ashx?id=1880",
+        "Id": 6633,
+        "Name": "Nic Choo",
+        "Phone": "02040876985",
+        "BirthDate": "12 Oct 1997",
+        "Profile": "https://rock.ev.church/GetImage.ashx?id=1098",
         "IsLeader": 0
       },
       {
-        "Id": 9885,
-        "Name": "Donatella Paton",
-        "Phone": "022 521 9529",
+        "Id": 7636,
+        "Name": "Ryan Yoon",
+        "Phone": "022 062 4057",
         "BirthDate": "",
-        "Profile": "https://rock.ev.church/GetImage.ashx?id=2149",
+        "Profile": "https://rock.ev.church/GetImage.ashx?id=1244",
         "IsLeader": 0
       },
       {
-        "Id": 9909,
-        "Name": "Kaitlyn Porter",
-        "Phone": "",
-        "BirthDate": "",
-        "Profile": "https://rock.ev.church/GetImage.ashx?id=2985",
+        "Id": 7975,
+        "Name": "Serena Lau",
+        "Phone": "021 022 38133",
+        "BirthDate": "27 Feb 2003",
+        "Profile": "https://rock.ev.church/GetImage.ashx?id=2945",
+        "IsLeader": 1
+      },
+      {
+        "Id": 8204,
+        "Name": "Simon Yu",
+        "Phone": "022 083 0181",
+        "BirthDate": "25 Jul 1997",
+        "Profile": "https://rock.ev.church/GetImage.ashx?id=1342",
         "IsLeader": 0
       },
       {
-        "Id": 10569,
-        "Name": "Ashley Chan",
-        "Phone": "022 683 5233",
-        "BirthDate": "",
-        "Profile": "https://rock.ev.church/GetImage.ashx?id=2974",
+        "Id": 9393,
+        "Name": "Zac Turner",
+        "Phone": "021 024 23426",
+        "BirthDate": "06 Jul 2000",
+        "Profile": "https://rock.ev.church/GetImage.ashx?id=1512",
         "IsLeader": 0
       }
-    ]
+    ],
+    "healthy": true,
+    "groupName": "Michael N's CG"
   }
 ]

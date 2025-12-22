@@ -1,6 +1,10 @@
+import { Icon } from "@iconify/react";
+import { useState } from "react";
+
 import type { Group } from "../utils/types";
 
 import AttendanceBarChart from "./AttendanceBarChart";
+import HealthToggle from "./HealthToggle";
 import PersonCard from "./PersonCard";
 import PersonPanel from "./PersonPanel";
 
@@ -15,10 +19,21 @@ const CGMetrics = ({ group }: CGMetricsProps) => {
       (a, b) => b.cgDropOff + b.churchDropOff - (a.cgDropOff + a.churchDropOff)
     );
 
+  const [healthy, setHealthy] = useState<boolean>(group.groupDetails.healthy);
+
   return (
     <>
-      <div className="text-4xl [@media(min-width:480px)]:text-5xl font-bold text-black mb-12">
-        My Connect Group
+      <div className="mb-12">
+        <div className="text-4xl [@media(min-width:480px)]:text-5xl font-bold text-black mb-3">
+          My Connect Group
+        </div>
+        <div className="mb-5 flex items-center gap-2">
+          <Icon icon="fluent:people-20-filled" color="#505050" height="32px" />
+          <div className="font-bold text-2xl text-[#505050]">
+            Leaders: {group.groupDetails.leaders.join(", ")}
+          </div>
+        </div>
+        <HealthToggle healthy={healthy} setHealthy={setHealthy} />
       </div>
       <div className="text-2xl [@media(min-width:480px)]:text-3xl font-bold text-black mb-6">
         People Dropping Off
@@ -98,7 +113,7 @@ const CGMetrics = ({ group }: CGMetricsProps) => {
       <div
         id="individual-attendance"
         className="text-3xl font-bold text-black mt-14 mb-4">
-        Individual Attendance
+        {`Individual Attendance (${group.members.length.toString()})`}
       </div>
       <PersonPanel />
       <div className="grid gap-5 [grid-template-columns:repeat(auto-fit,minmax(300px,1fr))]">

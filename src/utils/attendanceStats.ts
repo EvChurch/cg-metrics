@@ -12,12 +12,12 @@ export const countDropOff = (attendance: AttendanceEntry[]) => {
   return count;
 };
 
-export const getCgMonthAverage = (
-  cgAttendance: AttendanceEntry[],
+export const getAttendanceMonthAverage = (
+  attendance: AttendanceEntry[],
   month: number,
   year: number
 ) => {
-  const cgMonthAttendance = cgAttendance.filter(
+  const cgMonthAttendance = attendance.filter(
     (att) => att.date.getMonth() === month && att.date.getFullYear() === year
   );
 
@@ -30,45 +30,15 @@ export const getCgMonthAverage = (
   );
 };
 
-export const getCgYearAverage = (cgAttendance: AttendanceEntry[]) => {
+export const getAttendanceYearAverage = (attendance: AttendanceEntry[]) => {
   const now = new Date();
   const currentYear = now.getFullYear();
-  const cgYearAttendance = cgAttendance.filter(
+  const cgYearAttendance = attendance.filter(
     (att) => att.date.getFullYear() === currentYear
   );
   return (
     (cgYearAttendance.filter((att) => att.didAttend).length /
       cgYearAttendance.length) *
-    100
-  );
-};
-
-export const getChurchMonthAverage = (
-  churchAttendance: AttendanceEntry[],
-  month: number,
-  year: number
-) => {
-  const churchMonthAttendance = churchAttendance.filter(
-    (att) => att.date.getMonth() === month && att.date.getFullYear() === year
-  );
-
-  return (
-    (churchMonthAttendance.filter((att) => att.didAttend).length /
-      churchMonthAttendance.length) *
-    100
-  );
-};
-
-export const getChurchYearAverage = (churchAttendance: AttendanceEntry[]) => {
-  const now = new Date();
-  const currentYear = now.getFullYear();
-  const churchYearAttendance = churchAttendance.filter(
-    (att) => att.date.getFullYear() === currentYear
-  );
-
-  return (
-    (churchYearAttendance.filter((att) => att.didAttend).length /
-      churchYearAttendance.length) *
     100
   );
 };

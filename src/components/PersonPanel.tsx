@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Bar } from "react-chartjs-2";
 
 import { useCgReport } from "../hooks/useCgReport";
-import { getCgMonthAverage } from "../utils/attendanceStats";
+import { getAttendanceMonthAverage } from "../utils/attendanceStats";
 import { barChartData, barChartOptions } from "../utils/barChart";
 import type { AttendanceEntry } from "../utils/types";
 
@@ -73,7 +73,7 @@ const PersonPanel = () => {
     const monthlyAverageData = Array.from(
       { length: lastMonth },
       (_, i) => i
-    ).map((month) => getCgMonthAverage(attendance, month, currentYear));
+    ).map((month) => getAttendanceMonthAverage(attendance, month, currentYear));
     const chartData = barChartData(
       labels,
       monthlyAverageData,
@@ -133,7 +133,7 @@ const PersonPanel = () => {
     if (!attendance.length) return <></>;
 
     const selectedMonth = cg ? selectedMonthCg : selectedMonthChurch;
-    const cgMonthAverage = getCgMonthAverage(
+    const cgMonthAverage = getAttendanceMonthAverage(
       attendance,
       selectedMonth,
       currentYear
@@ -155,7 +155,9 @@ const PersonPanel = () => {
         <div className="text-center [@media(min-width:480px)]:text-left text-xl font-semibold text-zinc-900 mb-4">
           {`${new Date(0, selectedMonth).toLocaleString("default", {
             month: "long",
-          })} Attendance (${String(Math.round(cgMonthAverage))}%)`}
+          })} Attendance (${
+            cgMonthAverage ? `${String(Math.round(cgMonthAverage))}%` : "–"
+          })`}
         </div>
         <div className="flex gap-2 [@media(min-width:480px)]:gap-8 w-full">
           {daysInMonth.map((date, index) => (
