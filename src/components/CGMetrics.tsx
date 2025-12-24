@@ -33,7 +33,11 @@ const CGMetrics = ({ group }: CGMetricsProps) => {
             Leaders: {group.groupDetails.leaders.join(", ")}
           </div>
         </div>
-        <HealthToggle healthy={healthy} setHealthy={setHealthy} />
+        <HealthToggle
+          groupId={group.groupDetails.id}
+          healthy={healthy}
+          setHealthy={setHealthy}
+        />
       </div>
       <div className="text-2xl [@media(min-width:480px)]:text-3xl font-bold text-black mb-6">
         People Dropping Off

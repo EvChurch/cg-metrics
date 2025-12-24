@@ -21,6 +21,7 @@ const buildAttendanceData = (
 const buildGroupData = (rockGroup: z.infer<typeof groupSchema>): Group => {
   return {
     groupDetails: {
+      id: rockGroup.groupId,
       name: rockGroup.groupName ?? "",
       healthy: rockGroup.healthy,
       leaders: rockGroup.members.filter((m) => m.IsLeader).map((m) => m.Name),
@@ -71,6 +72,7 @@ const groupSchema = z.object({
   members: z.array(personSchema),
   cgAttendance: z.array(attendanceSchema),
   churchAttendance: z.array(attendanceSchema),
+  groupId: z.number(),
   healthy: z.boolean(),
   groupName: z.string().nullable().optional(),
 });

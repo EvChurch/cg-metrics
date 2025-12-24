@@ -21,6 +21,7 @@ export interface PersonAttendance {
 }
 
 export interface GroupDetails {
+  id: number;
   name: string;
   leaders: string[];
   healthy: boolean;

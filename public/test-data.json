@@ -1326,6 +1326,11 @@
       {
         "PersonId": 2477,
         "DidAttend": true,
+        "Date": "2025-12-21T00:00:00"
+      },
+      {
+        "PersonId": 2477,
+        "DidAttend": true,
         "Date": "2025-12-14T00:00:00"
       },
       {
@@ -1586,6 +1591,11 @@
       {
         "PersonId": 2550,
         "DidAttend": true,
+        "Date": "2025-12-21T00:00:00"
+      },
+      {
+        "PersonId": 2550,
+        "DidAttend": true,
         "Date": "2025-12-14T00:00:00"
       },
       {
@@ -1846,6 +1856,11 @@
       {
         "PersonId": 3185,
         "DidAttend": true,
+        "Date": "2025-12-21T00:00:00"
+      },
+      {
+        "PersonId": 3185,
+        "DidAttend": true,
         "Date": "2025-12-14T00:00:00"
       },
       {
@@ -2106,6 +2121,11 @@
       {
         "PersonId": 3823,
         "DidAttend": true,
+        "Date": "2025-12-21T00:00:00"
+      },
+      {
+        "PersonId": 3823,
+        "DidAttend": true,
         "Date": "2025-12-14T00:00:00"
       },
       {
@@ -2366,6 +2386,11 @@
       {
         "PersonId": 5813,
         "DidAttend": true,
+        "Date": "2025-12-21T00:00:00"
+      },
+      {
+        "PersonId": 5813,
+        "DidAttend": true,
         "Date": "2025-12-14T00:00:00"
       },
       {
@@ -2625,6 +2650,11 @@
       },
       {
         "PersonId": 6077,
+        "DidAttend": false,
+        "Date": "2025-12-21T00:00:00"
+      },
+      {
+        "PersonId": 6077,
         "DidAttend": true,
         "Date": "2025-12-14T00:00:00"
       },
@@ -2886,6 +2916,11 @@
       {
         "PersonId": 6341,
         "DidAttend": true,
+        "Date": "2025-12-21T00:00:00"
+      },
+      {
+        "PersonId": 6341,
+        "DidAttend": true,
         "Date": "2025-12-14T00:00:00"
       },
       {
@@ -3146,6 +3181,11 @@
       {
         "PersonId": 6633,
         "DidAttend": false,
+        "Date": "2025-12-21T00:00:00"
+      },
+      {
+        "PersonId": 6633,
+        "DidAttend": false,
         "Date": "2025-12-14T00:00:00"
       },
       {
@@ -3406,6 +3446,11 @@
       {
         "PersonId": 7636,
         "DidAttend": true,
+        "Date": "2025-12-21T00:00:00"
+      },
+      {
+        "PersonId": 7636,
+        "DidAttend": true,
         "Date": "2025-12-14T00:00:00"
       },
       {
@@ -3666,6 +3711,11 @@
       {
         "PersonId": 7975,
         "DidAttend": true,
+        "Date": "2025-12-21T00:00:00"
+      },
+      {
+        "PersonId": 7975,
+        "DidAttend": true,
         "Date": "2025-12-14T00:00:00"
       },
       {
@@ -3926,6 +3976,11 @@
       {
         "PersonId": 8204,
         "DidAttend": true,
+        "Date": "2025-12-21T00:00:00"
+      },
+      {
+        "PersonId": 8204,
+        "DidAttend": true,
         "Date": "2025-12-14T00:00:00"
       },
       {
@@ -4182,6 +4237,11 @@
         "PersonId": 8204,
         "DidAttend": true,
         "Date": "2025-01-05T00:00:00"
+      },
+      {
+        "PersonId": 9393,
+        "DidAttend": true,
+        "Date": "2025-12-21T00:00:00"
       },
       {
         "PersonId": 9393,
@@ -4542,6 +4602,7 @@
         "IsLeader": 0
       }
     ],
+    "groupId": 28982,
     "healthy": true,
     "groupName": "Michael N's CG"
   }
