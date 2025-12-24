@@ -1,5 +1,7 @@
 import { forwardRef } from "react";
 
+import { updateGroupAttributeValue } from "../api/groups";
+
 interface HealthToggleProps {
   groupId: number;
   healthy: boolean;
@@ -10,18 +12,10 @@ const HealthToggle = forwardRef<HTMLInputElement, HealthToggleProps>(
   ({ groupId, healthy, setHealthy }, ref) => {
     const onChangeToggle = (e: React.ChangeEvent<HTMLInputElement>) => {
       setHealthy(e.target.checked);
-      console.log("posting..");
-      window.parent.postMessage(
-        {
-          type: "ROCK_API_REQUEST",
-          url: `/api/Groups/AttributeValue/${String(
-            groupId
-          )}?attributeKey=Healthy&attributeValue=${
-            e.target.checked ? "True" : "False"
-          }`,
-          method: "POST",
-        },
-        "*" // or restrict to your parent origin
+      updateGroupAttributeValue(
+        groupId,
+        "Healthy",
+        e.target.checked ? "True" : "False"
       );
     };
 
