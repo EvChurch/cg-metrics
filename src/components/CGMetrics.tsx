@@ -25,7 +25,7 @@ const CGMetrics = ({ group }: CGMetricsProps) => {
   return (
     <>
       <div className="mb-12">
-        <div className="text-4xl [@media(min-width:480px)]:text-5xl font-bold text-black mb-3">
+        <div className="text-4xl [@media(min-width:480px)]:text-5xl font-bold text-black mb-3 mt-14">
           {group.groupDetails.name}
         </div>
         <div className="mb-5 flex items-center gap-2">
@@ -123,7 +123,7 @@ const CGMetrics = ({ group }: CGMetricsProps) => {
         {`Individual Attendance (${group.members.length.toString()})`}
       </div>
       <PersonPanel />
-      <div className="grid gap-5 [grid-template-columns:repeat(auto-fit,minmax(300px,1fr))] mb-12">
+      <div className="grid gap-5 [grid-template-columns:repeat(auto-fit,minmax(300px,1fr))]">
         {group.members.map((member) => (
           <PersonCard key={member.person.id} personAttendance={member} />
         ))}
