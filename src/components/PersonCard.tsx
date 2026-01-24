@@ -13,13 +13,12 @@ const PersonCard = ({ personAttendance }: PersonCardProps) => {
   const { selectedPerson, setSelectedPerson } = useCgReport();
   const now = new Date();
   const lastMonth = now.getMonth() === 0 ? 11 : now.getMonth() - 1;
-  const yearOfLastMonth =
-    now.getMonth() === 0 ? now.getFullYear() - 1 : now.getFullYear();
+  // const yearOfLastMonth =
+  //   now.getMonth() === 0 ? now.getFullYear() - 1 : now.getFullYear();
 
   const cgMonthAverage = getAttendanceMonthAverage(
     personAttendance.cgAttendance,
     lastMonth,
-    yearOfLastMonth
   );
 
   const cgYearAverage = getAttendanceYearAverage(personAttendance.cgAttendance);
@@ -27,11 +26,10 @@ const PersonCard = ({ personAttendance }: PersonCardProps) => {
   const churchMonthAverage = getAttendanceMonthAverage(
     personAttendance.churchAttendance,
     lastMonth,
-    yearOfLastMonth
   );
 
   const churchYearAverage = getAttendanceYearAverage(
-    personAttendance.churchAttendance
+    personAttendance.churchAttendance,
   );
 
   return (

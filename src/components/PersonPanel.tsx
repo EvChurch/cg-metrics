@@ -63,26 +63,27 @@ const PersonPanel = () => {
 
   const monthlyAttendanceChart = (
     attendance: AttendanceEntry[],
-    cg: boolean
+    cg: boolean,
   ) => {
     const now = new Date();
-    const labels = Array.from({ length: 12 }, (_, i) => {
-      const d = new Date(now.getFullYear(), now.getMonth() - 11 + i, 1);
+    const labels = Array.from({ length: 13 }, (_, i) => {
+      const d = new Date(now.getFullYear(), now.getMonth() - 12 + i, 1);
       return d.toLocaleString("default", { month: "short" });
     });
     const monthlyAverageData = Array.from(
-      { length: 12 },
-      (_, i) => (now.getMonth() - 11 + i + 12) % 12
-    ).map((month) => getAttendanceMonthAverage(attendance, month, currentYear));
+      { length: 13 },
+      (_, i) => (now.getMonth() - 12 + i + 13) % 13,
+    ).map((month) => getAttendanceMonthAverage(attendance, month));
     console.log("monthlyAverageData: ", monthlyAverageData);
     const chartData = barChartData(
       labels,
       monthlyAverageData,
-      cg ? selectedMonthCg : selectedMonthChurch
+      cg ? selectedMonthCg : selectedMonthChurch,
     );
 
     const onClick = (_event: ChartEvent, activeElements: ActiveElement[]) => {
       if (activeElements.length > 0) {
+        console.log(activeElements);
         const activeElement = activeElements[0];
         const dataIndex = activeElement.index;
         if (cg) {
@@ -105,8 +106,8 @@ const PersonPanel = () => {
     return status === null
       ? "border-[3px] border-[#D9D9D9]"
       : status
-      ? "bg-[#CEF0C7]"
-      : "border-[3px] border-[#F4C6CF]";
+        ? "bg-[#CEF0C7]"
+        : "border-[3px] border-[#F4C6CF]";
   };
 
   const getAttendanceGridIcon = (status: boolean | null) => {
@@ -123,7 +124,7 @@ const PersonPanel = () => {
     return (
       <div
         className={`w-full h-[65px] rounded-[10px] flex items-center justify-center ${getAttendanceGridStyle(
-          status
+          status,
         )}`}>
         {getAttendanceGridIcon(status)}
       </div>
@@ -134,21 +135,17 @@ const PersonPanel = () => {
     if (!attendance.length) return <></>;
 
     const selectedMonth = cg ? selectedMonthCg : selectedMonthChurch;
-    const cgMonthAverage = getAttendanceMonthAverage(
-      attendance,
-      selectedMonth,
-      currentYear
-    );
+    const cgMonthAverage = getAttendanceMonthAverage(attendance, selectedMonth);
     const dayOfWeek = new Date(attendance[0].date).getDay();
     const numDaysInMonth = new Date(
       currentYear,
       selectedMonth + 1,
-      0
+      0,
     ).getDate();
 
     const daysInMonth = Array.from(
       { length: numDaysInMonth },
-      (_, i) => new Date(currentYear, selectedMonth, i + 1)
+      (_, i) => new Date(currentYear, selectedMonth, i + 1),
     ).filter((d) => d.getDay() === dayOfWeek);
 
     return (
@@ -165,7 +162,7 @@ const PersonPanel = () => {
             <div key={index} className="flex-1 flex flex-col items-center">
               {getAttendanceGrid(
                 attendance.find((a) => a.date.getTime() === date.getTime())
-                  ?.didAttend ?? null
+                  ?.didAttend ?? null,
               )}
               <div className="[@media(min-width:480px)]:text-base text-sm mt-2">
                 {date.toLocaleDateString("en-GB", {
@@ -232,7 +229,7 @@ const PersonPanel = () => {
           </h1>
           {monthlyAttendanceChart(
             selectedPerson?.churchAttendance ?? [],
-            false
+            false,
           )}
           {weeklyAttendanceGrid(selectedPerson?.churchAttendance ?? [], false)}
         </div>

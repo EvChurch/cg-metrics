@@ -10,8 +10,9 @@ import type {
 export const barChartData = (
   labels: string[],
   data: number[],
-  selectedIndex?: number
+  selectedIndex?: number,
 ): ChartData<"bar"> => {
+  console.log("barchart: ", data);
   return {
     labels,
     datasets: [
@@ -35,7 +36,7 @@ export const barChartData = (
 };
 
 export const barChartOptions = (
-  onClick?: (event: ChartEvent, activeElements: ActiveElement[]) => void
+  onClick?: (event: ChartEvent, activeElements: ActiveElement[]) => void,
 ): ChartOptions<"bar"> => {
   return {
     responsive: true,
