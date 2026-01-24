@@ -16,16 +16,17 @@ const CGMetrics = ({ group }: CGMetricsProps) => {
   const peopleDroppingOff = group.members
     .filter((member) => member.cgDropOff >= 2 || member.churchDropOff >= 2)
     .sort(
-      (a, b) => b.cgDropOff + b.churchDropOff - (a.cgDropOff + a.churchDropOff)
+      (a, b) => b.cgDropOff + b.churchDropOff - (a.cgDropOff + a.churchDropOff),
     );
 
   const [healthy, setHealthy] = useState<boolean>(group.groupDetails.healthy);
+  console.log("group: ", group);
 
   return (
     <>
       <div className="mb-12">
         <div className="text-4xl [@media(min-width:480px)]:text-5xl font-bold text-black mb-3">
-          My Connect Group
+          {group.groupDetails.name}
         </div>
         <div className="mb-5 flex items-center gap-2">
           <Icon icon="fluent:people-20-filled" color="#505050" height="32px" />
@@ -33,11 +34,13 @@ const CGMetrics = ({ group }: CGMetricsProps) => {
             Leaders: {group.groupDetails.leaders.join(", ")}
           </div>
         </div>
-        <HealthToggle
-          groupId={group.groupDetails.id}
-          healthy={healthy}
-          setHealthy={setHealthy}
-        />
+        {group.groupDetails.isCoach && (
+          <HealthToggle
+            groupId={group.groupDetails.id}
+            healthy={healthy}
+            setHealthy={setHealthy}
+          />
+        )}
       </div>
       <div className="text-2xl [@media(min-width:480px)]:text-3xl font-bold text-black mb-6">
         People Dropping Off
@@ -120,7 +123,7 @@ const CGMetrics = ({ group }: CGMetricsProps) => {
         {`Individual Attendance (${group.members.length.toString()})`}
       </div>
       <PersonPanel />
-      <div className="grid gap-5 [grid-template-columns:repeat(auto-fit,minmax(300px,1fr))]">
+      <div className="grid gap-5 [grid-template-columns:repeat(auto-fit,minmax(300px,1fr))] mb-12">
         {group.members.map((member) => (
           <PersonCard key={member.person.id} personAttendance={member} />
         ))}

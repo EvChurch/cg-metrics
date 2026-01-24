@@ -7,13 +7,13 @@ import type { Group } from "../utils/types";
 
 const buildAttendanceData = (
   attendance: z.infer<typeof attendanceSchema>[],
-  personId: number
+  personId: number,
 ) => {
   return attendance
-    .filter((att) => att.PersonId === personId)
+    .filter((att) => att.personId === personId)
     .map((att) => ({
-      didAttend: att.DidAttend,
-      date: new Date(att.Date),
+      didAttend: att.didAttend,
+      date: new Date(att.date),
     }))
     .sort((a, b) => a.date.getTime() - b.date.getTime());
 };
@@ -24,25 +24,26 @@ const buildGroupData = (rockGroup: z.infer<typeof groupSchema>): Group => {
       id: rockGroup.groupId,
       name: rockGroup.groupName ?? "",
       healthy: rockGroup.healthy,
-      leaders: rockGroup.members.filter((m) => m.IsLeader).map((m) => m.Name),
+      leaders: rockGroup.members.filter((m) => m.isLeader).map((m) => m.name),
+      isCoach: rockGroup.isCoach,
     },
     members: rockGroup.members.map((member) => {
       const cgAttendance = buildAttendanceData(
         rockGroup.cgAttendance,
-        member.Id
+        member.personId,
       );
       const churchAttendance = buildAttendanceData(
         rockGroup.churchAttendance,
-        member.Id
+        member.personId,
       );
       return {
         person: {
-          id: member.Id,
-          name: member.Name,
-          profile: member.Profile,
-          phoneNumber: member.PhoneNumber,
-          birthDate: member.BirthDate,
-          isLeader: Boolean(member.IsLeader),
+          id: member.personId,
+          name: member.name,
+          profile: member.profile,
+          phoneNumber: member.phone,
+          birthDate: member.birthDate,
+          isLeader: member.isLeader,
         },
         cgAttendance,
         churchAttendance,
@@ -54,18 +55,18 @@ const buildGroupData = (rockGroup: z.infer<typeof groupSchema>): Group => {
 };
 
 const personSchema = z.object({
-  Id: z.number(),
-  Name: z.string(),
-  Profile: z.string(),
-  PhoneNumber: z.string().nullable().optional(),
-  BirthDate: z.string().nullable().optional(),
-  IsLeader: z.number(),
+  personId: z.number(),
+  name: z.string(),
+  profile: z.string(),
+  phone: z.string().nullable().optional(),
+  birthDate: z.string().nullable().optional(),
+  isLeader: z.boolean(),
 });
 
 const attendanceSchema = z.object({
-  PersonId: z.number(),
-  DidAttend: z.boolean(),
-  Date: z.string(),
+  personId: z.number(),
+  didAttend: z.boolean(),
+  date: z.string(),
 });
 
 const groupSchema = z.object({
@@ -75,6 +76,7 @@ const groupSchema = z.object({
   groupId: z.number(),
   healthy: z.boolean(),
   groupName: z.string().nullable().optional(),
+  isCoach: z.boolean(),
 });
 
 const rockDataSchema = z.array(groupSchema);

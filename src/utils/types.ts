@@ -25,6 +25,7 @@ export interface GroupDetails {
   name: string;
   leaders: string[];
   healthy: boolean;
+  isCoach: boolean;
 }
 
 export interface Group {

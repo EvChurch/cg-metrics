@@ -14,14 +14,11 @@ export const countDropOff = (attendance: AttendanceEntry[]) => {
 
 export const getAttendanceMonthAverage = (
   attendance: AttendanceEntry[],
-  month: number,
-  year: number
+  month: number
 ) => {
   const cgMonthAttendance = attendance.filter(
-    (att) => att.date.getMonth() === month && att.date.getFullYear() === year
+    (att) => att.date.getMonth() === month
   );
-
-  console.log(month, cgMonthAttendance);
 
   return (
     (cgMonthAttendance.filter((att) => att.didAttend).length /

@@ -66,14 +66,15 @@ const PersonPanel = () => {
     cg: boolean
   ) => {
     const now = new Date();
-    const lastMonth = now.getMonth();
-    const labels = Array.from({ length: lastMonth }, (_, i) =>
-      new Date(0, i).toLocaleString("default", { month: "short" })
-    );
+    const labels = Array.from({ length: 12 }, (_, i) => {
+      const d = new Date(now.getFullYear(), now.getMonth() - 11 + i, 1);
+      return d.toLocaleString("default", { month: "short" });
+    });
     const monthlyAverageData = Array.from(
-      { length: lastMonth },
-      (_, i) => i
+      { length: 12 },
+      (_, i) => (now.getMonth() - 11 + i + 12) % 12
     ).map((month) => getAttendanceMonthAverage(attendance, month, currentYear));
+    console.log("monthlyAverageData: ", monthlyAverageData);
     const chartData = barChartData(
       labels,
       monthlyAverageData,
