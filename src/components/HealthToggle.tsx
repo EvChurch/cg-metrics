@@ -15,14 +15,14 @@ const HealthToggle = forwardRef<HTMLInputElement, HealthToggleProps>(
       updateGroupAttributeValue(
         groupId,
         "Healthy",
-        e.target.checked ? "True" : "False"
+        e.target.checked ? "True" : "False",
       );
     };
 
     return (
       <>
         <input
-          id="health-toggle"
+          id={groupId.toString()}
           type="checkbox"
           className="hidden"
           ref={ref}
@@ -31,7 +31,7 @@ const HealthToggle = forwardRef<HTMLInputElement, HealthToggleProps>(
         />
 
         <label
-          htmlFor="health-toggle"
+          htmlFor={groupId.toString()}
           className="cursor-pointer inline-block select-none">
           <div className="w-[260px] h-12 p-[8px] rounded-[6px] transition-colors duration-300 bg-[#F2F2F2] relative">
             <div
@@ -56,7 +56,7 @@ const HealthToggle = forwardRef<HTMLInputElement, HealthToggleProps>(
         </label>
       </>
     );
-  }
+  },
 );
 
 export default HealthToggle;

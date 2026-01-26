@@ -1,7 +1,7 @@
 import { Icon } from "@iconify/react";
 import { useState } from "react";
 
-import type { Group } from "../utils/types";
+import type { Group, PersonAttendance } from "../utils/types";
 
 import AttendanceBarChart from "./AttendanceBarChart";
 import HealthToggle from "./HealthToggle";
@@ -20,7 +20,9 @@ const CGMetrics = ({ group }: CGMetricsProps) => {
     );
 
   const [healthy, setHealthy] = useState<boolean>(group.groupDetails.healthy);
-  console.log("group: ", group);
+  const [selectedPerson, setSelectedPerson] = useState<PersonAttendance | null>(
+    null,
+  );
 
   return (
     <>
@@ -118,14 +120,20 @@ const CGMetrics = ({ group }: CGMetricsProps) => {
       </div>
 
       <div
-        id="individual-attendance"
+        id={`individual-attendance-${String(group.groupDetails.id)}`}
         className="text-3xl font-bold text-black mt-14 mb-4">
         {`Individual Attendance (${group.members.length.toString()})`}
       </div>
-      <PersonPanel />
+      <PersonPanel selectedPerson={selectedPerson} />
       <div className="grid gap-5 [grid-template-columns:repeat(auto-fit,minmax(300px,1fr))]">
         {group.members.map((member) => (
-          <PersonCard key={member.person.id} personAttendance={member} />
+          <PersonCard
+            key={member.person.id}
+            personAttendance={member}
+            groupId={group.groupDetails.id}
+            selectedPerson={selectedPerson}
+            setSelectedPerson={setSelectedPerson}
+          />
         ))}
       </div>
     </>

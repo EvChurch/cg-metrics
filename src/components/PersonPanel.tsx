@@ -3,14 +3,15 @@ import type { ActiveElement, ChartEvent } from "chart.js";
 import { useState } from "react";
 import { Bar } from "react-chartjs-2";
 
-import { useCgReport } from "../hooks/useCgReport";
 import { getAttendanceMonthAverage } from "../utils/attendanceStats";
 import { barChartData, barChartOptions } from "../utils/barChart";
-import type { AttendanceEntry } from "../utils/types";
+import type { AttendanceEntry, PersonAttendance } from "../utils/types";
 
-const PersonPanel = () => {
-  const { selectedPerson } = useCgReport();
+interface PersonPanelProps {
+  selectedPerson: PersonAttendance | null;
+}
 
+const PersonPanel = ({ selectedPerson }: PersonPanelProps) => {
   const now = new Date();
   const lastMonth = now.getMonth() === 0 ? 0 : now.getMonth() - 1;
   const currentYear = now.getFullYear();

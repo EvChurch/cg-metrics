@@ -7,8 +7,8 @@ const CoachMetrics = () => {
 
   return (
     <>
-      {data.map((group, index) => (
-        <CGMetrics key={index} group={group} />
+      {data.map((group) => (
+        <CGMetrics key={group.groupDetails.id} group={group} />
       ))}
     </>
   );
