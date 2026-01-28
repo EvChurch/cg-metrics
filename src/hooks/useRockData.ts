@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { z } from "zod";
 
 // import testData from "../../public/test-data.json";
@@ -101,6 +101,12 @@ export function useRockData(): {
   const [error, setError] = useState<Error>();
   const [data, setData] = useState<Group[]>([]);
 
+  const hasLoadedRef = useRef(false);
+
+  useEffect(() => {
+    window.parent.postMessage({ type: "CG_METRICS_READY" }, "*");
+  }, []);
+
   useEffect(() => {
     // console.log(testData);
     // const data = rockDataSchema.parse(testData);
@@ -119,6 +125,9 @@ export function useRockData(): {
 
       const result = messageEventDataSchema.safeParse(event.data);
       if (!result.success) return;
+
+      if (hasLoadedRef.current) return;
+      hasLoadedRef.current = true;
 
       try {
         console.log("result: ", result.data.data);

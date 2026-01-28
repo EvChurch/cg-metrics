@@ -12,7 +12,6 @@ export const barChartData = (
   data: number[],
   selectedIndex?: number,
 ): ChartData<"bar"> => {
-  console.log("barchart: ", data);
   return {
     labels,
     datasets: [

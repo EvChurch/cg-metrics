@@ -74,10 +74,10 @@ const PersonPanel = ({ selectedPerson }: PersonPanelProps) => {
     const monthlyAverageData = barChartMonths().map((month) =>
       getAttendanceMonthAverage(attendance, month),
     );
-    console.log(
-      `monthlyAverageData ${cg ? "cg: " : "church: "}`,
-      monthlyAverageData,
-    );
+    // console.log(
+    //   `monthlyAverageData ${cg ? "cg: " : "church: "}`,
+    //   monthlyAverageData,
+    // );
     const months = barChartMonths();
     const chartData = barChartData(
       labels,
@@ -89,7 +89,6 @@ const PersonPanel = ({ selectedPerson }: PersonPanelProps) => {
 
     const onClick = (_event: ChartEvent, activeElements: ActiveElement[]) => {
       if (activeElements.length > 0) {
-        console.log(activeElements);
         const activeElement = activeElements[0];
         const dataIndex = activeElement.index;
         if (cg) {
@@ -150,7 +149,6 @@ const PersonPanel = ({ selectedPerson }: PersonPanelProps) => {
       { length: numDaysInMonth },
       (_, i) => new Date(year, month, i + 1),
     ).filter((d) => d.getDay() === dayOfWeek);
-    console.log("daysInMonth: ", numDaysInMonth, daysInMonth);
 
     return (
       <div>
