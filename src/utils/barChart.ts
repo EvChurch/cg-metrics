@@ -30,6 +30,7 @@ export const barChartData = (
         borderSkipped: false,
         categoryPercentage: 0.8,
         barPercentage: 1,
+        minBarLength: 7,
       },
     ],
   };
@@ -74,5 +75,24 @@ export const barChartOptions = (
       },
     },
     onClick,
+    onHover: (event, elements) => {
+      if (event.native?.target) {
+        (event.native.target as HTMLCanvasElement).style.cursor =
+          elements.length ? "pointer" : "default";
+      }
+    },
   };
+};
+
+export const barChartMonths = () => {
+  const now = new Date();
+  return Array.from({ length: 13 }, (_, i) => {
+    return new Date(now.getFullYear(), now.getMonth() - 12 + i, 1);
+  });
+};
+
+export const barChartLabels = () => {
+  return barChartMonths().map((month) =>
+    month.toLocaleString("default", { month: "short" }),
+  );
 };

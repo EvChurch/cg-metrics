@@ -4,7 +4,12 @@ import { useState } from "react";
 import { Bar } from "react-chartjs-2";
 
 import { getAttendanceMonthAverage } from "../utils/attendanceStats";
-import { barChartData, barChartOptions } from "../utils/barChart";
+import {
+  barChartData,
+  barChartLabels,
+  barChartMonths,
+  barChartOptions,
+} from "../utils/barChart";
 import type { AttendanceEntry, PersonAttendance } from "../utils/types";
 
 interface PersonPanelProps {
@@ -13,11 +18,10 @@ interface PersonPanelProps {
 
 const PersonPanel = ({ selectedPerson }: PersonPanelProps) => {
   const now = new Date();
-  const lastMonth = now.getMonth() === 0 ? 0 : now.getMonth() - 1;
-  const currentYear = now.getFullYear();
-  const [selectedMonthCg, setSelectedMonthCg] = useState<number>(lastMonth);
+  const lastMonth = new Date(now.getFullYear(), now.getMonth() - 1, 1);
+  const [selectedMonthCg, setSelectedMonthCg] = useState<Date>(lastMonth);
   const [selectedMonthChurch, setSelectedMonthChurch] =
-    useState<number>(lastMonth);
+    useState<Date>(lastMonth);
 
   // const summaryMetrics = () => {
   //   const cgMonthAverage = getCgMonthAverage(
@@ -66,20 +70,21 @@ const PersonPanel = ({ selectedPerson }: PersonPanelProps) => {
     attendance: AttendanceEntry[],
     cg: boolean,
   ) => {
-    const now = new Date();
-    const labels = Array.from({ length: 13 }, (_, i) => {
-      const d = new Date(now.getFullYear(), now.getMonth() - 12 + i, 1);
-      return d.toLocaleString("default", { month: "short" });
-    });
-    const monthlyAverageData = Array.from(
-      { length: 13 },
-      (_, i) => (now.getMonth() - 12 + i + 13) % 13,
-    ).map((month) => getAttendanceMonthAverage(attendance, month));
-    console.log("monthlyAverageData: ", monthlyAverageData);
+    const labels = barChartLabels();
+    const monthlyAverageData = barChartMonths().map((month) =>
+      getAttendanceMonthAverage(attendance, month),
+    );
+    console.log(
+      `monthlyAverageData ${cg ? "cg: " : "church: "}`,
+      monthlyAverageData,
+    );
+    const months = barChartMonths();
     const chartData = barChartData(
       labels,
       monthlyAverageData,
-      cg ? selectedMonthCg : selectedMonthChurch,
+      cg
+        ? months.findIndex((m) => m === selectedMonthCg)
+        : months.findIndex((m) => m === selectedMonthChurch),
     );
 
     const onClick = (_event: ChartEvent, activeElements: ActiveElement[]) => {
@@ -88,9 +93,9 @@ const PersonPanel = ({ selectedPerson }: PersonPanelProps) => {
         const activeElement = activeElements[0];
         const dataIndex = activeElement.index;
         if (cg) {
-          setSelectedMonthCg(dataIndex);
+          setSelectedMonthCg(months[dataIndex]);
         } else {
-          setSelectedMonthChurch(dataIndex);
+          setSelectedMonthChurch(months[dataIndex]);
         }
       }
     };
@@ -136,26 +141,26 @@ const PersonPanel = ({ selectedPerson }: PersonPanelProps) => {
     if (!attendance.length) return <></>;
 
     const selectedMonth = cg ? selectedMonthCg : selectedMonthChurch;
-    const cgMonthAverage = getAttendanceMonthAverage(attendance, selectedMonth);
+    const monthAverage = getAttendanceMonthAverage(attendance, selectedMonth);
     const dayOfWeek = new Date(attendance[0].date).getDay();
-    const numDaysInMonth = new Date(
-      currentYear,
-      selectedMonth + 1,
-      0,
-    ).getDate();
-
+    const year = selectedMonth.getFullYear();
+    const month = selectedMonth.getMonth();
+    const numDaysInMonth = new Date(year, month + 1, 0).getDate();
     const daysInMonth = Array.from(
       { length: numDaysInMonth },
-      (_, i) => new Date(currentYear, selectedMonth, i + 1),
+      (_, i) => new Date(year, month, i + 1),
     ).filter((d) => d.getDay() === dayOfWeek);
+    console.log("daysInMonth: ", numDaysInMonth, daysInMonth);
 
     return (
       <div>
         <div className="text-center [@media(min-width:480px)]:text-left text-xl font-semibold text-zinc-900 mb-4">
-          {`${new Date(0, selectedMonth).toLocaleString("default", {
+          {`${selectedMonth.toLocaleString("default", {
             month: "long",
           })} Attendance (${
-            cgMonthAverage ? `${String(Math.round(cgMonthAverage))}%` : "–"
+            isFinite(monthAverage)
+              ? `${String(Math.round(monthAverage))}%`
+              : "–"
           })`}
         </div>
         <div className="flex gap-2 [@media(min-width:480px)]:gap-8 w-full">
@@ -207,7 +212,7 @@ const PersonPanel = ({ selectedPerson }: PersonPanelProps) => {
             </div>
           )}
           {selectedPerson?.person.birthDate && (
-            <div className="flex items-center gap-2 text-lg font-medium text-[#898E9B]">
+            <div className="flex items-center gap-2 text-sm font-medium text-[#898E9B]">
               <Icon
                 className="mb-[4px]"
                 icon="fa7-solid:birthday-cake"

@@ -8,9 +8,11 @@ import type { Group } from "../utils/types";
 const buildAttendanceData = (
   attendance: z.infer<typeof attendanceSchema>[],
   personId: number,
+  church: boolean,
 ) => {
   return attendance
     .filter((att) => att.personId === personId)
+    .filter((att) => (church ? new Date(att.date).getDay() === 0 : true))
     .map((att) => ({
       didAttend: att.didAttend,
       date: new Date(att.date),
@@ -31,10 +33,12 @@ const buildGroupData = (rockGroup: z.infer<typeof groupSchema>): Group => {
       const cgAttendance = buildAttendanceData(
         rockGroup.cgAttendance,
         member.personId,
+        false,
       );
       const churchAttendance = buildAttendanceData(
         rockGroup.churchAttendance,
         member.personId,
+        true,
       );
       return {
         person: {

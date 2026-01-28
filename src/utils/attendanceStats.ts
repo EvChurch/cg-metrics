@@ -1,6 +1,7 @@
 import type { AttendanceEntry } from "./types";
 
 export const countDropOff = (attendance: AttendanceEntry[]) => {
+  console.log(attendance);
   let count = 0;
   for (let i = attendance.length - 1; i >= 0; i--) {
     if (!attendance[i].didAttend) {
@@ -14,15 +15,17 @@ export const countDropOff = (attendance: AttendanceEntry[]) => {
 
 export const getAttendanceMonthAverage = (
   attendance: AttendanceEntry[],
-  month: number
+  month: Date,
 ) => {
-  const cgMonthAttendance = attendance.filter(
-    (att) => att.date.getMonth() === month
+  const monthAttendance = attendance.filter(
+    (att) =>
+      att.date.getMonth() === month.getMonth() &&
+      att.date.getFullYear() === month.getFullYear(),
   );
 
   return (
-    (cgMonthAttendance.filter((att) => att.didAttend).length /
-      cgMonthAttendance.length) *
+    (monthAttendance.filter((att) => att.didAttend).length /
+      monthAttendance.length) *
     100
   );
 };
@@ -31,7 +34,7 @@ export const getAttendanceYearAverage = (attendance: AttendanceEntry[]) => {
   const now = new Date();
   const currentYear = now.getFullYear();
   const cgYearAttendance = attendance.filter(
-    (att) => att.date.getFullYear() === currentYear
+    (att) => att.date.getFullYear() === currentYear,
   );
   return (
     (cgYearAttendance.filter((att) => att.didAttend).length /

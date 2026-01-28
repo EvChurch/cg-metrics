@@ -18,7 +18,7 @@ const PersonCard = ({
   setSelectedPerson,
 }: PersonCardProps) => {
   const now = new Date();
-  const lastMonth = now.getMonth() === 0 ? 11 : now.getMonth() - 1;
+  const lastMonth = new Date(now.getFullYear(), now.getMonth() - 1, 1);
   // const yearOfLastMonth =
   //   now.getMonth() === 0 ? now.getFullYear() - 1 : now.getFullYear();
 
@@ -57,20 +57,24 @@ const PersonCard = ({
 
         <div className="text-gray-600 text-right mr-6">CG</div>
         <div className="text-center text-2xl font-semibold text-gray-900">
-          {cgMonthAverage ? `${String(Math.round(cgMonthAverage))}%` : "–"}
+          {isFinite(cgMonthAverage)
+            ? `${String(Math.round(cgMonthAverage))}%`
+            : "–"}
         </div>
         <div className="text-center text-2xl font-semibold text-gray-900">
-          {cgYearAverage ? `${String(Math.round(cgYearAverage))}%` : "–"}
+          {isFinite(cgYearAverage)
+            ? `${String(Math.round(cgYearAverage))}%`
+            : "–"}
         </div>
 
         <div className="text-gray-600 text-right mr-6">Church</div>
         <div className="text-center text-2xl font-semibold text-gray-900">
-          {churchMonthAverage
+          {isFinite(churchMonthAverage)
             ? `${String(Math.round(churchMonthAverage))}%`
             : "–"}
         </div>
         <div className="text-center text-2xl font-semibold text-gray-900">
-          {churchYearAverage
+          {isFinite(churchYearAverage)
             ? `${String(Math.round(churchYearAverage))}%`
             : "–"}
         </div>
