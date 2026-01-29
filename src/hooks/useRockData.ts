@@ -108,6 +108,12 @@ export function useRockData(): {
   }, []);
 
   useEffect(() => {
+    if (!isLoading) {
+      window.parentIFrame.resize();
+    }
+  }, [isLoading, data]);
+
+  useEffect(() => {
     // console.log(testData);
     // const data = rockDataSchema.parse(testData);
     // setData(data.map((group) => buildGroupData(group)));

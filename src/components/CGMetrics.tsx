@@ -57,18 +57,18 @@ const CGMetrics = ({ group }: CGMetricsProps) => {
                 </th>
                 <th className="bg-gray-100 px-5 py-3 font-bold whitespace-normal break-words min-w-0">
                   <span className="hidden [@media(min-width:480px)]:inline">
-                    Last CG attended (weeks ago)
+                    No. of CGs missed
                   </span>
                   <span className="inline [@media(min-width:480px)]:hidden">
-                    Last CG (weeks)
+                    # CG missed
                   </span>
                 </th>
                 <th className="rounded-r-2xl bg-gray-100 px-5 py-3 font-bold whitespace-normal break-words min-w-0">
                   <span className="hidden [@media(min-width:480px)]:inline">
-                    Last church attended (weeks ago)
+                    No. of church services missed
                   </span>
                   <span className="inline [@media(min-width:480px)]:hidden">
-                    Last Church (weeks)
+                    # Church missed
                   </span>
                 </th>
               </tr>
