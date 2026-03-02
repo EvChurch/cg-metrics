@@ -61,7 +61,7 @@ const CGMetrics = ({ group }: CGMetricsProps) => {
   return (
     <div className="mb-14">
       <div className="mb-12">
-        <div className="flex justify-between">
+        <div className="flex gap-8 justify-between">
           <div>
             <div className="text-4xl [@media(min-width:480px)]:text-5xl font-bold text-black mb-3">
               {group.groupDetails.name}
