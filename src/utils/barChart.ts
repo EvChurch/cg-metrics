@@ -9,7 +9,7 @@ import type {
 
 export const barChartData = (
   labels: string[],
-  data: number[],
+  data: (number | null)[],
   selectedIndex?: number,
 ): ChartData<"bar"> => {
   return {

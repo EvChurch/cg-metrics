@@ -10,15 +10,18 @@ import type { Plugin } from "chart.js";
 import { type JSX } from "react";
 import { Bar } from "react-chartjs-2";
 
-import { barChartData, barChartOptions } from "../utils/barChart";
-import type { Group, PersonAttendance } from "../utils/types";
+import {
+  barChartData,
+  barChartLabels,
+  barChartOptions,
+} from "../utils/barChart";
 
 interface AttendanceBarChartProps {
-  group: Group;
+  dataVals: (number | null)[];
 }
 
 export default function AttendanceBarChart({
-  group,
+  dataVals,
 }: AttendanceBarChartProps): JSX.Element {
   ChartJS.register(BarElement, CategoryScale, LinearScale, Tooltip, Legend);
 
@@ -60,44 +63,9 @@ export default function AttendanceBarChart({
 
   ChartJS.register(ValueInsideBarPlugin);
 
-  const now = new Date();
-  const labels = Array.from({ length: 12 }, (_, i) => {
-    const d = new Date(now.getFullYear(), now.getMonth() - 11 + i, 1);
-    return d.toLocaleString("default", { month: "short" });
-  });
+  const labels = barChartLabels();
 
-  const calculateMonthlyAverageAttendance = (members: PersonAttendance[]) => {
-    const maxAttendance = members.reduce((max, member) =>
-      member.cgAttendance.length > max.cgAttendance.length ? member : max
-    );
-    const now = new Date();
-    const months = Array.from(
-      { length: 12 },
-      (_, i) => (now.getMonth() - 11 + i + 12) % 12
-    );
-    return months.map((month) => {
-      const maxMonthAttendance =
-        maxAttendance.cgAttendance.filter(
-          (att) => att.date.getMonth() === month
-        ).length * members.length;
-      const monthAttendance = maxMonthAttendance
-        ? (members
-            .map((member) =>
-              member.cgAttendance.filter(
-                (att) => att.date.getMonth() === month && att.didAttend
-              )
-            )
-            .flat().length /
-            maxMonthAttendance) *
-          100
-        : 0;
-      return Math.round(monthAttendance);
-    });
-  };
-
-  const monthlyAverageData = calculateMonthlyAverageAttendance(group.members);
-
-  const data = barChartData(labels, monthlyAverageData);
+  const data = barChartData(labels, dataVals);
   const options = barChartOptions();
 
   return (

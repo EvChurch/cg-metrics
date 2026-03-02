@@ -1,6 +1,11 @@
 import { Icon } from "@iconify/react";
 import { useState } from "react";
 
+import {
+  average,
+  calculateMonthlyAverageCgAttendance,
+} from "../utils/attendanceStats";
+import { barChartMonths } from "../utils/barChart";
 import type { Group, PersonAttendance } from "../utils/types";
 
 import AttendanceBarChart from "./AttendanceBarChart";
@@ -24,25 +29,82 @@ const CGMetrics = ({ group }: CGMetricsProps) => {
     null,
   );
 
+  const now = new Date();
+  const currentYear = now.getFullYear();
+
+  const monthlyAverageData = calculateMonthlyAverageCgAttendance(group.members);
+  const months = barChartMonths();
+  const currentYearIndex = months.findIndex(
+    (month) => month.getFullYear() === currentYear,
+  );
+  const monthlyAverageDataCurrentYear = monthlyAverageData
+    .slice(currentYearIndex)
+    .filter((data) => !!data);
+  const averageThisYear = Math.round(average(monthlyAverageDataCurrentYear));
+
+  const currentMonth = new Date().getMonth();
+  const quarterStartMonth = Math.floor(currentMonth / 3) * 3;
+  const quarterStartIndex = months.findIndex(
+    (month) =>
+      month.getFullYear() === currentYear &&
+      month.getMonth() === quarterStartMonth,
+  );
+
+  const monthlyAverageDataCurrentQuarter = monthlyAverageData
+    .slice(quarterStartIndex, quarterStartIndex + 3)
+    .filter((data) => !!data);
+  const averageThisQuarter = Math.round(
+    average(monthlyAverageDataCurrentQuarter),
+  );
+  console.log("monthlyAverageDataCurrentQuarter", quarterStartIndex);
+
   return (
-    <>
+    <div className="mb-14">
       <div className="mb-12">
-        <div className="text-4xl [@media(min-width:480px)]:text-5xl font-bold text-black mb-3 mt-14">
-          {group.groupDetails.name}
-        </div>
-        <div className="mb-5 flex items-center gap-2">
-          <Icon icon="fluent:people-20-filled" color="#505050" height="32px" />
-          <div className="font-bold text-2xl text-[#505050]">
-            Leaders: {group.groupDetails.leaders.join(", ")}
+        <div className="flex justify-between">
+          <div>
+            <div className="text-4xl [@media(min-width:480px)]:text-5xl font-bold text-black mb-3">
+              {group.groupDetails.name}
+            </div>
+            <div className="mb-5 flex items-center gap-2">
+              <Icon
+                icon="fluent:people-20-filled"
+                color="#505050"
+                height="32px"
+              />
+              <div className="font-bold text-2xl text-[#505050]">
+                Leaders: {group.groupDetails.leaders.join(", ")}
+              </div>
+            </div>
+            {group.groupDetails.isCoach && (
+              <HealthToggle
+                groupId={group.groupDetails.id}
+                healthy={healthy}
+                setHealthy={setHealthy}
+              />
+            )}
+          </div>
+          <div className="flex gap-3">
+            <div className="border-[4px] border-solid border-[#DDDDDD] rounded-2xl py-[14px] px-[40px] flex flex-col items-center justify-between text-center h-fit">
+              <div className="text-[5.5rem] font-bold text-[#E22A30] leading-none">
+                {averageThisYear}%
+              </div>
+              <div className="font-bold text-[#505050] text-[1.5rem] leading-[1.3]">
+                Average Attendance <br />
+                This Year
+              </div>
+            </div>
+            <div className="border-[4px] border-solid border-[#DDDDDD] rounded-2xl py-[14px] px-[40px] flex flex-col items-center justify-between text-center h-fit">
+              <div className="text-[5.5rem] font-bold text-[#E22A30] leading-none">
+                {averageThisQuarter}%
+              </div>
+              <div className="font-bold text-[#505050] text-[1.5rem] leading-[1.3]">
+                Average Attendance <br />
+                Jan - Mar
+              </div>
+            </div>
           </div>
         </div>
-        {group.groupDetails.isCoach && (
-          <HealthToggle
-            groupId={group.groupDetails.id}
-            healthy={healthy}
-            setHealthy={setHealthy}
-          />
-        )}
       </div>
       <div className="text-2xl [@media(min-width:480px)]:text-3xl font-bold text-black mb-6">
         People Dropping Off
@@ -105,18 +167,13 @@ const CGMetrics = ({ group }: CGMetricsProps) => {
           </table>
         </div>
       </div>
-      <div className="flex items-center justify-between gap-10">
+      <div className="flex items-center justify-between">
         <div className="flex-1">
           <div className="text-3xl font-bold text-black mt-14 mb-6">
             Average Monthly Attendance
           </div>
-          <AttendanceBarChart group={group} />
+          <AttendanceBarChart dataVals={monthlyAverageData} />
         </div>
-        {/* <div>
-          <div className="text-3xl font-bold text-black mt-14 mb-6">
-            Average Attendance This Year
-          </div>
-        </div> */}
       </div>
 
       <div
@@ -136,7 +193,7 @@ const CGMetrics = ({ group }: CGMetricsProps) => {
           />
         ))}
       </div>
-    </>
+    </div>
   );
 };
 

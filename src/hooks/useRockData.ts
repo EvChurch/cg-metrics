@@ -107,11 +107,11 @@ export function useRockData(): {
     window.parent.postMessage({ type: "CG_METRICS_READY" }, "*");
   }, []);
 
-  useEffect(() => {
-    if (!isLoading) {
-      window.parentIFrame.resize();
-    }
-  }, [isLoading, data]);
+  // useEffect(() => {
+  //   if (!isLoading) {
+  //     window.parentIFrame.resize();
+  //   }
+  // }, [isLoading, data]);
 
   useEffect(() => {
     // console.log(testData);
