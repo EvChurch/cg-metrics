@@ -85,20 +85,20 @@ const CGMetrics = ({ group }: CGMetricsProps) => {
             )}
           </div>
           <div className="flex gap-3">
-            <div className="border-[4px] border-solid border-[#DDDDDD] rounded-2xl py-[14px] px-[40px] flex flex-col items-center justify-between text-center h-fit">
-              <div className="text-[5.5rem] font-bold text-[#E22A30] leading-none">
+            <div className="border-[4px] border-solid border-[#DDDDDD] rounded-2xl min-w-[250px] py-[14px] flex flex-col items-center justify-between text-center h-fit">
+              <div className="text-[4.5rem] font-bold text-[#E22A30] leading-none">
                 {averageThisYear}%
               </div>
-              <div className="font-bold text-[#505050] text-[1.5rem] leading-[1.3]">
+              <div className="font-bold text-[#505050] text-[1.2rem] leading-[1.3]">
                 Average Attendance <br />
                 This Year
               </div>
             </div>
-            <div className="border-[4px] border-solid border-[#DDDDDD] rounded-2xl py-[14px] px-[40px] flex flex-col items-center justify-between text-center h-fit">
-              <div className="text-[5.5rem] font-bold text-[#E22A30] leading-none">
+            <div className="border-[4px] border-solid border-[#DDDDDD] rounded-2xl min-w-[250px] py-[14px] flex flex-col items-center justify-between text-center h-fit">
+              <div className="text-[4.5rem] font-bold text-[#E22A30] leading-none">
                 {averageThisQuarter}%
               </div>
-              <div className="font-bold text-[#505050] text-[1.5rem] leading-[1.3]">
+              <div className="font-bold text-[#505050] text-[1.2rem] leading-[1.3]">
                 Average Attendance <br />
                 Jan - Mar
               </div>
