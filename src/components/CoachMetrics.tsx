@@ -17,7 +17,7 @@ const CoachMetrics = () => {
     </div>
   ) : (
     <>
-      {data.length > 0 && (
+      {data.length > 1 && (
         <div className="mb-14">
           <div className="text-4xl [@media(min-width:480px)]:text-5xl font-bold text-black mb-3 mt-14">
             Overall Stats
