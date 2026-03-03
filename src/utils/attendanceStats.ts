@@ -94,3 +94,25 @@ export const calculateMonthlyAverageAttendanceManyCgs = (
     .map((_, index) => monthlyAverages.map((a) => a[index]))
     .map((m) => average(m));
 };
+
+export const getQuarterRangeLabel = (monthIndex: number) => {
+  const months = [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec",
+  ];
+
+  const quarterStart = Math.floor(monthIndex / 3) * 3;
+  const quarterEnd = quarterStart + 2;
+
+  return `${months[quarterStart]} - ${months[quarterEnd]}`;
+};

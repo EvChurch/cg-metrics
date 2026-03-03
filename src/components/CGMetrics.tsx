@@ -4,6 +4,7 @@ import { useState } from "react";
 import {
   average,
   calculateMonthlyAverageCgAttendance,
+  getQuarterRangeLabel,
 } from "../utils/attendanceStats";
 import { barChartMonths } from "../utils/barChart";
 import type { Group, PersonAttendance } from "../utils/types";
@@ -100,7 +101,7 @@ const CGMetrics = ({ group }: CGMetricsProps) => {
               </div>
               <div className="font-bold text-[#505050] text-[1.2rem] leading-[1.3]">
                 Average Attendance <br />
-                Jan - Mar
+                {getQuarterRangeLabel(quarterStartMonth)}
               </div>
             </div>
           </div>
