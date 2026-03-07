@@ -57,14 +57,18 @@ export const calculateMonthlyAverageCgAttendance = (
     if (attendanceDate) {
       const maxMonthAttendance =
         maxAttendance.cgAttendance.filter(
-          (att) => att.date.getMonth() === month.getMonth(),
+          (att) =>
+            att.date.getMonth() === month.getMonth() &&
+            att.date.getFullYear() === month.getFullYear(),
         ).length * members.length;
       const monthAttendance = maxMonthAttendance
         ? (members
             .map((member) =>
               member.cgAttendance.filter(
                 (att) =>
-                  att.date.getMonth() === month.getMonth() && att.didAttend,
+                  att.date.getMonth() === month.getMonth() &&
+                  att.date.getFullYear() === month.getFullYear() &&
+                  att.didAttend,
               ),
             )
             .flat().length /
