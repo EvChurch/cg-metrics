@@ -8,7 +8,7 @@
   <title>Ev Church - Connect Group Metrics</title>
 </head>
 
-<body style="margin: 0; padding: 0">
+<body style="margin: 0; padding: 0 24px">
   <style>
     iframe {
       width: 100%;
@@ -18,13 +18,27 @@
   <iframe id="cg-metrics-iframe" src="." frameborder="0"></iframe>
   <script src="https://cdn.jsdelivr.net/npm/@iframe-resizer/parent@5.5.7"></script>
   <script>
+    const iframe = document.getElementById("cg-metrics-iframe");
+    let testData;
+
+    function sendTestData() {
+      if (!testData || !iframe.contentWindow) return;
+      iframe.contentWindow.postMessage({ target: "cg-metrics", data: testData }, "*");
+    }
+
+    iframe.addEventListener("load", sendTestData);
+    window.addEventListener("message", (event) => {
+      if (event.source === iframe.contentWindow && event.data?.type === "CG_METRICS_READY") {
+        sendTestData();
+      }
+    });
+
     iframeResize({ license: "GPLv3" }, "#cg-metrics-iframe");
-    fetch("./public/test-data.json")
+    fetch("./test-data.json")
       .then((response) => response.json())
       .then((data) => {
-        const iframe = document.getElementById("cg-metrics-iframe");
-        iframe.onload = () =>
-          iframe.contentWindow.postMessage({ target: "cg-metrics", data });
+        testData = data;
+        sendTestData();
       });
   </script>
 </body>
