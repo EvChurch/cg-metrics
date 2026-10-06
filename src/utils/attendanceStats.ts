@@ -46,6 +46,10 @@ export const getAttendanceYearAverage = (attendance: AttendanceEntry[]) => {
 export const calculateMonthlyAverageCgAttendance = (
   members: PersonAttendance[],
 ) => {
+  if (members.length === 0) {
+    return barChartMonths().map(() => null);
+  }
+
   const maxAttendance = members.reduce((max, member) =>
     member.cgAttendance.length > max.cgAttendance.length ? member : max,
   );

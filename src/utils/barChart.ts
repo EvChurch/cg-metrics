@@ -18,7 +18,7 @@ export const barChartData = (
       {
         label: "Attendance",
         data: data,
-        backgroundColor: selectedIndex
+        backgroundColor: selectedIndex !== undefined
           ? function (context: ScriptableContext<"bar">) {
               return context.dataIndex === selectedIndex
                 ? "#8A161A"
