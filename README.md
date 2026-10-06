@@ -45,3 +45,12 @@ The GitHub Actions workflow (`.github/workflows/deploy.yml`) will:
 - Deploy to GitHub Pages
 
 The app will be available at: `https://evchurch.github.io/cg-metrics/`
+
+## Behavioral tests
+
+Run `pnpm test` on Node 22 (see `.nvmrc`). The Node test runner loads the
+TypeScript attendance and chart helpers through the existing Vite dependency.
+Tests use synthetic in-memory attendance and scoped fixed clocks; the loader
+opens no HTTP/WebSocket listener and closes after the suite. No Rock/API calls
+are made. A separate read-only workflow runs these tests for pull requests and
+pushes to `main`.
