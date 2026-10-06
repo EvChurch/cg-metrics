@@ -89,7 +89,7 @@ export type Person = z.infer<typeof personSchema>;
 
 const messageEventDataSchema = z.object({
   target: z.literal("cg-metrics"),
-  data: z.unknown(),
+  data: z.unknown().optional(),
 });
 
 export function useRockData(): {
