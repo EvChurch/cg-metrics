@@ -23,7 +23,7 @@ export default tseslint.config([
       // React-specific lint rules
       reactX.configs["recommended-typescript"],
       reactDom.configs.recommended,
-      reactHooks.configs["recommended-latest"],
+      reactHooks.configs.flat["recommended-latest"],
       reactRefresh.configs.vite,
     ],
     plugins: {
