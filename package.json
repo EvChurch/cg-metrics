@@ -44,10 +44,5 @@
     "typescript": "npm:@typescript/typescript6@~6.0.2",
     "typescript-eslint": "^8.34.1",
     "vite": "^8.3.5"
-  },
-  "pnpm": {
-    "overrides": {
-      "rollup": "4.67.2"
-    }
   }
 }
