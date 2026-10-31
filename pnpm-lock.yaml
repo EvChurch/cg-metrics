@@ -165,6 +165,9 @@ settings:
 overrides:
   rollup: 4.67.2
 
+patchedDependencies:
+  eslint-plugin-import@2.32.0: 2e0941f7df793d1d2d364c66098ab261b1cc779829a0de40d43a435605ef484e
+
 importers:
 
   .:
@@ -226,7 +229,7 @@ importers:
         version: 10.14.0(jiti@1.21.7)(supports-color@7.2.0)
       eslint-plugin-import:
         specifier: ^2.32.0
-        version: 2.32.0(@typescript-eslint/parser@8.72.1(@typescript/typescript6@6.0.2)(eslint@10.14.0(jiti@1.21.7)(supports-color@7.2.0))(supports-color@7.2.0))(eslint@10.14.0(jiti@1.21.7)(supports-color@7.2.0))(supports-color@7.2.0)
+        version: 2.32.0(patch_hash=2e0941f7df793d1d2d364c66098ab261b1cc779829a0de40d43a435605ef484e)(@typescript-eslint/parser@8.72.1(@typescript/typescript6@6.0.2)(eslint@10.14.0(jiti@1.21.7)(supports-color@7.2.0))(supports-color@7.2.0))(eslint@10.14.0(jiti@1.21.7)(supports-color@7.2.0))(supports-color@7.2.0)
       eslint-plugin-react-dom:
         specifier: ^5.0.0
         version: 5.28.8(@typescript/typescript6@6.0.2)(eslint@10.14.0(jiti@1.21.7)(supports-color@7.2.0))(supports-color@7.2.0)
@@ -3007,7 +3010,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.72.1(@typescript/typescript6@6.0.2)(eslint@10.14.0(jiti@1.21.7)(supports-color@7.2.0))(supports-color@7.2.0))(eslint@10.14.0(jiti@1.21.7)(supports-color@7.2.0))(supports-color@7.2.0):
+  eslint-plugin-import@2.32.0(patch_hash=2e0941f7df793d1d2d364c66098ab261b1cc779829a0de40d43a435605ef484e)(@typescript-eslint/parser@8.72.1(@typescript/typescript6@6.0.2)(eslint@10.14.0(jiti@1.21.7)(supports-color@7.2.0))(supports-color@7.2.0))(eslint@10.14.0(jiti@1.21.7)(supports-color@7.2.0))(supports-color@7.2.0):
     dependencies:
       '@rtsao/scc': 1.1.0
       array-includes: 3.1.9

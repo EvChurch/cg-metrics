@@ -1,0 +1,1045 @@
+[
+  {
+    "name": "missing-group-newline",
+    "source": "import React from \"react\";\nimport App from \"./App\";\n",
+    "messages": [
+      {
+        "ruleId": "import/order",
+        "severity": 2,
+        "message": "There should be at least one empty line between import groups",
+        "line": 1,
+        "column": 1,
+        "endLine": 1,
+        "endColumn": 27,
+        "fix": {
+          "range": [
+            26,
+            26
+          ],
+          "text": "\n"
+        }
+      }
+    ],
+    "output": "import React from \"react\";\n\nimport App from \"./App\";\n",
+    "remaining": []
+  },
+  {
+    "name": "groups-and-duplicate",
+    "source": "import { useState } from \"react\";\nimport App from \"./App\";\nimport { useEffect } from \"react\";\n",
+    "messages": [
+      {
+        "ruleId": "import/order",
+        "severity": 2,
+        "message": "There should be at least one empty line between import groups",
+        "line": 1,
+        "column": 1,
+        "endLine": 1,
+        "endColumn": 34,
+        "fix": {
+          "range": [
+            33,
+            33
+          ],
+          "text": "\n"
+        }
+      },
+      {
+        "ruleId": "import/no-duplicates",
+        "severity": 2,
+        "message": "'<repo>/node_modules/react/index.js' imported multiple times.",
+        "line": 1,
+        "column": 26,
+        "endLine": 1,
+        "endColumn": 33,
+        "fix": {
+          "range": [
+            18,
+            94
+          ],
+          "text": ", useEffect } from \"react\";\nimport App from \"./App\";\n"
+        }
+      },
+      {
+        "ruleId": "import/order",
+        "severity": 2,
+        "message": "There should be at least one empty line between import groups",
+        "line": 2,
+        "column": 1,
+        "endLine": 2,
+        "endColumn": 25,
+        "fix": {
+          "range": [
+            58,
+            58
+          ],
+          "text": "\n"
+        }
+      },
+      {
+        "ruleId": "import/order",
+        "severity": 2,
+        "message": "`react` import should occur before import of `./App`",
+        "line": 3,
+        "column": 1,
+        "endLine": 3,
+        "endColumn": 35,
+        "fix": {
+          "range": [
+            34,
+            94
+          ],
+          "text": "import { useEffect } from \"react\";\nimport App from \"./App\";\n"
+        }
+      },
+      {
+        "ruleId": "import/no-duplicates",
+        "severity": 2,
+        "message": "'<repo>/node_modules/react/index.js' imported multiple times.",
+        "line": 3,
+        "column": 27,
+        "endLine": 3,
+        "endColumn": 34
+      }
+    ],
+    "output": "import { useState , useEffect } from \"react\";\n\nimport App from \"./App\";\n",
+    "remaining": []
+  },
+  {
+    "name": "alphabet-forward",
+    "source": "import z from \"zod\";\nimport r from \"react\";\nimport c from \"chart.js\";\n",
+    "messages": [
+      {
+        "ruleId": "import/order",
+        "severity": 2,
+        "message": "`react` import should occur before import of `zod`",
+        "line": 2,
+        "column": 1,
+        "endLine": 2,
+        "endColumn": 23,
+        "fix": {
+          "range": [
+            0,
+            44
+          ],
+          "text": "import r from \"react\";\nimport z from \"zod\";\n"
+        }
+      },
+      {
+        "ruleId": "import/order",
+        "severity": 2,
+        "message": "`chart.js` import should occur before import of `zod`",
+        "line": 3,
+        "column": 1,
+        "endLine": 3,
+        "endColumn": 26,
+        "fix": {
+          "range": [
+            0,
+            70
+          ],
+          "text": "import c from \"chart.js\";\nimport z from \"zod\";\nimport r from \"react\";\n"
+        }
+      }
+    ],
+    "output": "import c from \"chart.js\";\nimport r from \"react\";\nimport z from \"zod\";\n",
+    "remaining": []
+  },
+  {
+    "name": "alphabet-reverse",
+    "source": "import r from \"react\";\nimport z from \"zod\";\nimport c from \"chart.js\";\n",
+    "messages": [
+      {
+        "ruleId": "import/order",
+        "severity": 2,
+        "message": "`chart.js` import should occur before import of `react`",
+        "line": 3,
+        "column": 1,
+        "endLine": 3,
+        "endColumn": 26,
+        "fix": {
+          "range": [
+            0,
+            70
+          ],
+          "text": "import c from \"chart.js\";\nimport r from \"react\";\nimport z from \"zod\";\n"
+        }
+      }
+    ],
+    "output": "import c from \"chart.js\";\nimport r from \"react\";\nimport z from \"zod\";\n",
+    "remaining": []
+  },
+  {
+    "name": "builtin-external-parent-sibling-index",
+    "source": "import App from \"./App\";\nimport index from \"./\";\nimport parent from \"../parent\";\nimport React from \"react\";\nimport fs from \"node:fs\";\n",
+    "messages": [
+      {
+        "ruleId": "import/order",
+        "severity": 2,
+        "message": "There should be at least one empty line between import groups",
+        "line": 1,
+        "column": 1,
+        "endLine": 1,
+        "endColumn": 25,
+        "fix": {
+          "range": [
+            24,
+            24
+          ],
+          "text": "\n"
+        }
+      },
+      {
+        "ruleId": "import/order",
+        "severity": 2,
+        "message": "There should be at least one empty line between import groups",
+        "line": 2,
+        "column": 1,
+        "endLine": 2,
+        "endColumn": 24,
+        "fix": {
+          "range": [
+            48,
+            48
+          ],
+          "text": "\n"
+        }
+      },
+      {
+        "ruleId": "import/order",
+        "severity": 2,
+        "message": "There should be at least one empty line between import groups",
+        "line": 3,
+        "column": 1,
+        "endLine": 3,
+        "endColumn": 32,
+        "fix": {
+          "range": [
+            80,
+            80
+          ],
+          "text": "\n"
+        }
+      },
+      {
+        "ruleId": "import/order",
+        "severity": 2,
+        "message": "`../parent` import should occur before import of `./App`",
+        "line": 3,
+        "column": 1,
+        "endLine": 3,
+        "endColumn": 32,
+        "fix": {
+          "range": [
+            0,
+            81
+          ],
+          "text": "import parent from \"../parent\";\nimport App from \"./App\";\nimport index from \"./\";\n"
+        }
+      },
+      {
+        "ruleId": "import/order",
+        "severity": 2,
+        "message": "There should be at least one empty line between import groups",
+        "line": 4,
+        "column": 1,
+        "endLine": 4,
+        "endColumn": 27,
+        "fix": {
+          "range": [
+            107,
+            107
+          ],
+          "text": "\n"
+        }
+      },
+      {
+        "ruleId": "import/order",
+        "severity": 2,
+        "message": "`react` import should occur before import of `./App`",
+        "line": 4,
+        "column": 1,
+        "endLine": 4,
+        "endColumn": 27,
+        "fix": {
+          "range": [
+            0,
+            108
+          ],
+          "text": "import React from \"react\";\nimport App from \"./App\";\nimport index from \"./\";\nimport parent from \"../parent\";\n"
+        }
+      },
+      {
+        "ruleId": "import/order",
+        "severity": 2,
+        "message": "`node:fs` import should occur before import of `./App`",
+        "line": 5,
+        "column": 1,
+        "endLine": 5,
+        "endColumn": 26,
+        "fix": {
+          "range": [
+            0,
+            134
+          ],
+          "text": "import fs from \"node:fs\";\nimport App from \"./App\";\nimport index from \"./\";\nimport parent from \"../parent\";\nimport React from \"react\";\n"
+        }
+      }
+    ],
+    "output": "import fs from \"node:fs\";\n\nimport React from \"react\";\n\nimport parent from \"../parent\";\n\nimport App from \"./App\";\n\nimport index from \"./\";\n\n",
+    "remaining": []
+  },
+  {
+    "name": "trailing-line-comments",
+    "source": "import z from \"zod\"; // keep z\nimport r from \"react\"; // keep r\n",
+    "messages": [
+      {
+        "ruleId": "import/order",
+        "severity": 2,
+        "message": "`react` import should occur before import of `zod`",
+        "line": 2,
+        "column": 1,
+        "endLine": 2,
+        "endColumn": 23,
+        "fix": {
+          "range": [
+            0,
+            64
+          ],
+          "text": "import r from \"react\"; // keep r\nimport z from \"zod\"; // keep z\n"
+        }
+      }
+    ],
+    "output": "import r from \"react\"; // keep r\nimport z from \"zod\"; // keep z\n",
+    "remaining": []
+  },
+  {
+    "name": "trailing-block-comments",
+    "source": "import z from \"zod\"; /* keep z */\nimport r from \"react\"; /* keep r */\n",
+    "messages": [
+      {
+        "ruleId": "import/order",
+        "severity": 2,
+        "message": "`react` import should occur before import of `zod`",
+        "line": 2,
+        "column": 1,
+        "endLine": 2,
+        "endColumn": 23,
+        "fix": {
+          "range": [
+            0,
+            70
+          ],
+          "text": "import r from \"react\"; /* keep r */\nimport z from \"zod\"; /* keep z */\n"
+        }
+      }
+    ],
+    "output": "import r from \"react\"; /* keep r */\nimport z from \"zod\"; /* keep z */\n",
+    "remaining": []
+  },
+  {
+    "name": "leading-block-comments",
+    "source": "/* keep z */ import z from \"zod\";\n/* keep r */ import r from \"react\";\n",
+    "messages": [
+      {
+        "ruleId": "import/order",
+        "severity": 2,
+        "message": "`react` import should occur before import of `zod`",
+        "line": 2,
+        "column": 14,
+        "endLine": 2,
+        "endColumn": 36,
+        "fix": {
+          "range": [
+            0,
+            70
+          ],
+          "text": "/* keep r */ import r from \"react\";\n/* keep z */ import z from \"zod\";\n"
+        }
+      }
+    ],
+    "output": "/* keep r */ import r from \"react\";\n/* keep z */ import z from \"zod\";\n",
+    "remaining": []
+  },
+  {
+    "name": "leading-line-comments",
+    "source": "// section z\nimport z from \"zod\";\n// section r\nimport r from \"react\";\n",
+    "messages": [
+      {
+        "ruleId": "import/order",
+        "severity": 2,
+        "message": "`react` import should occur before import of `zod`",
+        "line": 4,
+        "column": 1,
+        "endLine": 4,
+        "endColumn": 23,
+        "fix": {
+          "range": [
+            13,
+            70
+          ],
+          "text": "import r from \"react\";\nimport z from \"zod\";\n// section r\n"
+        }
+      }
+    ],
+    "output": "// section z\nimport r from \"react\";\nimport z from \"zod\";\n// section r\n",
+    "remaining": []
+  },
+  {
+    "name": "multiline-block-comments",
+    "source": "import z from \"zod\"; /* keep\nz */\nimport r from \"react\";\n",
+    "messages": [
+      {
+        "ruleId": "import/order",
+        "severity": 2,
+        "message": "`react` import should occur before import of `zod`",
+        "line": 3,
+        "column": 1,
+        "endLine": 3,
+        "endColumn": 23,
+        "fix": {
+          "range": [
+            0,
+            57
+          ],
+          "text": "import r from \"react\";\nimport z from \"zod\"; /* keep\nz */\n"
+        }
+      }
+    ],
+    "output": "import r from \"react\";\nimport z from \"zod\"; /* keep\nz */\n",
+    "remaining": []
+  },
+  {
+    "name": "comment-group-newline",
+    "source": "import r from \"react\"; // external\nimport App from \"./App\";\n",
+    "messages": [
+      {
+        "ruleId": "import/order",
+        "severity": 2,
+        "message": "There should be at least one empty line between import groups",
+        "line": 1,
+        "column": 1,
+        "endLine": 1,
+        "endColumn": 23,
+        "fix": {
+          "range": [
+            34,
+            34
+          ],
+          "text": "\n"
+        }
+      }
+    ],
+    "output": "import r from \"react\"; // external\n\nimport App from \"./App\";\n",
+    "remaining": []
+  },
+  {
+    "name": "crlf-comments",
+    "source": "import z from \"zod\"; // z\r\nimport r from \"react\"; // r\r\n",
+    "messages": [
+      {
+        "ruleId": "import/order",
+        "severity": 2,
+        "message": "`react` import should occur before import of `zod`",
+        "line": 2,
+        "column": 1,
+        "endLine": 2,
+        "endColumn": 23,
+        "fix": {
+          "range": [
+            0,
+            56
+          ],
+          "text": "import r from \"react\"; // r\r\nimport z from \"zod\"; // z\r\n"
+        }
+      }
+    ],
+    "output": "import r from \"react\"; // r\r\nimport z from \"zod\"; // z\r\n",
+    "remaining": []
+  },
+  {
+    "name": "no-final-newline",
+    "source": "import z from \"zod\";\nimport r from \"react\";",
+    "messages": [
+      {
+        "ruleId": "import/order",
+        "severity": 2,
+        "message": "`react` import should occur before import of `zod`",
+        "line": 2,
+        "column": 1,
+        "endLine": 2,
+        "endColumn": 23,
+        "fix": {
+          "range": [
+            0,
+            43
+          ],
+          "text": "import r from \"react\";\nimport z from \"zod\";\n"
+        }
+      }
+    ],
+    "output": "import r from \"react\";\nimport z from \"zod\";\n",
+    "remaining": []
+  },
+  {
+    "name": "same-line",
+    "source": "import z from \"zod\"; import r from \"react\";\n",
+    "messages": [
+      {
+        "ruleId": "import/order",
+        "severity": 2,
+        "message": "`react` import should occur before import of `zod`",
+        "line": 1,
+        "column": 22,
+        "endLine": 1,
+        "endColumn": 44,
+        "fix": {
+          "range": [
+            0,
+            44
+          ],
+          "text": " import r from \"react\";\nimport z from \"zod\";"
+        }
+      }
+    ],
+    "output": " import r from \"react\";\nimport z from \"zod\";",
+    "remaining": []
+  },
+  {
+    "name": "extra-intragroup-newline",
+    "source": "import r from \"react\";\n\nimport z from \"zod\";\n",
+    "messages": [
+      {
+        "ruleId": "import/order",
+        "severity": 2,
+        "message": "There should be no empty line within import group",
+        "line": 1,
+        "column": 1,
+        "endLine": 1,
+        "endColumn": 23,
+        "fix": {
+          "range": [
+            23,
+            24
+          ],
+          "text": ""
+        }
+      }
+    ],
+    "output": "import r from \"react\";\nimport z from \"zod\";\n",
+    "remaining": []
+  },
+  {
+    "name": "duplicate-named",
+    "source": "import { useState } from \"react\";\nimport { useEffect as effect } from \"react\";\n",
+    "messages": [
+      {
+        "ruleId": "import/no-duplicates",
+        "severity": 2,
+        "message": "'<repo>/node_modules/react/index.js' imported multiple times.",
+        "line": 1,
+        "column": 26,
+        "endLine": 1,
+        "endColumn": 33,
+        "fix": {
+          "range": [
+            18,
+            79
+          ],
+          "text": ", useEffect as effect } from \"react\";\n"
+        }
+      },
+      {
+        "ruleId": "import/no-duplicates",
+        "severity": 2,
+        "message": "'<repo>/node_modules/react/index.js' imported multiple times.",
+        "line": 2,
+        "column": 37,
+        "endLine": 2,
+        "endColumn": 44
+      }
+    ],
+    "output": "import { useState , useEffect as effect } from \"react\";\n",
+    "remaining": []
+  },
+  {
+    "name": "duplicate-default-named",
+    "source": "import React from \"react\";\nimport { useState } from \"react\";\n",
+    "messages": [
+      {
+        "ruleId": "import/no-duplicates",
+        "severity": 2,
+        "message": "'<repo>/node_modules/react/index.js' imported multiple times.",
+        "line": 1,
+        "column": 19,
+        "endLine": 1,
+        "endColumn": 26,
+        "fix": {
+          "range": [
+            12,
+            61
+          ],
+          "text": ", { useState } from \"react\";\n"
+        }
+      },
+      {
+        "ruleId": "import/no-duplicates",
+        "severity": 2,
+        "message": "'<repo>/node_modules/react/index.js' imported multiple times.",
+        "line": 2,
+        "column": 26,
+        "endLine": 2,
+        "endColumn": 33
+      }
+    ],
+    "output": "import React, { useState } from \"react\";\n",
+    "remaining": []
+  },
+  {
+    "name": "duplicate-side-effect",
+    "source": "import \"react\";\nimport { useState } from \"react\";\n",
+    "messages": [
+      {
+        "ruleId": "import/no-duplicates",
+        "severity": 2,
+        "message": "'<repo>/node_modules/react/index.js' imported multiple times.",
+        "line": 1,
+        "column": 8,
+        "endLine": 1,
+        "endColumn": 15,
+        "fix": {
+          "range": [
+            6,
+            50
+          ],
+          "text": " { useState } from \"react\";\n"
+        }
+      },
+      {
+        "ruleId": "import/no-duplicates",
+        "severity": 2,
+        "message": "'<repo>/node_modules/react/index.js' imported multiple times.",
+        "line": 2,
+        "column": 26,
+        "endLine": 2,
+        "endColumn": 33
+      }
+    ],
+    "output": "import { useState } from \"react\";\n",
+    "remaining": []
+  },
+  {
+    "name": "duplicate-empty-specifiers",
+    "source": "import {} from \"react\";\nimport { useState } from \"react\";\n",
+    "messages": [
+      {
+        "ruleId": "import/no-duplicates",
+        "severity": 2,
+        "message": "'<repo>/node_modules/react/index.js' imported multiple times.",
+        "line": 1,
+        "column": 16,
+        "endLine": 1,
+        "endColumn": 23,
+        "fix": {
+          "range": [
+            8,
+            58
+          ],
+          "text": " useState } from \"react\";\n"
+        }
+      },
+      {
+        "ruleId": "import/no-duplicates",
+        "severity": 2,
+        "message": "'<repo>/node_modules/react/index.js' imported multiple times.",
+        "line": 2,
+        "column": 26,
+        "endLine": 2,
+        "endColumn": 33
+      }
+    ],
+    "output": "import { useState } from \"react\";\n",
+    "remaining": []
+  },
+  {
+    "name": "duplicate-trailing-comma",
+    "source": "import { useState, } from \"react\";\nimport { useEffect } from \"react\";\n",
+    "messages": [
+      {
+        "ruleId": "import/no-duplicates",
+        "severity": 2,
+        "message": "'<repo>/node_modules/react/index.js' imported multiple times.",
+        "line": 1,
+        "column": 27,
+        "endLine": 1,
+        "endColumn": 34,
+        "fix": {
+          "range": [
+            19,
+            70
+          ],
+          "text": " useEffect } from \"react\";\n"
+        }
+      },
+      {
+        "ruleId": "import/no-duplicates",
+        "severity": 2,
+        "message": "'<repo>/node_modules/react/index.js' imported multiple times.",
+        "line": 2,
+        "column": 27,
+        "endLine": 2,
+        "endColumn": 34
+      }
+    ],
+    "output": "import { useState,  useEffect } from \"react\";\n",
+    "remaining": []
+  },
+  {
+    "name": "duplicate-inline-specifier-comment",
+    "source": "import { useState /* keep */ } from \"react\";\nimport { useEffect } from \"react\";\n",
+    "messages": [
+      {
+        "ruleId": "import/no-duplicates",
+        "severity": 2,
+        "message": "'<repo>/node_modules/react/index.js' imported multiple times.",
+        "line": 1,
+        "column": 37,
+        "endLine": 1,
+        "endColumn": 44,
+        "fix": {
+          "range": [
+            29,
+            80
+          ],
+          "text": ", useEffect } from \"react\";\n"
+        }
+      },
+      {
+        "ruleId": "import/no-duplicates",
+        "severity": 2,
+        "message": "'<repo>/node_modules/react/index.js' imported multiple times.",
+        "line": 2,
+        "column": 27,
+        "endLine": 2,
+        "endColumn": 34
+      }
+    ],
+    "output": "import { useState /* keep */ , useEffect } from \"react\";\n",
+    "remaining": []
+  },
+  {
+    "name": "duplicate-comment-before",
+    "source": "// do not detach\nimport { useState } from \"react\";\nimport { useEffect } from \"react\";\n",
+    "messages": [
+      {
+        "ruleId": "import/no-duplicates",
+        "severity": 2,
+        "message": "'<repo>/node_modules/react/index.js' imported multiple times.",
+        "line": 2,
+        "column": 26,
+        "endLine": 2,
+        "endColumn": 33
+      },
+      {
+        "ruleId": "import/no-duplicates",
+        "severity": 2,
+        "message": "'<repo>/node_modules/react/index.js' imported multiple times.",
+        "line": 3,
+        "column": 27,
+        "endLine": 3,
+        "endColumn": 34
+      }
+    ],
+    "output": "// do not detach\nimport { useState } from \"react\";\nimport { useEffect } from \"react\";\n",
+    "remaining": [
+      {
+        "ruleId": "import/no-duplicates",
+        "severity": 2,
+        "message": "'<repo>/node_modules/react/index.js' imported multiple times.",
+        "line": 2,
+        "column": 26,
+        "endLine": 2,
+        "endColumn": 33
+      },
+      {
+        "ruleId": "import/no-duplicates",
+        "severity": 2,
+        "message": "'<repo>/node_modules/react/index.js' imported multiple times.",
+        "line": 3,
+        "column": 27,
+        "endLine": 3,
+        "endColumn": 34
+      }
+    ]
+  },
+  {
+    "name": "duplicate-comment-after",
+    "source": "import { useState } from \"react\"; // do not detach\nimport { useEffect } from \"react\";\n",
+    "messages": [
+      {
+        "ruleId": "import/no-duplicates",
+        "severity": 2,
+        "message": "'<repo>/node_modules/react/index.js' imported multiple times.",
+        "line": 1,
+        "column": 26,
+        "endLine": 1,
+        "endColumn": 33
+      },
+      {
+        "ruleId": "import/no-duplicates",
+        "severity": 2,
+        "message": "'<repo>/node_modules/react/index.js' imported multiple times.",
+        "line": 2,
+        "column": 27,
+        "endLine": 2,
+        "endColumn": 34
+      }
+    ],
+    "output": "import { useState } from \"react\"; // do not detach\nimport { useEffect } from \"react\";\n",
+    "remaining": [
+      {
+        "ruleId": "import/no-duplicates",
+        "severity": 2,
+        "message": "'<repo>/node_modules/react/index.js' imported multiple times.",
+        "line": 1,
+        "column": 26,
+        "endLine": 1,
+        "endColumn": 33
+      },
+      {
+        "ruleId": "import/no-duplicates",
+        "severity": 2,
+        "message": "'<repo>/node_modules/react/index.js' imported multiple times.",
+        "line": 2,
+        "column": 27,
+        "endLine": 2,
+        "endColumn": 34
+      }
+    ]
+  },
+  {
+    "name": "duplicate-comment-inside",
+    "source": "import /* do not detach */ { useState } from \"react\";\nimport { useEffect } from \"react\";\n",
+    "messages": [
+      {
+        "ruleId": "import/no-duplicates",
+        "severity": 2,
+        "message": "'<repo>/node_modules/react/index.js' imported multiple times.",
+        "line": 1,
+        "column": 46,
+        "endLine": 1,
+        "endColumn": 53
+      },
+      {
+        "ruleId": "import/no-duplicates",
+        "severity": 2,
+        "message": "'<repo>/node_modules/react/index.js' imported multiple times.",
+        "line": 2,
+        "column": 27,
+        "endLine": 2,
+        "endColumn": 34
+      }
+    ],
+    "output": "import /* do not detach */ { useState } from \"react\";\nimport { useEffect } from \"react\";\n",
+    "remaining": [
+      {
+        "ruleId": "import/no-duplicates",
+        "severity": 2,
+        "message": "'<repo>/node_modules/react/index.js' imported multiple times.",
+        "line": 1,
+        "column": 46,
+        "endLine": 1,
+        "endColumn": 53
+      },
+      {
+        "ruleId": "import/no-duplicates",
+        "severity": 2,
+        "message": "'<repo>/node_modules/react/index.js' imported multiple times.",
+        "line": 2,
+        "column": 27,
+        "endLine": 2,
+        "endColumn": 34
+      }
+    ]
+  },
+  {
+    "name": "duplicate-namespace",
+    "source": "import * as React from \"react\";\nimport { useState } from \"react\";\n",
+    "messages": [],
+    "output": "import * as React from \"react\";\nimport { useState } from \"react\";\n",
+    "remaining": []
+  },
+  {
+    "name": "duplicate-conflicting-defaults",
+    "source": "import React from \"react\";\nimport OtherReact from \"react\";\n",
+    "messages": [
+      {
+        "ruleId": "import/no-duplicates",
+        "severity": 2,
+        "message": "'<repo>/node_modules/react/index.js' imported multiple times.",
+        "line": 1,
+        "column": 19,
+        "endLine": 1,
+        "endColumn": 26
+      },
+      {
+        "ruleId": "import/no-duplicates",
+        "severity": 2,
+        "message": "'<repo>/node_modules/react/index.js' imported multiple times.",
+        "line": 2,
+        "column": 24,
+        "endLine": 2,
+        "endColumn": 31
+      }
+    ],
+    "output": "import React from \"react\";\nimport OtherReact from \"react\";\n",
+    "remaining": [
+      {
+        "ruleId": "import/no-duplicates",
+        "severity": 2,
+        "message": "'<repo>/node_modules/react/index.js' imported multiple times.",
+        "line": 1,
+        "column": 19,
+        "endLine": 1,
+        "endColumn": 26
+      },
+      {
+        "ruleId": "import/no-duplicates",
+        "severity": 2,
+        "message": "'<repo>/node_modules/react/index.js' imported multiple times.",
+        "line": 2,
+        "column": 24,
+        "endLine": 2,
+        "endColumn": 31
+      }
+    ]
+  },
+  {
+    "name": "type-imports-separate",
+    "source": "import type { ReactNode } from \"react\";\nimport { useState } from \"react\";\n",
+    "messages": [],
+    "output": "import type { ReactNode } from \"react\";\nimport { useState } from \"react\";\n",
+    "remaining": []
+  },
+  {
+    "name": "duplicate-type-imports",
+    "source": "import type { ReactNode } from \"react\";\nimport type { ReactElement } from \"react\";\n",
+    "messages": [
+      {
+        "ruleId": "import/no-duplicates",
+        "severity": 2,
+        "message": "'<repo>/node_modules/react/index.js' imported multiple times.",
+        "line": 1,
+        "column": 32,
+        "endLine": 1,
+        "endColumn": 39,
+        "fix": {
+          "range": [
+            24,
+            83
+          ],
+          "text": ", ReactElement } from \"react\";\n"
+        }
+      },
+      {
+        "ruleId": "import/no-duplicates",
+        "severity": 2,
+        "message": "'<repo>/node_modules/react/index.js' imported multiple times.",
+        "line": 2,
+        "column": 35,
+        "endLine": 2,
+        "endColumn": 42
+      }
+    ],
+    "output": "import type { ReactNode , ReactElement } from \"react\";\n",
+    "remaining": []
+  },
+  {
+    "name": "queries-default-distinct",
+    "source": "import { a } from \"./item?one\";\nimport { b } from \"./item?two\";\n",
+    "messages": [],
+    "output": "import { a } from \"./item?one\";\nimport { b } from \"./item?two\";\n",
+    "remaining": []
+  },
+  {
+    "name": "require-order",
+    "source": "const z = require(\"zod\");\nconst r = require(\"react\");\n",
+    "messages": [
+      {
+        "ruleId": "import/order",
+        "severity": 2,
+        "message": "`react` import should occur before import of `zod`",
+        "line": 2,
+        "column": 11,
+        "endLine": 2,
+        "endColumn": 27,
+        "fix": {
+          "range": [
+            0,
+            54
+          ],
+          "text": "const r = require(\"react\");\nconst z = require(\"zod\");\n"
+        }
+      }
+    ],
+    "output": "const r = require(\"react\");\nconst z = require(\"zod\");\n",
+    "remaining": []
+  },
+  {
+    "name": "typescript-import-equals",
+    "source": "import z = require(\"zod\");\nimport r = require(\"react\");\n",
+    "messages": [
+      {
+        "ruleId": "import/order",
+        "severity": 2,
+        "message": "`react` import should occur before import of `zod`",
+        "line": 2,
+        "column": 1,
+        "endLine": 2,
+        "endColumn": 29,
+        "fix": {
+          "range": [
+            0,
+            56
+          ],
+          "text": "import r = require(\"react\");\nimport z = require(\"zod\");\n"
+        }
+      }
+    ],
+    "output": "import r = require(\"react\");\nimport z = require(\"zod\");\n",
+    "remaining": []
+  },
+  {
+    "name": "unassigned-barrier",
+    "source": "import z from \"zod\";\nimport \"./side-effect\";\nimport r from \"react\";\n",
+    "messages": [
+      {
+        "ruleId": "import/order",
+        "severity": 2,
+        "message": "`react` import should occur before import of `zod`",
+        "line": 3,
+        "column": 1,
+        "endLine": 3,
+        "endColumn": 23
+      }
+    ],
+    "output": "import z from \"zod\";\nimport \"./side-effect\";\nimport r from \"react\";\n",
+    "remaining": [
+      {
+        "ruleId": "import/order",
+        "severity": 2,
+        "message": "`react` import should occur before import of `zod`",
+        "line": 3,
+        "column": 1,
+        "endLine": 3,
+        "endColumn": 23
+      }
+    ]
+  },
+  {
+    "name": "already-clean",
+    "source": "import fs from \"node:fs\";\n\nimport React from \"react\";\n\nimport App from \"./App\";\n",
+    "messages": [],
+    "output": "import fs from \"node:fs\";\n\nimport React from \"react\";\n\nimport App from \"./App\";\n",
+    "remaining": []
+  }
+]
