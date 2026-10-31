@@ -1,0 +1,35 @@
+diff --git a/lib/rules/order.js b/lib/rules/order.js
+index 578709bf0b90c1c794ed7f8c046d9b3edaf0ff0a..82e0b88eda73c0769b641dff6467a7cd05394202 100644
+--- a/lib/rules/order.js
++++ b/lib/rules/order.js
+@@ -28,7 +28,7 @@ function getTokensOrCommentsAfter(sourceCode, node, count) {
+   var currentNodeOrToken = node;
+   var result = [];
+   for (var i = 0; i < count; i++) {
+-    currentNodeOrToken = sourceCode.getTokenOrCommentAfter(currentNodeOrToken);
++    currentNodeOrToken = sourceCode.getTokenAfter(currentNodeOrToken, { includeComments: true });
+     if (currentNodeOrToken == null) {
+       break;
+     }
+@@ -41,7 +41,7 @@ function getTokensOrCommentsBefore(sourceCode, node, count) {
+   var currentNodeOrToken = node;
+   var result = [];
+   for (var i = 0; i < count; i++) {
+-    currentNodeOrToken = sourceCode.getTokenOrCommentBefore(currentNodeOrToken);
++    currentNodeOrToken = sourceCode.getTokenBefore(currentNodeOrToken, { includeComments: true });
+     if (currentNodeOrToken == null) {
+       break;
+     }
+diff --git a/package.json b/package.json
+index 3163544b95fe3361214e2b9cd5b89200aba55725..b1a329a36fbf8605e0726dc4d306f0b3df5f48e0 100644
+--- a/package.json
++++ b/package.json
+@@ -112,7 +112,7 @@
+     "typescript-eslint-parser": "^15 || ^20 || ^22"
+   },
+   "peerDependencies": {
+-    "eslint": "^2 || ^3 || ^4 || ^5 || ^6 || ^7.2.0 || ^8 || ^9"
++    "eslint": "^2 || ^3 || ^4 || ^5 || ^6 || ^7.2.0 || ^8 || ^9 || 10.14.0"
+   },
+   "dependencies": {
+     "@rtsao/scc": "^1.1.0",
