@@ -163,7 +163,7 @@ settings:
   excludeLinksFromLockfile: false
 
 overrides:
-  rollup: 4.67.2
+  rollup: 4.67.3
 
 patchedDependencies:
   eslint-plugin-import@2.32.0: 2e0941f7df793d1d2d364c66098ab261b1cc779829a0de40d43a435605ef484e

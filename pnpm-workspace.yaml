@@ -1,5 +1,5 @@
 overrides:
-  rollup: 4.67.2
+  rollup: 4.67.3
 patchedDependencies:
   eslint-plugin-import@2.32.0: patches/eslint-plugin-import@2.32.0.patch
 # Only this patched package/ESLint pair is covered by the parity regression suite.
